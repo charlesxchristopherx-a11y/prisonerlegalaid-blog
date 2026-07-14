@@ -133,27 +133,59 @@ description: "We place civil rights cases with vetted attorneys at zero upfront 
     <p class="eyebrow">Writ Large TV</p>
     <h2>Watch. Learn. File.</h2>
     <p class="sub">Plain-English video guides to prisoners' rights and federal litigation — plus what to expect when the referral network takes your case.</p>
-    <div class="tv-grid">
-      <!-- FEATURED VIDEO: replace VIDEO_ID_HERE with the ID from your YouTube URL
-           (e.g., youtube.com/watch?v=abc123XYZ → abc123XYZ) -->
-      <div class="video-frame">
-        <iframe src="https://www.youtube-nocookie.com/embed/{{ videos.featured.id }}" title="Inside the Litigation Referral Network — Prisoner Legal Aid" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="wlt-container">
+      <div id="wlt-empty" class="tv-empty">
+        <p>New videos are on the way — subscribe now so you don't miss the first one.</p>
+        <a class="yt-btn" href="https://www.youtube.com/@prisonerlegalaid" target="_blank" rel="noopener">Subscribe on YouTube →</a>
       </div>
-      <div class="tv-side">
-        <h3>{{ videos.featured.title }}</h3>
-        <p>{{ videos.featured.blurb }}</p>
-        <a class="yt-btn" href="{{ videos.channelUrl }}" target="_blank" rel="noopener">Subscribe on YouTube →</a>
-      </div>
-    </div>
-    <!-- SHORTS: replace SHORT_ID_1/2/3 with the ID from each Short's URL
-         (e.g., youtube.com/shorts/xyz789 → xyz789) -->
-    <div class="shorts-row">
-      {% for s in videos.shorts %}
-      <div class="short-frame"><iframe src="https://www.youtube-nocookie.com/embed/{{ s.id }}" title="{{ s.title }}" loading="lazy" allowfullscreen></iframe></div>
-      {% endfor %}
     </div>
   </div>
 </section>
+<script>
+(function () {
+  fetch('/api/youtube-videos')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var videos = data.videos || [];
+      if (!videos.length) return; // keep the "coming soon" state showing
+
+      var container = document.getElementById('wlt-container');
+      var featured = videos[0];
+      var rest = videos.slice(1, 4);
+      var channelUrl = data.channelUrl || 'https://www.youtube.com/@prisonerlegalaid';
+
+      var html = '<div class="tv-grid">' +
+        '<div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + featured.id +
+        '" title="' + escapeAttr(featured.title) +
+        '" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' +
+        '<div class="tv-side"><h3>' + escapeHtml(featured.title) + '</h3>' +
+        '<p>New from Writ Large TV.</p>' +
+        '<a class="yt-btn" href="' + channelUrl + '" target="_blank" rel="noopener">Subscribe on YouTube →</a></div>' +
+        '</div>';
+
+      if (rest.length) {
+        html += '<div class="shorts-row">';
+        rest.forEach(function (v) {
+          html += '<div class="short-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + v.id +
+            '" title="' + escapeAttr(v.title) + '" loading="lazy" allowfullscreen></iframe></div>';
+        });
+        html += '</div>';
+      }
+
+      container.innerHTML = html;
+    })
+    .catch(function () { /* network hiccup — keep showing the empty state */ });
+
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+  function escapeAttr(s) {
+    return escapeHtml(s).replace(/"/g, '&quot;');
+  }
+})();
+</script>
 
 <section class="blog" id="blog">
   <div class="wrap">

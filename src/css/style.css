@@ -134,6 +134,8 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(27px,3.6vw,40px);lin
 .short-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .yt-btn{display:inline-block;margin-top:6px;padding:12px 22px;background:var(--stamp);color:#fff;font-weight:700;font-size:14.5px;text-decoration:none}
 .yt-btn:hover{background:var(--stamp-dark)}
+.tv-empty{border:1px dashed rgba(255,255,255,.25);padding:40px 30px;text-align:center;max-width:520px;margin:0 auto}
+.tv-empty p{color:#C7D3E2;margin-bottom:16px;font-size:15.5px}
 
 /* ---------- docket steps ---------- */
 .docket{border:1px solid var(--rule);background:#fff}
