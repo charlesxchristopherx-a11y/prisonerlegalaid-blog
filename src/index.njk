@@ -196,16 +196,18 @@ description: "We place civil rights cases with vetted attorneys at zero upfront 
         <div><p class="lbl">Hours</p><p>Monday–Friday: 9 AM–6 PM EST<br>Saturday: 10 AM–2 PM EST</p></div>
         <div class="urgent"><b>Facing a deadline?</b> We prioritize urgent matters and offer expedited preparation. Call now and say "deadline" — we'll triage your case the same day.</div>
       </div>
-      <form class="cform" onsubmit="event.preventDefault();alert('Prototype form — connect to your intake system.');">
+      <form class="cform" action="https://formspree.io/f/xzzqvkjd" method="POST">
         <h3>Request a free case review</h3>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="New case review request — Prisoner Legal Aid">
         <label for="fn">Full name *</label>
-        <input id="fn" required autocomplete="name">
+        <input id="fn" name="name" required autocomplete="name">
         <label for="ph">Phone *</label>
-        <input id="ph" type="tel" required autocomplete="tel">
+        <input id="ph" name="phone" type="tel" required autocomplete="tel">
         <label for="em">Email *</label>
-        <input id="em" type="email" required autocomplete="email">
+        <input id="em" name="email" type="email" required autocomplete="email">
         <label for="sv">What do you need? *</label>
-        <select id="sv" required>
+        <select id="sv" name="service_needed" required>
           <option value="">Select…</option>
           <option>Free civil rights case review (attorney referral)</option>
           <option>Habeas corpus petition (§ 2254 / § 2255)</option>
@@ -217,7 +219,7 @@ description: "We place civil rights cases with vetted attorneys at zero upfront 
           <option>Other</option>
         </select>
         <label for="dt">Case details *</label>
-        <textarea id="dt" rows="4" required placeholder="What happened, where, and any court deadlines."></textarea>
+        <textarea id="dt" name="case_details" rows="4" required placeholder="What happened, where, and any court deadlines."></textarea>
         <button type="submit">Submit — it's confidential</button>
         <small>By submitting, you agree to our confidentiality policy. All information is kept strictly confidential and shared with network attorneys only with your consent.</small>
       </form>
