@@ -1,0 +1,12 @@
+{
+  "name": "prisoner-legal-aid-site",
+  "version": "1.0.0",
+  "description": "Prisoner Legal Aid - civil rights referral network & pro se document preparation",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
