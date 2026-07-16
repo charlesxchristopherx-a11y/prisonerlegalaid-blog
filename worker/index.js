@@ -5,8 +5,8 @@
 // YouTube's channel feed server-side (no CORS restriction applies to
 // server-to-server fetches) and caches the result at the edge for 15 minutes.
 
-const CHANNEL_ID = "UCWGrdHP_8NanRsuV_BwR19A"; // @prisonerlegalaid
-const CHANNEL_URL = "https://www.youtube.com/@prisonerlegalaid";
+const CHANNEL_ID = "UC8OGpuULR69am3VVphh6lqw"; // @prisonerlegalaidchannel
+const CHANNEL_URL = "https://www.youtube.com/@prisonerlegalaidchannel";
 const CACHE_SECONDS = 900; // 15 minutes
 
 export default {
