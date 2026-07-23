@@ -231,3 +231,6 @@ article.post-body em{color:#39414B}
 .all-posts{padding:64px 0}
 .all-posts .posts{grid-template-columns:repeat(2,1fr)}
 @media(max-width:720px){.all-posts .posts{grid-template-columns:1fr}}
+
+/* ---------- final CTA band ---------- */
+.finalcta .cta-row{justify-content:center}
