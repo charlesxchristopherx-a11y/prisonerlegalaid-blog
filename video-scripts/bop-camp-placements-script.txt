@@ -1,0 +1,18 @@
+WRIT LARGE — VIDEO SCRIPT
+"BOP News: New Camp Placements Before Release"
+Target length: 30 seconds (≈65-75 words)
+
+HEYGEN SCENE PROMPT (keep short):
+Professional newscaster, news studio background, breaking news chyron, serious and direct to camera, formal attire.
+
+---
+
+This is a Federal Prison News Alert.
+
+The Bureau of Prisons has expanded the use of minimum-security camps as a transitional step before release. Eligible prisoners with a halfway house or home confinement date may now be moved to a camp first.
+
+This is a placement change, not a credit change — and it can affect your timeline.
+
+For help understanding what it means for your release, visit PrisonerLegalAid dot blog.
+
+[END]
