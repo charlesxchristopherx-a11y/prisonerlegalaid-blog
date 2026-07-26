@@ -1,0 +1,18 @@
+WRIT LARGE — VIDEO SCRIPT
+"BOP News: Most Prisoners Aren't Getting Their Earned Credits"
+Target length: 30 seconds (≈65-75 words)
+
+HEYGEN SCENE PROMPT (keep short):
+Professional newscaster, news studio background, breaking news chyron, serious and direct to camera, formal attire.
+
+---
+
+This is a Federal Prison News Alert.
+
+New data shows most federal prisoners aren't getting the First Step Act credit they've already earned. The Bureau of Prisons failed to properly apply time credits for over seventy percent of eligible people reviewed.
+
+If your release date doesn't match what you've earned, it may be a calculation error — not a denial.
+
+For help checking your credits, visit PrisonerLegalAid dot blog.
+
+[END]
