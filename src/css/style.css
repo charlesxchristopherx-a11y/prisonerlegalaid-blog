@@ -227,6 +227,7 @@ article.post-body strong{color:var(--ink)}
 article.post-body hr{border:0;border-top:1px solid var(--rule);margin:34px 0}
 article.post-body em{color:#39414B}
 .post-cta{background:var(--navy-deep);color:#E8EDF4;padding:28px 30px;margin-top:40px;border-top:4px solid var(--stamp)}
+.post-cta strong{color:#fff}
 .post-cta a{color:#fff;font-weight:700}
 .all-posts{padding:64px 0}
 .all-posts .posts{grid-template-columns:repeat(2,1fr)}
@@ -234,3 +235,4 @@ article.post-body em{color:#39414B}
 
 /* ---------- final CTA band ---------- */
 .finalcta .cta-row{justify-content:center}
+
