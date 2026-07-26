@@ -1,0 +1,18 @@
+WRIT LARGE — VIDEO SCRIPT
+"BOP News: Home Confinement Is Supposed to Be Mandatory"
+Target length: 30 seconds (≈65-75 words)
+
+HEYGEN SCENE PROMPT (keep short):
+Professional newscaster, news studio background, breaking news chyron, serious and direct to camera, formal attire.
+
+---
+
+This is a Federal Prison News Alert.
+
+Bureau of Prisons policy now says eligible prisoners must be referred directly to home confinement — not a halfway house — when they don't need those services. That word is "shall." It's mandatory, not optional.
+
+But enforcement has been inconsistent, and many eligible people are still being denied.
+
+If you think this applies to you, visit PrisonerLegalAid dot blog.
+
+[END]
