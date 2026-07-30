@@ -1,0 +1,29 @@
+---
+title: "First Step Act Time Credits: What They Are and Why the BOP Doesn't Always Apply Them Correctly"
+description: "Federal law entitles eligible prisoners to 10-15 days of credit for every 30 days of program participation — but the BOP frequently miscalculates or delays applying it. What the statute actually says, and what to do if your credits are wrong."
+date: 2026-07-30
+category: "Federal Prison News · First Step Act"
+---
+<div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
+  <iframe src="https://www.youtube-nocookie.com/embed/4Lf76LGIU5M" title="Federal Prison News - First Step Act time credits" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Federal prisoners can leave custody earlier than their raw sentence would suggest, and it isn't a rumor or a yard myth — it's a specific statutory benefit under the First Step Act, and the Bureau of Prisons frequently gets it wrong. That gap between what the law promises and what actually shows up on an inmate's time computation sheet is one of the most common sources of frustration we hear about, and it's also one of the more fixable ones if you know what you're looking at.
+
+The benefit is called an FSA Time Credit, created under 18 U.S.C. § 3632(d)(4). The basic rule is straightforward: an eligible prisoner earns 10 days of credit for every 30 days of successful participation in an Evidence-Based Recidivism Reduction program or a Productive Activity. Prisoners assessed as minimum or low risk of recidivism — and who haven't increased that risk level across two consecutive assessments — earn an additional 5 days on top of that, for a maximum of 15 days of credit per 30-day period. Those credits then apply toward earlier transfer to prerelease custody, meaning home confinement or a residential reentry center, or toward earlier supervised release.
+
+Not everyone qualifies. The statute carves out a specific list of ineligible offenses under § 3632(d)(4)(D) — certain violent, sex, and terrorism-related offenses among others — and a prisoner serving time for one of those convictions generally can't earn credits at all, even if every other offense on their record would qualify. Immigration detainers, certain custody classifications, and a handful of other statuses can also affect eligibility. This is the first thing worth confirming, because a lot of confusion starts with someone assuming they're eligible when their specific offense sits on the excluded list, or assuming they're excluded when they're not.
+
+For prisoners who are eligible, the more common problem isn't the rule itself — it's the BOP's application of it. Time credits are tracked and calculated administratively, program by program, and that process runs through the same systems responsible for tracking hundreds of thousands of other inmates. Programs sometimes go uncoded in the system after they're completed. Risk assessments occasionally aren't updated on schedule, which delays the additional 5-day bonus. Credits earned at one facility sometimes don't transfer cleanly when someone is moved to another. None of these are exotic problems — they're the ordinary failure modes of a large bureaucratic system, but they have a very direct, personal cost: real time added to how long someone stays in custody.
+
+If your time computation doesn't reflect credits you believe you've earned, the fix starts the same way most BOP disputes do — with the administrative remedy process, sometimes called the BP-8 through BP-11 process depending on your facility. You'll want your program completion records, your risk assessment history, and your current time computation sheet in hand before you file, because a request built around specific dates and specific programs moves differently than one that just says "my credits are wrong." Ask your case manager for a printout of your FSA time credit calculation if you don't already have one — you're entitled to see how the number was reached, not just what the final figure is.
+
+If the administrative process doesn't resolve it, or drags out without a real answer, this is exactly the kind of dispute federal courts have been willing to take up through a petition for a writ of habeas corpus under 28 U.S.C. § 2241. Unlike a claim challenging the underlying conviction or sentence, a time-credit miscalculation is about how a sentence already imposed is being administered — that's squarely within what a § 2241 petition is built to address, and courts across the country are actively hearing these cases right now.
+
+One thing worth being realistic about: a computation error doesn't automatically mean you're entitled to immediate release. Sometimes it means a correction of a few weeks, sometimes months, depending on how much programming is at issue and how far off the calculation was. But even a modest correction is real time, and it's worth pursuing precisely because the process to fix it exists and works when it's used correctly.
+
+---
+
+*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and case is different, and eligibility and outcomes depend on your specific record.*
+
+If you're not sure whether your time credits are being calculated correctly, or you've hit a wall with the administrative remedy process, Writ Large's <a href="/#services">Pro Se Services</a> can help you put together a clear, well-documented request — and if it's time to take the issue to federal court, our team prepares <a href="/#contact">§ 2241 habeas petitions</a> built to be taken seriously by the court.
