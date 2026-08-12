@@ -16,17 +16,28 @@ This distinction matters enormously in practice. A prisoner has to pair the inno
 
 To pass through the gateway, a petitioner has to present new, reliable evidence not presented at trial — exculpatory scientific evidence, credible eyewitness accounts, or critical physical evidence are the examples courts point to most often. Crucially, the court reviewing this evidence doesn't just look at the new material in isolation. Under *House v. Bell*, 547 U.S. 518 (2006), the habeas court must consider *all* the evidence, old and new, incriminating and exculpatory, even evidence that technically wouldn't have been admissible at the original trial. The court isn't independently deciding what actually happened. It's making a probabilistic judgment: how would reasonable, properly instructed jurors react to the whole record, viewed together, if they saw everything — not just what the original jury saw.
 
+Courts have not always used "new" identically. Some decisions ask whether the evidence was unavailable or could not reasonably have been discovered earlier; others focus on whether it was presented to the factfinder at trial. A petitioner should therefore address both why the evidence was not presented earlier and why it is reliable under the controlling circuit's law, rather than assuming that a newly packaged version of existing proof will qualify.
+
 ## The standard: more likely than not
 
 The bar is demanding, and the Supreme Court has been explicit that it's meant to apply only in truly extraordinary cases. The petitioner must show that, in light of the new evidence, it is more likely than not that no reasonable juror would have found guilt beyond a reasonable doubt. That's not a certainty standard, but it's also not a low bar — "more likely than not that no reasonable juror would convict" is a genuinely demanding showing to make, particularly years after the fact, when memories have faded and physical evidence may be degraded or gone.
 
-It's worth being precise about how this differs from other, related standards, because the differences carry real legal consequences. *Schlup*'s gateway standard is less demanding than the standard for a freestanding innocence claim discussed in *Herrera v. Collins* — which would require evidence so overwhelming that continued imprisonment would be constitutionally intolerable even after an error-free trial. But *Schlup* is more demanding than an ordinary sufficiency-of-the-evidence challenge under *Jackson v. Virginia*, because *Schlup* often requires the habeas court to make credibility assessments about evidence the original jury never had a chance to weigh.
+It's worth being precise about how this differs from other, related standards, because the differences carry real legal consequences. *Schlup*'s gateway standard is less demanding than what would be required for a freestanding innocence claim of the sort discussed in *Herrera v. Collins*, 506 U.S. 390 (1993). The Supreme Court has discussed—and at times assumed for argument's sake—the possibility that an extraordinarily persuasive freestanding innocence claim might raise constitutional concerns, but it has not recognized a general freestanding innocence claim or supplied a settled standard for granting habeas relief on innocence alone. But *Schlup* is more demanding than an ordinary sufficiency-of-the-evidence challenge under *Jackson v. Virginia*, because *Schlup* often requires the habeas court to make credibility assessments about evidence the original jury never had a chance to weigh.
 
 ## Where this gateway actually applies
 
 The gateway can unlock relief in more than one procedural context. It was originally developed to excuse procedural default — allowing a court to reach an otherwise-defaulted constitutional claim despite the absence of "cause" under the ordinary cause-and-prejudice framework. Later, in *McQuiggin v. Perkins*, the Supreme Court extended the same logic to AEDPA's one-year statute of limitations: a credible showing of actual innocence can allow a federal court to consider an otherwise untimely petition on the merits, without the petitioner needing to separately establish grounds for equitable tolling. In both settings, the underlying insight is the same — the Court has treated the risk of imprisoning someone who is actually innocent as serious enough to justify a narrow, judge-made exception to rules that would otherwise close the courthouse door for good.
 
 None of this makes the gateway easy to use, and it shouldn't be treated as a fallback argument to try when other options run out. It requires genuinely new evidence — not a new argument about old evidence, not a more persuasive framing of the same trial record — and it requires that evidence to be strong enough to change how a reasonable jury would have seen the whole case. For the rare petitioner who actually has that kind of evidence, though, it can be the difference between a claim that never gets heard and one that finally does.
+
+The gateway most often matters when a claim is blocked by [procedural default](/blog/what-is-procedural-default/) or by [AEDPA's one-year deadline](/blog/the-one-year-clock-2254-habeas-deadline/).
+
+## Primary authorities
+
+- *Schlup v. Delo*, 513 U.S. 298 (1995)
+- *House v. Bell*, 547 U.S. 518 (2006)
+- *McQuiggin v. Perkins*, 569 U.S. 383 (2013)
+- *Herrera v. Collins*, 506 U.S. 390 (1993)
 
 ---
 
