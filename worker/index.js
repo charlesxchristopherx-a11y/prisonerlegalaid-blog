@@ -13,6 +13,18 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // Cloudflare injects a managed robots.txt that allows search crawling but
+    // carries no Sitemap: directive, so nothing points a crawler at the sitemap.
+    // Serving our own here adds that pointer. (Mirrors the .com worker.)
+    if (url.pathname === "/robots.txt") {
+      return new Response(
+        "User-agent: *\n" +
+        "Allow: /\n\n" +
+        "Sitemap: https://prisonerlegalaid.blog/sitemap.xml\n",
+        { headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "public, max-age=3600" } }
+      );
+    }
+
     if (url.pathname === "/api/youtube-videos") {
       return getYouTubeVideos();
     }

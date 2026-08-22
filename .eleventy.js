@@ -19,5 +19,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
+  eleventyConfig.addFilter("dateISO", (d) => new Date(d).toISOString().slice(0, 10));
+
+  // Newest published post date — used as <lastmod> for the index pages so the
+  // sitemap reflects real freshness instead of the build timestamp.
+  eleventyConfig.addFilter("newestPostDate", (posts) => {
+    if (!posts || !posts.length) return new Date().toISOString().slice(0, 10);
+    const newest = posts.reduce((a, p) => (p.date > a ? p.date : a), posts[0].date);
+    return new Date(newest).toISOString().slice(0, 10);
+  });
+
   return { dir: { input: "src", includes: "_includes", output: "_site" } };
 };
