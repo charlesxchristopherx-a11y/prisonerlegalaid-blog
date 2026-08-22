@@ -8,7 +8,21 @@ both repos and say so in each entry.**
 
 ---
 
-## 2026-08-22 · chat · (this commit) — SEO: sitemap.xml + robots.txt Sitemap directive
+## 2026-08-22 · chat · (this commit) — host Google Search Console verification file
+- Did: added `src/static/google987f21ef8371cd2b.html`, served at
+  `/google987f21ef8371cd2b.html` via passthrough copy (not template processing, so the
+  bytes Google fetches match the bytes it issued exactly — verified with `cmp`).
+- Did: `eleventyConfig.ignores.add("src/static/**")` — without it Eleventy ALSO renders the
+  file as a template and emits a stray duplicate at `/static/<name>/index.html`.
+- **DO NOT DELETE THIS FILE.** Google requires it to stay in place permanently; removing it
+  un-verifies the `prisonerlegalaid.blog` Search Console property. Noted in `.eleventy.js`.
+- Verified: build 44 files; served file byte-identical to Google's original; no stray
+  `/static/` output; sitemap unchanged at 43 urls and does not include the verify file.
+- Open for next session: Chris clicks Verify in Search Console, then submits the sitemap.
+
+---
+
+## 2026-08-22 · chat · 5384cc7 — SEO: sitemap.xml + robots.txt Sitemap directive
 - Did: added `/sitemap.xml` (`src/sitemap.njk`) — 43 URLs: `/`, `/litigation/`, `/blog/`,
   and every PUBLISHED post. Added `dateISO` and `newestPostDate` filters to `.eleventy.js`.
 - Did: worker now serves its own `/robots.txt` with a `Sitemap:` directive. Cloudflare's

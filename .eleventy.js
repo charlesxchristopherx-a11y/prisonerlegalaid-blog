@@ -1,6 +1,17 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
 
+  // Google Search Console ownership verification file. Passthrough (not a
+  // template) so the bytes Google fetches match the bytes it issued exactly.
+  // Google requires this file to STAY in place permanently — removing it
+  // un-verifies the property. Do not delete.
+  eleventyConfig.addPassthroughCopy({
+    "src/static/google987f21ef8371cd2b.html": "google987f21ef8371cd2b.html",
+  });
+  // ...and stop Eleventy ALSO processing it as a template, which would emit a
+  // stray duplicate at /static/<name>/index.html.
+  eleventyConfig.ignores.add("src/static/**");
+
   // Blog posts collection, newest first — future-dated posts are excluded
   // until their date arrives. This lets a batch of posts be written and
   // pushed at once, then drip-publish one per day automatically.
