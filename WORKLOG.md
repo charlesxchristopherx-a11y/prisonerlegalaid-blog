@@ -12,10 +12,13 @@ both repos and say so in each entry.**
 - Did: new `/case-file/` page — the Docket & Record Retrieval offer approved by Chris as the
   paid front-end hook (free case review sits in front of it). Added to nav + footer, added to
   sitemap (44 urls now).
-- **No dollar figures on the page.** Standing rule 4 (no published pricing) has NOT been
-  changed; Chris was asked whether to publish and has not answered. Page routes to the free
-  review, where the price is quoted verbally. **If Chris decides to publish, the price block
-  goes here and this note comes out.**
+- **Pricing published: flat $149, all retrieval fees included, credited toward engagement.**
+  Chris clarified 2026-08-22 that **standing rule 4 (no dollar figures) governs the .com site
+  only — it does not bind .blog.** Writ Large may publish prices. `.com` remains price-free.
+- **Engagement pricing (§2255 / §2241 / compassionate release) stays quote-only by choice**,
+  not by rule: quoting collateral-attack work sight-unseen invites a competitor to undercut a
+  published number, and high-ticket work converts better on a call. Only the front-end offer
+  is public.
 - Positioning is deliberately clerical — "document retrieval and organization," explicit
   "we do not evaluate the case or recommend a course of action." That framing is what keeps
   this offer clear of the scrivener line; do not soften it into case-evaluation language.
