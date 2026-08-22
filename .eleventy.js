@@ -1,16 +1,10 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
 
-  // Google Search Console ownership verification file. Passthrough (not a
-  // template) so the bytes Google fetches match the bytes it issued exactly.
-  // Google requires this file to STAY in place permanently — removing it
-  // un-verifies the property. Do not delete.
-  eleventyConfig.addPassthroughCopy({
-    "src/static/google987f21ef8371cd2b.html": "google987f21ef8371cd2b.html",
-  });
-  // ...and stop Eleventy ALSO processing it as a template, which would emit a
-  // stray duplicate at /static/<name>/index.html.
-  eleventyConfig.ignores.add("src/static/**");
+  // NOTE: the Google Search Console verification file is NOT served from here.
+  // Cloudflare Workers Assets strips the .html extension and 307-redirects
+  // /google<token>.html -> /google<token>, and Google's file verification wants
+  // a clean 200 at the exact URL. It is served directly by worker/index.js.
 
   // Blog posts collection, newest first — future-dated posts are excluded
   // until their date arrives. This lets a batch of posts be written and

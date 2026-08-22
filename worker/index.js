@@ -16,6 +16,17 @@ export default {
     // Cloudflare injects a managed robots.txt that allows search crawling but
     // carries no Sitemap: directive, so nothing points a crawler at the sitemap.
     // Serving our own here adds that pointer. (Mirrors the .com worker.)
+    // Google Search Console ownership verification.
+    // Served from the Worker, NOT as a static asset: Cloudflare Assets strips
+    // the .html extension and 307-redirects to the extensionless path, and
+    // Google's file verification wants a clean 200 at the exact URL.
+    // DO NOT REMOVE — deleting this un-verifies the Search Console property.
+    if (url.pathname === "/google987f21ef8371cd2b.html") {
+      return new Response("google-site-verification: google987f21ef8371cd2b.html\n", {
+        headers: { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=3600" },
+      });
+    }
+
     if (url.pathname === "/robots.txt") {
       return new Response(
         "User-agent: *\n" +
