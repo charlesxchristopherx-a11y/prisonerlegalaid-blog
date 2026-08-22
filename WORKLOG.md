@@ -8,7 +8,26 @@ both repos and say so in each entry.**
 
 ---
 
-## 2026-08-22 · chat · (this commit) — host Google Search Console verification file
+## 2026-08-22 · chat · (this commit) — add /case-file/ front-end offer page
+- Did: new `/case-file/` page — the Docket & Record Retrieval offer approved by Chris as the
+  paid front-end hook (free case review sits in front of it). Added to nav + footer, added to
+  sitemap (44 urls now).
+- **No dollar figures on the page.** Standing rule 4 (no published pricing) has NOT been
+  changed; Chris was asked whether to publish and has not answered. Page routes to the free
+  review, where the price is quoted verbally. **If Chris decides to publish, the price block
+  goes here and this note comes out.**
+- Positioning is deliberately clerical — "document retrieval and organization," explicit
+  "we do not evaluate the case or recommend a course of action." That framing is what keeps
+  this offer clear of the scrivener line; do not soften it into case-evaluation language.
+- Note for a future session: the base.njk footer still reads "Writ Large does not currently
+  employ attorneys directly." Attorney oversight was confirmed for .blog on 2026-08-22, so an
+  oversight line may now be addable — but that sentence is a legal disclaimer and was NOT
+  touched here. Chris/counsel decide its wording, not a drafting session.
+- Verified: build clean 45 files; page renders; no `$` figures in output; sitemap includes it.
+
+---
+
+## 2026-08-22 · chat · c9e219a — host Google Search Console verification file
 - Did: added `src/static/google987f21ef8371cd2b.html`, served at
   `/google987f21ef8371cd2b.html` via passthrough copy (not template processing, so the
   bytes Google fetches match the bytes it issued exactly — verified with `cmp`).
