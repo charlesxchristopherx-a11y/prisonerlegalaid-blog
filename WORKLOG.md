@@ -8,6 +8,33 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-23 · chat · 0c1da23 — Stripe live; $149 pay button added to /case-file/
+- **Stripe is connected and the full catalogue is built in LIVE mode** (`livemode: true` verified
+  on every object). Connection `029a720c-aa6d-8bf8-9dc1-d3378d346ac9` "Prisoner Legal Aid LLC",
+  set as the Zapier default. 6 products, 8 prices, 6 payment links — all created via API, no
+  dashboard work. Full ID table in
+  `prisonerlegalaid-com/claude/HANDOFF-2026-08-22-writ-large-offer-and-stripe.md` §4b.
+- Did: added the **$149 payment link as a SECONDARY CTA** on `/case-file/`, below the free
+  case review, framed "Already spoken with us and ready to go ahead?".
+  **Deliberately not the primary button.** This page's architecture funnels through the free
+  review first, and the page promises *"if your case is largely sealed, we will tell you before
+  taking payment, not after."* A prominent self-serve buy button invites cold payment ahead of
+  that conversation and puts the page at odds with its own promise. Secondary framing keeps the
+  call in front of the money.
+- **Backstop for anyone who pays cold anyway:** the Stripe checkout confirmation message repeats
+  the sealed-record promise and commits to a full refund. Set at link creation.
+- **Legal-position language on this page was NOT touched** and was asserted intact after the
+  edit: the "we do not evaluate the case" sentence, the "not a law firm" sentence, and the
+  "before taking payment, not after" sentence all verified present post-patch.
+- Verified: build clean 46 files; link renders in `_site/case-file/index.html`; `buy.stripe.com`
+  appears on that page and **no other page** in the build.
+- **Process note:** the code commit (0c1da23) shipped WITHOUT this entry because the WORKLOG
+  anchor assertion failed on an en-dash mismatch and the shell continued past it. The assert did
+  its job — it caught a bad edit rather than corrupting the file — but it was not wired to abort
+  the commit. **A future session should `set -e` or gate the commit on the log edit succeeding.**
+- Open for Chris: statement descriptor (`PRISONER LEGAL AID`) is an account setting, not an API
+  object — one field in Stripe settings, his only manual task.
+
 ## 2026-08-22 · chat · (this commit) — www.prisonerlegalaid.blog canonicalization
 
 - **Reported:** `www.prisonerlegalaid.blog` goes nowhere.
