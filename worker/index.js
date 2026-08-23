@@ -13,6 +13,15 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // Canonicalize: www.prisonerlegalaid.blog -> prisonerlegalaid.blog
+    // Mirrors the .com worker. Note this only fires if a DNS record for the
+    // www hostname exists and is proxied through Cloudflare — without one the
+    // name is NXDOMAIN and the request never reaches this Worker at all.
+    if (url.hostname === "www.prisonerlegalaid.blog") {
+      url.hostname = "prisonerlegalaid.blog";
+      return Response.redirect(url.toString(), 301);
+    }
+
     // Cloudflare injects a managed robots.txt that allows search crawling but
     // carries no Sitemap: directive, so nothing points a crawler at the sitemap.
     // Serving our own here adds that pointer. (Mirrors the .com worker.)

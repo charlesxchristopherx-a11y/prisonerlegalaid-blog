@@ -8,7 +8,25 @@ both repos and say so in each entry.**
 
 ---
 
-## 2026-08-22 · chat · (this commit) — add /case-file/ front-end offer page
+## 2026-08-22 · chat · (this commit) — www.prisonerlegalaid.blog canonicalization
+
+- **Reported:** `www.prisonerlegalaid.blog` goes nowhere.
+- **Root cause: no DNS record exists for the `www` hostname on the .blog zone.**
+  `getent hosts www.prisonerlegalaid.blog` returns NXDOMAIN; curl returns 000 (connection
+  never established). The apex resolves and serves 200 normally. `.com` has both a www DNS
+  record and a Worker redirect; `.blog` had neither.
+- **Fixed in code here:** added the `www -> apex` 301 to `worker/index.js`, mirroring .com.
+- **NOT fixable from code — requires a Cloudflare dashboard change by Chris:** add a proxied
+  DNS record for `www` on the prisonerlegalaid.blog zone. Until that record exists the
+  hostname is NXDOMAIN and requests never reach the Worker, so the redirect above cannot
+  fire. Code alone does not resolve this.
+- Diagnostic to re-run after the DNS record is added:
+  `curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' https://www.prisonerlegalaid.blog/`
+  Expect `301 -> https://prisonerlegalaid.blog/`.
+
+---
+
+## 2026-08-22 · chat · prior — add /case-file/ front-end offer page
 - Did: new `/case-file/` page — the Docket & Record Retrieval offer approved by Chris as the
   paid front-end hook (free case review sits in front of it). Added to nav + footer, added to
   sitemap (44 urls now).
