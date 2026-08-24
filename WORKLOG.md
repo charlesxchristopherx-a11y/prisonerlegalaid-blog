@@ -35,7 +35,10 @@ both repos and say so in each entry.**
 ## 2026-08-24 · chat · (this commit) — HANDOFF pickup block appended
 
 - Docs only; no site output changed. Companion to `.com` commit d7343af.
-- Appended a "SESSION PICKUP (2026-08-24)" block to `HANDOFF.md` pointing at the canonical
+- **CORRECTION to this entry's first push (c84a9c1): that commit claimed a HANDOFF block was
+  appended, but this repo had NO `HANDOFF.md` and the script silently failed. `HANDOFF.md` has
+  now been CREATED here. Treat c84a9c1's description as inaccurate.**
+- Created `HANDOFF.md` for this repo, with a "SESSION PICKUP (2026-08-24)" block pointing at the canonical
   pickup doc (`claude/START-HERE-next-session.md` in the `.com` repo) and restating the two
   facts that bite on this site specifically: analytics only began collecting 2026-08-24
   (pre-that traffic came from a retired WordPress install, not this build), and both external
