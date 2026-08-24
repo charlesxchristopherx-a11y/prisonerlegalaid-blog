@@ -9,6 +9,11 @@ both repos and say so in each entry.**
 ---
 
 ## 2026-08-22 · chat · (this commit) — /case-file/ pay CTA redesign
+- **Superseded same session:** the hand-drawn SVG arrow was replaced at Chris's request with a
+  pointing-hand emoji that slowly fades in and out. SVG `.scrawl` styles and markup removed
+  entirely — do not leave both. Fade is a 7.2s cycle (3.6s alternate), opacity .12 -> 1,
+  measured live at .14 -> .98. `prefers-reduced-motion` holds it at full opacity.
+  Emoji is `aria-hidden` — decorative only.
 - Chris asked for the Stripe link to be "more apparent" with a hand-drawn red arrow.
 - **Root issue was hierarchy, not the missing arrow:** the pay link used `btn-ghost` (the
   lowest-weight button style) directly beneath a solid red `btn-primary`, so the paid action
