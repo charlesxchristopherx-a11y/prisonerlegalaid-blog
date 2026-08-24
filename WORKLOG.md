@@ -32,6 +32,55 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — /pricing/, /free-tools/, /case-file-checklist/ shipped; sitemap gaps closed
+
+- **Context: both Juno and Enrich Labs ("Helena," a marketing-automation SaaS Chris trialed
+  Aug 23-26) are discontinued/being canceled.** Chris directed marketing execution move fully
+  in-house: "do their would-be work. Build a funnel and implement." Helena never delivered the
+  funnel-architecture doc her assignment asked for (per-app automation-idea emails and 4
+  TikTok + 6 IG Reel drafts only — those drafts remain under Chris's LEGAL QA HOLD, unpublished).
+- **Closed three named open items from the 2026-08-23 entries: `/pricing/`, `/free-tools/`,
+  Case File Checklist.**
+- `/pricing/` — publishes the $149 flat retrieval fee with the live public Stripe link
+  (`buy.stripe.com/aFa8wI4Wo4lYenw7qsaAw00`), plus the $1,499/$399-mo and $1,199/$319-mo
+  **typical ranges** for post-conviction and compassionate-release preparation with a
+  call-for-quote CTA. **Deliberately does NOT embed the private Stripe payment links**
+  (`.com` HANDOFF §4b marks those `private`; publishing the URL makes it de facto public,
+  which would undo the recorded reasoning — quoting collateral work sight-unseen invites
+  undercutting and converts worse than a call). **$99 FSA packet excluded entirely** — still
+  on HOLD, no live page exists for it, verified absent from build output.
+- `/free-tools/` — hub linking free case review, `/transfer-request/`, and the new checklist.
+- `/case-file-checklist/` — new static page: plain-language list of what's public on a federal
+  docket (docket sheet, indictment/information, judgment & commitment, plea agreement,
+  sentencing transcript, appellate record) vs. what's typically sealed (PSR). No case
+  citations, no case-evaluation language — describes document types only, consistent with
+  the site's clerical positioning. Cross-links to `/case-file/`.
+- Nav: added "Pricing" to desktop + mobile nav (3 places in `base.njk`); added "Pricing" and
+  "Free Tools" to footer Navigate column. Case File Checklist intentionally NOT in main nav
+  (reached via `/free-tools/` and `/case-file/`), matching the .com SM6/SM7 precedent of
+  cross-links over nav bloat for secondary pages.
+- **Sitemap gap found and fixed:** `/transfer-request/` was never in `sitemap.xml`'s static
+  URL block (pre-existing gap, unrelated to this session's new pages). Added it along with
+  the three new pages. Verified: sitemap parses as valid XML, all four new URLs present,
+  `collections.posts`-only iteration for blog posts preserved (drip-exclusion behavior
+  untouched).
+- Verified before push: build clean (48 files); scanned all three new pages' rendered HTML
+  for banned terms (`referral`, `in-house counsel`, `Certified Peer Legal`) — none found;
+  scanned for the $99/FSA payment-link string — none found; only the public $149 link appears
+  on `/pricing/`; phone number consistently 786-408-5073.
+- **Did NOT touch:** the footer's "Writ Large does not currently employ attorneys directly"
+  sentence (a legal disclaimer previously flagged as Chris/counsel's call, not a drafting
+  session's) — new pages avoid asserting attorney-oversight language that could conflict
+  with it.
+- **Open, blocking further automation:** n8n API key not available to this session — cannot
+  wire the `/transfer-request/` lead-capture webhook (`LEAD_ENDPOINT` still empty in
+  `transfer-request.js`) or build any n8n-based recurring audit/distribution workflow to
+  replace what Helena/Juno were doing. Asked Chris for the key or for him to build the
+  webhook + Gmail-send workflow in the n8n UI using the payload shape already documented in
+  that file.
+- Content-drafting side (what Juno used to do) is unaffected by any of this — the .blog
+  `CONTENT_QUEUE.md` drip-publishing pipeline is separate and continues on its own cadence.
+
 ## 2026-08-24 · chat · (this commit) — CORRECTION: OIG figure was wrong. Source docs now linked.
 - **Chris set a standing rule: any document cited on the site must be linked so the reader can
   download the original.** Applying that rule to `/transfer-request/` immediately caught a
