@@ -8,6 +8,28 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — Brand identity shipped here for the first time
+
+- Companion to `.com` commit `272d20a`. Read that repo's WORKLOG entry for the full rationale.
+- **This site had NO favicon, NO icon tag, NO `src/img` directory, NO canonical tag, and NO
+  Open Graph or Twitter tags.** Every Writ Large link shared on social or by text rendered
+  with no title card and no image. All of it added.
+- Added: `favicon.ico`, `icon-{48,96,144,180,192,512}.png`, `logo-square.png`,
+  `og-card.jpg` (1200x630 Writ Large card), `/site.webmanifest`. New `src/img` and
+  `site.webmanifest` passthrough copies in `.eleventy.js`.
+- Added `Organization` JSON-LD: name "Writ Large", legalName "Prisoner Legal Aid LLC", phone,
+  principal-office address, `sameAs` -> `.com`. **Type is `Organization` on purpose — not
+  `LegalService`, not `Attorney`. Do not change it.**
+- **Header brandmark changed from the `§` glyph to the PLA logo image.** New `.brandmark-img`
+  class in `style.css`; the original `.brandmark` glyph rule is left intact.
+  **Revert = restore `<span class="brandmark">§</span>` in `src/_includes/base.njk`.**
+- **Cross-brand rule clarified by Chris:** separation is about funnel and practice area, not
+  visual identity. Shared logo across both brands is approved. See `.com` HANDOFF §2.
+- Verified: clean build, JSON-LD machine-parsed, all assets present in `_site`, 49/49 pages.
+
+## NOTE — ordering: the 2026-08-22 entry below sits out of sequence (it predates the
+## 2026-08-24 entries that follow it). Left in place rather than silently reordered history.
+
 ## 2026-08-22 · chat · (this commit) — /case-file/ pay CTA redesign
 - **Superseded same session:** the hand-drawn SVG arrow was replaced at Chris's request with a
   pointing-hand emoji that slowly fades in and out. SVG `.scrawl` styles and markup removed

@@ -35,6 +35,7 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(251,250,248,.96);bac
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
 .brandmark{width:44px;height:44px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:19px;border:2px solid var(--navy);position:relative;flex-shrink:0}
 .brandmark::after{content:"";position:absolute;inset:3px;border:1px solid rgba(255,255,255,.45)}
+.brandmark-img{width:44px;height:44px;flex-shrink:0;display:block;object-fit:contain}
 .brandname{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.15}
 .brandname small{display:block;font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.14em;color:var(--steel);text-transform:uppercase}
 nav.links{display:flex;gap:26px;align-items:center}

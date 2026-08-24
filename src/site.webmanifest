@@ -1,0 +1,13 @@
+{
+  "name": "Writ Large — Federal Post-Conviction Resource",
+  "short_name": "Writ Large",
+  "description": "Federal post-conviction document preparation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a2a4a",
+  "icons": [
+    { "src": "/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
