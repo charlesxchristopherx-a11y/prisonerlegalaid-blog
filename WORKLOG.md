@@ -32,6 +32,16 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — CORRECTION: Enrich Labs is NOT cancelled
+
+- Docs only. Companion to `.com` commit f8e7bca.
+- The pickup block added in 315aab2 said both marketing vendors were cancelled. **Wrong about
+  Enrich Labs** — Chris had not cancelled it and was still evaluating it (one more trial day,
+  then cancel or keep for a month). **Juno remains cancelled.**
+- `HANDOFF.md` fact 2 rewritten to say status is undecided and to instruct future sessions to
+  ASK Chris rather than assume. The LEGAL QA HOLD on the 4 TikTok + 6 Instagram scripts stands
+  either way.
+
 ## 2026-08-24 · chat · (this commit) — HANDOFF pickup block appended
 
 - Docs only; no site output changed. Companion to `.com` commit d7343af.
