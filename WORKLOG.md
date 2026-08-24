@@ -32,6 +32,63 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — ANALYTICS WERE DEAD. GA4 tag added to every page + /privacy/ created
+
+- **Root-cause finding, and it invalidates recent traffic reasoning.** Ran the first in-house
+  marketing audit against GA4 directly (Zapier connection authorized this session). GA4
+  property 520455352 returned **zero rows for Aug 1-23 and zero for the trailing 28 days.**
+  Monthly sessions 2026: Jan 58, Feb 35, Mar 7, Apr 7, May 1, Jun 3, Jul 19, **Aug 0**.
+- **Cause: neither live site had any analytics tag at all.** Verified by grepping the Eleventy
+  source AND fetching both live homepages — no `gtag`, no `googletagmanager` on
+  prisonerlegalaid.blog or prisonerlegalaid.com.
+- **Where the old data came from:** all 130 historical sessions are on hostname
+  `prisonerlegalaid.blog`, and the GA property carries custom dimensions `wp_user_id`,
+  `post_type`, `is_affiliate_link`. The data stream was named
+  *"MonsterInsights - https://cyan-crane-673969.hostingersite.com"*. **That is a WordPress
+  site on Hostinger that the current Eleventy build replaced.** The Eleventy templates were
+  never given a tag, so collection stopped when the WordPress site went away. Nobody noticed
+  because nobody was reading GA.
+- **Consequence worth remembering: any traffic-based claim made in the Juno/Enrich Labs era
+  rests on a dataset that had stopped collecting.** Platform-native social numbers (e.g.
+  TikTok's 689-view figure) are unaffected — those come from the platforms, not GA.
+- **Fix shipped (Chris chose Option 1: one shared property, segment by hostName).** GA4
+  `G-RBTXF3H1RX` added to `<head>` in `src/_includes/base.njk` here and in the `.com` repo's
+  base.njk (separate commit, same session). `anonymize_ip: true` set. Verified **49/49 blog
+  pages** carry the tag; on `.com`, 49/51 — the two exceptions are `/team/automation-setup/`
+  and `/team/followups/`, internal tool pages on a different layout, deliberately untracked.
+- **Stale GA config corrected via Admin API:** data stream 13326171998 renamed from the
+  MonsterInsights/Hostinger string to "Prisoner Legal Aid — .com + .blog (Eleventy)" and its
+  defaultUri re-pointed from the hostingersite.com staging URL to https://prisonerlegalaid.com.
+- **Privacy work done as part of the same change, not deferred.** Adding cookie-setting
+  analytics to a site serving families of incarcerated people obliges disclosure:
+  · NEW `/privacy/` page on `.blog` (this repo had none) — states plainly that the
+    transfer-request tool runs client-side, that **only the optional email field is
+    transmitted**, that form input is never sent to GA, and restates the not-a-law-firm /
+    monitored-facility-communications limits.
+  · `.com` already had `/privacy-policy/` but it **did not mention analytics or cookies at
+    all** — a "Website analytics and cookies" section was added there and the Last-updated
+    date moved to August 2026.
+  · Footer "Privacy" link added on `.blog`; `/privacy/` added to sitemap (49 urls, XML valid).
+- **Three stale key events exist in GA** (`qualify_lead`, `purchase`, `close_convert_lead`) —
+  WordPress-era leftovers that will never fire on the current sites. Left in place, flagged;
+  real conversion events should be defined once traffic data exists again.
+- **Deliberately NOT built this session: the recurring weekly audit workflow.** It would have
+  faithfully reported zeros. Standing it up is pointless until this tag has collected data —
+  revisit after ~1 week of live collection. Architecture Chris chose: hybrid ("Option C") —
+  n8n keeps lead capture + drip posting; recurring *reporting* runs as a Cowork scheduled
+  task against the Zapier connections, because n8n's YouTube credential is tied to a Google
+  Cloud project (922902152529) with the YouTube Analytics API disabled, n8n has no GA4
+  credential, and n8n has no Meta credential for Instagram.
+- **Platform connection status after this session (Zapier):** Instagram ✅ (authorized under
+  jamellhumphrey8@gmail.com — the Meta Business admin account, confirmed intentional),
+  LinkedIn ✅ (post-only; no analytics read actions exist), YouTube ✅ **both** channels
+  (verified by API: UCWGrdHP_8NanRsuV_BwR19A = @prisonerlegal/.blog,
+  UC8OGpuULR69am3VVphh6lqw = @PrisonerLegalAidChannel/.com), GA4 ✅.
+  **No route available for TikTok** (Zapier offers only Ads/Lead-Gen, not content analytics),
+  **Twitter/X** (absent from Zapier's catalog), or **Search Console** (absent from catalog).
+- Verified before push: build clean (49 files); single `</head>` per page; sitemap parses;
+  no banned terms on the new page; gtag config carries no user-supplied values.
+
 ## 2026-08-24 · chat · (this commit) — Transfer-request lead capture LIVE via n8n
 
 - **Closed the last named open item from 2026-08-23: the n8n webhook for `/transfer-request/`
