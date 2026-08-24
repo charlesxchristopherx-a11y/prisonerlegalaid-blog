@@ -236,3 +236,26 @@ article.post-body em{color:#39414B}
 /* ---------- final CTA band ---------- */
 .finalcta .cta-row{justify-content:center}
 
+/* ---- Pay CTA: hand-drawn arrow nudge (case-file) ------------------- */
+.pay-block{margin-top:30px;padding-top:24px;border-top:1px solid #D6DBE1}
+.pay-cta{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.scrawl{width:104px;height:74px;flex:0 0 auto;overflow:visible;
+  transform:translateY(-6px) rotate(-4deg);pointer-events:none}
+.scrawl path{fill:none;stroke:var(--stamp);stroke-width:2.6;
+  stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:260;stroke-dashoffset:260;
+  animation:scrawl-draw .9s ease-out .35s forwards}
+.scrawl .head path{animation-delay:1.05s;animation-duration:.35s}
+@keyframes scrawl-draw{to{stroke-dashoffset:0}}
+.btn-pay{background:var(--navy);color:#fff;border-color:var(--navy);
+  font-size:17px;padding:16px 30px;box-shadow:0 2px 0 rgba(27,42,65,.35)}
+.btn-pay:hover{background:#122032;border-color:#122032;color:#fff}
+.pay-secure{display:block;margin-top:10px;font-family:var(--mono);
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#6B7280}
+@media(max-width:560px){
+  .scrawl{width:78px;height:56px;transform:translateY(-2px) rotate(-6deg)}
+  .btn-pay{font-size:16px;padding:15px 22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .scrawl path{stroke-dashoffset:0;animation:none}
+}

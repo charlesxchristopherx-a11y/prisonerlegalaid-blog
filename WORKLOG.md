@@ -8,6 +8,25 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-22 · chat · (this commit) — /case-file/ pay CTA redesign
+- Chris asked for the Stripe link to be "more apparent" with a hand-drawn red arrow.
+- **Root issue was hierarchy, not the missing arrow:** the pay link used `btn-ghost` (the
+  lowest-weight button style) directly beneath a solid red `btn-primary`, so the paid action
+  read as less important than the free one. Arrow alone would not have fixed that.
+- Changes: new `.btn-pay` (solid navy, larger, subtle drop shadow) — deliberately NOT red, so
+  it does not compete with the free-review primary, which remains the intended first path.
+  Added inline SVG `.scrawl` hand-drawn arrow in `--stamp` red, extending the existing
+  `.stamp` annotation motif rather than importing a new visual language. Added
+  "SECURE CHECKOUT · STRIPE" microcopy in the mono face.
+- Arrow animates via `stroke-dashoffset` draw-on (shaft, then head). Guarded by
+  `prefers-reduced-motion`. `aria-hidden` + `focusable=false` — decorative, not announced.
+- **Direction was wrong on the first pass** (arrow pointed down into empty space while the
+  button sat right). Caught by screenshotting at 412px and 1280px before pushing, not after.
+  Keep verifying rendered output visually — a valid SVG path can still point nowhere.
+- Stripe payment link live on the page: `buy.stripe.com/aFa8wI4Wo4lYenw7qsaAw00`.
+
+---
+
 ## 2026-08-24 · chat · (this commit) — CORRECTION: OIG figure was wrong. Source docs now linked.
 - **Chris set a standing rule: any document cited on the site must be linked so the reader can
   download the original.** Applying that rule to `/transfer-request/` immediately caught a
