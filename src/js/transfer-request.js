@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var LEAD_ENDPOINT = ''; // set when the n8n webhook is provisioned
+  var LEAD_ENDPOINT = 'https://prisonerlegalaid.app.n8n.cloud/webhook/pla-transfer-lead';
 
   var M = 54;             // page margin, points (0.75in)
   var PW = 612, PH = 792; // US Letter

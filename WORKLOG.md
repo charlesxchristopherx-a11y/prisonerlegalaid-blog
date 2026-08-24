@@ -32,6 +32,37 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — Transfer-request lead capture LIVE via n8n
+
+- **Closed the last named open item from 2026-08-23: the n8n webhook for `/transfer-request/`
+  lead capture.** Chris supplied an n8n API key this session (used only in-session, not
+  committed to the repo or logged anywhere in plaintext in this file).
+- New n8n workflow **"PLA Transfer-Request Lead Capture"** (id `CR8TaNM0kdTpldY9`), active,
+  webhook path `pla-transfer-lead`. Mirrors the existing "PLA Lead Nurture (guide downloads)"
+  workflow's pattern: webhook → `ntfy.sh` push to the same topic Chris already has on his
+  phone (`pla-watch-493b29d9`), no email/SMTP credential required. Alert includes requester
+  name/email/phone, inmate name/reg#/facility, home location and computed driving miles, and
+  a suggested same-day opener specific to this offer (distinct from the guide-download
+  opener already in the Lead Nurture workflow).
+- `src/js/transfer-request.js` `LEAD_ENDPOINT` updated from `''` to
+  `https://prisonerlegalaid.app.n8n.cloud/webhook/pla-transfer-lead`. **Only fires when the
+  optional email field is filled in** — this is existing behavior in the file, unchanged.
+- **Verified end-to-end before and after deploy:** posted a POST directly to the production
+  webhook URL with the requester name prefixed `[TEST - ignore]` so it's unmistakable if
+  Chris sees it on his phone; got `{"message":"Workflow was started"}` back. Confirmed the
+  built `_site/js/transfer-request.js` contains the new endpoint string post-build.
+- **What this does NOT do yet: it does not email the PDF to the requester.** The current
+  payload (unchanged, pre-existing) never included the PDF bytes — only lead metadata — so
+  there was nothing to email even if a send-email step existed. n8n has no Gmail/SMTP
+  credential configured on this account (checked via API: only GitHub, Telegram, two Google
+  Drive, YouTube, OpenAI/OpenRouter, Buffer). **To build PDF-by-email:** (1) capture the
+  jsPDF output as base64 in `transfer-request.js` and add it to the POST body, (2) add a
+  Gmail or SMTP credential to n8n (a Gmail **App Password** is the fastest path — Google
+  Account → Security → App Passwords, no OAuth browser flow needed, works from a phone) and
+  a Send Email node with an attachment. Neither done this session; flagged to Chris.
+- No site copy, pricing, or legal-position language touched this session beyond the one
+  JS constant. Build verified clean before push.
+
 ## 2026-08-24 · chat · (this commit) — /pricing/, /free-tools/, /case-file-checklist/ shipped; sitemap gaps closed
 
 - **Context: both Juno and Enrich Labs ("Helena," a marketing-automation SaaS Chris trialed
