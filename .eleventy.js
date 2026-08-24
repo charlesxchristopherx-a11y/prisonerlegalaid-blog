@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
+  eleventyConfig.addPassthroughCopy({ "src/js": "js" });
 
   // NOTE: the Google Search Console verification file is NOT served from here.
   // Cloudflare Workers Assets strips the .html extension and 307-redirects

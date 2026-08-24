@@ -8,6 +8,44 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-23 · chat · (this commit) — FREE closer-to-home transfer request tool shipped
+- New page `/transfer-request/` + `src/js/transfer-request.js`. Nav link added (3 places).
+  `.eleventy.js` now passes through `src/js` → `/js`.
+- **What it does:** family fills a form; jsPDF builds a BP-A0148-style *Inmate Request to Staff*
+  (cop-out) with a § 3621(b) argument and a continuation page, and downloads it. **100% client
+  side** — no backend, no data leaves the device unless an email is given.
+- **Statute verified before writing any of the copy.** FSA § 601 amended 18 U.S.C. § 3621(b):
+  place "as close as practicable" to primary residence and "to the extent practicable" within
+  500 driving miles — **subject to** bed availability, security designation, programmatic needs,
+  medical/mental health needs, faith-based requests, sentencing court recommendations, and other
+  BOP security concerns. Page and PDF both state the request is subject to those factors and that
+  the decision rests with BOP. **No transfer is promised anywhere.**
+- **Key positioning Chris called correctly:** this is NOT an FSA earned-time-credit benefit. It is
+  a placement provision and applies to people excluded from earning ETCs. Page says so explicitly
+  — that is the whole marketing wedge.
+- Supporting fact used on the page: DOJ OIG audit 25-083 (Sept 2025) found 33% of evaluated
+  inmates were not placed within 500 driving miles.
+- **Workflow stated plainly on the page:** the inmate submits the cop-out, not the family and not
+  Writ Large. Family prints → mails in → he signs/dates → hands to Unit Team.
+- Tested headlessly (jsdom + jsPDF + pypdf), not assumed:
+  · empty submit blocked, 4 required fields flagged
+  · full-input PDF: 1 page, 2,423 chars extracted, all required strings present
+  · minimal-input PDF: 1 page, 1,700 chars, still valid (optional paragraphs drop cleanly)
+  · caught a real bug: form placeholders were third-person ("His mother is 71") but a cop-out is
+    first-person and signed by the inmate — PDF read wrong. Placeholders + hints rewritten to
+    first person and a bold instruction added to the section.
+  · guarded `scrollIntoView` (absent in some in-app browsers).
+- **Lead capture is built but DORMANT.** `LEAD_ENDPOINT` in the JS is an empty string, so no lead
+  is posted. Wire it to an n8n webhook — the payload shape is already defined in the file
+  (tool, email, requester, phone, inmate_name, reg_no, facility, home, miles, source, referrer, utm).
+  **Until that endpoint is set, this tool captures zero leads** — it's a pure giveaway.
+- Email delivery of the PDF is NOT built. Currently download-only. Needs the same n8n workflow.
+- Pricing: **$449 tier cancelled by Chris.** Transfer request becomes a free top-of-funnel offer
+  instead of a paid line item. Ladder is now: free review → free transfer request → $149 records
+  → $1,199/$1,499 preparation.
+- Open: n8n webhook URL for lead capture + PDF email; `/pricing/` page; Case File Checklist;
+  `/free-tools/` hub.
+
 ## 2026-08-23 · chat · 0c1da23 — Stripe live; $149 pay button added to /case-file/
 - **Stripe is connected and the full catalogue is built in LIVE mode** (`livemode: true` verified
   on every object). Connection `029a720c-aa6d-8bf8-9dc1-d3378d346ac9` "Prisoner Legal Aid LLC",
