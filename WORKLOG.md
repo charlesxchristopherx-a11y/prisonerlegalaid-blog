@@ -8,6 +8,32 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — CORRECTION: OIG figure was wrong. Source docs now linked.
+- **Chris set a standing rule: any document cited on the site must be linked so the reader can
+  download the original.** Applying that rule to `/transfer-request/` immediately caught a
+  factual error in copy shipped hours earlier.
+- **The error.** The page said *"the OIG reported that 33 percent were not placed within 500
+  driving miles."* Pulling OIG Report 25-083 shows **33 percent is the BOP's own straight-line
+  number, which the OIG's Finding 1 exists specifically to criticize.** The OIG's own figure,
+  measured in driving miles as the statute requires, is **approximately 41 percent.** Attaching
+  "driving miles" to the 33 percent was precisely the mistake the audit was about.
+- Corrected to 41 percent, and the straight-line vs driving-miles story is now told on the page —
+  it is stronger material than the bare statistic was.
+- Added, all verified in the report text: undercount affected 8,600+ inmates and the same error
+  reached the reports to Congress; **26 of 100 sampled placements could not be justified** by BOP
+  (Finding 2, Table 2); 69% of Native American inmates and 51% of women housed 500+ miles out.
+- Added a **Sources** section and inline links. Both URLs HEAD-checked 200:
+  · 18 U.S.C. § 3621(b) — uscode.house.gov (Office of the Law Revision Counsel)
+  · DOJ OIG Report 25-083 PDF — oig.justice.gov
+  Linked to the official government hosts rather than rehosting, so no one can claim the copy
+  was altered.
+- **Process lesson worth keeping:** the statute was verified before drafting, but the OIG figure
+  came from a search snippet and was not. Snippet-sourced numbers get treated like unverified
+  citations from now on — pull the document. Chris's "show me the source" rule is now the
+  standing check for every statistic and every case cited on either site.
+- Also: two Python asserts failed on entity-vs-literal mismatches (`&sect;` vs `§`) and correctly
+  aborted before writing. Anchors are now taken from `grep` output rather than retyped.
+
 ## 2026-08-23 · chat · (this commit) — FREE closer-to-home transfer request tool shipped
 - New page `/transfer-request/` + `src/js/transfer-request.js`. Nav link added (3 places).
   `.eleventy.js` now passes through `src/js` → `/js`.
