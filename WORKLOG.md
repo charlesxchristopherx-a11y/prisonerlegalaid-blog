@@ -32,6 +32,18 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — HANDOFF pickup block appended
+
+- Docs only; no site output changed. Companion to `.com` commit d7343af.
+- Appended a "SESSION PICKUP (2026-08-24)" block to `HANDOFF.md` pointing at the canonical
+  pickup doc (`claude/START-HERE-next-session.md` in the `.com` repo) and restating the two
+  facts that bite on this site specifically: analytics only began collecting 2026-08-24
+  (pre-that traffic came from a retired WordPress install, not this build), and both external
+  marketing vendors are cancelled with their scripts still under LEGAL QA HOLD.
+- Also records what shipped here today (42635c2, b105c15, 136a8f3), the unfinished
+  PDF-by-email work and exactly what it needs, and the footer/attorney-oversight tension
+  that is reserved for Chris and counsel.
+
 ## 2026-08-24 · chat · (this commit) — ANALYTICS WERE DEAD. GA4 tag added to every page + /privacy/ created
 
 - **Root-cause finding, and it invalidates recent traffic reasoning.** Ran the first in-house
