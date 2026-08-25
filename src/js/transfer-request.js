@@ -1,16 +1,26 @@
 /* Writ Large — closer-to-home transfer request builder.
-   Generates a BP-A0148-style Inmate Request to Staff plus a continuation page.
+
+   Fills the OFFICIAL BOP form BP-A0148 (Inmate Request to Staff), served from
+   /forms/BP_A0148.pdf, obtained from bop.gov. The form is never redrawn,
+   recreated, or altered — only its existing fillable fields are populated.
+   Overflow narrative goes onto a plain continuation sheet, which the form
+   itself contemplates ("Continue on back, if necessary").
+
+   STAFF-ONLY FIELDS — never written to by this tool:
+     'Disposition', 'Signature Staff Member', 'Date'
+   Those belong to BOP staff and are left blank.
+
    Runs entirely in the browser. Nothing is transmitted unless the visitor
    supplies an email, in which case a lead is posted to the configured endpoint. */
 (function () {
   'use strict';
 
   var LEAD_ENDPOINT = 'https://prisonerlegalaid.app.n8n.cloud/webhook/pla-transfer-lead';
+  var FORM_URL = '/forms/BP_A0148.pdf';
 
-  var M = 54;             // page margin, points (0.75in)
-  var PW = 612, PH = 792; // US Letter
-  var RIGHT = PW - M;
-  var LINE = 13.2;
+  /* Text1 (the SUBJECT body) rect on the official form:
+     [35.3, 346.9, 575.5, 544.8] -> 540.2 x 197.9 pt. Inset for padding. */
+  var BODY_W = 528, BODY_H = 190, BODY_SIZE = 9, BODY_LEAD = 10.8;
 
   function $(id) { return document.getElementById(id); }
   function val(id) { var e = $(id); return e ? e.value.trim() : ''; }
@@ -21,7 +31,7 @@
            String(d.getDate()).padStart(2, '0') + '/' + d.getFullYear();
   }
 
-  // ---- narrative assembled from the facts given. No claims are invented. ----
+  /* ---- narrative assembled from the facts given. No claims are invented. ---- */
   function buildBody(d) {
     var p = [];
 
@@ -43,15 +53,9 @@
       'request is subject to each of those considerations and that the designation decision ' +
       'rests with the Bureau.');
 
-    if (d.family) {
-      p.push('Family circumstances. ' + d.family);
-    }
-    if (d.conduct) {
-      p.push('Institutional conduct and programming. ' + d.conduct);
-    }
-    if (d.other) {
-      p.push('Additional considerations. ' + d.other);
-    }
+    if (d.family)  { p.push('Family circumstances. ' + d.family); }
+    if (d.conduct) { p.push('Institutional conduct and programming. ' + d.conduct); }
+    if (d.other)   { p.push('Additional considerations. ' + d.other); }
     if (d.pref) {
       p.push('If a transfer can be accommodated, the following facilities would be substantially ' +
         'closer to my release residence, listed in order of preference: ' + d.pref + '. I am ' +
@@ -65,132 +69,166 @@
     return p;
   }
 
-  // ---- form rendering ----
-  function hr(doc, y) {
-    doc.setLineWidth(0.8).line(M, y, RIGHT, y);
-    return y;
+  /* ---- word wrap measured against the real embedded font ---- */
+  function wrap(paras, font, size, width) {
+    var out = [];
+    paras.forEach(function (para, idx) {
+      var words = para.split(/\s+/), line = '';
+      words.forEach(function (w) {
+        var trial = line ? line + ' ' + w : w;
+        if (font.widthOfTextAtSize(trial, size) > width && line) {
+          out.push(line); line = w;
+        } else {
+          line = trial;
+        }
+      });
+      if (line) { out.push(line); }
+      if (idx < paras.length - 1) { out.push(''); }
+    });
+    return out;
   }
 
-  function labeled(doc, x, y, w, label, value) {
-    doc.setFont('helvetica', 'normal').setFontSize(7.5);
-    doc.text(label.toUpperCase(), x + 2, y + 8);
-    doc.setFont('helvetica', 'bold').setFontSize(10.5);
-    doc.text(doc.splitTextToSize(value || '', w - 6)[0] || '', x + 2, y + 22);
-    doc.setLineWidth(0.5).line(x, y + 26, x + w, y + 26);
-  }
-
-  function generate(d) {
-    var doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'letter' });
-    var y = M;
-
-    // masthead
-    doc.setFont('helvetica', 'bold').setFontSize(13);
-    doc.text('INMATE REQUEST TO STAFF', PW / 2, y, { align: 'center' });
-    y += 15;
-    doc.setFont('helvetica', 'normal').setFontSize(8.5);
-    doc.text('Federal Bureau of Prisons', PW / 2, y, { align: 'center' });
-    y += 12;
-    hr(doc, y);
-    y += 6;
-
-    // header grid
-    var half = (RIGHT - M) / 2;
-    labeled(doc, M, y, half - 8, 'To (Name and Title of Staff Member)', d.to);
-    labeled(doc, M + half + 8, y, half - 8, 'Date', today());
-    y += 34;
-    labeled(doc, M, y, half - 8, 'From (Last Name, First, Middle Initial)', d.name);
-    labeled(doc, M + half + 8, y, half - 8, 'Register Number', d.reg);
-    y += 34;
-    labeled(doc, M, y, half - 8, 'Work Assignment', d.work);
-    labeled(doc, M + half + 8, y, half - 8, 'Unit', d.unit);
-    y += 34;
-    labeled(doc, M, y, RIGHT - M, 'Institution', d.fac);
-    y += 40;
-
-    // subject
-    doc.setFont('helvetica', 'bold').setFontSize(9.5);
-    doc.text('SUBJECT:', M, y);
-    doc.setFont('helvetica', 'normal').setFontSize(10);
-    var subj = doc.splitTextToSize(
-      'Request for Closer-to-Home Transfer \u2014 18 U.S.C. \u00A7 3621(b)', RIGHT - M - 58);
-    doc.text(subj, M + 58, y);
-    y += 12 + (subj.length - 1) * 12;
-    hr(doc, y);
-    y += 20;
-
-    // body, paginating
-    var paras = buildBody(d);
-    var pageNo = 1;
-
-    function newPage() {
-      doc.setFont('helvetica', 'italic').setFontSize(8);
-      doc.text('Page ' + pageNo, PW / 2, PH - 34, { align: 'center' });
-      doc.addPage();
-      pageNo++;
-      var ny = M;
-      doc.setFont('helvetica', 'bold').setFontSize(9.5);
-      doc.text('CONTINUATION \u2014 ' + (d.name || '') +
-               (d.reg ? ', Reg. No. ' + d.reg : ''), M, ny);
-      ny += 8;
-      hr(doc, ny);
-      return ny + 20;
-    }
-
-    doc.setFont('helvetica', 'normal').setFontSize(10.5);
-    for (var i = 0; i < paras.length; i++) {
-      var lines = doc.splitTextToSize(paras[i], RIGHT - M);
-      for (var j = 0; j < lines.length; j++) {
-        if (y > PH - 150) { y = newPage(); doc.setFont('helvetica', 'normal').setFontSize(10.5); }
-        doc.text(lines[j], M, y);
-        y += LINE;
-      }
-      y += 9;
-    }
-
-    // signature block
-    if (y > PH - 130) { y = newPage(); }
-    y += 22;
-    doc.setLineWidth(0.6).line(M, y, M + 250, y);
-    doc.line(RIGHT - 150, y, RIGHT, y);
-    y += 11;
-    doc.setFont('helvetica', 'normal').setFontSize(8.5);
-    doc.text('Signature of Requesting Inmate', M, y);
-    doc.text('Date', RIGHT - 150, y);
-    y += 30;
-
-    doc.setFont('helvetica', 'italic').setFontSize(7.5);
-    var note = doc.splitTextToSize(
-      'Prepared as a document-preparation service by Writ Large, a service of Prisoner Legal Aid ' +
-      'LLC, at the request of the family. Not legal advice. No attorney-client relationship. ' +
-      'Placement and transfer decisions rest with the Bureau of Prisons. Sign and date before ' +
-      'submitting.', RIGHT - M);
-    doc.text(note, M, y);
-
-    doc.setFont('helvetica', 'italic').setFontSize(8);
-    doc.text('Page ' + pageNo, PW / 2, PH - 34, { align: 'center' });
-
-    var safe = (d.name || 'request').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    var filename = 'Transfer-Request-' + safe + '.pdf';
-    doc.save(filename);
-
-    // Base64 copy of the exact same PDF, for the optional email-a-copy step below.
-    // This does not change or delay the local download above in any way.
-    var pdfBase64 = null;
+  function setField(form, name, value) {
     try {
-      var dataUri = doc.output('datauristring');
-      pdfBase64 = dataUri.split(',')[1] || null;
-    } catch (e) { pdfBase64 = null; }
-
-    return { filename: filename, base64: pdfBase64 };
+      form.getTextField(name).setText(value || '');
+    } catch (e) { /* field absent on a revised form revision — skip, never crash */ }
   }
 
-  // ---- validation + wiring ----
+  /* ---- fill the official form ---- */
+  function generate(d) {
+    var PDFLib = window.PDFLib;
+    var pdfDoc, form, helv, helvB;
+
+    return fetch(FORM_URL).then(function (res) {
+      if (!res.ok) { throw new Error('form fetch failed'); }
+      return res.arrayBuffer();
+    }).then(function (bytes) {
+      return PDFLib.PDFDocument.load(bytes);
+    }).then(function (doc) {
+      pdfDoc = doc;
+      form = pdfDoc.getForm();
+      return pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
+    }).then(function (f) {
+      helv = f;
+      return pdfDoc.embedFont(PDFLib.StandardFonts.HelveticaBold);
+    }).then(function (fb) {
+      helvB = fb;
+
+      /* Inmate-side header fields only. */
+      setField(form, 'TOName and Title of Staff Member', d.to);
+      setField(form, 'DATE', today());
+      setField(form, 'FROM', d.name);
+      setField(form, 'REGISTER NO', d.reg);
+      setField(form, 'WORK ASSIGNMENT', d.work);
+      setField(form, 'UNIT', d.unit);
+      /* 'Disposition', 'Signature Staff Member', 'Date' are STAFF-ONLY. Untouched. */
+
+      var subject = 'REQUEST FOR CLOSER-TO-HOME TRANSFER \u2014 18 U.S.C. \u00A7 3621(b)';
+      var paras = [subject].concat(buildBody(d));
+      var lines = wrap(paras, helv, BODY_SIZE, BODY_W);
+
+      var maxLines = Math.floor(BODY_H / BODY_LEAD);
+      var head = lines, rest = [];
+      if (lines.length > maxLines) {
+        head = lines.slice(0, maxLines - 1);
+        rest = lines.slice(maxLines - 1);
+        head.push('(Continued on attached page.)');
+      }
+
+      setField(form, 'Text1', head.join('\n'));
+      try { form.getTextField('Text1').setFontSize(BODY_SIZE); } catch (e) {}
+
+      /* Overflow onto a plain continuation sheet — not a form reproduction. */
+      if (rest.length) {
+        var page = pdfDoc.addPage([612, 792]);
+        var y = 738;
+        page.drawText('CONTINUATION \u2014 INMATE REQUEST TO STAFF',
+          { x: 54, y: y, size: 11, font: helvB });
+        y -= 15;
+        page.drawText((d.name || '') + (d.reg ? ', Reg. No. ' + d.reg : ''),
+          { x: 54, y: y, size: 9, font: helv });
+        y -= 8;
+        page.drawLine({ start: { x: 54, y: y }, end: { x: 558, y: y }, thickness: 0.8 });
+        y -= 20;
+
+        for (var i = 0; i < rest.length; i++) {
+          if (y < 100) { page = pdfDoc.addPage([612, 792]); y = 738; }
+          if (rest[i]) {
+            page.drawText(rest[i], { x: 54, y: y, size: BODY_SIZE, font: helv });
+          }
+          y -= BODY_LEAD;
+        }
+
+        y -= 26;
+        page.drawLine({ start: { x: 54, y: y }, end: { x: 304, y: y }, thickness: 0.6 });
+        page.drawLine({ start: { x: 408, y: y }, end: { x: 558, y: y }, thickness: 0.6 });
+        y -= 11;
+        page.drawText('Signature of Requesting Inmate', { x: 54, y: y, size: 8, font: helv });
+        page.drawText('Date', { x: 408, y: y, size: 8, font: helv });
+      }
+
+      /* Flatten so the completed form prints identically everywhere. Staff
+         fields flatten as blank space, exactly as on a printed blank form. */
+      form.flatten();
+      return pdfDoc.save();
+    }).then(function (outBytes) {
+      var safe = (d.name || 'request').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      var filename = 'Transfer-Request-' + safe + '.pdf';
+
+      var blob = new Blob([outBytes], { type: 'application/pdf' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = filename;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+
+      var b64 = null;
+      try {
+        var bin = '', chunk = 0x8000;
+        for (var k = 0; k < outBytes.length; k += chunk) {
+          bin += String.fromCharCode.apply(null, outBytes.subarray(k, k + chunk));
+        }
+        b64 = btoa(bin);
+      } catch (e) { b64 = null; }
+
+      return { filename: filename, base64: b64 };
+    });
+  }
+
+  /* ---- validation + wiring ---- */
   var REQUIRED = [
     ['f_name', 'the full name as the Bureau has it'],
     ['f_reg', 'the register number'],
     ['f_fac', 'the current facility'],
     ['f_home', 'the release city and state']
   ];
+
+  function postLead(d, built) {
+    var email = val('f_email');
+    if (!email || !LEAD_ENDPOINT) { return; }
+    try {
+      fetch(LEAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          tool: 'transfer-request',
+          email: email,
+          requester: val('f_yourname'),
+          phone: val('f_phone'),
+          inmate_name: d.name,
+          reg_no: d.reg,
+          facility: d.fac,
+          home: d.home,
+          miles: d.miles,
+          source: location.pathname,
+          referrer: document.referrer || '',
+          utm: location.search || '',
+          pdf_filename: built ? built.filename : null,
+          pdf_base64: built ? built.base64 : null
+        })
+      }).catch(function () {});
+    } catch (e) { /* never block the download */ }
+  }
 
   function run() {
     var err = $('tr-err'), btn = $('tr-go');
@@ -225,7 +263,7 @@
       conduct: val('f_conduct'), other: val('f_other')
     };
 
-    if (!window.jspdf || !window.jspdf.jsPDF) {
+    if (!window.PDFLib || !window.PDFLib.PDFDocument) {
       err.textContent = 'The PDF builder is still loading. Give it a second and tap again.';
       err.hidden = false;
       return;
@@ -233,46 +271,22 @@
 
     btn.disabled = true;
     btn.textContent = 'Building\u2026';
-    var built = null;
-    try {
-      built = generate(d);
+
+    generate(d).then(function (built) {
       btn.textContent = 'Downloaded \u2014 Build Another';
-    } catch (e) {
+      btn.disabled = false;
+      postLead(d, built);
+    }).catch(function () {
       err.textContent = 'Something went wrong building the PDF. Try again, or call 786-408-5073 and we will prepare it by hand.';
       err.hidden = false;
       btn.textContent = 'Build My Transfer Request';
-    }
-    btn.disabled = false;
-
-    var email = val('f_email');
-    if (email && LEAD_ENDPOINT) {
-      try {
-        fetch(LEAD_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            tool: 'transfer-request',
-            email: email,
-            requester: val('f_yourname'),
-            phone: val('f_phone'),
-            inmate_name: d.name,
-            reg_no: d.reg,
-            facility: d.fac,
-            home: d.home,
-            miles: d.miles,
-            source: location.pathname,
-            referrer: document.referrer || '',
-            utm: location.search || '',
-            pdf_filename: built ? built.filename : null,
-            pdf_base64: built ? built.base64 : null
-          })
-        }).catch(function () {});
-      } catch (e) { /* never block the download */ }
-    }
+      btn.disabled = false;
+      postLead(d, null);
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
     var btn = $('tr-go');
-    if (btn) btn.addEventListener('click', run);
+    if (btn) { btn.addEventListener('click', run); }
   });
 })();

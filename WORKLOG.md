@@ -8,6 +8,38 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-25 · chat · (this commit) — RULE VIOLATION FIXED: stop reproducing the BP-A0148 government form
+
+- **STANDING RULE (Chris, this session): NEVER reproduce, recreate, or reformat a government
+  form.** Obtain the official fillable PDF and fill it as-is. Applies to BP-A0148, AO-242,
+  BP-9/10/11, IFP applications, everything. If an official fillable copy can't be found, say so
+  and STOP — do not substitute a look-alike.
+- **The violation:** `src/js/transfer-request.js` drew a from-scratch imitation of BP-A0148 with
+  jsPDF — its own "INMATE REQUEST TO STAFF" masthead, "Federal Bureau of Prisons" line, and
+  header grid. The file header literally said "Generates a BP-A0148-style Inmate Request to
+  Staff." That is exactly what the rule forbids.
+- **The fix:** downloaded the genuine form from `https://www.bop.gov/policy/forms/BP_A0148.pdf`
+  (439 KB, 10 real AcroForm fields), now served at `/forms/BP_A0148.pdf` via a new `src/forms`
+  passthrough. Generator rewritten from **jsPDF to pdf-lib** (CDN swap in `transfer-request.njk`)
+  — it now loads the official PDF and populates its existing fields. Zero jsPDF references remain.
+- **STAFF-ONLY FIELDS deliberately left blank — do not "helpfully" populate these:**
+  `Disposition`, `Signature Staff Member`, `Date` (capital D). Those belong to BOP staff. The
+  inmate's own date field is `DATE` (all caps). Field names are quirky and exact —
+  `TOName and Title of Staff Member`, `REGISTER NO` (no period), body is `Text1`.
+- Body text is wrapped by measuring against the real embedded font, sized to the actual `Text1`
+  rect `[35.3, 346.9, 575.5, 544.8]`. Overflow goes to a **plain continuation sheet** — NOT a
+  second form page — which the form itself contemplates ("Continue on back, if necessary").
+  Output is flattened so it prints identically everywhere.
+- **Verified by execution, not inspection:** ran the exact fill logic headlessly in Node against
+  the real PDF with a full sample record, rendered both pages to PNG, and confirmed visually —
+  header fields correct, DISPOSITION and staff signature block blank, continuation page clean.
+  23 wrapped lines, 17 fit, 7 overflowed to page 2 as designed.
+- Base64-to-webhook behavior from `6dbb49e` preserved; `run()` reworked to be promise-safe since
+  pdf-lib is async. Lead still posts even if PDF generation fails.
+- Backup of the old jsPDF version was kept only in the session sandbox, not committed — the
+  reproduction should not live on in the repo.
+
+
 ## 2026-08-24 · chat · (this commit) — MAJOR FINDING: transfer-request PDF never reached n8n; fixed (6dbb49e)
 
 - **Root finding: "email the PDF" was never architecturally possible with the shipped code.**
