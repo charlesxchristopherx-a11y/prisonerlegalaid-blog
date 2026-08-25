@@ -170,7 +170,18 @@
     doc.text('Page ' + pageNo, PW / 2, PH - 34, { align: 'center' });
 
     var safe = (d.name || 'request').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    doc.save('Transfer-Request-' + safe + '.pdf');
+    var filename = 'Transfer-Request-' + safe + '.pdf';
+    doc.save(filename);
+
+    // Base64 copy of the exact same PDF, for the optional email-a-copy step below.
+    // This does not change or delay the local download above in any way.
+    var pdfBase64 = null;
+    try {
+      var dataUri = doc.output('datauristring');
+      pdfBase64 = dataUri.split(',')[1] || null;
+    } catch (e) { pdfBase64 = null; }
+
+    return { filename: filename, base64: pdfBase64 };
   }
 
   // ---- validation + wiring ----
@@ -222,8 +233,9 @@
 
     btn.disabled = true;
     btn.textContent = 'Building\u2026';
+    var built = null;
     try {
-      generate(d);
+      built = generate(d);
       btn.textContent = 'Downloaded \u2014 Build Another';
     } catch (e) {
       err.textContent = 'Something went wrong building the PDF. Try again, or call 786-408-5073 and we will prepare it by hand.';
@@ -250,7 +262,9 @@
             miles: d.miles,
             source: location.pathname,
             referrer: document.referrer || '',
-            utm: location.search || ''
+            utm: location.search || '',
+            pdf_filename: built ? built.filename : null,
+            pdf_base64: built ? built.base64 : null
           })
         }).catch(function () {});
       } catch (e) { /* never block the download */ }
