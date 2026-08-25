@@ -8,6 +8,34 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — MAJOR FINDING: transfer-request PDF never reached n8n; fixed (6dbb49e)
+
+- **Root finding: "email the PDF" was never architecturally possible with the shipped code.**
+  `jsPDF`'s `doc.save(...)` triggers a browser-local download only. The webhook payload sent to
+  `pla-transfer-lead` (`src/js/transfer-request.js`) contained text fields ONLY — name, reg #,
+  facility, email — **zero PDF bytes, ever.** The Gmail App Password blocker documented
+  elsewhere was necessary but not sufficient; there was nothing to attach even with working SMTP.
+- **Fix, in commit `6dbb49e`: `generate(d)` now returns `{filename, base64}`** via
+  `doc.output('datauristring')`, split on the (single, verified) comma to isolate the base64
+  payload. `doc.save(...)` is UNCHANGED and still fires first — the local download behavior is
+  untouched, this is additive only. `pdf_filename` and `pdf_base64` added to the existing
+  webhook JSON body.
+- **Verified, not assumed:** ran the actual extraction line
+  (`doc.output('datauristring').split(',')[1]`) against a real jsPDF-generated document in
+  Node, decoded the resulting base64, and confirmed a valid `%PDF-1.3` file header. End-to-end
+  round-trip test of the exact shipped code, not a syntax check.
+- Build verified clean; `_site/js/transfer-request.js` confirmed to contain the new fields.
+- **n8n side (workflow `CR8TaNM0kdTpldY9`) still needs:** a node to convert `body.pdf_base64`
+  from JSON to binary (Move Binary Data, mode `jsonToBinary`), an Email Send node with the
+  binary attached, and an SMTP credential. **Credential creation blocked on Chris rotating the
+  Gmail App Password** he pasted into chat by mistake this session — treat any App Password
+  from before 2026-08-24 ~1:30pm as compromised; do not use it if found anywhere.
+- **Also this session: Chris provided a live n8n API key in-chat** (accepted deliberately,
+  unlike the Gmail password — the key is instantly revocable from n8n Settings -> API with no
+  downstream account risk, unlike an inbox credential). Used via `bash_tool` + `curl` against
+  `https://prisonerlegalaid.app.n8n.cloud/api/v1/...`. **Chris should rotate this key once the
+  n8n-side work this session is complete**, same as the Gmail password.
+
 ## 2026-08-24 · chat · (this commit) — Enrich Labs decision FINAL: cancelled, fully in-house
 
 - Docs only. Companion to `.com` commit cf094e3.
