@@ -8,6 +8,27 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — Terms of Service + Refund Policy added
+
+- **Reason: Stripe onboarding.** Chris found `.blog` had a privacy page but no Terms of
+  Service and no refund policy at all, while taking live payment for a $149 flat product,
+  quoted document-prep engagements, and 4-month payment plans. That's a real gap for a
+  payments-account underwriting review, not just a nice-to-have.
+- New `/terms/` — same UPL-safe pattern as `.com`'s terms.njk (no attorney-client relationship,
+  no guaranteed outcome, "under the oversight of a licensed attorney" phrasing, client remains
+  responsible for filing/deadlines). Adds a payment/engagement section specific to `.blog`
+  services and links out to the new refund policy.
+- New `/refund-policy/` — full refund pre-drafting, partial refund for unearned work once
+  drafting has begun, completed+delivered documents are non-refundable, payment-plan
+  cancellation stops future installments with no cancellation fee, explicit "a refund is not
+  available because a court ruled against you" clause. Numbers used ($149 Case File, 60-day
+  credit window, 4 monthly payments) are pulled directly from the live `/pricing/` page —
+  nothing invented.
+- **Chris said he will review/edit both after this session** — treat current text as a working
+  draft, not final-approved copy, until he confirms.
+- Both wired into the footer nav (`_includes/base.njk`) next to the existing Privacy link.
+- Verified: clean build, both routes present in `_site`, footer links resolve.
+
 ## 2026-08-24 · chat · (this commit) — Brand identity shipped here for the first time
 
 - Companion to `.com` commit `272d20a`. Read that repo's WORKLOG entry for the full rationale.
