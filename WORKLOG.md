@@ -8,6 +8,13 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-08-24 · chat · (this commit) — Enrich Labs decision FINAL: cancelled, fully in-house
+
+- Docs only. Companion to `.com` commit cf094e3.
+- Chris decided against keeping Enrich Labs' free tier: **"I say we just do everything
+  ourselves."** Both vendors now cancelled, final. `HANDOFF.md` updated to remove the
+  "undecided" framing.
+
 ## 2026-08-24 · chat · (this commit) — Terms of Service + Refund Policy added
 
 - **Reason: Stripe onboarding.** Chris found `.blog` had a privacy page but no Terms of

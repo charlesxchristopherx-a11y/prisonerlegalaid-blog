@@ -19,15 +19,14 @@ Two facts that bite on this site specifically:
    on `cyan-crane-673969.hostingersite.com` — not from this Eleventy build. **Do
    not cite pre-2026-08-24 traffic as a baseline.** Platform-native social numbers
    (TikTok, YouTube views) are unaffected.
-2. **Juno is cancelled. Enrich Labs / "Helena" is NOT — status was undecided as
-   of 2026-08-24.** Chris was trialling it one more day and would then cancel or
-   keep it a month; his read is that driving the **web app directly** is much
-   better than its emailed output. **Ask Chris for current status; do not record
-   it as cancelled until he says so.** Marketing execution is in-house by default
-   either way. Full detail in the `.com` repo's `HANDOFF.md` §7. The 4 TikTok
-   scripts and 6 Instagram Reel scripts it produced remain under Chris's
-   **"LEGAL QA HOLD — do not publish"** email of 2026-08-23 and are unpublished —
-   that holds whether or not the vendor is kept.
+2. **Both external marketing vendors are cancelled, final.** Juno first; Enrich
+   Labs / "Helena" was briefly under evaluation — Chris liked its web app more
+   than its emailed output and considered keeping the free tier — but decided
+   against it: *"I say we just do everything ourselves."* Marketing execution is
+   fully in-house, permanently. Do not reopen this. Full detail in the `.com`
+   repo's `HANDOFF.md` §7. The 4 TikTok scripts and 6 Instagram Reel scripts
+   Enrich Labs produced remain under Chris's **"LEGAL QA HOLD — do not publish"**
+   email of 2026-08-23 and are unpublished.
 
 ## Shipped 2026-08-24
 
