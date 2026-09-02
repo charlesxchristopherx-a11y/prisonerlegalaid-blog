@@ -4,6 +4,12 @@ description: "The § 2255 one-year deadline is strict, but not absolute. Here's 
 date: 2026-09-02
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+answer: "A late § 2255 motion can still be heard if you show both that you pursued your rights diligently and that an extraordinary circumstance prevented timely filing. Documented prison mail delays can qualify. Separately, the prisoner mailbox rule fixes your filing date at the moment you hand the motion to prison staff."
+faq:
+  - q: "Does a prison mail delay automatically excuse a late filing?"
+    a: "No. Courts apply equitable tolling narrowly and decide it on the specific record. A general claim that mail is slow rarely succeeds; a documented timeline showing when you handed the filing over and what happened next is what matters."
+  - q: "When is my motion considered filed?"
+    a: "Under Houston v. Lack, a pro se prisoner's filing is deemed filed when delivered to prison authorities for mailing — not when the court clerk stamps it. The prison's outgoing mail log is the relevant record."
 ---
 Missing the one-year deadline under 28 U.S.C. § 2255(f) usually ends a case before a court ever looks at the merits. But "usually" isn't "always." Two doctrines — equitable tolling and the prisoner mailbox rule — exist specifically because Congress and the courts recognized that people in custody don't control their own mail the way someone on the outside does.
 

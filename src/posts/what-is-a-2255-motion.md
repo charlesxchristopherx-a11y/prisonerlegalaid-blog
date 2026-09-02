@@ -4,6 +4,14 @@ description: "28 U.S.C. § 2255 lets federal prisoners challenge a conviction or
 date: 2026-07-22
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+answer: "A § 2255 motion asks the federal court that sentenced you to vacate, set aside, or correct that sentence. It is filed in your original criminal case, not as a new lawsuit, and generally must be filed within one year of the conviction becoming final. It is the primary post-conviction remedy for federal prisoners."
+faq:
+  - q: "How long do I have to file a § 2255 motion?"
+    a: "Generally one year, running from the latest of four trigger dates under § 2255(f) — most commonly the date the judgment of conviction became final. Missing it usually ends the case before a judge reaches the merits."
+  - q: "Can I file a § 2255 motion myself?"
+    a: "Yes. Federal prisoners may file pro se. The practical difficulty is not permission but precision — most § 2255 motions are denied on procedural grounds like default or untimeliness rather than on the merits of the underlying claim."
+  - q: "What is the difference between § 2255 and § 2254?"
+    a: "§ 2255 is for people convicted in federal court. § 2254 is for people in custody under a state court judgment. Filing under the wrong one wastes time you may not have."
 ---
 If you're serving a federal sentence and believe your conviction or sentence was unconstitutional, unauthorized by law, or otherwise fundamentally flawed, 28 U.S.C. § 2255 is usually the vehicle for raising that challenge — not a new appeal, and not a state habeas petition. It's the federal post-conviction remedy built specifically for people convicted in federal court.
 

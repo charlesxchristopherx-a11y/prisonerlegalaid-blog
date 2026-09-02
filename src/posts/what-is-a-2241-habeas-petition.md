@@ -4,6 +4,12 @@ description: "28 U.S.C. § 2241 challenges how a federal sentence is being carri
 date: 2026-08-09
 category: "Post-Conviction · § 2241"
 track: "post-conviction"
+answer: "A § 2241 habeas petition challenges how a federal sentence is being carried out — sentence computation, good-time or First Step Act credits, disciplinary sanctions affecting release date — rather than whether the conviction itself was valid. It is filed in the district where you are confined, not where you were sentenced."
+faq:
+  - q: "What is the difference between § 2241 and § 2255?"
+    a: "§ 2255 attacks the validity of the conviction or sentence and is filed in the sentencing court. § 2241 attacks the execution of the sentence — how the BOP is carrying it out — and is filed where you are confined."
+  - q: "Is there a deadline for a § 2241 petition?"
+    a: "Congress did not impose a one-year statute of limitations on § 2241 petitions the way it did for § 2255 and § 2254. Unreasonable delay can still hurt a petition, but there is no equivalent statutory clock."
 ---
 Ask ten federal prisoners what a "habeas petition" gets you, and you'll probably get ten different answers — and at least half of them will be wrong about which statute actually applies to their situation. That confusion isn't a knock on anyone's intelligence. It's a design problem. Congress built two federal remedies that sound almost interchangeable, filed by two different populations, in two different courts, for two entirely different reasons — and then named them one digit apart. § 2255 and § 2241 get confused constantly, and getting the wrong one costs real time.
 

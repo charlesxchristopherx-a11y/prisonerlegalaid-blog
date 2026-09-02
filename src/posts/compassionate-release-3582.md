@@ -4,6 +4,12 @@ description: "The First Step Act let federal prisoners file compassionate releas
 date: 2026-07-23
 category: "Compassionate Release · § 3582"
 track: "post-conviction"
+answer: "Compassionate release under 18 U.S.C. § 3582(c)(1)(A) lets a federal prisoner ask the court for a sentence reduction based on extraordinary and compelling reasons — typically serious illness, advanced age, or a major change in family circumstances. You must first ask the Bureau of Prisons before filing with the court."
+faq:
+  - q: "Can I use compassionate release to argue my conviction was wrong?"
+    a: "No. The Supreme Court held in Fernandez v. United States (2026) that the alleged invalidity of a conviction is not an extraordinary and compelling reason for compassionate release. That argument belongs in a § 2255 motion."
+  - q: "Do I have to go through the BOP first?"
+    a: "Yes. You must first request that the Bureau of Prisons file on your behalf. You may file your own motion only after the BOP declines or fails to respond within the statutory window."
 ---
 Before 2018, only the Bureau of Prisons could ask a court to reduce a federal sentence for compassionate release — and it rarely did. The First Step Act changed that: federal prisoners can now file these motions directly with the sentencing court themselves. That single change has made compassionate release one of the most active areas of federal post-conviction practice.
 
