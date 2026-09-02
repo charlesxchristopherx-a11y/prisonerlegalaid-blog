@@ -50,4 +50,8 @@ That's the pattern worth sitting with: the law here isn't complicated because th
 
 ---
 
+Not every placement problem needs a court filing. If the issue is simply that the facility is far from family, the BOP has an administrative process for that, and Section 601 of the First Step Act gives it a statutory basis — people should generally be housed within 500 driving miles of home where practicable. Our [free transfer request tool](/transfer-request/) prepares that request on the official BOP form, at no cost, before anything escalates to litigation.
+
+---
+
 *This is general information about how federal habeas law generally works — not legal advice for your specific sentence, custody status, or filing deadline, all of which depend on facts a court will scrutinize closely.* If you're trying to figure out whether your situation calls for a § 2241 petition, a § 2255 motion, or something else entirely, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — our paralegal team can help you identify the right vehicle before you file anything.

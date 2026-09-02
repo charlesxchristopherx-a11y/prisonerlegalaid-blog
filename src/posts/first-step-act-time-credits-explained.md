@@ -27,4 +27,6 @@ One thing worth being realistic about: a computation error doesn't automatically
 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and case is different, and eligibility and outcomes depend on your specific record.*
 
+Time credits govern *when* someone moves toward release. A related but separate question is *where* they're housed in the meantime — the same First Step Act also directs the BOP to place people within 500 driving miles of home where practicable. If distance from family is the more immediate problem, our [free closer-to-home transfer request tool](/transfer-request/) prepares that request on the official BOP form at no cost.
+
 If you're not sure whether your time credits are being calculated correctly, or you've hit a wall with the administrative remedy process, Writ Large's <a href="/#services">Pro Se Services</a> can help you put together a clear, well-documented request — and if it's time to take the issue to federal court, our team prepares <a href="/#contact">§ 2241 habeas petitions</a> built to be taken seriously by the court.

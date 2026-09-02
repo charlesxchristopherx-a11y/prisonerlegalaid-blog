@@ -36,6 +36,10 @@ For prisoners who are eligible and who do accumulate enough credits, 18 U.S.C. �
 
 BOP sentence computations are not error-proof, and misapplied or miscalculated time credits are common enough to be worth verifying independently rather than assuming the computation is correct. If your offense sits anywhere near the boundary of this list — or you believe credits you've earned haven't been applied correctly — that's generally a challenge to the *execution* of your sentence, which is a § 2241 question, not a § 2255 one.
 
+## If time credits aren't available, placement may still be
+
+Being on the exclusion list forecloses time credits — it does not foreclose a closer-to-home placement request. Section 601 of the First Step Act separately directs the BOP to house people within 500 driving miles of their primary residence where practicable, and that request stands on its own footing regardless of time-credit eligibility. Our [free transfer request tool](/transfer-request/) prepares it on the official BOP form at no cost.
+
 ---
 
 None of this is a substitute for review of your specific sentence computation. If you believe your FSA time credits have been miscalculated or wrongly withheld, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
