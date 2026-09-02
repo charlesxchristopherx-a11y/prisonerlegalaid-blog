@@ -4,6 +4,16 @@ description: "42 U.S.C. § 1983 is the vehicle for constitutional claims against
 date: 2026-07-30
 category: "Civil Rights · § 1983"
 track: "inside-rights"
+answer: "42 U.S.C. § 1983 lets you sue a state or local official who violated your constitutional rights while acting under color of state law. It is not a general unfairness remedy. There is no single national § 1983 form — most federal district courts publish their own prisoner civil rights complaint form."
+faq:
+  - q: "What form do I file for a section 1983 claim?"
+    a: "There is no single national form. A § 1983 case is filed as a civil complaint in federal district court, and most district courts publish their own prisoner civil rights complaint form. Get it from the clerk of the district where you are filing, or that court's website."
+  - q: "What is the filing fee for a 1983 lawsuit?"
+    a: "Under 28 U.S.C. § 1914(a) the district court civil filing fee is set by statute. A prisoner may apply under § 1915 to proceed without prepaying it, but § 1915(b) still requires the full fee to be paid over time through monthly deductions."
+  - q: "Can I file a section 1983 complaint myself?"
+    a: "Yes. People file pro se regularly. The practical risk is procedural: a complaint filed without the required in forma pauperis application and certified 6-month trust account statement can be delayed or dismissed before any judge evaluates the underlying claim."
+  - q: "What is the statute of limitations for a 1983 claim?"
+    a: "Section 1983 has no federal statute of limitations of its own. Courts borrow the personal injury limitations period of the state where the claim arose, so the deadline varies by state and should be confirmed for your specific jurisdiction before filing."
 ---
 You've probably heard the phrase "filing a 1983" tossed around the yard, in a law library, or in another guy's jailhouse lawyer advice, usually attached to something like "I'm gonna 1983 that officer." It gets used as shorthand for suing over just about anything that felt unfair. But 42 U.S.C. § 1983 is a specific legal tool with a specific job, and understanding what it actually does — and doesn't do — will save you a lot of wasted paperwork and a lot of false hope.
 
@@ -26,5 +36,26 @@ That last distinction — deliberate indifference versus ordinary negligence or 
 ---
 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
+
+## "What form do I file for a 1983 claim?"
+
+This is the question people actually search for, and it has a specific answer: **there is no single national § 1983 form.** A § 1983 case is filed as a civil complaint in federal district court, and most district courts publish their own **prisoner civil rights complaint form** for people filing without a lawyer. You get it from the clerk's office of the district where you're filing, or from that court's website — not from a generic form site, and not from another district's packet.
+
+What goes in it is the same regardless of which court's form you use: who violated your rights, what specifically they did, when and where it happened, what constitutional right was violated, that they were acting under color of state law, and what relief you're asking the court for.
+
+### The paperwork nobody warns you about
+
+A complaint by itself is usually not a complete filing. For an incarcerated person, a federal civil action normally also requires:
+
+- **The filing fee, or an application to proceed without prepaying it.** Under 28 U.S.C. § 1915(a), a court may authorize a civil action without prepayment of fees on an affidavit showing inability to pay.
+- **A certified 6-month trust fund account statement.** Section 1915(a)(2) requires a prisoner seeking to proceed without prepayment to submit a certified copy of the trust fund account statement for the 6-month period immediately preceding the filing, obtained from each institution where they were confined.
+- **Understanding that "without prepayment" does not mean free.** Under § 1915(b)(1), a prisoner proceeding this way is still required to pay the full filing fee over time — the court assesses an initial partial payment and then monthly payments of 20 percent of the preceding month's income until it's paid. Importantly, § 1915(b)(4) provides that no prisoner may be barred from bringing an action solely because he has no assets and no means to pay the initial partial fee.
+
+### One rule that catches people before they ever file
+
+Under 28 U.S.C. § 1915(g) — often called the "three strikes" provision — a prisoner who has had three or more prior actions or appeals dismissed as frivolous, malicious, or for failure to state a claim generally cannot proceed without prepayment of fees, unless he is under imminent danger of serious physical injury. Filings sent in without knowing where you stand on this can be dismissed before the merits are ever reached.
+
+None of this is a reason not to file. It is a reason to get the package right the first time, because a procedurally defective filing is one of the most common ways a real claim dies without a judge ever evaluating it.
+
 
 If you're wondering whether what happened to you actually fits this framework, Prisoner Legal Aid's blog has a companion piece, "Do I Have a § 1983 Case? A 10-Question Self-Screen," built specifically to help you work through that. And whether you need help preparing your own filings through our <a href="/#services">Pro Se Services</a> or think your situation calls for an attorney through our <a href="/litigation/">Full Lawsuit Support</a> program, we're set up to help either way.
