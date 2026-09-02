@@ -3,6 +3,7 @@ title: "What Is a § 2255 Motion? A Federal Prisoner's Guide to Vacating a Sente
 description: "28 U.S.C. § 2255 lets federal prisoners challenge a conviction or sentence in the court that imposed it. Here's what it covers, what it doesn't, and the one-year clock that governs it."
 date: 2026-07-22
 category: "Post-Conviction · § 2255"
+track: "post-conviction"
 ---
 If you're serving a federal sentence and believe your conviction or sentence was unconstitutional, unauthorized by law, or otherwise fundamentally flawed, 28 U.S.C. § 2255 is usually the vehicle for raising that challenge — not a new appeal, and not a state habeas petition. It's the federal post-conviction remedy built specifically for people convicted in federal court.
 

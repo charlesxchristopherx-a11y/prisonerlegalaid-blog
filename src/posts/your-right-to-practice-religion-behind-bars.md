@@ -3,6 +3,7 @@ title: "Your Right to Practice Religion Behind Bars"
 description: "RLUIPA requires more than a policy justification to restrict religious exercise in custody. What 'compelling interest' and 'least restrictive means' actually mean in practice."
 date: 2026-07-30
 category: "Religious Rights"
+track: "inside-rights"
 ---
 A lot of people assume that once you're incarcerated, your religious practice becomes whatever the facility decides it can be bothered to allow. That's not the legal standard, and it's worth knowing the difference, because facilities sometimes act like it is anyway. Congress passed a law specifically because ordinary constitutional protection wasn't cutting it for people in custody: the Religious Land Use and Institutionalized Persons Act, known as RLUIPA. It sets a genuinely high bar for facilities that want to restrict how you worship, eat according to your faith, or gather for services — higher than most people, including some staff, realize.
 

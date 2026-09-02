@@ -3,6 +3,7 @@ title: "How to Document a Use-of-Force Incident So It Actually Holds Up"
 description: "Use-of-force incidents are chaotic and over fast. How to build a written record — dates, names, injuries — that can actually support a claim under Hudson v. McMillian."
 date: 2026-07-30
 category: "Excessive Force"
+track: "inside-rights"
 ---
 Something happens fast in a cell block or a yard, and then it's over, and everyone moves on except the person who got hurt. That's the problem with use-of-force incidents inside a facility: they're chaotic, they're over in seconds, and the official paperwork gets written by the people who did the pushing, not the person who got pushed. If you or someone you love has been on the receiving end of force that felt excessive, what you do in the hours and days afterward matters almost as much as what happened in the moment. Courts don't just want to hear "they hurt me." They want dates, names, sequences, and corroboration. This post isn't about the legal standard for excessive force — that's a separate conversation. This is about the unglamorous, practical work of building a record while the details are still sharp in your mind.
 

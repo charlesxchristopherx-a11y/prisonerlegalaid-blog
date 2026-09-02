@@ -3,6 +3,7 @@ title: "Ineffective Assistance of Counsel: What the Strickland Standard Actually
 description: "Almost every federal prisoner thinks their lawyer did something wrong. Winning on it requires two specific things under Strickland v. Washington — and the second one, prejudice, is usually where the fight is."
 date: 2026-08-10
 category: "Post-Conviction · § 2255"
+track: "post-conviction"
 ---
 Talk to a hundred people serving federal time and you'll hear a common thread: their lawyer missed something, didn't investigate something, didn't call a witness who should have testified, didn't push back hard enough at sentencing. Some of that is genuine grievance. Some of it is the ordinary second-guessing anyone would do about the worst experience of their life. The law doesn't ask which one it is by intuition. It asks a very specific two-part question. Many ineffective-assistance claims turn on prejudice even when counsel's performance is seriously questioned, because both prongs are independently required — a defendant can clear the first hurdle and still lose on the second.
 

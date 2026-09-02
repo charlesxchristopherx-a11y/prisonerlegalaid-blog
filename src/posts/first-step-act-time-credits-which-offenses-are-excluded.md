@@ -3,6 +3,7 @@ title: "First Step Act Time Credits: Which Offenses Actually Disqualify You"
 description: "Earning FSA time credits toward early transfer to home confinement or supervised release depends on more than program participation — the underlying offense of conviction matters. Here's the actual statutory exclusion list."
 date: 2026-09-07
 category: "Federal Prison News · First Step Act"
+track: "post-conviction"
 ---
 Successfully completing evidence-based recidivism-reduction programming or productive activities under the First Step Act earns time credits — generally 10 days for every 30 days of participation, with an additional 5 days for people assessed at minimum or low recidivism risk who maintain that status. Those credits can be applied toward earlier transfer to prerelease custody or supervised release. But none of that matters if the underlying conviction falls on the statute's exclusion list.
 

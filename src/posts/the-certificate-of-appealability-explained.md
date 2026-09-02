@@ -3,6 +3,7 @@ title: "The Certificate of Appealability: Why You Need One Just to Appeal a Deni
 description: "Losing your habeas petition or § 2255 motion doesn't automatically get you an appeal. You need a certificate of appealability first — and without one, the court of appeals ordinarily cannot reach the merits of your case."
 date: 2026-08-12
 category: "Post-Conviction · § 2255"
+track: "post-conviction"
 ---
 Losing a § 2255 motion or a habeas petition feels like the end of the road, but it isn't, at least not procedurally — there's an appeal available. What surprises a lot of people is that you don't get there automatically. Before a federal court of appeals can even look at whether the district court got it wrong, the prisoner has to clear a separate threshold: a certificate of appealability, universally shortened to COA. Without one, the court of appeals doesn't have jurisdiction to decide the merits at all — the case simply doesn't get that far.
 

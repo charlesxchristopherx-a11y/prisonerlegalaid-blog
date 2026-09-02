@@ -3,6 +3,7 @@ title: "Your Right to Send and Receive Mail"
 description: "Ordinary mail gets far less protection than legal mail, but facilities still can't restrict it without justification. What the law actually allows, and what crosses the line."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 Mail is one of the last direct threads connecting someone inside to the people who love them, which is exactly why it can feel so gutting when a letter gets rejected, returned, or just disappears. Families often assume that any mail rule the facility enforces must be legal simply because the facility is enforcing it. That's not automatically true. Prisons and jails can restrict mail, but the restriction has to actually connect to a legitimate reason — it can't just be arbitrary, and it can't exist because a particular staff member doesn't like what's being said.
 

@@ -3,6 +3,7 @@ title: "AEDPA Deference: Why 'The State Court Got It Wrong' Isn't Enough for a �
 description: "Winning a federal habeas petition under § 2254 takes more than showing the state court made a mistake. Here's the exact statutory standard federal courts have to apply — and why it's so much harder to meet than people expect."
 date: 2026-09-05
 category: "Post-Conviction · § 2254"
+track: "post-conviction"
 ---
 One of the hardest things to accept about § 2254 habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
 

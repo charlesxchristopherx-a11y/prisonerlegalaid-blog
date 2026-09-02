@@ -3,6 +3,7 @@ title: "Compassionate Release Can't Fix a Bad Conviction — What Fernandez Actu
 description: "The Supreme Court's Fernandez decision closed a door some prisoners had started using: filing a compassionate-release motion to argue a conviction is invalid. Here's why the Court said that's the wrong tool for the job — and what the right one is."
 date: 2026-09-04
 category: "Compassionate Release · Supreme Court Update"
+track: "post-conviction"
 ---
 If you believe your *conviction itself* was wrongful — not just that your circumstances have changed since sentencing — it can be tempting to raise that argument in a compassionate-release motion under 18 U.S.C. § 3582(c)(1)(A). The Supreme Court's May 2026 decision in *Fernandez v. United States* squarely closed that door, and understanding exactly why matters for choosing the right filing the first time.
 

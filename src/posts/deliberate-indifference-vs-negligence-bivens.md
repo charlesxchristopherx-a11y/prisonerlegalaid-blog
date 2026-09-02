@@ -3,6 +3,7 @@ title: "The Right to Adequate Medical Care in Custody — And Why Bivens No Long
 description: "Deliberate indifference and medical negligence are not the same legal claim. Recent Supreme Court decisions have made Bivens damages actions nearly impossible for federal prisoners — but FTCA negligence claims remain a real path forward."
 date: 2026-07-23
 category: "Medical Care · Bivens & FTCA"
+track: "inside-rights"
 ---
 Every person in custody — pretrial or convicted, state or federal — has a constitutional right to adequate medical care. For convicted prisoners, that right comes from the Eighth Amendment's prohibition on cruel and unusual punishment; for pretrial detainees, courts generally apply a closely related standard under the Fourteenth Amendment's Due Process Clause. But having a constitutional right is different from having a working way to enforce it — and for federal prisoners specifically, the enforcement mechanism has quietly collapsed over the past several years.
 

@@ -3,6 +3,7 @@ title: "Second or Successive Motions: Why You (Usually) Only Get One Real Shot"
 description: "Federal prisoners generally get one § 2255 motion, and state prisoners generally get one federal habeas petition. Filing a second one isn't just harder — it requires a federal appeals court's permission before a district court can even look at it."
 date: 2026-08-14
 category: "Post-Conviction · § 2255"
+track: "post-conviction"
 ---
 One of the hardest realities in post-conviction practice has nothing to do with the strength of any particular legal argument. It's timing, and it's structural: federal law treats a prisoner's first § 2255 motion, or first federal habeas petition, as close to a one-shot opportunity. Get it wrong, leave something out, or file it before you're ready, and the door to a second attempt doesn't just get harder to open — it gets locked behind a gatekeeper who has to grant permission before a district court can even consider what's on the other side.
 

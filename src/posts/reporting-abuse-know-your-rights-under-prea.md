@@ -3,6 +3,7 @@ title: "Reporting Abuse: Know Your Rights Under PREA"
 description: "The Prison Rape Elimination Act sets specific reporting and investigation requirements. What PREA protects, how to report, and what to document if you're not believed."
 date: 2026-07-30
 category: "PREA / Abuse Reporting"
+track: "inside-rights"
 ---
 Sexual abuse in custody is not something you have to accept as part of being incarcerated, and it's not something you have to handle alone or in silence. The Prison Rape Elimination Act, usually just called PREA, was passed in 2003 to set national standards for how facilities prevent, detect, and respond to sexual abuse of people in custody. It applies broadly — prisons, jails, juvenile facilities, and other detention settings — and it exists because, for a long time, there was no consistent baseline requiring facilities to take this seriously at all. PREA changed that, at least on paper, and understanding what it actually requires can help you know what you're entitled to if you ever need to use it.
 

@@ -10,10 +10,30 @@ permalink: /blog/
     <h1>Know the law they hope you never read.</h1>
   </div>
 </div>
+
 <section class="all-posts">
   <div class="wrap">
+    <h2 style="font-size:22px;margin:0 0 6px">Federal Post-Conviction Relief</h2>
+    <p style="font-size:15px;color:#5b6470;margin:0 0 22px;max-width:62ch">Motions to vacate under &sect; 2255, habeas petitions under &sect; 2241 and &sect; 2254, compassionate release, and First Step Act time credits &mdash; including the deadlines and procedural traps that end most filings before a judge reads them.</p>
     <div class="posts">
-      {% for post in collections.posts %}
+      {% for post in collections.postsPostConviction %}
+      <a class="post" href="{{ post.url }}">
+        <span class="kicker">{{ post.data.category }} · {{ post.date | dateDisplay }}</span>
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.data.description }}</p>
+        <span class="more">Read the post &rarr;</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="all-posts">
+  <div class="wrap">
+    <h2 style="font-size:22px;margin:36px 0 6px">Your Rights Inside</h2>
+    <p style="font-size:15px;color:#5b6470;margin:0 0 22px;max-width:62ch">Grievances and administrative remedies, disciplinary hearings, medical care, mail and visitation, and documenting what happens to you &mdash; the day-to-day record-building that matters long before any filing.</p>
+    <div class="posts">
+      {% for post in collections.postsInsideRights %}
       <a class="post" href="{{ post.url }}">
         <span class="kicker">{{ post.data.category }} · {{ post.date | dateDisplay }}</span>
         <h3>{{ post.data.title }}</h3>

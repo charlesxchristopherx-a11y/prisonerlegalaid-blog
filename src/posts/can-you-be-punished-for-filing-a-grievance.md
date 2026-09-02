@@ -3,6 +3,7 @@ title: "Can You Be Punished for Filing a Grievance?"
 description: "Retaliation for filing a grievance is its own separate legal claim, distinct from whatever the original grievance was about. What you have to show, and how to build the record."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Short answer: no, not legally. Filing a grievance is protected conduct, and if staff come down on you for using the process the facility itself set up, that's not just unfair — it's its own separate legal claim, distinct from whatever the original grievance was about. A lot of people don't realize that. They think of retaliation as an ugly fact of life inside, something to just absorb and move past. It is common, and yes, it's ugly. But it's also actionable, and understanding why makes it a lot easier to spot when it's happening to you and to build a record while it's still fresh.
 

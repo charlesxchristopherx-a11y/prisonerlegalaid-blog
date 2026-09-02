@@ -3,6 +3,7 @@ title: "Can Officers Search Your Cell Whenever They Want?"
 description: "Cell searches get very little Fourth Amendment protection — but that's not the whole story. What courts actually look at when a search crosses into retaliation or harassment."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 Somebody writes in furious because their cell got tossed for the third time in two weeks — mattress flipped, papers scattered, nothing found, no explanation given — and they want to know if that's even legal. It's a fair question, and the answer disappoints most people the first time they hear it: yes, generally, officers can search a cell without a warrant, without suspicion, and without telling you why. That's not a gap in the law. It's the law working exactly as courts have designed it, and understanding why helps you tell the difference between a search you have to live with and one that might actually cross a line.
 

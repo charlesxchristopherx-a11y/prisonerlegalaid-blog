@@ -3,6 +3,7 @@ title: "FTCA vs. Bivens: What's the Difference, and Which One Actually Works for
 description: "Two very different legal roads for federal prisoners seeking damages — and after a string of recent Supreme Court decisions, one of them has nearly closed. Here's what each claim is, and which one still works."
 date: 2026-08-09
 category: "Federal Litigation · FTCA & Bivens"
+track: "inside-rights"
 ---
 <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
   <iframe src="https://www.youtube-nocookie.com/embed/VyXozQ1Yego" title="What's the difference between FTCA and Bivens lawsuits?" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

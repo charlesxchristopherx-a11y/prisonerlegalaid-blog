@@ -3,6 +3,7 @@ title: "What Happens at a Disciplinary Hearing?"
 description: "Disciplinary hearings aren't criminal trials, but Wolff v. McDonnell still guarantees specific due process protections. What you're entitled to, and what isn't required."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 Getting a disciplinary write-up can feel like the ground just shifted under you — good time on the line, a transfer possibly coming, maybe segregation. It's natural to assume you're walking into something resembling a criminal trial, with all the protections that implies. You're not. A prison disciplinary hearing is a much thinner process than a courtroom, but it isn't nothing either, and understanding exactly what protections you do have is the difference between sitting there passively and actually using the hearing to your advantage.
 

@@ -3,6 +3,7 @@ title: "How to Preserve Evidence for a Future Lawsuit"
 description: "Strong cases usually fall apart because nobody wrote anything down at the time. A practical method for preserving dates, names, and documentation before memory and video are gone."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 The single biggest reason strong cases fall apart later isn't that the underlying facts were weak. It's that nobody wrote anything down at the time. Memory fades, staff rotate out, video gets overwritten on a routine cycle, and the version of events that felt undeniable in the moment becomes, six months later, a story with no paper behind it. If there's one habit worth building starting today — whether or not you ever end up in court — it's treating every incident, every denial, every injury as something to document immediately, as though you already know you'll need to prove it later.
 

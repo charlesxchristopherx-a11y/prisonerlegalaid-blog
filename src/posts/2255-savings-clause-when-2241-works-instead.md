@@ -3,6 +3,7 @@ title: "The § 2255(e) Savings Clause: When Does § 2241 Actually Work Instead?"
 description: "Section 2255 is usually the only path for a federal prisoner to challenge a conviction — but a narrow 'savings clause' sometimes opens the door to § 2241 instead. Here's exactly when it applies, and where the Supreme Court has closed it off."
 date: 2026-09-03
 category: "Post-Conviction · § 2241"
+track: "post-conviction"
 ---
 A recurring question in federal post-conviction cases is whether a claim belongs in a § 2255 motion or a § 2241 petition. Get it wrong, and a court can dismiss your filing without ever reaching the substance of your argument. The rule that decides this — the § 2255(e) savings clause — is narrower than a lot of jailhouse-lawyer advice suggests, and the Supreme Court narrowed it further in 2023.
 

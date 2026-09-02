@@ -3,6 +3,7 @@ title: "What Is a Section 1983 Claim?"
 description: "42 U.S.C. § 1983 is the vehicle for constitutional claims against state officials — but it's often misunderstood. What it actually covers, and what it doesn't."
 date: 2026-07-30
 category: "Civil Rights · § 1983"
+track: "inside-rights"
 ---
 You've probably heard the phrase "filing a 1983" tossed around the yard, in a law library, or in another guy's jailhouse lawyer advice, usually attached to something like "I'm gonna 1983 that officer." It gets used as shorthand for suing over just about anything that felt unfair. But 42 U.S.C. § 1983 is a specific legal tool with a specific job, and understanding what it actually does — and doesn't do — will save you a lot of wasted paperwork and a lot of false hope.
 

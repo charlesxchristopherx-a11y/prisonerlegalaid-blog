@@ -3,6 +3,7 @@ title: "How to Properly Describe an Injury in a Grievance"
 description: "Vague language is one of the most common reasons grievances get denied for 'insufficient information.' How to describe an injury with the specificity reviewers and courts expect."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Somebody gets hurt, they write "I was assaulted and injured" on a grievance form, and three weeks later it comes back denied for "insufficient information." It happens constantly, and it's one of the more avoidable ways a real, legitimate complaint gets tossed aside. The problem usually isn't that the reviewer doesn't believe something happened. It's that the grievance, as written, doesn't give them enough to act on — no timeline, no location, no names, nothing that lets anyone check the facts or connect the dots to what you're asking for.
 

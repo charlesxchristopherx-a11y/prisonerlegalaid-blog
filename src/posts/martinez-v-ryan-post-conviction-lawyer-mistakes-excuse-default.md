@@ -3,6 +3,7 @@ title: "When Your Post-Conviction Lawyer's Mistakes Can Excuse a Procedural Defa
 description: "Procedural default usually kills a claim you didn't raise at the right stage — permanently. Martinez v. Ryan carved out one narrow exception for ineffective-assistance claims, and it's easy to misunderstand how far it actually reaches."
 date: 2026-09-06
 category: "Post-Conviction · § 2254"
+track: "post-conviction"
 ---
 Procedural default is one of the most common reasons a genuinely strong claim never gets heard in federal habeas review. If a state court refused to consider your claim because you didn't follow the state's own procedural rules, a federal court will usually refuse to consider it too — unless you can show "cause" for the default and resulting prejudice. For a specific, narrow category of claims, *Martinez v. Ryan* changed what counts as cause.
 

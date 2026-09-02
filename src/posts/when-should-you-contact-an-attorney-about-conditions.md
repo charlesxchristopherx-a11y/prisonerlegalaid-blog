@@ -3,6 +3,7 @@ title: "When Should You Contact an Attorney About Conditions?"
 description: "Handling everything alone first isn't always the safest approach. When conditions-of-confinement issues are worth bringing to an attorney — and how to know before it's too late."
 date: 2026-07-30
 category: "Referral Network"
+track: "inside-rights"
 ---
 There's a common instinct to handle everything alone first and only call a lawyer once every internal option has been tried and has failed. It feels responsible — like you're supposed to exhaust your own effort before asking for help. But with prison conditions cases, that instinct can quietly work against you. Grievance systems, exhaustion rules, and filing deadlines all move on their own clocks, and some mistakes made early on — a missed step in the grievance process, a deadline let slip while waiting to "see how things go" — can't be undone later no matter how strong the underlying facts are. The honest answer to "when should I contact an attorney" is usually earlier than people think, not later.
 

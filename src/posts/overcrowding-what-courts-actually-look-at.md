@@ -3,6 +3,7 @@ title: "Overcrowding: What Courts Actually Look At"
 description: "A high bunk count alone rarely wins an overcrowding claim. What courts actually weigh, and how conditions-of-confinement claims get built."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 A lot of grievances about overcrowding start the same way: "There are four of us in a cell built for two." That's a real problem, and it's worth documenting. But if you're hoping a court will look at a bunk count and rule in your favor on that alone, you're going to be disappointed. Courts don't measure square footage against a formula and declare a constitutional violation. They ask a narrower, more specific question: did the crowding actually cause you serious harm, and did the people running the facility know about that risk and ignore it?
 

@@ -3,6 +3,7 @@ title: "What Is Qualified Immunity?"
 description: "Qualified immunity is one of the biggest obstacles in § 1983 cases — and it can defeat a claim even when everyone agrees on the facts. What it actually requires and how it works."
 date: 2026-07-30
 category: "Civil Rights · § 1983"
+track: "inside-rights"
 ---
 You file a civil rights claim under 42 U.S.C. § 1983 because a guard did something you're sure was unconstitutional. The facts aren't really in dispute — everybody agrees on what happened. And you still lose, not because the court thinks the officer acted fine, but because of a doctrine that never asks whether the conduct was okay in some moral sense. That doctrine is qualified immunity, and understanding it before you file is a lot better than being blindsided by it after.
 

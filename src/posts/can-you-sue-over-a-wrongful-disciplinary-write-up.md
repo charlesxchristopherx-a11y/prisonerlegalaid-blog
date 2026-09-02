@@ -3,6 +3,7 @@ title: "Can You Sue Over a Wrongful Disciplinary Write-Up?"
 description: "Prison officials don't have unchecked authority to hand out discipline. When a wrongful write-up can support a due process or retaliation claim — and when it can't."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 Most people who get hit with a disciplinary write-up they didn't deserve assume there's nothing to be done about it — that prison officials have basically unchecked power to decide who did what and hand out whatever punishment they want. That's closer to true than people would like, but it isn't entirely true, and the gap between "mostly true" and "entirely true" is where real cases live. Courts do give prison officials a lot of deference on disciplinary matters. They're not deference-free, though, and understanding exactly where that deference runs out is the difference between wasting your time on a challenge that never had a chance and recognizing the one that actually might.
 

@@ -3,6 +3,7 @@ title: "What Is a Class Action and Could It Apply to Your Facility?"
 description: "When the same problem affects an entire unit — bad water, chronic understaffing — a class action can be more effective than dozens of individual claims. How to tell if your situation fits."
 date: 2026-07-30
 category: "Civil Rights · § 1983"
+track: "inside-rights"
 ---
 Say the water at your facility has run brown and metallic-tasting for eight months. You've filed a grievance. So has your cellmate. So has half the unit, honestly, and everyone's gotten some version of the same shrug from staff. Filing forty separate lawsuits, each person telling the same story about the same water, fighting the same institutional defense one case at a time — that's exhausting, expensive, and inefficient for everybody, including the court. This is exactly the kind of situation a class action exists to fix.
 

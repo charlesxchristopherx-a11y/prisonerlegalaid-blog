@@ -3,6 +3,7 @@ title: "What Is 'Procedural Default,' and How Does It Sink Post-Conviction Claim
 description: "A federal court can refuse to even look at the merits of a strong constitutional claim if it wasn't raised the right way, at the right time, in state court first. Here's how procedural default works — and the narrow paths around it."
 date: 2026-08-11
 category: "Post-Conviction · § 2254"
+track: "post-conviction"
 ---
 Here's a scenario that plays out constantly in post-conviction practice: a prisoner has what looks, on paper, like a genuinely strong constitutional claim. Maybe it's about a jury instruction, a suppressed piece of evidence, an improper comment by the prosecutor. And the federal court never rules on whether that claim is right or wrong at all. It gets dismissed on a threshold issue that has nothing to do with the underlying merits — because the claim wasn't properly raised in state court first, in the way state procedural rules required. That's procedural default, and it's a recurring reason post-conviction claims never get a hearing on the substance.
 

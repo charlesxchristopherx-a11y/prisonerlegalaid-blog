@@ -3,6 +3,7 @@ title: "Retaliation After a Grievance: Building the Record Before You Need It"
 description: "Retaliation rarely comes with a note attached. How to build a timeline connecting protected conduct to adverse action before you need it in front of a court."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Retaliation almost never comes with a note attached. Nobody writes "moved you to segregation because you complained about the water" on a transfer form. Instead it looks like a job loss that happens to land three days after a grievance gets filed, or a cell search that turns up a "contraband" ticket right after someone reports being hurt by staff. The action itself might even be something the facility is technically allowed to do — move a person, reassign a job, issue a write-up. What makes it retaliation isn't the act. It's the reason behind it, and reasons are exactly what get hidden. That's why the person on the receiving end has to become the record-keeper, because if nobody's writing it down as it happens, it becomes almost impossible to reconstruct later.
 

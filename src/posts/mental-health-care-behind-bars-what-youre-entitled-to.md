@@ -3,6 +3,7 @@ title: "Mental Health Care Behind Bars: What You're Entitled To"
 description: "The same deliberate indifference standard that governs physical medical care applies to mental health treatment. What that standard requires, and how it plays out in practice."
 date: 2026-07-30
 category: "Medical Neglect"
+track: "inside-rights"
 ---
 A lot of people assume the law treats a broken mind differently than a broken bone. It doesn't — at least not in the way courts are supposed to apply it. The same constitutional standard that governs whether a facility can ignore a bleeding wound also governs whether it can ignore a person spiraling into psychosis, refusing to eat, or telling staff they're going to hurt themselves. That standard comes from a pair of Supreme Court cases, Estelle v. Gamble and Farmer v. Brennan, and together they set the floor for what any incarcerated person — you, or someone you love — is legally owed when it comes to mental health care.
 

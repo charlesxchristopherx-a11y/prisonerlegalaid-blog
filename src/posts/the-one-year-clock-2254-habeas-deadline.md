@@ -3,6 +3,7 @@ title: "The One-Year Clock: AEDPA's Statute of Limitations for State Habeas Peti
 description: "State prisoners generally get one year to file a federal habeas petition under § 2254 — but the clock doesn't always start where people assume, and it can pause. Here's how the four trigger dates and statutory tolling actually work."
 date: 2026-08-15
 category: "Post-Conviction · § 2254"
+track: "post-conviction"
 ---
 Of all the deadlines in post-conviction practice, none gets more people in trouble than AEDPA's one-year statute of limitations for state habeas petitions. It sounds simple — one year — and that simplicity is exactly what makes it dangerous. The clock doesn't always start when people assume it does, and it can be paused by the right kind of state filing. Once the limitations period expires, the petition will ordinarily be dismissed as untimely unless statutory tolling, equitable tolling, the actual-innocence gateway, waiver, or another recognized doctrine applies. The deadline is not jurisdictional, but it is strictly enforced and should never be treated as optional.
 

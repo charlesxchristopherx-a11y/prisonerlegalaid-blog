@@ -3,6 +3,7 @@ title: "How to Request Medical Records From Inside"
 description: "A dated paper trail is often what turns a vague complaint into a real Eighth Amendment claim. How to request your medical records from inside, and why the request itself matters."
 date: 2026-07-30
 category: "Medical Neglect"
+track: "inside-rights"
 ---
 If you've been trying to get someone at your facility to take a health complaint seriously, you already know the frustration of watching a problem get worse while nothing gets written down anywhere you can see. That's the real value of a medical records request — it's not just paperwork for paperwork's sake. It's how you start building a record that exists independent of what staff remember or choose to say later. Whether you're trying to understand your own treatment history, prepare for a parole hearing, or lay groundwork for a legal claim, the records are yours to ask for, and there's a right way to ask that makes them useful.
 

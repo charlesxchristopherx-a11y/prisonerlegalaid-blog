@@ -3,6 +3,7 @@ title: "Do You Have a Right to See a Doctor Behind Bars?"
 description: "The Eighth Amendment guarantees medical care, not a specific response time. What 'deliberate indifference' actually requires you to show, and how documentation makes or breaks that claim."
 date: 2026-07-30
 category: "Medical Neglect"
+track: "inside-rights"
 ---
 Somebody's father calls home and says his cellmate has been asking for a doctor for eleven days about chest pain that won't quit, and nothing's happened. The family wants to know: isn't that illegal? The honest answer is more complicated than yes or no, and understanding the actual legal standard matters, because it tells you what to document and what to push for instead of just hoping the system corrects itself. The short version is that people in custody do have a constitutional right to medical care — but it's narrower than most people assume, and knowing exactly where the line sits is what makes the difference between a legitimate claim and a frustrating dead end.
 

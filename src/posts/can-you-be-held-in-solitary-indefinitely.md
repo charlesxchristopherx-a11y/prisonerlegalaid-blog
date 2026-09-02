@@ -3,6 +3,7 @@ title: "Can You Be Held in Solitary Indefinitely?"
 description: "There's no single federal cap on solitary confinement, but courts do scrutinize prolonged isolation. What factors matter, and how a due process or Eighth Amendment claim gets built."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 A question we hear constantly from families is some version of "it's been eight months, isn't there a limit?" The honest answer is that there's no single federal law that caps how many days someone can spend in solitary confinement. No ticking clock built into the Constitution says 60 days, 90 days, or a year and you're out automatically. That surprises people, and it should — it means the system relies on something less concrete than a countdown, and that something is due process.
 

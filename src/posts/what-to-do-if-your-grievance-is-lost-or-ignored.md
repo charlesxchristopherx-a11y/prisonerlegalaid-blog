@@ -3,6 +3,7 @@ title: "What to Do If Your Grievance Is \"Lost\" or Ignored"
 description: "Silence isn't the same as exhaustion, but courts still expect specific steps when a grievance goes unanswered. What to do — and document — when nothing comes back."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Nothing coming back is its own kind of frustrating. You did what you were supposed to do — filled out the form, followed the steps, waited — and then silence. No receipt, no response, no denial you could at least appeal. Just nothing. It's tempting to read that silence as a dead end, like the system swallowed your complaint and there's no way forward. That's usually not true, but what you do in that gap matters enormously, because a lost or ignored grievance can still become part of a solid legal record if you handle it right.
 

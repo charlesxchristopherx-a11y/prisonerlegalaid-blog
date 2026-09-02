@@ -3,6 +3,7 @@ title: "5 Grievance Mistakes That Get Cases Thrown Out"
 description: "Under the PLRA, a grievance filed the wrong way can end a federal claim before a judge ever reaches the merits. Five common mistakes that sink otherwise strong cases."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Most people don't lose their case in front of a judge. They lose it months earlier, in a grievance office, without ever realizing what they signed away by filling out a form the wrong way. Under the Prison Litigation Reform Act, codified at 42 U.S.C. § 1997e(a), you generally have to exhaust your facility's administrative grievance process before you can bring most claims to federal court. That sounds like a simple procedural hoop, but courts have generally taken it seriously — meaning a grievance filed late, filed vaguely, or missing a required step can end a legal claim before it ever gets a real hearing, no matter how strong the underlying facts are.
 

@@ -3,6 +3,7 @@ title: "Can You Record or Document What Happens Behind Bars?"
 description: "Recording devices are almost never allowed inside. What written documentation can do instead, and why a same-day note often holds up better than a recording would."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 People picture evidence the way TV shows it — a phone pulled out at just the right moment, video that settles the argument instantly. That's not how it works inside. Recording devices are almost never allowed in a facility, and getting caught with one, even an improvised one, is its own disciplinary problem on top of whatever you were trying to document. So the real question isn't whether you can record something. It's what actually holds up when you can't, and the answer is written, contemporaneous documentation — notes made close in time to the event, specific enough that they read as credible months or years later when it actually matters.
 

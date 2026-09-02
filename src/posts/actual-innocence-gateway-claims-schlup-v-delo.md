@@ -3,6 +3,7 @@ title: "Actual Innocence as a 'Gateway': What Schlup v. Delo Actually Allows"
 description: "New evidence of innocence can sometimes unlock claims that would otherwise be permanently barred by procedural default or AEDPA's deadline. But the standard is demanding, and it doesn't work the way most people assume."
 date: 2026-08-13
 category: "Post-Conviction · § 2254"
+track: "post-conviction"
 ---
 There's a phrase that gets thrown around loosely in post-conviction cases: "actual innocence." People use it to mean anything from genuine, provable factual innocence to a general sense that the case against them was weak or unfair. In federal habeas law, "actual innocence" as a legal doctrine is much narrower and much more specific than that everyday usage — and understanding exactly what it does, and doesn't, unlock is essential before relying on it.
 

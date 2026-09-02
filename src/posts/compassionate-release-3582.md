@@ -3,6 +3,7 @@ title: "Compassionate Release Under § 3582(c)(1)(A): What Actually Qualifies"
 description: "The First Step Act let federal prisoners file compassionate release motions directly with the court. Here's what 'extraordinary and compelling reasons' actually means in practice."
 date: 2026-07-23
 category: "Compassionate Release · § 3582"
+track: "post-conviction"
 ---
 Before 2018, only the Bureau of Prisons could ask a court to reduce a federal sentence for compassionate release — and it rarely did. The First Step Act changed that: federal prisoners can now file these motions directly with the sentencing court themselves. That single change has made compassionate release one of the most active areas of federal post-conviction practice.
 

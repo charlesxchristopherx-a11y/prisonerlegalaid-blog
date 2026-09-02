@@ -3,6 +3,7 @@ title: "Can Guards Read Your Legal Mail?"
 description: "Legal mail gets real constitutional protection that ordinary mail doesn't — but only if it's marked correctly and opened in your presence. What the law actually requires, and what to do if it's violated."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 Say your sister mails you a copy of a motion your lawyer filed, and by the time it lands in your hands, the envelope's been sliced open with the pages creased like someone flipped through every one of them twice. You'd be right to wonder whether that's allowed. It's one of the most common questions we hear, and the honest answer is: it depends almost entirely on what was written on that envelope before it ever got to the mailroom.
 

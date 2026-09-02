@@ -3,6 +3,7 @@ title: "What Happens After You Exhaust Administrative Remedies?"
 description: "Finishing the grievance process is a milestone, not the finish line. What exhaustion actually accomplishes, and what comes next if you're considering a federal claim."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
+track: "inside-rights"
 ---
 Finishing the grievance process feels like it should be the hard part. You filed the initial grievance, you appealed the denial, maybe you appealed again to a regional or central office, and finally you got a piece of paper saying the process is done. A lot of people breathe a sigh of relief right there, thinking the fight is basically over and a lawsuit is just a formality away. It's not — exhaustion isn't the finish line, it's the starting gun for a race that has its own strict rules, and the biggest one is timing.
 

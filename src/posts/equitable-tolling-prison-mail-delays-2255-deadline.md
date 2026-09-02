@@ -3,6 +3,7 @@ title: "Equitable Tolling and Prison Mail Delays: Can a Late § 2255 Motion Stil
 description: "The § 2255 one-year deadline is strict, but not absolute. Here's the Supreme Court's actual two-part test for excusing a late filing caused by prison mail delays — and the rule that fixes your filing date the moment you hand it to staff."
 date: 2026-09-02
 category: "Post-Conviction · § 2255"
+track: "post-conviction"
 ---
 Missing the one-year deadline under 28 U.S.C. § 2255(f) usually ends a case before a court ever looks at the merits. But "usually" isn't "always." Two doctrines — equitable tolling and the prisoner mailbox rule — exist specifically because Congress and the courts recognized that people in custody don't control their own mail the way someone on the outside does.
 

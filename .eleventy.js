@@ -20,6 +20,28 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.date - a.date)
   );
 
+  // Track split (added 2026-09-02). Writ Large's core scope is federal
+  // post-conviction relief; a large body of older posts covers prison
+  // conditions / civil-rights topics that belong to the .com brand. Rather
+  // than move those posts (which would break their live URLs), the blog
+  // index presents them as two labelled sections so the post-conviction
+  // focus reads clearly to both human readers and search/AI crawlers.
+  // Nothing is hidden -- every post remains published at its existing URL
+  // and in the sitemap. Same future-date drip filter applies to both.
+  const publishedSorted = (c) =>
+    c
+      .getFilteredByGlob("src/posts/*.md")
+      .filter((p) => p.date <= new Date())
+      .sort((a, b) => b.date - a.date);
+
+  eleventyConfig.addCollection("postsPostConviction", (c) =>
+    publishedSorted(c).filter((p) => p.data.track === "post-conviction")
+  );
+
+  eleventyConfig.addCollection("postsInsideRights", (c) =>
+    publishedSorted(c).filter((p) => p.data.track !== "post-conviction")
+  );
+
   eleventyConfig.addFilter("dateDisplay", (d) =>
     new Date(d).toLocaleDateString("en-US", {
       year: "numeric", month: "long", day: "numeric", timeZone: "UTC",

@@ -3,6 +3,7 @@ title: "Your Right to Family Visitation"
 description: "Visitation isn't unlimited, but facilities can't cut it off without any legal boundary. What courts look at when visitation restrictions get challenged."
 date: 2026-07-30
 category: "Know Your Rights"
+track: "inside-rights"
 ---
 A mother drives four hours every other Saturday to see her son. Then, without warning, the facility cuts visitation for his unit to once a month, citing "operational needs." No explanation, no timeline, and when she asks why, nobody can point to an actual incident that caused it. Is that legal? Maybe. It depends on facts you have every right to dig into, and that's the heart of what we're covering today.
 
