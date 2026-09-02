@@ -8,7 +8,20 @@ both repos and say so in each entry.**
 
 ---
 
-## 2026-08-25 · chat · (this commit) — RULE VIOLATION FIXED: stop reproducing the BP-A0148 government form
+## 2026-09-02 · chat · (this commit) — Content queue restarted: 6 new post-conviction articles, plus two findings that matter more than the posts themselves
+
+**The one-line summary:** `.blog` had published nothing since 2026-08-15 (18 days dark). Root cause was simply that nothing was writing new content — the drip mechanism itself was never broken. Wrote and pushed 6 fully-verified post-conviction articles, dated 2026-09-02 through 2026-09-07 for the existing daily-drip filter. Verified live: today's post (`equitable-tolling-prison-mail-delays-2255-deadline`) is showing on `/blog/` right now; the other five built correctly and are reachable by direct URL but correctly excluded from the index pending their dates, exactly as `.eleventy.js` is designed to do.
+
+**Finding 1 — significant, NOT fixed this session, flagged for Chris: roughly two-thirds of the existing 40 posts are off-brand.** Pulled the `category:` front-matter tag on every existing post. Only ~12 are genuinely within Writ Large's stated scope (Post-Conviction · §2255/§2241/§2254, Compassionate Release, First Step Act). The other ~28 are tagged things like "Civil Rights · § 1983," "Excessive Force," "FTCA & Bivens," "Grievances & Exhaustion," "Medical Neglect," "Know Your Rights" — genuinely good content, but `.com`'s subject matter, sitting on `.blog`. This means real post-conviction topic coverage was thinner than the raw 40-post count suggested, which is *why* six solid new topics were still findable. This is a scope-drift finding, not something this session silently recategorized, deleted, or moved — that's Chris's call.
+
+**Finding 2 — critical, NOT fixed this session, this is the actual next decision: nothing currently rebuilds this site on a schedule.** Confirmed by direct inspection of `wrangler.jsonc` — no `triggers.crons` field, no scheduled Worker, nothing. This repo's Cloudflare deploy is git-push-triggered only. Without something re-triggering a build after today, the five posts dated 09-03 through 09-07 will sit built-but-invisible forever, which is very plausibly close to how the *original* Aug 15 gap happened in spirit (though the direct historical record shows that specific gap was caused by an empty queue, not a stale build — this is a related but distinct risk for *this* batch going forward). **This needs a scheduled trigger — most likely a GitHub Actions `schedule:` cron that runs `npx eleventy` + `wrangler deploy` daily — before this six-post batch can be trusted to actually surface on its own.** Not built this session; flagged to Chris as the immediate next choice.
+
+**Topic research method, for anyone auditing this:** reviewed prisonlegalnews.org's current coverage to identify which post-conviction issues are actually live right now (Fernandez v. United States, Jones v. Hendrix, FSA exclusion disputes) — used only to decide *what to write about*, never as source text. Every case and statute actually cited was independently verified via Descrybe Legal Engine and/or the U.S. Code directly, before writing: Holland v. Florida (560 U.S. 631), Houston v. Lack (487 U.S. 266), Jones v. Hendrix (599 U.S. 465, 2023), Fernandez v. United States (2026, No. 24-556), Martinez v. Ryan (566 U.S. 1, 2012), 28 U.S.C. § 2254(d) exact text, 18 U.S.C. § 3632(d)(4)(D)-(E) and § 3624(g) exact text.
+
+**Pre-commit compliance self-check run manually** (no Zo gate involved — this was written and pushed directly by a Claude chat session): no cross-brand terms (§1983/FTCA/excessive force/Bivens), no pricing language, no slug collisions with existing posts, only the correct phone number appears. Full detail in the commit message (`95871a7`).
+
+**Standing decision this session:** Chris confirmed daily drip cadence (not Mon/Wed/Fri) and confirmed resuming from today's date rather than backdating to disguise the gap — both consistent with the 2026-08-22 handoff's own recommendation.
+
 
 - **STANDING RULE (Chris, this session): NEVER reproduce, recreate, or reformat a government
   form.** Obtain the official fillable PDF and fill it as-is. Applies to BP-A0148, AO-242,
