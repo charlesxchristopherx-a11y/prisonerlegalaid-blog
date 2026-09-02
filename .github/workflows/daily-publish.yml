@@ -1,0 +1,77 @@
+name: Daily drip publish
+
+# WHY THIS EXISTS
+# ---------------
+# This is a static Eleventy site. The "drip" mechanism in .eleventy.js filters
+# out future-dated posts AT BUILD TIME. That means a post dated tomorrow does
+# not appear tomorrow on its own -- it appears the next time the site is BUILT
+# after its date arrives.
+#
+# Deploys here are git-push-triggered only. So without this scheduled job, a
+# queue of future-dated posts sits built-but-invisible indefinitely, and the
+# blog silently goes dark. That is materially what happened between 2026-08-15
+# and 2026-09-02 (18 days). This job is the fix.
+
+on:
+  schedule:
+    # 09:10 UTC daily (~5:10am ET / 4:10am ET depending on DST).
+    # Deliberately not on the hour -- GitHub's scheduler is heavily contended
+    # at :00 and jobs can be delayed or dropped.
+    - cron: "10 9 * * *"
+  workflow_dispatch: {}   # allows a manual "publish now" run from the Actions tab
+
+# Never let two deploys race each other.
+concurrency:
+  group: blog-deploy
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npx @11ty/eleventy
+
+      # SAFEGUARD: if the build produces an empty or near-empty blog index,
+      # something is wrong (bad filter, broken template, empty posts dir).
+      # Deploying that would take the live blog down. Fail loudly instead.
+      - name: Sanity-check the build before deploying
+        run: |
+          if [ ! -f _site/blog/index.html ]; then
+            echo "::error::_site/blog/index.html was not generated. Refusing to deploy."
+            exit 1
+          fi
+          COUNT=$(grep -o 'class="post"' _site/blog/index.html | wc -l)
+          echo "Posts on index: $COUNT"
+          if [ "$COUNT" -lt 1 ]; then
+            echo "::error::Blog index built with zero posts. Refusing to deploy over a working site."
+            exit 1
+          fi
+
+      - name: Deploy to Cloudflare Workers
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy
+
+      - name: Report what is now live
+        run: |
+          echo "### Daily drip publish complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Posts now visible on /blog/: $(grep -o 'class=\"post\"' _site/blog/index.html | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "https://prisonerlegalaid.blog/blog/" >> $GITHUB_STEP_SUMMARY
