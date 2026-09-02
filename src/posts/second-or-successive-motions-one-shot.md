@@ -4,6 +4,12 @@ description: "Federal prisoners generally get one § 2255 motion, and state pris
 date: 2026-08-14
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+answer: "Federal prisoners generally get one § 2255 motion. A second or successive motion requires advance authorization from the court of appeals, and is limited to newly discovered evidence establishing innocence by clear and convincing evidence, or a new rule of constitutional law made retroactive by the Supreme Court. Filing without authorization results in dismissal."
+faq:
+  - q: "Can I file a second § 2255 motion if I have new arguments?"
+    a: "Generally no. New legal arguments do not qualify. The gate is narrow: newly discovered evidence of innocence, or a new retroactive rule of constitutional law from the Supreme Court. A new statutory interpretation does not satisfy it."
+  - q: "What happens if I file one without permission?"
+    a: "The district court must dismiss it. Authorization from a three-judge panel of the court of appeals is a jurisdictional prerequisite, not a formality that can be cured later."
 ---
 One of the hardest realities in post-conviction practice has nothing to do with the strength of any particular legal argument. It's timing, and it's structural: federal law treats a prisoner's first § 2255 motion, or first federal habeas petition, as close to a one-shot opportunity. Get it wrong, leave something out, or file it before you're ready, and the door to a second attempt doesn't just get harder to open — it gets locked behind a gatekeeper who has to grant permission before a district court can even consider what's on the other side.
 

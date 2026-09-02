@@ -4,6 +4,12 @@ description: "Almost every federal prisoner thinks their lawyer did something wr
 date: 2026-08-10
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+answer: "Strickland v. Washington requires two things: that counsel's performance fell below an objective standard of reasonableness, and that the deficient performance prejudiced the defense. Prejudice means a reasonable probability the result would have been different — enough to undermine confidence in the outcome. Both prongs must be met."
+faq:
+  - q: "Why is ineffective assistance usually raised in a § 2255 motion?"
+    a: "Because it typically requires evidence outside the trial record — what counsel knew, did, or failed to investigate. That evidence generally cannot be developed on direct appeal, so the claim is normally reserved for collateral review."
+  - q: "Is a bad outcome enough to prove ineffective assistance?"
+    a: "No. Courts weigh the entire trial record and ask whether the specific error actually mattered against everything else the factfinder saw. Losing, by itself, proves nothing under Strickland."
 ---
 Talk to a hundred people serving federal time and you'll hear a common thread: their lawyer missed something, didn't investigate something, didn't call a witness who should have testified, didn't push back hard enough at sentencing. Some of that is genuine grievance. Some of it is the ordinary second-guessing anyone would do about the worst experience of their life. The law doesn't ask which one it is by intuition. It asks a very specific two-part question. Many ineffective-assistance claims turn on prejudice even when counsel's performance is seriously questioned, because both prongs are independently required — a defendant can clear the first hurdle and still lose on the second.
 

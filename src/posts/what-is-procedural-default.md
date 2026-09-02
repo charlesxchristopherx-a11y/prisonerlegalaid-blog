@@ -4,6 +4,12 @@ description: "A federal court can refuse to even look at the merits of a strong 
 date: 2026-08-11
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+answer: "Procedural default means a federal court will not review a claim the state court refused to hear because you did not follow the state's procedural rules. It can be overcome by showing cause for the default plus prejudice, or by passing through the actual-innocence gateway. Ordinary attorney error usually does not qualify as cause."
+faq:
+  - q: "What counts as 'cause' for a default?"
+    a: "Generally an objective factor external to the defense that actually prevented compliance with the state rule. Ordinary attorney error or oversight typically does not qualify — a defendant generally bears the risk of his own lawyer's ordinary mistakes."
+  - q: "Is there any exception for lawyer error?"
+    a: "Yes, but it is narrow. Under Martinez v. Ryan, ineffective counsel in an initial-review collateral proceeding can establish cause for defaulting an ineffective-assistance-of-trial-counsel claim, in states that require that claim to be raised there."
 ---
 Here's a scenario that plays out constantly in post-conviction practice: a prisoner has what looks, on paper, like a genuinely strong constitutional claim. Maybe it's about a jury instruction, a suppressed piece of evidence, an improper comment by the prosecutor. And the federal court never rules on whether that claim is right or wrong at all. It gets dismissed on a threshold issue that has nothing to do with the underlying merits — because the claim wasn't properly raised in state court first, in the way state procedural rules required. That's procedural default, and it's a recurring reason post-conviction claims never get a hearing on the substance.
 

@@ -4,6 +4,12 @@ description: "Winning a federal habeas petition under § 2254 takes more than sh
 date: 2026-09-05
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+answer: "Under 28 U.S.C. § 2254(d), a federal court cannot grant habeas relief on a claim the state court decided on the merits unless that decision was contrary to, or an unreasonable application of, clearly established Supreme Court law, or rested on an unreasonable determination of the facts. Ordinary legal error is not enough."
+faq:
+  - q: "What if the state court was simply wrong?"
+    a: "That is usually not enough. The standard requires unreasonableness, not mere error — courts describe it as a decision no fair-minded jurist could agree with. A federal judge can privately think the state court erred and still be required to deny relief."
+  - q: "Does circuit precedent count as 'clearly established federal law'?"
+    a: "Generally no. The phrase means holdings of the U.S. Supreme Court as they existed at the time of the state-court decision. A claim needs a Supreme Court hook, not just favorable circuit law."
 ---
 One of the hardest things to accept about § 2254 habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
 

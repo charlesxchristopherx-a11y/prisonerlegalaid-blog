@@ -4,6 +4,12 @@ description: "State prisoners generally get one year to file a federal habeas pe
 date: 2026-08-15
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+answer: "State prisoners generally have one year to file a federal habeas petition under § 2254. The clock runs from the latest of four trigger dates under § 2244(d)(1) — usually when direct review concluded. Time during which a properly filed state post-conviction application is pending does not count against the year."
+faq:
+  - q: "Does filing something in state court pause the clock?"
+    a: "A properly filed application for state post-conviction or other collateral review tolls the period while it is pending. Whether a filing was 'properly filed' is itself litigated, so the safe assumption is that the clock is running."
+  - q: "What if I missed the one-year deadline?"
+    a: "Equitable tolling may excuse a late filing where you pursued your rights diligently and an extraordinary circumstance prevented timely filing. Courts apply it narrowly and decide it on the specific record."
 ---
 Of all the deadlines in post-conviction practice, none gets more people in trouble than AEDPA's one-year statute of limitations for state habeas petitions. It sounds simple — one year — and that simplicity is exactly what makes it dangerous. The clock doesn't always start when people assume it does, and it can be paused by the right kind of state filing. Once the limitations period expires, the petition will ordinarily be dismissed as untimely unless statutory tolling, equitable tolling, the actual-innocence gateway, waiver, or another recognized doctrine applies. The deadline is not jurisdictional, but it is strictly enforced and should never be treated as optional.
 

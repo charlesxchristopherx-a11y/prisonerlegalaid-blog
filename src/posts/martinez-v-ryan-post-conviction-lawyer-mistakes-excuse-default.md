@@ -4,6 +4,12 @@ description: "Procedural default usually kills a claim you didn't raise at the r
 date: 2026-09-06
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+answer: "Martinez v. Ryan created a narrow exception: where state law requires ineffective-assistance-of-trial-counsel claims to be raised first in a collateral proceeding, having no counsel or ineffective counsel in that specific proceeding can establish cause to excuse a later procedural default. The underlying trial-counsel claim must also be substantial."
+faq:
+  - q: "Does Martinez apply to every defaulted claim?"
+    a: "No. It reaches only ineffective-assistance-of-trial-counsel claims, only in the first initial-review collateral proceeding, and only in states that require such claims to be raised there rather than on direct appeal."
+  - q: "Does Martinez win my case?"
+    a: "No. Establishing cause and prejudice only permits a federal court to consider the merits of the underlying claim. You still have to win that claim."
 ---
 Procedural default is one of the most common reasons a genuinely strong claim never gets heard in federal habeas review. If a state court refused to consider your claim because you didn't follow the state's own procedural rules, a federal court will usually refuse to consider it too — unless you can show "cause" for the default and resulting prejudice. For a specific, narrow category of claims, *Martinez v. Ryan* changed what counts as cause.
 

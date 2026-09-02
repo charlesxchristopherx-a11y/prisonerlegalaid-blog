@@ -4,6 +4,12 @@ description: "On May 28, 2026, the BOP announced it will transfer many eligible 
 date: 2026-07-30
 category: "Federal Prison News · BOP Policy"
 track: "post-conviction"
+answer: "This BOP policy affects which eligible people may transfer to a camp before halfway house or home confinement placement. It changes who is considered — not when release planning begins or how placement length is decided. Eligibility turns on your specific classification, so verify against the actual policy language rather than secondhand summaries."
+faq:
+  - q: "Does this policy change my release date?"
+    a: "No. It concerns placement — where you are housed and when a camp transfer may be considered — not the length of your sentence or your projected release date."
+  - q: "What if I just want to be closer to family?"
+    a: "That is a separate request with its own statutory basis. Section 601 of the First Step Act directs the BOP to house people within 500 driving miles of home where practicable. Our free transfer-request tool prepares that request at no cost."
 ---
 <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
   <iframe src="https://www.youtube-nocookie.com/embed/WP3Q3P7b7O4" title="New BOP Policy: Camp Transfer Before RRC or Home Confinement" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

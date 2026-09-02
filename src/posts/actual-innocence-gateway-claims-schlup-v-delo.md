@@ -4,6 +4,12 @@ description: "New evidence of innocence can sometimes unlock claims that would o
 date: 2026-08-13
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+answer: "Actual innocence under Schlup v. Delo is a gateway, not a standalone claim. It does not win your case — it lets a federal court hear an otherwise barred constitutional claim. You must present new, reliable evidence making it more likely than not that no reasonable juror would have convicted you."
+faq:
+  - q: "Does proving actual innocence get me released?"
+    a: "Not by itself. Schlup innocence is a procedural gateway that unlocks review of an underlying constitutional claim. You still have to win that underlying claim on its merits."
+  - q: "What counts as 'new reliable evidence'?"
+    a: "Evidence not presented at trial — exculpatory scientific evidence, credible eyewitness accounts, or critical physical evidence. Under House v. Bell, the court weighs all evidence old and new, including some that would not have been admissible at trial."
 ---
 There's a phrase that gets thrown around loosely in post-conviction cases: "actual innocence." People use it to mean anything from genuine, provable factual innocence to a general sense that the case against them was weak or unfair. In federal habeas law, "actual innocence" as a legal doctrine is much narrower and much more specific than that everyday usage — and understanding exactly what it does, and doesn't, unlock is essential before relying on it.
 

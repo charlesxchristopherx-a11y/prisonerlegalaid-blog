@@ -4,6 +4,12 @@ description: "Losing your habeas petition or § 2255 motion doesn't automaticall
 date: 2026-08-12
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+answer: "You cannot appeal the denial of a § 2255 motion or § 2254 petition without a certificate of appealability. A COA issues only on a substantial showing of the denial of a constitutional right — meaning reasonable jurists could debate whether the claim should have been resolved differently. It is a threshold, not a merits ruling."
+faq:
+  - q: "Do I have to prove I will win to get a COA?"
+    a: "No. Buck v. Davis made clear the COA stage asks only whether the claim is reasonably debatable. A court errs when it effectively decides the merits at the threshold and then uses that to deny a COA."
+  - q: "What happens if a COA is denied?"
+    a: "The appeal cannot proceed in the ordinary course. Because the COA is the gate to appellate review, how the claims are framed at this stage matters more than most people expect."
 ---
 Losing a § 2255 motion or a habeas petition feels like the end of the road, but it isn't, at least not procedurally — there's an appeal available. What surprises a lot of people is that you don't get there automatically. Before a federal court of appeals can even look at whether the district court got it wrong, the prisoner has to clear a separate threshold: a certificate of appealability, universally shortened to COA. Without one, the court of appeals doesn't have jurisdiction to decide the merits at all — the case simply doesn't get that far.
 

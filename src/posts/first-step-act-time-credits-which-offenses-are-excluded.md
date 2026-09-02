@@ -4,6 +4,12 @@ description: "Earning FSA time credits toward early transfer to home confinement
 date: 2026-09-07
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"
+answer: "First Step Act time credits are unavailable if you are serving a sentence for an offense on the exclusion list in 18 U.S.C. § 3632(d)(4)(D). The list is long and specific, and several entries apply only where the sentencing court made particular findings. A final order of removal separately bars applying earned credits."
+faq:
+  - q: "How do I know if my offense is excluded?"
+    a: "The list is set out in 18 U.S.C. § 3632(d)(4)(D). Some entries apply to an offense generally; others apply only if the sentencing court made specific findings, such as that you were an organizer or leader. It must be checked against your actual judgment."
+  - q: "If I am excluded from credits, is there anything else?"
+    a: "Yes. Exclusion from time credits does not foreclose a closer-to-home placement request under Section 601 of the First Step Act, which stands on its own footing regardless of credit eligibility."
 ---
 Successfully completing evidence-based recidivism-reduction programming or productive activities under the First Step Act earns time credits — generally 10 days for every 30 days of participation, with an additional 5 days for people assessed at minimum or low recidivism risk who maintain that status. Those credits can be applied toward earlier transfer to prerelease custody or supervised release. But none of that matters if the underlying conviction falls on the statute's exclusion list.
 

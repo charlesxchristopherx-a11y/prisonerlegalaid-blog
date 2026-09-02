@@ -4,6 +4,12 @@ description: "The Supreme Court's Fernandez decision closed a door some prisoner
 date: 2026-09-04
 category: "Compassionate Release · Supreme Court Update"
 track: "post-conviction"
+answer: "In Fernandez v. United States (2026), the Supreme Court held that the alleged invalidity of a conviction is not an 'extraordinary and compelling reason' for compassionate release. A challenge to whether your conviction is legally sound belongs in a § 2255 motion. Compassionate release is for personal circumstances — illness, age, family crisis."
+faq:
+  - q: "Did Fernandez eliminate compassionate release?"
+    a: "No. It narrowed what type of argument qualifies. Genuine personal circumstances — serious medical conditions, advanced age with a clean record, major family changes — remain squarely within the statute's purpose."
+  - q: "What if my § 2255 deadline already passed?"
+    a: "Fernandez means you cannot relabel that argument as compassionate release. The remaining paths are a properly filed § 2255 motion where available, or the narrow savings-clause route to § 2241. Those are fact-specific and worth reviewing before filing."
 ---
 If you believe your *conviction itself* was wrongful — not just that your circumstances have changed since sentencing — it can be tempting to raise that argument in a compassionate-release motion under 18 U.S.C. § 3582(c)(1)(A). The Supreme Court's May 2026 decision in *Fernandez v. United States* squarely closed that door, and understanding exactly why matters for choosing the right filing the first time.
 
