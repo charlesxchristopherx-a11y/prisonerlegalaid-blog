@@ -4,7 +4,7 @@ description: "New evidence of innocence can sometimes unlock claims that would o
 date: 2026-08-13
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
-answer: "Actual innocence under Schlup v. Delo is a gateway, not a standalone claim. It does not win your case — it lets a federal court hear an otherwise barred constitutional claim. You must present new, reliable evidence making it more likely than not that no reasonable juror would have convicted you."
+answer: "Actual innocence under Schlup v. Delo is a gateway, not a standalone claim. It does not decide the case by itself — it lets a federal court hear an otherwise barred constitutional claim. You must present new, reliable evidence making it more likely than not that no reasonable juror would have convicted you."
 faq:
   - q: "Does proving actual innocence get me released?"
     a: "Not by itself. Schlup innocence is a procedural gateway that unlocks review of an underlying constitutional claim. You still have to win that underlying claim on its merits."
