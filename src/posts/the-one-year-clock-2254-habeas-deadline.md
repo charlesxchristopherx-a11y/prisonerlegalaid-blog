@@ -11,6 +11,15 @@ faq:
     a: "A properly filed application for state post-conviction or other collateral review tolls the period while it is pending. Whether a filing was 'properly filed' is itself litigated, so the safe assumption is that the clock is running."
   - q: "What if I missed the one-year deadline?"
     a: "Equitable tolling may excuse a late filing where you pursued your rights diligently and an extraordinary circumstance prevented timely filing. Courts apply it narrowly and decide it on the specific record."
+authorities:
+  - cite: "28 U.S.C. § 2244(d)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim"
+  - cite: "Pace v. DiGuglielmo, 544 U.S. 408 (2005)"
+    url: "https://www.courtlistener.com/opinion/142891/pace-v-diguglielmo/"
+  - cite: "Holland v. Florida, 560 U.S. 631 (2010)"
+    url: "https://www.courtlistener.com/opinion/6796841/holland-v-florida/"
+  - cite: "Lawrence v. Florida, 549 U.S. 327 (2007)"
+    url: "https://www.courtlistener.com/opinion/145759/lawrence-v-florida/"
 ---
 Of all the deadlines in post-conviction practice, none gets more people in trouble than AEDPA's one-year statute of limitations for state habeas petitions. It sounds simple — one year — and that simplicity is exactly what makes it dangerous. The clock doesn't always start when people assume it does, and it can be paused by the right kind of state filing. Once the limitations period expires, the petition will ordinarily be dismissed as untimely unless statutory tolling, equitable tolling, the actual-innocence gateway, waiver, or another recognized doctrine applies. The deadline is not jurisdictional, but it is strictly enforced and should never be treated as optional.
 

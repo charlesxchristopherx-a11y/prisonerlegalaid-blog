@@ -13,6 +13,9 @@ faq:
     a: "Yes. Federal prisoners may file pro se. The practical difficulty is not permission but precision — most § 2255 motions are denied on procedural grounds like default or untimeliness rather than on the merits of the underlying claim."
   - q: "What is the difference between § 2255 and § 2254?"
     a: "§ 2255 is for people convicted in federal court. § 2254 is for people in custody under a state court judgment. Filing under the wrong one wastes time you may not have."
+authorities:
+  - cite: "28 U.S.C. § 2255"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
 ---
 If you're serving a federal sentence and believe your conviction or sentence was unconstitutional, unauthorized by law, or otherwise fundamentally flawed, 28 U.S.C. § 2255 is usually the vehicle for raising that challenge — not a new appeal, and not a state habeas petition. It's the federal post-conviction remedy built specifically for people convicted in federal court.
 

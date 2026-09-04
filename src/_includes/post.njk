@@ -112,6 +112,23 @@ layout: base.njk
     {% endfor %}
   </section>
   {% endif %}
+  {% if authorities %}
+  {# P1.11 -- primary authority, presented the same way on every article.
+     Each entry links the official source: uscode.house.gov for statutes,
+     supremecourt.gov for slip opinions with no U.S. Reports page yet, and
+     CourtListener for reported decisions. Curated, not exhaustive: these
+     are the authorities the article actually rests on. Enforced by
+     tools/authority-audit.js, which fails if a hub article has none. #}
+  <section class="post-authority" style="margin:36px 0 0;padding:20px;border:1px solid rgba(20,24,31,.14);border-radius:6px;background:#f6f7f9">
+    <p style="margin:0 0 10px;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#5b6470">Primary authority</p>
+    <ul style="margin:0;padding-left:20px;font-size:16px;line-height:1.9">
+      {%- for a in authorities %}
+      <li><a href="{{ a.url }}" rel="noopener" target="_blank">{{ a.cite }}</a></li>
+      {%- endfor %}
+    </ul>
+    <p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:#5b6470">Read the law itself, not only our summary of it. Every citation above was checked against the official source before publication &mdash; see our <a href="/editorial-standards/">editorial standards</a>.</p>
+  </section>
+  {% endif %}
   {% if myHub %}
   <section class="hub-links" style="margin:36px 0 0;padding:20px;border:1px solid rgba(20,24,31,.14);border-radius:6px">
     <p style="margin:0 0 10px;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#5b6470">More in {{ myHub.label }}</p>

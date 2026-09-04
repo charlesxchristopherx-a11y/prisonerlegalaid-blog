@@ -11,6 +11,13 @@ faq:
     a: "Yes. Both decisions narrowed which arguments qualify, not the remedy itself. Serious medical conditions, advanced age combined with time served, and genuine changes in personal circumstances remain within the statute."
   - q: "What if my sentence would be shorter under today's law?"
     a: "After Rutherford, a nonretroactive change in sentencing law cannot by itself be an extraordinary and compelling reason. Congress declined to make those changes retroactive, and the Court treated that as a deliberate choice."
+authorities:
+  - cite: "Rutherford v. United States, No. 24-820 (U.S. May 28, 2026)"
+    url: "https://www.supremecourt.gov/opinions/25pdf/24-820_97be.pdf"
+  - cite: "Fernandez v. United States, No. 24-556 (U.S. May 28, 2026)"
+    url: "https://www.supremecourt.gov/opinions/25pdf/24-556_8m58.pdf"
+  - cite: "18 U.S.C. § 3582(c)(1)(A)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim"
 ---
 <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
   <iframe src="https://www.youtube-nocookie.com/embed/nHyfnNgZg1o" title="Compassionate Release: Supreme Court Updates" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

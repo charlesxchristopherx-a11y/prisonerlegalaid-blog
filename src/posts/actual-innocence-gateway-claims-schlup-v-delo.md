@@ -11,6 +11,15 @@ faq:
     a: "Not by itself. Schlup innocence is a procedural gateway that unlocks review of an underlying constitutional claim. You still have to win that underlying claim on its merits."
   - q: "What counts as 'new reliable evidence'?"
     a: "Evidence not presented at trial — exculpatory scientific evidence, credible eyewitness accounts, or critical physical evidence. Under House v. Bell, the court weighs all evidence old and new, including some that would not have been admissible at trial."
+authorities:
+  - cite: "Schlup v. Delo, 513 U.S. 298 (1995)"
+    url: "https://www.courtlistener.com/opinion/117893/schlup-v-delo/"
+  - cite: "House v. Bell, 547 U.S. 518 (2006)"
+    url: "https://www.courtlistener.com/opinion/145648/house-v-bell/"
+  - cite: "McQuiggin v. Perkins, 569 U.S. 383 (2013)"
+    url: "https://www.courtlistener.com/opinion/872995/mcquiggin-v-perkins/"
+  - cite: "Herrera v. Collins, 506 U.S. 390 (1993)"
+    url: "https://www.courtlistener.com/opinion/112808/herrera-v-collins/"
 ---
 There's a phrase that gets thrown around loosely in post-conviction cases: "actual innocence." People use it to mean anything from genuine, provable factual innocence to a general sense that the case against them was weak or unfair. In federal habeas law, "actual innocence" as a legal doctrine is much narrower and much more specific than that everyday usage — and understanding exactly what it does, and doesn't, unlock is essential before relying on it.
 

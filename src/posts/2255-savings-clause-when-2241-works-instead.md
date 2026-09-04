@@ -11,6 +11,11 @@ faq:
     a: "No. Courts have repeatedly held that § 2255 is not inadequate merely because a prior motion was denied, or because AEDPA's second-or-successive bar now blocks a new one. That is the system working as Congress designed it, not a defect."
   - q: "What claims still belong in § 2241?"
     a: "Claims about how the sentence is being carried out — sentence computation, good-time or First Step Act credits, parole denial, disciplinary sanctions affecting your release date, or detention in a place or manner the sentence does not authorize."
+authorities:
+  - cite: "28 U.S.C. § 2255(e)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+  - cite: "Jones v. Hendrix, 599 U.S. 465 (2023)"
+    url: "https://www.courtlistener.com/opinion/10049669/jones-v-hendrix/"
 ---
 A recurring question in federal post-conviction cases is whether a claim belongs in a § 2255 motion or a § 2241 petition. Get it wrong, and a court can dismiss your filing without ever reaching the substance of your argument. The rule that decides this — the § 2255(e) savings clause — is narrower than a lot of jailhouse-lawyer advice suggests, and the Supreme Court narrowed it further in 2023.
 

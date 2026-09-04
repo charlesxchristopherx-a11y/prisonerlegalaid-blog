@@ -11,6 +11,15 @@ faq:
     a: "§ 2255 attacks the validity of the conviction or sentence and is filed in the sentencing court. § 2241 attacks the execution of the sentence — how the BOP is carrying it out — and is filed where you are confined."
   - q: "Is there a deadline for a § 2241 petition?"
     a: "Congress did not impose a one-year statute of limitations on § 2241 petitions the way it did for § 2255 and § 2254. Unreasonable delay can still hurt a petition, but there is no equivalent statutory clock."
+authorities:
+  - cite: "28 U.S.C. § 2241"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim"
+  - cite: "28 U.S.C. § 2255"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+  - cite: "Rumsfeld v. Padilla, 542 U.S. 426 (2004)"
+    url: "https://www.courtlistener.com/opinion/136999/rumsfeld-v-padilla/"
+  - cite: "Preiser v. Rodriguez, 411 U.S. 475 (1973)"
+    url: "https://www.courtlistener.com/opinion/108772/preiser-v-rodriguez/"
 ---
 Ask ten federal prisoners what a "habeas petition" gets you, and you'll probably get ten different answers — and at least half of them will be wrong about which statute actually applies to their situation. That confusion isn't a knock on anyone's intelligence. It's a design problem. Congress built two federal remedies that sound almost interchangeable, filed by two different populations, in two different courts, for two entirely different reasons — and then named them one digit apart. § 2255 and § 2241 get confused constantly, and getting the wrong one costs real time.
 

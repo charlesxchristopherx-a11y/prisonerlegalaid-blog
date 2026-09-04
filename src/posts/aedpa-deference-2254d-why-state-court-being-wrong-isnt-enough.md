@@ -11,6 +11,9 @@ faq:
     a: "That is usually not enough. The standard requires unreasonableness, not mere error — courts describe it as a decision no fair-minded jurist could agree with. A federal judge can privately think the state court erred and still be required to deny relief."
   - q: "Does circuit precedent count as 'clearly established federal law'?"
     a: "Generally no. The phrase means holdings of the U.S. Supreme Court as they existed at the time of the state-court decision. A claim needs a Supreme Court hook, not just favorable circuit law."
+authorities:
+  - cite: "28 U.S.C. § 2254(d)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2254&num=0&edition=prelim"
 ---
 One of the hardest things to accept about § 2254 habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
 

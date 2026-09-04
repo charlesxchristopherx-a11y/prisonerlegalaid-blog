@@ -11,6 +11,15 @@ faq:
     a: "Generally no. New legal arguments do not qualify. The gate is narrow: newly discovered evidence of innocence, or a new retroactive rule of constitutional law from the Supreme Court. A new statutory interpretation does not satisfy it."
   - q: "What happens if I file one without permission?"
     a: "The district court must dismiss it. Authorization from a three-judge panel of the court of appeals is a jurisdictional prerequisite, not a formality that can be cured later."
+authorities:
+  - cite: "28 U.S.C. § 2255(h)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+  - cite: "28 U.S.C. § 2244(b)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim"
+  - cite: "Magwood v. Patterson, 561 U.S. 320 (2010)"
+    url: "https://www.courtlistener.com/opinion/149287/magwood-v-patterson/"
+  - cite: "Panetti v. Quarterman, 551 U.S. 930 (2007)"
+    url: "https://www.courtlistener.com/opinion/145700/panetti-v-quarterman/"
 ---
 One of the hardest realities in post-conviction practice has nothing to do with the strength of any particular legal argument. It's timing, and it's structural: federal law treats a prisoner's first § 2255 motion, or first federal habeas petition, as close to a one-shot opportunity. Get it wrong, leave something out, or file it before you're ready, and the door to a second attempt doesn't just get harder to open — it gets locked behind a gatekeeper who has to grant permission before a district court can even consider what's on the other side.
 

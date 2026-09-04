@@ -11,6 +11,13 @@ faq:
     a: "No. It reaches only ineffective-assistance-of-trial-counsel claims, only in the first initial-review collateral proceeding, and only in states that require such claims to be raised there rather than on direct appeal."
   - q: "Does Martinez win my case?"
     a: "No. Establishing cause and prejudice only permits a federal court to consider the merits of the underlying claim. You still have to win that claim."
+authorities:
+  - cite: "Martinez v. Ryan, 566 U.S. 1 (2012)"
+    url: "https://www.courtlistener.com/opinion/625711/martinez-v-ryan/"
+  - cite: "Trevino v. Thaler, 569 U.S. 413 (2013)"
+    url: "https://www.courtlistener.com/opinion/872994/trevino-v-thaler/"
+  - cite: "Coleman v. Thompson, 501 U.S. 722 (1991)"
+    url: "https://www.courtlistener.com/opinion/112640/coleman-v-thompson/"
 ---
 Procedural default is one of the most common reasons a genuinely strong claim never gets heard in federal habeas review. If a state court refused to consider your claim because you didn't follow the state's own procedural rules, a federal court will usually refuse to consider it too — unless you can show "cause" for the default and resulting prejudice. For a specific, narrow category of claims, *Martinez v. Ryan* changed what counts as cause.
 

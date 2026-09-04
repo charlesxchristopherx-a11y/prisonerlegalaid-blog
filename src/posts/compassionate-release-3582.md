@@ -11,6 +11,11 @@ faq:
     a: "No. The Supreme Court held in Fernandez v. United States (2026) that the alleged invalidity of a conviction is not an extraordinary and compelling reason for compassionate release. That argument belongs in a § 2255 motion."
   - q: "Do I have to go through the BOP first?"
     a: "Yes. You must first request that the Bureau of Prisons file on your behalf. You may file your own motion only after the BOP declines or fails to respond within the statutory window."
+authorities:
+  - cite: "18 U.S.C. § 3582(c)(1)(A)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim"
+  - cite: "18 U.S.C. § 3553(a)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3553&num=0&edition=prelim"
 ---
 Before 2018, only the Bureau of Prisons could ask a court to reduce a federal sentence for compassionate release — and it rarely did. The First Step Act changed that: federal prisoners can now file these motions directly with the sentencing court themselves. That single change has made compassionate release one of the most active areas of federal post-conviction practice.
 

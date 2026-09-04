@@ -11,6 +11,15 @@ faq:
     a: "Because it typically requires evidence outside the trial record — what counsel knew, did, or failed to investigate. That evidence generally cannot be developed on direct appeal, so the claim is normally reserved for collateral review."
   - q: "Is a bad outcome enough to prove ineffective assistance?"
     a: "No. Courts weigh the entire trial record and ask whether the specific error actually mattered against everything else the factfinder saw. Losing, by itself, proves nothing under Strickland."
+authorities:
+  - cite: "Strickland v. Washington, 466 U.S. 668 (1984)"
+    url: "https://www.courtlistener.com/opinion/111170/strickland-v-washington/"
+  - cite: "Hill v. Lockhart, 474 U.S. 52 (1985)"
+    url: "https://www.courtlistener.com/opinion/111539/hill-v-lockhart/"
+  - cite: "Lafler v. Cooper, 566 U.S. 156 (2012)"
+    url: "https://www.courtlistener.com/opinion/625833/lafler-v-cooper/"
+  - cite: "Missouri v. Frye, 566 U.S. 134 (2012)"
+    url: "https://www.courtlistener.com/opinion/626055/missouri-v-frye/"
 ---
 Talk to a hundred people serving federal time and you'll hear a common thread: their lawyer missed something, didn't investigate something, didn't call a witness who should have testified, didn't push back hard enough at sentencing. Some of that is genuine grievance. Some of it is the ordinary second-guessing anyone would do about the worst experience of their life. The law doesn't ask which one it is by intuition. It asks a very specific two-part question. Many ineffective-assistance claims turn on prejudice even when counsel's performance is seriously questioned, because both prongs are independently required — a defendant can clear the first hurdle and still lose on the second.
 

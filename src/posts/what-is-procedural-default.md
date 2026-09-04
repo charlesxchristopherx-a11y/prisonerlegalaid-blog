@@ -11,6 +11,13 @@ faq:
     a: "Generally an objective factor external to the defense that actually prevented compliance with the state rule. Ordinary attorney error or oversight typically does not qualify — a defendant generally bears the risk of his own lawyer's ordinary mistakes."
   - q: "Is there any exception for lawyer error?"
     a: "Yes, but it is narrow. Under Martinez v. Ryan, ineffective counsel in an initial-review collateral proceeding can establish cause for defaulting an ineffective-assistance-of-trial-counsel claim, in states that require that claim to be raised there."
+authorities:
+  - cite: "Coleman v. Thompson, 501 U.S. 722 (1991)"
+    url: "https://www.courtlistener.com/opinion/112640/coleman-v-thompson/"
+  - cite: "Murray v. Carrier, 477 U.S. 478 (1986)"
+    url: "https://www.courtlistener.com/opinion/111727/murray-v-carrier/"
+  - cite: "Martinez v. Ryan, 566 U.S. 1 (2012)"
+    url: "https://www.courtlistener.com/opinion/625711/martinez-v-ryan/"
 ---
 Here's a scenario that plays out constantly in post-conviction practice: a prisoner has what looks, on paper, like a genuinely strong constitutional claim. Maybe it's about a jury instruction, a suppressed piece of evidence, an improper comment by the prosecutor. And the federal court never rules on whether that claim is right or wrong at all. It gets dismissed on a threshold issue that has nothing to do with the underlying merits — because the claim wasn't properly raised in state court first, in the way state procedural rules required. That's procedural default, and it's a recurring reason post-conviction claims never get a hearing on the substance.
 

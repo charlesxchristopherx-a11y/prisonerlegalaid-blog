@@ -11,6 +11,15 @@ faq:
     a: "No. Buck v. Davis made clear the COA stage asks only whether the claim is reasonably debatable. A court errs when it effectively decides the merits at the threshold and then uses that to deny a COA."
   - q: "What happens if a COA is denied?"
     a: "The appeal cannot proceed in the ordinary course. Because the COA is the gate to appellate review, how the claims are framed at this stage matters more than most people expect."
+authorities:
+  - cite: "28 U.S.C. § 2253(c)"
+    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2253&num=0&edition=prelim"
+  - cite: "Slack v. McDaniel, 529 U.S. 473 (2000)"
+    url: "https://www.courtlistener.com/opinion/118359/slack-v-mcdaniel/"
+  - cite: "Miller-El v. Cockrell, 537 U.S. 322 (2003)"
+    url: "https://www.courtlistener.com/opinion/122258/miller-el-v-cockrell/"
+  - cite: "Buck v. Davis, 580 U.S. 100 (2017)"
+    url: "https://www.courtlistener.com/opinion/4374577/buck-v-davis/"
 ---
 Losing a § 2255 motion or a habeas petition feels like the end of the road, but it isn't, at least not procedurally — there's an appeal available. What surprises a lot of people is that you don't get there automatically. Before a federal court of appeals can even look at whether the district court got it wrong, the prisoner has to clear a separate threshold: a certificate of appealability, universally shortened to COA. Without one, the court of appeals doesn't have jurisdiction to decide the merits at all — the case simply doesn't get that far.
 
