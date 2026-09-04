@@ -4,6 +4,7 @@ description: "28 U.S.C. § 2255 lets federal prisoners challenge a conviction or
 date: 2026-07-22
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+hub: "2255"
 answer: "A § 2255 motion asks the federal court that sentenced you to vacate, set aside, or correct that sentence. It is filed in your original criminal case, not as a new lawsuit, and generally must be filed within one year of the conviction becoming final. It is the primary post-conviction remedy for federal prisoners."
 faq:
   - q: "How long do I have to file a § 2255 motion?"

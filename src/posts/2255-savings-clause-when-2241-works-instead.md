@@ -4,6 +4,7 @@ description: "Section 2255 is usually the only path for a federal prisoner to ch
 date: 2026-09-03
 category: "Post-Conviction · § 2241"
 track: "post-conviction"
+hub: "2241"
 answer: "Federal prisoners must normally use § 2255 to challenge a conviction. The § 2255(e) savings clause allows a § 2241 petition instead only when § 2255 is 'inadequate or ineffective' — a narrow exception. After Jones v. Hendrix (2023), a new statutory-interpretation argument does not qualify. Execution-of-sentence claims still belong in § 2241."
 faq:
   - q: "Does losing my first § 2255 motion make it 'inadequate or ineffective'?"

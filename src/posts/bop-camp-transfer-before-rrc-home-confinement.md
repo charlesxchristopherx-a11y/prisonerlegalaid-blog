@@ -4,6 +4,7 @@ description: "On May 28, 2026, the BOP announced it will transfer many eligible 
 date: 2026-07-30
 category: "Federal Prison News · BOP Policy"
 track: "post-conviction"
+hub: "first-step-act"
 answer: "This BOP policy affects which eligible people may transfer to a camp before halfway house or home confinement placement. It changes who is considered — not when release planning begins or how placement length is decided. Eligibility turns on your specific classification, so verify against the actual policy language rather than secondhand summaries."
 faq:
   - q: "Does this policy change my release date?"

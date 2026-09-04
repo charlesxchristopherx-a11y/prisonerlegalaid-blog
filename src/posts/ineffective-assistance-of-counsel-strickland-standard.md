@@ -4,6 +4,7 @@ description: "Almost every federal prisoner thinks their lawyer did something wr
 date: 2026-08-10
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+hub: "2255"
 answer: "Strickland v. Washington requires two things: that counsel's performance fell below an objective standard of reasonableness, and that the deficient performance prejudiced the defense. Prejudice means a reasonable probability the result would have been different — enough to undermine confidence in the outcome. Both prongs must be met."
 faq:
   - q: "Why is ineffective assistance usually raised in a § 2255 motion?"

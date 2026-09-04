@@ -4,6 +4,7 @@ description: "The § 2255 one-year deadline is strict, but not absolute. Here's 
 date: 2026-09-02
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+hub: "2255"
 answer: "A late § 2255 motion can still be heard if you show both that you pursued your rights diligently and that an extraordinary circumstance prevented timely filing. Documented prison mail delays can qualify. Separately, the prisoner mailbox rule fixes your filing date at the moment you hand the motion to prison staff."
 faq:
   - q: "Does a prison mail delay automatically excuse a late filing?"

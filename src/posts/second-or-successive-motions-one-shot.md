@@ -4,6 +4,7 @@ description: "Federal prisoners generally get one § 2255 motion, and state pris
 date: 2026-08-14
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
+hub: "2255"
 answer: "Federal prisoners generally get one § 2255 motion. A second or successive motion requires advance authorization from the court of appeals, and is limited to newly discovered evidence establishing innocence by clear and convincing evidence, or a new rule of constitutional law made retroactive by the Supreme Court. Filing without authorization results in dismissal."
 faq:
   - q: "Can I file a second § 2255 motion if I have new arguments?"

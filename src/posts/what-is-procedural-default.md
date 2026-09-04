@@ -4,6 +4,7 @@ description: "A federal court can refuse to even look at the merits of a strong 
 date: 2026-08-11
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+hub: "2254"
 answer: "Procedural default means a federal court will not review a claim the state court refused to hear because you did not follow the state's procedural rules. It can be overcome by showing cause for the default plus prejudice, or by passing through the actual-innocence gateway. Ordinary attorney error usually does not qualify as cause."
 faq:
   - q: "What counts as 'cause' for a default?"

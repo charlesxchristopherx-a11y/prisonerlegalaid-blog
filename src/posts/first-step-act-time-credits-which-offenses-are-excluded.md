@@ -4,6 +4,7 @@ description: "Earning FSA time credits toward early transfer to home confinement
 date: 2026-09-07
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"
+hub: "first-step-act"
 answer: "First Step Act time credits are unavailable if you are serving a sentence for an offense on the exclusion list in 18 U.S.C. § 3632(d)(4)(D). The list is long and specific, and several entries apply only where the sentencing court made particular findings. A final order of removal separately bars applying earned credits."
 faq:
   - q: "How do I know if my offense is excluded?"

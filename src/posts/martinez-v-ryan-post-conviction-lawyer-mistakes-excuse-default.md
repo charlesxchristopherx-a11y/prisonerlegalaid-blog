@@ -4,6 +4,7 @@ description: "Procedural default usually kills a claim you didn't raise at the r
 date: 2026-09-06
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+hub: "2254"
 answer: "Martinez v. Ryan created a narrow exception: where state law requires ineffective-assistance-of-trial-counsel claims to be raised first in a collateral proceeding, having no counsel or ineffective counsel in that specific proceeding can establish cause to excuse a later procedural default. The underlying trial-counsel claim must also be substantial."
 faq:
   - q: "Does Martinez apply to every defaulted claim?"

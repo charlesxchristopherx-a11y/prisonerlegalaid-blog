@@ -61,7 +61,30 @@ layout: base.njk
 }
 </script>
 {% endif %}
+{%- set myHub = null -%}
+{%- for h in hubs -%}{%- if h.key == hub -%}{%- set myHub = h -%}{%- endif -%}{%- endfor -%}
+{% if myHub %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prisonerlegalaid.blog/" },
+    { "@type": "ListItem", "position": 2, "name": "Federal Post-Conviction", "item": "https://prisonerlegalaid.blog/blog/" },
+    { "@type": "ListItem", "position": 3, "name": {{ myHub.crumb | dump | safe }}, "item": "https://prisonerlegalaid.blog/topics/{{ myHub.slug }}/" },
+    { "@type": "ListItem", "position": 4, "name": {{ title | dump | safe }}, "item": "https://prisonerlegalaid.blog{{ page.url }}" }
+  ]
+}
+</script>
+{% endif %}
 <article class="post-body">
+  {% if myHub %}
+  <nav class="crumbs" aria-label="Breadcrumb" style="font-size:14px;color:#5b6470;margin:0 0 14px">
+    <a href="/" style="color:#5b6470">Home</a> ›
+    <a href="/blog/" style="color:#5b6470">Federal Post-Conviction</a> ›
+    <a href="/topics/{{ myHub.slug }}/" style="color:#5b6470">{{ myHub.crumb }}</a>
+  </nav>
+  {% endif %}
   <p class="kicker">{{ category }}</p>
   <h1>{{ title }}</h1>
   <p class="meta">Writ Large · {{ page.date | dateDisplay }}{% if modified %} · Last reviewed {{ modified | dateDisplay }}{% endif %}</p>
@@ -87,6 +110,21 @@ layout: base.njk
       <p style="margin:0;font-size:16px;line-height:1.7;color:#39414B">{{ item.a }}</p>
     </div>
     {% endfor %}
+  </section>
+  {% endif %}
+  {% if myHub %}
+  <section class="hub-links" style="margin:36px 0 0;padding:20px;border:1px solid rgba(20,24,31,.14);border-radius:6px">
+    <p style="margin:0 0 10px;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#5b6470">More in {{ myHub.label }}</p>
+    <ul style="margin:0;padding-left:20px;font-size:16px;line-height:1.85">
+      {%- set shown = 0 -%}
+      {%- for p in collections.posts -%}
+        {%- if p.data.hub == hub and p.url != page.url and shown < 4 -%}
+          {%- set shown = shown + 1 -%}
+      <li><a href="{{ p.url }}">{{ p.data.title }}</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    <p style="margin:12px 0 0;font-size:15px"><a href="/topics/{{ myHub.slug }}/">All {{ myHub.label }} articles &rarr;</a></p>
   </section>
   {% endif %}
   <div class="post-cta">

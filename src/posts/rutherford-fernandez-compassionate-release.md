@@ -4,6 +4,7 @@ description: "The Supreme Court's May 2026 decisions in Rutherford v. United Sta
 date: 2026-07-24
 category: "Compassionate Release · Supreme Court Update"
 track: "post-conviction"
+hub: "compassionate-release"
 answer: "On May 28, 2026, the Supreme Court decided Rutherford and Fernandez together, closing two arguments federal prisoners had increasingly used for compassionate release: a nonretroactive change in sentencing law, and a challenge to the validity of the conviction. Compassionate release itself survives — these two specific theories do not."
 faq:
   - q: "Can I still get compassionate release after these cases?"

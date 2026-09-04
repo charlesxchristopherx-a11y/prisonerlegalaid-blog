@@ -14,7 +14,13 @@ pageModified: 2026-09-02
 
 <section class="all-posts">
   <div class="wrap">
-    <h2 style="font-size:22px;margin:0 0 6px">Federal Post-Conviction Relief</h2>
+    <nav class="hub-nav" aria-label="Topics" style="margin:0 0 26px;padding:18px;border:1px solid rgba(20,24,31,.14);border-radius:6px">
+  <p style="margin:0 0 10px;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:#5b6470">Browse by topic</p>
+  <p style="margin:0;font-size:16px;line-height:2">
+    {% for h in hubs %}<a href="/topics/{{ h.slug }}/" style="font-weight:600">{{ h.label }}</a>{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}
+  </p>
+</nav>
+<h2 style="font-size:22px;margin:0 0 6px">Federal Post-Conviction Relief</h2>
     <p style="font-size:15px;color:#5b6470;margin:0 0 22px;max-width:62ch">Motions to vacate under &sect; 2255, habeas petitions under &sect; 2241 and &sect; 2254, compassionate release, and First Step Act time credits &mdash; including the deadlines and procedural traps that end most filings before a judge reads them.</p>
     <div class="posts">
       {% for post in collections.postsPostConviction %}

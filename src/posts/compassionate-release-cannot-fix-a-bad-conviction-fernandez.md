@@ -4,6 +4,7 @@ description: "The Supreme Court's Fernandez decision closed a door some prisoner
 date: 2026-09-04
 category: "Compassionate Release · Supreme Court Update"
 track: "post-conviction"
+hub: "compassionate-release"
 answer: "In Fernandez v. United States (2026), the Supreme Court held that the alleged invalidity of a conviction is not an 'extraordinary and compelling reason' for compassionate release. A challenge to whether your conviction is legally sound belongs in a § 2255 motion. Compassionate release is for personal circumstances — illness, age, family crisis."
 faq:
   - q: "Did Fernandez eliminate compassionate release?"

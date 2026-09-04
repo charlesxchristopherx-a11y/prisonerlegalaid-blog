@@ -4,6 +4,7 @@ description: "Learn about 2255 motion costs, self-filing options, and common cha
 date: 2026-09-02
 category: "Post-Conviction"
 track: "post-conviction"
+hub: "2255"
 generatedBy: "pla-agent-os"
 workItemId: "8d1bf712-53e8-4b6a-9eee-eac5535c1462"
 verifierScore: 0.975

@@ -4,6 +4,7 @@ description: "Federal law entitles eligible prisoners to 10-15 days of credit fo
 date: 2026-07-30
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"
+hub: "first-step-act"
 answer: "First Step Act time credits let eligible federal prisoners earn 10 days off for every 30 days of approved programming, plus 5 additional days for those assessed at minimum or low recidivism risk. Credits apply toward earlier transfer to prerelease custody or supervised release — not toward the sentence itself."
 faq:
   - q: "Why are my First Step Act credits not showing up?"

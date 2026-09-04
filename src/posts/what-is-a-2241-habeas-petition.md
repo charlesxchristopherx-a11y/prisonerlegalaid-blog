@@ -4,6 +4,7 @@ description: "28 U.S.C. § 2241 challenges how a federal sentence is being carri
 date: 2026-08-09
 category: "Post-Conviction · § 2241"
 track: "post-conviction"
+hub: "2241"
 answer: "A § 2241 habeas petition challenges how a federal sentence is being carried out — sentence computation, good-time or First Step Act credits, disciplinary sanctions affecting release date — rather than whether the conviction itself was valid. It is filed in the district where you are confined, not where you were sentenced."
 faq:
   - q: "What is the difference between § 2241 and § 2255?"

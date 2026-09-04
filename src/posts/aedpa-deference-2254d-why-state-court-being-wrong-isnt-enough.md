@@ -4,6 +4,7 @@ description: "Winning a federal habeas petition under § 2254 takes more than sh
 date: 2026-09-05
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+hub: "2254"
 answer: "Under 28 U.S.C. § 2254(d), a federal court cannot grant habeas relief on a claim the state court decided on the merits unless that decision was contrary to, or an unreasonable application of, clearly established Supreme Court law, or rested on an unreasonable determination of the facts. Ordinary legal error is not enough."
 faq:
   - q: "What if the state court was simply wrong?"

@@ -4,6 +4,7 @@ description: "The First Step Act let federal prisoners file compassionate releas
 date: 2026-07-23
 category: "Compassionate Release · § 3582"
 track: "post-conviction"
+hub: "compassionate-release"
 answer: "Compassionate release under 18 U.S.C. § 3582(c)(1)(A) lets a federal prisoner ask the court for a sentence reduction based on extraordinary and compelling reasons — typically serious illness, advanced age, or a major change in family circumstances. You must first ask the Bureau of Prisons before filing with the court."
 faq:
   - q: "Can I use compassionate release to argue my conviction was wrong?"

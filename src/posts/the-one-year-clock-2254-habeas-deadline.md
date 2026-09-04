@@ -4,6 +4,7 @@ description: "State prisoners generally get one year to file a federal habeas pe
 date: 2026-08-15
 category: "Post-Conviction · § 2254"
 track: "post-conviction"
+hub: "2254"
 answer: "State prisoners generally have one year to file a federal habeas petition under § 2254. The clock runs from the latest of four trigger dates under § 2244(d)(1) — usually when direct review concluded. Time during which a properly filed state post-conviction application is pending does not count against the year."
 faq:
   - q: "Does filing something in state court pause the clock?"
