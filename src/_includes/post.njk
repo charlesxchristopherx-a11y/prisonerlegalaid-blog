@@ -20,9 +20,24 @@ layout: base.njk
   "articleSection": {{ category | dump | safe }},
   "inLanguage": "en-US",
   "isAccessibleForFree": true,
-  "author": { "@id": "https://prisonerlegalaid.blog/#organization" },
+  {#- author is a Person, not the Organization. For a legal-information
+      site, naming the actual human who researched the piece is the point of
+      the signal; the Organization remains the publisher. Person data is
+      truthful: a certified paralegal, explicitly not an attorney. -#}
+  "author": {
+    "@type": "Person",
+    "@id": "https://prisonerlegalaid.blog/about-the-author/#person",
+    "name": "C. Christopher",
+    "jobTitle": "Certified Paralegal",
+    "url": "https://prisonerlegalaid.blog/about-the-author/",
+    "worksFor": { "@id": "https://prisonerlegalaid.blog/#organization" }
+  },
   "publisher": { "@id": "https://prisonerlegalaid.blog/#organization" },
-  "mainEntityOfPage": {
+  {#- reviewedBy is emitted only when an actual review occurred. Absent the
+      front-matter field, no reviewer claim is made anywhere. The memo is
+      explicit: never imply attorney review that did not happen. -#}
+  {% if reviewedBy %}"reviewedBy": { "@type": "Person", "name": {{ reviewedBy | dump | safe }} },
+  {% endif %}"mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://prisonerlegalaid.blog{{ page.url }}"
   }{% if answer %},
@@ -48,6 +63,10 @@ layout: base.njk
   <p class="kicker">{{ category }}</p>
   <h1>{{ title }}</h1>
   <p class="meta">Writ Large · {{ page.date | dateDisplay }}{% if modified %} · Last reviewed {{ modified | dateDisplay }}{% endif %}</p>
+  <p class="byline" style="font-size:15px;color:#5b6470;margin:-6px 0 22px">
+    Written by <a href="/about-the-author/" style="color:#14181f;font-weight:600">C. Christopher, Certified Paralegal</a>{% if reviewedBy %} · Reviewed by {{ reviewedBy }}{% if reviewedOn %} on {{ reviewedOn | dateDisplay }}{% endif %}{% endif %}
+    · <a href="/editorial-standards/" style="color:#5b6470">How we source this</a>
+  </p>
   {% if answer %}
   {# Answer-first block. AI retrieval chunks pages and strongly favors a
      direct, self-contained answer near the top over a narrative that builds
