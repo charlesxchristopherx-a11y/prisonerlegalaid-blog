@@ -1,0 +1,98 @@
+name: Weekly video render
+
+# Runs after the Monday article publish so there is fresh content to draw from.
+# Renders one short-form video from the newest post that has a verified answer
+# block, commits it, and records the slug so it is never rendered twice.
+on:
+  schedule:
+    - cron: "40 14 * * 1"     # Mon 14:40 UTC (~10:40am ET)
+  workflow_dispatch: {}
+
+concurrency:
+  group: video-render
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install fonts and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          # fonts-google-poppins is not packaged; pull the two weights we need
+          sudo mkdir -p /usr/share/fonts/truetype/google-fonts
+          for w in Bold Medium; do
+            curl -sfL -o "/tmp/Poppins-$w.ttf" \
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-$w.ttf"
+            sudo cp "/tmp/Poppins-$w.ttf" /usr/share/fonts/truetype/google-fonts/
+          done
+          sudo fc-cache -f >/dev/null
+          ffmpeg -version | head -1
+          ls -la /usr/share/fonts/truetype/google-fonts/
+
+      - name: Caption logic tests
+        working-directory: video-pipeline
+        run: python3 test_render.py
+
+      - name: Choose a post and build the script
+        id: script
+        run: python3 video-pipeline/make_script.py
+
+      - name: Render
+        if: steps.script.outcome == 'success'
+        working-directory: video-pipeline
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_EMAIL: ${{ secrets.CF_EMAIL }}
+        run: |
+          mkdir -p ../video-out
+          python3 render.py \
+            --script script.txt \
+            --out "../video-out/${{ steps.script.outputs.slug }}.mp4" \
+            --voice helena
+
+      - name: Record it so it is never rendered twice
+        if: success()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          p = "video-pipeline/rendered.json"
+          d = json.load(open(p)) if os.path.exists(p) else {"rendered": []}
+          slug = "${{ steps.script.outputs.slug }}"
+          if slug and slug not in d["rendered"]:
+              d["rendered"].append(slug)
+          json.dump(d, open(p, "w"), indent=2)
+          PY
+
+      - name: Commit
+        if: success()
+        run: |
+          git config user.name "PLA Video Bot"
+          git config user.email "chris@prisonerlegalaid.com"
+          git add video-out video-pipeline/rendered.json
+          if git diff --staged --quiet; then
+            echo "nothing to commit"; exit 0
+          fi
+          git commit -m "video: ${{ steps.script.outputs.slug }}
+
+          Rendered automatically from the post's verified answer block.
+          Voice: Aura-2 helena. Captions timed by Whisper against the
+          original script text."
+          git pull --rebase --autostash
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Weekly video render" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Post: ${{ steps.script.outputs.slug }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Video: https://raw.githubusercontent.com/charlesxchristopherx-a11y/prisonerlegalaid-blog/main/video-out/${{ steps.script.outputs.slug }}.mp4" >> $GITHUB_STEP_SUMMARY
