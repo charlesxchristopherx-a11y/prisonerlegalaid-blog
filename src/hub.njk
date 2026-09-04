@@ -40,6 +40,7 @@ eleventyComputed:
     <nav class="crumbs" aria-label="Breadcrumb" style="font-size:14px;color:#5b6470;margin:0 0 8px">
       <a href="/" style="color:#5b6470">Home</a> ›
       <a href="/blog/" style="color:#5b6470">Federal Post-Conviction</a> ›
+      <a href="/topics/" style="color:#5b6470">Topics</a> ›
       <span aria-current="page">{{ hub.crumb }}</span>
     </nav>
     <p class="eyebrow">Topic Hub</p>
@@ -77,6 +78,7 @@ eleventyComputed:
   </div>
 
   <h2 style="font-size:22px;margin:38px 0 12px">Other topics</h2>
+  <p style="margin:0 0 6px;font-size:15px"><a href="/topics/">All topics &rarr;</a></p>
   <p style="font-size:16px;line-height:1.9">
     {% for h in hubs %}{% if h.key != hub.key %}<a href="/topics/{{ h.slug }}/">{{ h.label }}</a>{% if not loop.last %} · {% endif %}{% endif %}{% endfor %}
   </p>
