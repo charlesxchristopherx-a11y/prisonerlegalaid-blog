@@ -13,63 +13,79 @@ layout: null
 -#}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- set site = "https://prisonerlegalaid.blog" -%}
+{#-
+  lastmod truthfulness (P0.2): previously EVERY static page emitted
+  `newestPostDate`, so publishing any single article falsely told search
+  engines that the homepage, pricing, terms, privacy and every tool page had
+  just been updated. Each page now carries its own `pageModified:` front
+  matter (seeded from real git history) and the sitemap reads that value.
+  Acceptance test: publishing an article must not change any other page's
+  lastmod.
+-#}
+{%- macro lastmodFor(url) -%}
+{%- set found = "" -%}
+{%- for p in collections.all -%}
+{%- if p.url == url and p.data.pageModified -%}{%- set found = p.data.pageModified | dateISO -%}{%- endif -%}
+{%- endfor -%}
+{{ found }}
+{%- endmacro -%}
   <url>
     <loc>{{ site }}/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/") }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>{{ site }}/litigation/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/litigation/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>{{ site }}/case-file/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/case-file/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>{{ site }}/pricing/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/pricing/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>{{ site }}/transfer-request/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/transfer-request/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>{{ site }}/forms/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/forms/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>{{ site }}/free-tools/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/free-tools/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>{{ site }}/case-file-checklist/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/case-file-checklist/") }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>{{ site }}/privacy/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/privacy/") }}</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>{{ site }}/blog/</loc>
-    <lastmod>{{ collections.posts | newestPostDate }}</lastmod>
+    <lastmod>{{ lastmodFor("/blog/") }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
