@@ -33,11 +33,13 @@ layout: base.njk
     "worksFor": { "@id": "https://prisonerlegalaid.blog/#organization" }
   },
   "publisher": { "@id": "https://prisonerlegalaid.blog/#organization" },
-  {#- reviewedBy is emitted only when an actual review occurred. Absent the
-      front-matter field, no reviewer claim is made anywhere. The memo is
-      explicit: never imply attorney review that did not happen. -#}
-  {% if reviewedBy %}"reviewedBy": { "@type": "Person", "name": {{ reviewedBy | dump | safe }} },
-  {% endif %}"mainEntityOfPage": {
+  {#- No schema reviewedBy. Attorney review DOES occur before publication, but
+      schema.org reviewedBy expects a named Person or Organization, and
+      reviewing attorneys are deliberately not named -- naming one alongside
+      legal information can imply representation that does not exist. The
+      review is stated in visible prose instead of asserted as a machine
+      claim about a party we will not identify. -#}
+  "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://prisonerlegalaid.blog{{ page.url }}"
   }{% if answer %},
@@ -64,8 +66,8 @@ layout: base.njk
   <h1>{{ title }}</h1>
   <p class="meta">Writ Large · {{ page.date | dateDisplay }}{% if modified %} · Last reviewed {{ modified | dateDisplay }}{% endif %}</p>
   <p class="byline" style="font-size:15px;color:#5b6470;margin:-6px 0 22px">
-    Written by <a href="/about-the-author/" style="color:#14181f;font-weight:600">C. Christopher, Certified Paralegal</a>{% if reviewedBy %} · Reviewed by {{ reviewedBy }}{% if reviewedOn %} on {{ reviewedOn | dateDisplay }}{% endif %}{% endif %}
-    · <a href="/editorial-standards/" style="color:#5b6470">How we source this</a>
+    Written by <a href="/about-the-author/" style="color:#14181f;font-weight:600">C. Christopher, Certified Paralegal</a>
+    · <a href="/editorial-standards/" style="color:#5b6470">Attorney-reviewed before publication</a>
   </p>
   {% if answer %}
   {# Answer-first block. AI retrieval chunks pages and strongly favors a
