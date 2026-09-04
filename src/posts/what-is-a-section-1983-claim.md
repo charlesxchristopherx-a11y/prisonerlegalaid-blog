@@ -2,6 +2,7 @@
 title: "What Is a Section 1983 Claim?"
 description: "42 U.S.C. § 1983 is the vehicle for constitutional claims against state officials — but it's often misunderstood. What it actually covers, and what it doesn't."
 date: 2026-07-30
+modified: 2026-09-02
 category: "Civil Rights · § 1983"
 track: "inside-rights"
 answer: "42 U.S.C. § 1983 lets you sue a state or local official who violated your constitutional rights while acting under color of state law. It is not a general unfairness remedy. There is no single national § 1983 form — most federal district courts publish their own prisoner civil rights complaint form."

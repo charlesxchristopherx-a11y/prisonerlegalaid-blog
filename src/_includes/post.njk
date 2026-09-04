@@ -12,7 +12,11 @@ layout: base.njk
   "headline": {{ title | dump | safe }},
   "description": {{ description | dump | safe }},
   "datePublished": "{{ page.date | dateISO }}",
-  "dateModified": "{{ page.date | dateISO }}",
+  {#- dateModified reflects a real substantive revision, set via an optional
+      `modified:` front-matter field. It must NOT change merely because a
+      build ran -- the daily rebuild would otherwise mark every article as
+      freshly updated, which is a false freshness signal to search engines. -#}
+  "dateModified": "{% if modified %}{{ modified | dateISO }}{% else %}{{ page.date | dateISO }}{% endif %}",
   "articleSection": {{ category | dump | safe }},
   "inLanguage": "en-US",
   "isAccessibleForFree": true,
@@ -43,7 +47,7 @@ layout: base.njk
 <article class="post-body">
   <p class="kicker">{{ category }}</p>
   <h1>{{ title }}</h1>
-  <p class="meta">Writ Large · {{ page.date | dateDisplay }}</p>
+  <p class="meta">Writ Large · {{ page.date | dateDisplay }}{% if modified %} · Last reviewed {{ modified | dateDisplay }}{% endif %}</p>
   {% if answer %}
   {# Answer-first block. AI retrieval chunks pages and strongly favors a
      direct, self-contained answer near the top over a narrative that builds
