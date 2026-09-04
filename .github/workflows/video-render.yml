@@ -25,6 +25,9 @@ jobs:
       - name: Install fonts and ffmpeg
         run: |
           sudo apt-get update -qq
+          # Do not assume the runner image ships these. It has ffmpeg but
+          # ffprobe was missing from PATH, which failed the first live run.
+          sudo apt-get install -y -qq ffmpeg
           # fonts-google-poppins is not packaged; pull the two weights we need
           sudo mkdir -p /usr/share/fonts/truetype/google-fonts
           for w in Bold Medium; do
@@ -34,6 +37,7 @@ jobs:
           done
           sudo fc-cache -f >/dev/null
           ffmpeg -version | head -1
+          ffprobe -version | head -1
           ls -la /usr/share/fonts/truetype/google-fonts/
 
       - name: Caption logic tests

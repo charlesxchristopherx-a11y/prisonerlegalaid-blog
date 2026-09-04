@@ -273,6 +273,12 @@ def main():
     for p in (FB,FSB,FM,a.logo_small,a.logo_end):
         if not os.path.exists(p):
             log(f"FATAL: missing required asset {p}"); sys.exit(1)
+    # Binaries are an asset too. The first live CI run failed here: the runner
+    # had ffmpeg but not ffprobe, and the failure surfaced deep inside the
+    # render instead of up front.
+    for b in ("ffmpeg","ffprobe"):
+        if subprocess.run(["which",b],capture_output=True).returncode != 0:
+            log(f"FATAL: required binary '{b}' not found on PATH"); sys.exit(1)
     script=open(a.script).read().strip()
     wd=a.workdir; audio=os.path.join(wd,"vo.mp3"); wj=os.path.join(wd,"whisper.json")
     try:
