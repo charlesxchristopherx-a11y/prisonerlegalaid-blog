@@ -1,5 +1,5 @@
 ---
-title: "Ineffective Assistance of Counsel: What the Strickland Standard Actually Requires"
+title: "How Do You Prove Your Lawyer Was Ineffective?"
 description: "Almost every federal prisoner thinks their lawyer did something wrong. Winning on it requires two specific things under Strickland v. Washington — and the second one, prejudice, is usually where the fight is."
 date: 2026-08-10
 category: "Post-Conviction · § 2255"

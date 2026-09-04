@@ -1,5 +1,5 @@
 ---
-title: "What Is 'Procedural Default,' and How Does It Sink Post-Conviction Claims?"
+title: "What Is Procedural Default — and Can It Still Be Excused?"
 description: "A federal court can refuse to even look at the merits of a strong constitutional claim if it wasn't raised the right way, at the right time, in state court first. Here's how procedural default works — and the narrow paths around it."
 date: 2026-08-11
 category: "Post-Conviction · § 2254"

@@ -1,5 +1,5 @@
 ---
-title: "Equitable Tolling and Prison Mail Delays: Can a Late § 2255 Motion Still Count?"
+title: "My § 2255 Deadline Passed — Can Prison Mail Delays Excuse It?"
 description: "The § 2255 one-year deadline is strict, but not absolute. Here's the Supreme Court's actual two-part test for excusing a late filing caused by prison mail delays — and the rule that fixes your filing date the moment you hand it to staff."
 date: 2026-09-02
 category: "Post-Conviction · § 2255"

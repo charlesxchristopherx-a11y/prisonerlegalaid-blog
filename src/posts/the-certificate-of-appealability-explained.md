@@ -1,5 +1,5 @@
 ---
-title: "The Certificate of Appealability: Why You Need One Just to Appeal a Denied § 2255 or § 2254"
+title: "How Do You Appeal a Denied § 2255? Certificate of Appealability"
 description: "Losing your habeas petition or § 2255 motion doesn't automatically get you an appeal. You need a certificate of appealability first — and without one, the court of appeals ordinarily cannot reach the merits of your case."
 date: 2026-08-12
 category: "Post-Conviction · § 2255"

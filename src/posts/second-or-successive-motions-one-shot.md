@@ -1,5 +1,5 @@
 ---
-title: "Second or Successive Motions: Why You (Usually) Only Get One Real Shot"
+title: "Can You File a Second § 2255 Motion After the First Is Denied?"
 description: "Federal prisoners generally get one § 2255 motion, and state prisoners generally get one federal habeas petition. Filing a second one isn't just harder — it requires a federal appeals court's permission before a district court can even look at it."
 date: 2026-08-14
 category: "Post-Conviction · § 2255"

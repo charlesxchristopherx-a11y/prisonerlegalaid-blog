@@ -1,5 +1,5 @@
 ---
-title: "Compassionate Release Can't Fix a Bad Conviction — What Fernandez Actually Means for You"
+title: "Can Compassionate Release Fix a Bad Sentence? What Fernandez Says"
 description: "The Supreme Court's Fernandez decision closed a door some prisoners had started using: filing a compassionate-release motion to argue a conviction is invalid. Here's why the Court said that's the wrong tool for the job — and what the right one is."
 date: 2026-09-04
 category: "Compassionate Release · Supreme Court Update"

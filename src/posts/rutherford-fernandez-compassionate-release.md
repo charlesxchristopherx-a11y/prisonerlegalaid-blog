@@ -1,5 +1,5 @@
 ---
-title: "Supreme Court Limits Compassionate Release: What Rutherford and Fernandez Actually Changed"
+title: "Supreme Court Narrows Compassionate Release: What Changed"
 description: "The Supreme Court's May 2026 decisions in Rutherford v. United States and Fernandez v. United States narrow what can count as an 'extraordinary and compelling reason' for compassionate release. Here's what still works — and what doesn't."
 date: 2026-07-24
 category: "Compassionate Release · Supreme Court Update"

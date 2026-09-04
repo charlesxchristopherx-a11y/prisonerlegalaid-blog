@@ -1,5 +1,5 @@
 ---
-title: "What Is a § 2241 Habeas Petition — and How Is It Different From a § 2255 Motion?"
+title: "§ 2241 or § 2255: Which Petition Do You Actually File?"
 description: "28 U.S.C. § 2241 challenges how a federal sentence is being carried out, not the sentence itself. Here's when it applies, where to file it, and why federal prisoners so often confuse it with a § 2255 motion."
 date: 2026-08-09
 category: "Post-Conviction · § 2241"

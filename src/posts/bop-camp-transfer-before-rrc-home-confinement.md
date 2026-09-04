@@ -1,5 +1,5 @@
 ---
-title: "New BOP Policy: Camp Transfer Before Halfway House or Home Confinement — What It Actually Means"
+title: "New BOP Rule: Camp Transfer Before Halfway House or Home"
 description: "On May 28, 2026, the BOP announced it will transfer many eligible inmates to a minimum-security camp before they report to a halfway house or home confinement. Who qualifies, who's excluded, and what families should expect."
 date: 2026-07-30
 category: "Federal Prison News · BOP Policy"

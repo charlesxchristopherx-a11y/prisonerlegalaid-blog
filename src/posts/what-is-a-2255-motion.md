@@ -1,5 +1,5 @@
 ---
-title: "What Is a § 2255 Motion? A Federal Prisoner's Guide to Vacating a Sentence"
+title: "How to File a § 2255 Motion to Vacate a Federal Sentence"
 description: "28 U.S.C. § 2255 lets federal prisoners challenge a conviction or sentence in the court that imposed it. Here's what it covers, what it doesn't, and the one-year clock that governs it."
 date: 2026-07-22
 category: "Post-Conviction · § 2255"

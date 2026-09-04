@@ -1,5 +1,5 @@
 ---
-title: "Filing a 2255 Motion: Costs, Self-Representation, and Challenges"
+title: "What Does It Cost to File a § 2255 Motion Without a Lawyer?"
 description: "Learn about 2255 motion costs, self-filing options, and common challenges. This material is general educational information, not legal advice."
 date: 2026-09-02
 category: "Post-Conviction"

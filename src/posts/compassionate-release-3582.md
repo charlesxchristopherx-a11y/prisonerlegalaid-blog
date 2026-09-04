@@ -1,5 +1,5 @@
 ---
-title: "Compassionate Release Under § 3582(c)(1)(A): What Actually Qualifies"
+title: "Who Actually Qualifies for Compassionate Release?"
 description: "The First Step Act let federal prisoners file compassionate release motions directly with the court. Here's what 'extraordinary and compelling reasons' actually means in practice."
 date: 2026-07-23
 category: "Compassionate Release · § 3582"
