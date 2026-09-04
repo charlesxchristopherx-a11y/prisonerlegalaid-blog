@@ -306,7 +306,7 @@ module.exports = [
         heading: "The quarterly waiver — this is the important one",
         items: [
           "If your account accrues <strong>$30 or less in a quarterly billing cycle, the fees are waived entirely</strong> for that quarter.",
-          "By the judiciary's own figures, most PACER users pay nothing in a given quarter. Ordinary case-file retrieval usually lands inside the waiver.",
+          "Ordinary case-file retrieval — a docket sheet and a handful of documents — usually lands inside the waiver.",
           "Practical consequence: pulling one case's docket and its key filings will typically cost nothing. Broad name searching is what generates real bills, because search results are billed per results page with no cap."
         ]
       },
