@@ -1,0 +1,107 @@
+name: IndexNow submit
+
+# Notifies participating search engines (Bing, Yandex, Seznam, Naver) when
+# URLs are added or materially changed. The .blog covers time-sensitive BOP,
+# sentencing and Supreme Court developments, where discovery latency matters.
+# This SUPPLEMENTS the sitemap and Search Console -- it does not replace them.
+#
+# Runs after the daily publish so newly surfaced drip posts are included.
+on:
+  schedule:
+    - cron: "30 9 * * *"      # 09:30 UTC, 20 min after daily-publish
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Optional comma-separated URLs to submit instead of auto-detection"
+        required: false
+        type: string
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2      # need the previous commit to diff against
+
+      - name: Verify the key file is actually served
+        run: |
+          # IndexNow rejects submissions if the key file is not reachable at
+          # the site root. Fail here rather than submitting silently in vain.
+          CODE=$(curl -s -o /tmp/key.txt -w "%{http_code}" "https://prisonerlegalaid.blog/bc10900418a84a23a3fb1da926b6ed98.txt")
+          if [ "$CODE" != "200" ]; then
+            echo "::error::Key file not reachable (HTTP $CODE). Deploy the site first."
+            exit 1
+          fi
+          if [ "$(tr -d '[:space:]' < /tmp/key.txt)" != "bc10900418a84a23a3fb1da926b6ed98" ]; then
+            echo "::error::Key file content does not match the expected key."
+            exit 1
+          fi
+          echo "key file verified"
+
+      - name: Determine changed URLs
+        id: urls
+        run: |
+          python3 - <<'PY'
+          import subprocess, os, re, json
+          manual = """${{ inputs.urls }}""".strip()
+          urls = []
+          if manual:
+              urls = [u.strip() for u in manual.split(",") if u.strip()]
+          else:
+              # Posts added or modified in the last commit
+              diff = subprocess.run(
+                  ["git","diff","--name-only","HEAD~1","HEAD"],
+                  capture_output=True, text=True).stdout.split()
+              for f in diff:
+                  if f.startswith("src/posts/") and f.endswith(".md"):
+                      slug = os.path.basename(f)[:-3]
+                      urls.append(f"https://prisonerlegalaid.blog/blog/{slug}/")
+                  elif re.fullmatch(r"src/[a-z0-9-]+\.njk", f or ""):
+                      pass  # static page permalinks vary; submit manually if needed
+          urls = sorted(set(urls))
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write("list=" + json.dumps(urls) + "\n")
+              fh.write(f"count={len(urls)}\n")
+          print(f"{len(urls)} url(s) to submit")
+          for u in urls: print("  ", u)
+          PY
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.count != '0'
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          urls = json.loads(os.environ["URLS"])
+          body = {
+            "host": "prisonerlegalaid.blog",
+            "key": "bc10900418a84a23a3fb1da926b6ed98",
+            "keyLocation": "https://prisonerlegalaid.blog/bc10900418a84a23a3fb1da926b6ed98.txt",
+            "urlList": urls,
+          }
+          req = urllib.request.Request(
+              "https://api.indexnow.org/IndexNow",
+              data=json.dumps(body).encode(),
+              headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  print("IndexNow HTTP", r.status)
+          except urllib.error.HTTPError as e:
+              # 202 = accepted, 200 = ok. Anything else is worth surfacing.
+              print("IndexNow HTTP", e.code, e.read()[:300].decode(errors="replace"))
+              if e.code not in (200, 202):
+                  raise SystemExit(1)
+          PY
+        env:
+          URLS: ${{ steps.urls.outputs.list }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### IndexNow" >> $GITHUB_STEP_SUMMARY
+          echo "URLs submitted: ${{ steps.urls.outputs.count }}" >> $GITHUB_STEP_SUMMARY

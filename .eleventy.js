@@ -4,6 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/forms": "forms" });
   eleventyConfig.addPassthroughCopy({ "src/site.webmanifest": "site.webmanifest" });
+  // IndexNow ownership key. Must be reachable at the site root or IndexNow
+  // rejects every submission. Named by the key value itself, per the spec.
+  eleventyConfig.addPassthroughCopy({ "src/bc10900418a84a23a3fb1da926b6ed98.txt": "bc10900418a84a23a3fb1da926b6ed98.txt" });
 
   // NOTE: the Google Search Console verification file is NOT served from here.
   // Cloudflare Workers Assets strips the .html extension and 307-redirects
