@@ -1,0 +1,63 @@
+---
+layout: base.njk
+title: "Federal Filing Checklists — Deadlines, Fees, and What Goes Where"
+description: "Free step-by-step checklists for federal post-conviction filings: § 2255 motions, § 2241 and § 2254 habeas petitions, compassionate release, First Step Act time-credit disputes, and pulling court records from PACER."
+permalink: /checklists/
+pageModified: 2026-09-04
+---
+{#- Parent index for /checklists/<slug>/. Built at the same time as the
+    children, so this path never 404s -- the mistake that left /topics/
+    dead for a day. -#}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Federal Filing Checklists",
+  "description": {{ description | dump | safe }},
+  "url": "https://prisonerlegalaid.blog/checklists/",
+  "isPartOf": { "@id": "https://prisonerlegalaid.blog/#organization" },
+  "hasPart": [
+{%- for c in checklists %}
+    { "@type": "HowTo", "name": {{ c.title | dump | safe }}, "url": "https://prisonerlegalaid.blog/checklists/{{ c.slug }}/" }{% if not loop.last %},{% endif %}
+{%- endfor %}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prisonerlegalaid.blog/" },
+    { "@type": "ListItem", "position": 2, "name": "Checklists", "item": "https://prisonerlegalaid.blog/checklists/" }
+  ]
+}
+</script>
+
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Free Resource</p>
+    <h1>Federal filing checklists</h1>
+  </div>
+</div>
+
+<section class="wrap" style="max-width:900px;padding:0 20px 40px">
+  <div style="border-left:3px solid #14181f;background:#f6f7f9;padding:16px 18px;margin:0 0 28px;border-radius:0 4px 4px 0">
+    <p style="margin:0;font-size:17px;line-height:1.65">Most filings that fail never reach a judge on the merits. They fail on a deadline, a missing copy, an unexhausted remedy, or the wrong court. These checklists cover the mechanics &mdash; what the rules actually require, and in what order.</p>
+  </div>
+
+  <div class="posts">
+    {%- for c in checklists %}
+    <a class="post" href="/checklists/{{ c.slug }}/">
+      <span class="kicker">{{ c.label }}</span>
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.description }}</p>
+      <span class="more">Open the checklist &rarr;</span>
+    </a>
+    {%- endfor %}
+  </div>
+
+  <p style="margin:28px 0 0;font-size:16px">Need the form itself? Every official fillable PDF is in the
+    <a href="/forms/">federal court forms library</a> &mdash; unmodified, with a link to the issuing authority.
+    We never recreate or reformat a government form.</p>
+</section>
