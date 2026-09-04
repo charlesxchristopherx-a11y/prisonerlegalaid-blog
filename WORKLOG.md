@@ -8,6 +8,26 @@ both repos and say so in each entry.**
 
 ---
 
+## 2026-09-04 · chat · (this commit) — SEO backlog worked to the end of what data supports: P1.16, P1.11, P1.14, and a near-miss on /topics/
+
+**The one-line summary:** picked up `SEO-HANDOFF-2026-09-04.md` and worked the remaining queue in its stated order. Shipped P1.16 (search-intent titles), P1.11 (primary-source citation standard, machine-enforced) and P1.14 (six filing checklists). P0.4, P0.5 and P1.15 remain blocked on the Google service account and were not worked around.
+
+**Finding 1 — the citation audit came back clean, which is worth recording.** All 34 unique U.S. Reports citations across the 19 core articles were run through CourtListener's citation lookup before anything was written. 34 of 34 resolved, and every case name used in prose matched the returned cluster. No hallucinated, misattributed or drifted citation anywhere in the core set. Rutherford (No. 24-820) and Fernandez (No. 24-556) have no U.S. Reports page yet; both slip opinions were read directly and their holdings checked against what the articles claim. Both matched.
+
+**Finding 2 — near-miss on concurrent writes, caught only by git.** While this session was working, Zo shipped `/topics/` upstream at `b978d24` — the same 404 this session had independently found and fixed locally. The push was rejected on a fast-forward failure, which is the only reason it surfaced. The local duplicate was dropped in favor of Zo's version, which is better integrated (uses the site's `.posts` card pattern, carries the CTA and disclaimer); only the contextual linking survived, because `tools/link-audit.js` strips `<nav>` and `<footer>` and Zo's page was still reported as an orphan. **This is the Aug 31 duplicate-writer problem recurring in a milder form.** Two writers on `.blog` is now demonstrated, not theoretical. Worth deciding who owns structural changes here.
+
+**Finding 3 — the § 1983 scope decision could not be executed as literally stated.** Chris's instruction was to move § 1983 document intent to `.com`. Both available mechanisms are blocked by standing rules that are correct: no cross-brand CTA means the intent cannot be handed over by link, and redirecting or noindexing the only page with search impressions — with no Search Console access to measure the fallout — would destroy the site's only search signal. Implemented as strategy instead: P1.16 touched only the 19 hub-assigned post-conviction posts, § 1983 URLs and titles are untouched, and `.com` gets a written spec for Zo rather than a change from this repo.
+
+**P1.11 is enforced, not just documented.** `tools/authority-audit.js` fails if a core article has no `authorities:` block, if a cite has no url, or if a url points outside the approved primary-source hosts (uscode.house.gov, supremecourt.gov, courtlistener.com, govinfo.gov, ecfr.gov). Negative-tested by repointing one entry at example.com — exits 1. 19 core articles, 53 authority entries, passing.
+
+**P1.14 verification method, for anyone auditing:** every factual statement in the six checklists was checked against a primary source before writing — Rules Governing 2255 Proceedings (Rules 2–8) and 2254 Cases (Rules 2–3) from uscode.house.gov; 28 U.S.C. § 1914(a) verbatim; 18 U.S.C. § 3582(c)(1)(A) exhaustion clause verbatim; 28 C.F.R. §§ 542.13–.18 pulled from govinfo because eCFR blocks automated requests; PACER fees from the Electronic Public Access Fee Schedule. All 17 authority URLs on the new pages were resolved. **No government form was recreated, reformatted or paraphrased** — the checklists are original content about the forms and link the official PDFs already served from /forms/.
+
+**Flagged, not fixed:** the footer on every page links `prisonerlegalaid.com` and describes the civil rights offering. It predates this session and sits close to the no-cross-brand-CTA rule. Left alone deliberately — that is a branding and legal-position call, not a drafting one, and it overlaps the attorney-employment tension already flagged in `HANDOFF.md`.
+
+**Credentials note:** the GitHub PAT used this session is a classic full-scope token covering all three repos and has now been pasted into chat more than once, with an older one already readable in git history. A fine-grained token scoped to this repo with Contents: read/write would have been sufficient for everything done here. Rotation was recommended to Chris twice.
+
+---
+
 ## 2026-09-02 · chat · (this commit) — Content queue restarted: 6 new post-conviction articles, plus two findings that matter more than the posts themselves
 
 **The one-line summary:** `.blog` had published nothing since 2026-08-15 (18 days dark). Root cause was simply that nothing was writing new content — the drip mechanism itself was never broken. Wrote and pushed 6 fully-verified post-conviction articles, dated 2026-09-02 through 2026-09-07 for the existing daily-drip filter. Verified live: today's post (`equitable-tolling-prison-mail-delays-2255-deadline`) is showing on `/blog/` right now; the other five built correctly and are reachable by direct URL but correctly excluded from the index pending their dates, exactly as `.eleventy.js` is designed to do.
