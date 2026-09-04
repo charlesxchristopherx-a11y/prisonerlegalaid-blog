@@ -493,3 +493,35 @@ both repos and say so in each entry.**
   content or code changed this session.
 - Verified: n/a — log-only commit.
 - Open for next session: nothing from this session.
+
+## 2026-09-04 — SEO/authority upgrade: P0 (6/8) + P1 (4/8)
+
+**Directive:** PLA_BLOG_SEO_CLAUDE_HANDOFF_2026-09-03.md
+**Full handoff:** SEO-HANDOFF-2026-09-04.md (repo root)
+
+Completed and verified live:
+- P0.1 truthful dateModified (opt-in `modified:` front matter)
+- P0.2 truthful sitemap lastmod (per-page `pageModified:`, seeded from git)
+- P0.3 address normalized to 7901 4th St N # 35356 on .blog AND .com
+- P0.6/7 crawler + OAI-SearchBot access verified (were already correct)
+- P0.8 IndexNow (key file live, HTTP 200/202 confirmed)
+- P1.9 author architecture (/about-the-author/, Person schema, bylines)
+- P1.10 editorial standards (/editorial-standards/)
+- P1.12 five topic hubs at /topics/<slug>/, all 19 core posts assigned
+- P1.13 breadcrumbs, sibling links, tools/link-audit.js
+
+Blocked: P0.4 GA4 reporting, P0.5 Search Console dashboard, P1.15 refresh
+queue — all need a Google service account. Deliberately deferred: ~78
+impressions is not enough data for a dashboard to inform anything.
+
+Next, in order: P1.16 search-intent titles (highest value; the only page with
+impressions ranks for document intent), then P1.11 citation standard, then
+P1.14 tools expansion.
+
+Two corrections made live this session: author was wrongly described as
+OWNER of PLA LLC (he is employed by it), and both new pages initially
+asserted that no attorney review had occurred — review does occur, reviewers
+are deliberately unnamed.
+
+Baseline after this work: 66 pages, 0 broken internal links, 161/161 JSON-LD
+valid, 61 sitemap URLs, 0 malformed lastmod.
