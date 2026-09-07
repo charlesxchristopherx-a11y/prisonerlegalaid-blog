@@ -22,6 +22,52 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    // Legacy WordPress-era URLs (301).
+    //
+    // These paths do not exist in this repo and have been returning 404 since
+    // the Eleventy rebuild. They are not obscure: Search Console shows they
+    // carry 3,846 impressions and 7 clicks over the last eight months, which
+    // is ~91% of all search visibility this domain has. Two of them still sit
+    // at average position 9.0 and 9.2 -- Google is ranking pages that answer
+    // with a 404. Every impression is wasted and the accumulated equity is
+    // decaying.
+    //
+    // Each target below is the closest genuinely relevant live page. A 301 to
+    // an unrelated page is treated as a soft 404 by Google and recovers
+    // nothing, so relevance matters more than salvaging every last URL.
+    //
+    // Deliberately NOT redirected: /what-is-a-legal-brief/. It is the single
+    // largest source of impressions (1,372) and the worst of them -- it ranks
+    // for "legal brief meaning", "legal brief definition", "parts of a legal
+    // brief". That is law students, not families of federal prisoners. One
+    // click in eight months. There is no relevant live target, and pointing it
+    // at one would import the wrong topical signal into a site trying to be
+    // unmistakably about federal post-conviction relief. It stays 404, which
+    // is the honest answer for content that was removed.
+    const LEGACY_REDIRECTS = {
+      "/confidentiality-legal-services-prisoners/": "/",
+      "/confidentiality-in-legal-document-preparation-guide/": "/",
+      "/legal-consultation-for-inmates/": "/",
+      "/how-to-request-legal-consultation-case-planning/": "/",
+      "/legal-document-preparer-us/": "/",
+      "/benefits-of-legal-document-preparation-for-prisoners/": "/",
+      "/document-preparation-for-incarcerated-guide/": "/forms/",
+      "/strategies-for-litigation-planning-without-a-lawyer/": "/checklists/",
+      "/legal-merit-court-assessment/": "/case-file/",
+      "/advantages-of-affordable-legal-assistance-for-inmates/": "/pricing/",
+      "/civil-rights-litigation-justice-prison/": "/litigation/",
+      "/civil-rights-litigation-prisoners/": "/litigation/",
+      "/state-court-litigation-basics-usa/": "/topics/2254-habeas/",
+      "/hello-world/": "/"
+    };
+    {
+      const p = url.pathname.endsWith("/") ? url.pathname : url.pathname + "/";
+      const target = LEGACY_REDIRECTS[p];
+      if (target) {
+        return Response.redirect(new URL(target, url.origin).toString(), 301);
+      }
+    }
+
     // Cloudflare injects a managed robots.txt that allows search crawling but
     // carries no Sitemap: directive, so nothing points a crawler at the sitemap.
     // Serving our own here adds that pointer. (Mirrors the .com worker.)

@@ -71,6 +71,49 @@
   gtag('js', new Date());
   gtag('config', 'G-RBTXF3H1RX', { anonymize_ip: true });
 </script>
+<script>
+/* Conversion events. Until these existed, GA4 could measure that someone
+   arrived but not whether they did anything -- which made every SEO decision
+   on this site a guess. Delegated listeners on document so they cover every
+   page and any markup added later, with no per-template edits.
+
+   Events emitted:
+     call_click     -- tap on the business number (the primary conversion)
+     intake_submit  -- intake form submitted
+     form_download  -- an official court form PDF downloaded
+     checklist_view -- a filing checklist opened
+
+   hostname is sent on every event because .com and .blog share one GA4
+   property and must stay separable in reporting. */
+(function () {
+  function send(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({ site_host: location.hostname }, params || {}));
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      send('call_click', { link_url: href, page_path: location.pathname });
+    } else if (/\.pdf($|\?)/i.test(href)) {
+      send('form_download', {
+        file_name: href.split('/').pop().split('?')[0],
+        page_path: location.pathname
+      });
+    }
+  }, true);
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (f && f.tagName === 'FORM') {
+      send('intake_submit', { page_path: location.pathname });
+    }
+  }, true);
+  if (location.pathname.indexOf('/checklists/') === 0 && location.pathname !== '/checklists/') {
+    send('checklist_view', { page_path: location.pathname });
+  }
+})();
+</script>
 </head>
 <body>
 <div class="topstrip">
