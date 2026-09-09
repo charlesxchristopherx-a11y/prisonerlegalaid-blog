@@ -1,9 +1,9 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-09-09 by Zo, CLAIM-006 completion_
+_Updated: 2026-09-09 by Zo, CLAIM-007 completion_
 
 ## Status
-CLAIM-006 shipped in commit ff8c18ced42f781bcd88c92d403634b0ee4ccd1d; local build/link checks and Cloudflare live checks passed 2026-09-09 04:03 UTC. No open incidents.
+CLAIM-007 shipped in commit `1e1f63f267f48f2b28027b73b7dcf06c7c86f8e3`; local build/link checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger was not present locally or in the related repository's `origin/main` history, so it could not be updated here.
 
 ## Active work
 - (none claimed on this repo right now — check claude/00-IN-FLIGHT.md in the
