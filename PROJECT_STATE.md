@@ -1,15 +1,16 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-09-08 by Zo, on adding this file_
+_Updated: 2026-09-08 by Zo, CLAIM-005 completion_
 
 ## Status
-Live at HEAD b364328. Build clean. No open incidents.
+Source updated for CLAIM-005; deployment verification pending. No open incidents.
 
 ## Active work
 - (none claimed on this repo right now — check claude/00-IN-FLIGHT.md in the
   Prisonerlegalaid.com Claude Project for cross-repo claims before starting anything)
 
 ## Recently completed (last 7 days)
+- CLAIM-005 homepage pricing-copy fix — this commit; final commit SHA reported in the job completion.
 - Credential + attorney-claim correction — PR #2, merge commit b364328 — deployed
   2026-09-08 00:18 UTC, live-verified (author credential "Paralegal" not "Certified
   Paralegal"; attorney-oversight framing corrected; homepage "Experienced paralegal team")
