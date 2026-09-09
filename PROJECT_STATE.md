@@ -1,9 +1,9 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-09-09 by Zo, CLAIM-008 completion_
+_Updated: 2026-09-09 by Zo, CLAIM-008 merge completion_
 
 ## Status
-CLAIM-008 homepage case-review heading rename is applied on this branch and is pending pull-request review. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
+CLAIM-008 homepage case-review heading rename is live on main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701`. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
 
 ## Active work
 - (none claimed on this repo right now — check claude/00-IN-FLIGHT.md in the
@@ -11,7 +11,7 @@ CLAIM-008 homepage case-review heading rename is applied on this branch and is p
 
 ## Recently completed (last 7 days)
 - CLAIM-008 homepage case-review heading rename — one content file updated exactly per payload;
-  2026-09-09. Release pending the required pull request.
+  merged into main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701` on 2026-09-09.
 - PR #3 merged into main in merge commit `c153dd7d804ff456c44c60aec35911006442a748` on 2026-09-09; the Weekly Video Bot workflow claim guard is live on main and stops before rendering when another session's claim is active.
 - CLAIM-006 llms.txt + custom 404 page — implementation commit ff8c18ced42f781bcd88c92d403634b0ee4ccd1d; live-verified 2026-09-09 04:03 UTC (llms.txt 200 text/plain; missing path 404 with non-empty custom page).
 - CLAIM-005 homepage pricing-copy fix — this commit; final commit SHA reported in the job completion.
@@ -42,7 +42,7 @@ CLAIM-008 homepage case-review heading rename is applied on this branch and is p
 - (none active as of 2026-09-09)
 
 ## Next action
-No repo-specific action queued; CLAIM-008 release follows its required pull request.
+No repo-specific action queued.
 
 ---
 This file is the current-state snapshot for THIS REPO ONLY. Detailed history belongs in
