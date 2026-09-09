@@ -22,6 +22,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check project claim before rendering
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          text = Path("PROJECT_STATE.md").read_text()
+          match = re.search(r"## Claimed by another session\n(.*?)(?=\n## |\n---|\Z)", text, re.S)
+          if not match:
+              raise SystemExit("PROJECT_STATE.md is missing the claimed-section marker")
+          lines = [line.strip() for line in match.group(1).splitlines() if line.strip()]
+          active_claims = [line for line in lines if not line.startswith("- (none active")]
+          if active_claims:
+              print("Active PROJECT_STATE claim found:")
+              print("\n".join(active_claims))
+              raise SystemExit(1)
+          print("No active PROJECT_STATE claim; continuing.")
+          PY
+
       - name: Install fonts and ffmpeg
         run: |
           sudo apt-get update -qq
