@@ -3,14 +3,14 @@
 _Updated: 2026-09-09 by Zo, CLAIM-006 completion_
 
 ## Status
-Source updated for CLAIM-006; local build and link verification passed; deployment verification pending. No open incidents.
+CLAIM-006 shipped in commit ff8c18ced42f781bcd88c92d403634b0ee4ccd1d; local build/link checks and Cloudflare live checks passed 2026-09-09 04:03 UTC. No open incidents.
 
 ## Active work
 - (none claimed on this repo right now — check claude/00-IN-FLIGHT.md in the
   Prisonerlegalaid.com Claude Project for cross-repo claims before starting anything)
 
 ## Recently completed (last 7 days)
-- CLAIM-006 llms.txt + custom 404 page — this commit; final commit SHA reported in the job completion.
+- CLAIM-006 llms.txt + custom 404 page — implementation commit ff8c18ced42f781bcd88c92d403634b0ee4ccd1d; live-verified 2026-09-09 04:03 UTC (llms.txt 200 text/plain; missing path 404 with non-empty custom page).
 - CLAIM-005 homepage pricing-copy fix — this commit; final commit SHA reported in the job completion.
 - Credential + attorney-claim correction — PR #2, merge commit b364328 — deployed
   2026-09-08 00:18 UTC, live-verified (author credential "Paralegal" not "Certified
