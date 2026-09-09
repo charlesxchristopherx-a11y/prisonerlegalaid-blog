@@ -1,0 +1,35 @@
+# Writ Large
+
+> Writ Large is a federal post-conviction paralegal service operated by Prisoner Legal Aid LLC, working under the oversight of a Florida-licensed supervising attorney. It prepares documents for people building their own federal case — § 2255 motions, § 2241 habeas petitions, compassionate release motions, and First Step Act time-credit claims — and for their families. Writ Large is not a law firm, does not provide legal representation, and does not create an attorney-client relationship; self-represented (pro se) filers remain solely responsible for reviewing, signing, and filing their own documents. No outcome, timeline, or result is guaranteed.
+
+Site scope: federal post-conviction relief specifically. For civil-rights and prison-conditions claims arising during incarceration — excessive force, medical neglect, wrongful death, retaliation, or other § 1983 claims — see the affiliated site https://prisonerlegalaid.com, which this site's litigation network page links to directly.
+
+## Services
+
+- [Free Case Review](https://prisonerlegalaid.blog/#contact): No-cost intake. Tell us the case name, district, and what happened; get an honest assessment of what makes sense next, including when the answer is nothing yet.
+- [Get the Case File](https://prisonerlegalaid.blog/case-file/): The complete federal case file pulled from PACER, indexed and delivered organized, for a flat $149.
+- [Free Closer-to-Home Transfer Request](https://prisonerlegalaid.blog/transfer-request/): Generates a completed BOP Inmate Request to Staff citing 18 U.S.C. § 3621(b) — no account or payment required.
+- [Federal Court Forms Library](https://prisonerlegalaid.blog/forms/): Official fillable federal court forms for § 2255, § 2241/§ 2254 habeas, civil rights complaints, and in forma pauperis applications, plus a direct link to every U.S. district court.
+- [Full Lawsuit Support](https://prisonerlegalaid.blog/litigation/): How civil rights litigation — deliberate indifference, medical malpractice — works, and how the affiliated attorney network evaluates and accepts cases.
+- [Pricing](https://prisonerlegalaid.blog/pricing/): What is free, what is flat-rate ($149 for a case file), and what is quoted only after a case review, and why.
+
+## Learn
+
+- [Articles](https://prisonerlegalaid.blog/blog/): Plain-English guides to federal post-conviction relief, First Step Act time credits, compassionate release, and the procedural mistakes that sink otherwise-good motions.
+- [Topics](https://prisonerlegalaid.blog/topics/): The same article library organized by subject — § 2255 motions, § 2241 habeas, § 2254 habeas, compassionate release, First Step Act time credits.
+- [Filing Checklists](https://prisonerlegalaid.blog/checklists/): Step-by-step checklists covering deadlines, fees, and where each document goes, for the filing types above plus pulling records from PACER.
+- [Free Tools](https://prisonerlegalaid.blog/free-tools/): The free case review, transfer request generator, and a filing checklist, gathered in one place.
+
+## About
+
+- [About the Author](https://prisonerlegalaid.blog/about-the-author/): Who researches and writes this site's content, and their background.
+- [Editorial Standards](https://prisonerlegalaid.blog/editorial-standards/): How legal claims here are sourced against primary authority (case law and statutes), and how corrections are handled.
+- [Privacy Policy](https://prisonerlegalaid.blog/privacy/)
+- [Terms of Service](https://prisonerlegalaid.blog/terms/)
+- [Refund Policy](https://prisonerlegalaid.blog/refund-policy/)
+
+## Contact
+
+Phone: +1-786-408-5073 (Mon–Fri 9 AM–6 PM, Sat 10 AM–2 PM EST)
+Email: info@prisonerlegalaid.com
+Sitemap: https://prisonerlegalaid.blog/sitemap.xml

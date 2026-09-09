@@ -8,6 +8,15 @@ module.exports = function (eleventyConfig) {
   // rejects every submission. Named by the key value itself, per the spec.
   eleventyConfig.addPassthroughCopy({ "src/bc10900418a84a23a3fb1da926b6ed98.txt": "bc10900418a84a23a3fb1da926b6ed98.txt" });
 
+  // llms.txt (added 2026-09-09). A plain-text/Markdown overview of the site's
+  // real sections for AI agents that fetch it on demand (coding assistants,
+  // chat browsing). Has no effect on Google ranking or AI Overviews -- major
+  // search crawlers (GPTBot, ClaudeBot, PerplexityBot, Googlebot) read the
+  // HTML directly and skip this file -- so treat it as a low-cost, low-risk
+  // addition, not an SEO lever. Must stay accurate to the real nav/footer;
+  // update it in the same commit as any nav/footer link change.
+  eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
+
   // NOTE: the Google Search Console verification file is NOT served from here.
   // Cloudflare Workers Assets strips the .html extension and 307-redirects
   // /google<token>.html -> /google<token>, and Google's file verification wants
