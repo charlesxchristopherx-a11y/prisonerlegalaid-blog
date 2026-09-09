@@ -10,6 +10,7 @@ CLAIM-007 shipped in commit `1e1f63f267f48f2b28027b73b7dcf06c7c86f8e3`; local bu
   Prisonerlegalaid.com Claude Project for cross-repo claims before starting anything)
 
 ## Recently completed (last 7 days)
+- Weekly Video Bot workflow claim guard added on 2026-09-09; it stops before rendering when another session's claim is active.
 - CLAIM-006 llms.txt + custom 404 page — implementation commit ff8c18ced42f781bcd88c92d403634b0ee4ccd1d; live-verified 2026-09-09 04:03 UTC (llms.txt 200 text/plain; missing path 404 with non-empty custom page).
 - CLAIM-005 homepage pricing-copy fix — this commit; final commit SHA reported in the job completion.
 - Credential + attorney-claim correction — PR #2, merge commit b364328 — deployed
