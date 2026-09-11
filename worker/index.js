@@ -1,12 +1,12 @@
 // Prisoner Legal Aid — Worker entry point
 // Serves the static Eleventy build, plus one live API route that pulls
-// the latest videos from the Writ Large TV YouTube channel at request time.
+// the latest videos from the Prisoner Legal Aid YouTube channel at request time.
 // No redeploy is ever needed for new videos to appear — the Worker fetches
 // YouTube's channel feed server-side (no CORS restriction applies to
 // server-to-server fetches) and caches the result at the edge for 15 minutes.
 
-const CHANNEL_ID = "UCWGrdHP_8NanRsuV_BwR19A"; // @prisonerlegal — dedicated Writ Large channel
-const CHANNEL_URL = "https://www.youtube.com/@prisonerlegal";
+const CHANNEL_ID = "UC8OGpuULR69am3VVphh6lqw"; // @PrisonerLegalAidChannel — single consolidated house channel (2026-09-11)
+const CHANNEL_URL = "https://www.youtube.com/@PrisonerLegalAidChannel";
 const CACHE_SECONDS = 900; // 15 minutes
 
 export default {
