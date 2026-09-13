@@ -6,8 +6,14 @@ _Updated: 2026-09-12 by a claude.ai chat session, homepage hero photo added_
 CLAIM-008 homepage case-review heading rename is live on main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701`. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
 
 ## Active work
-- (none claimed on this repo right now — check claude/00-IN-FLIGHT.md in the
-  Prisonerlegalaid.com Claude Project for cross-repo claims before starting anything)
+- (none claimed on this repo right now)
+
+**CROSS-ACTOR CLAIM BOARD — READ BEFORE STARTING ANYTHING.** It is now committed
+to the prisonerlegalaid-com repository at `claude/00-IN-FLIGHT.md`, not only in
+Chris's Claude Project. A prior run of this repo recorded that it went looking for
+that file in git and could not find it; that gap is closed. It carries the full
+2026-09-12 change log for BOTH repos, the standing rules on the cases-won pages,
+the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
 - Homepage hero photo band ADDED — 2026-09-12, direct to main at Chris's express instruction
