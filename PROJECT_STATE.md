@@ -1,6 +1,6 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-09-09 by Zo, CLAIM-008 merge completion_
+_Updated: 2026-09-12 by a claude.ai chat session, homepage hero photo added_
 
 ## Status
 CLAIM-008 homepage case-review heading rename is live on main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701`. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
@@ -10,6 +10,14 @@ CLAIM-008 homepage case-review heading rename is live on main in merge commit `7
   Prisonerlegalaid.com Claude Project for cross-repo claims before starting anything)
 
 ## Recently completed (last 7 days)
+- Homepage hero photo band ADDED — 2026-09-12, direct to main at Chris's express instruction
+  (branch+PR step waived by him for this change). New files `src/img/hero-team-{wide,portrait}.{jpg,webp}`;
+  `src/index.njk` gained a `.hero-photo-band` figure after the hero CTA row; `src/css/style.css` gained the
+  matching styles (16:9 wide, 3:2 on mobile portrait so no one in the group shot is cropped out).
+  Same photo is in use on prisonerlegalaid.com. Verified with a local Eleventy build (76 files, no errors)
+  before pushing, then live-verified. NOTE: the hero photo is STOCK IMAGERY, not Writ Large or PLA
+  personnel — do not add any caption or alt text identifying these people as staff, leadership, or
+  attorneys. PLA has no attorneys.
 - CLAIM-008 homepage case-review heading rename — one content file updated exactly per payload;
   merged into main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701` on 2026-09-09.
 - PR #3 merged into main in merge commit `c153dd7d804ff456c44c60aec35911006442a748` on 2026-09-09; the Weekly Video Bot workflow claim guard is live on main and stops before rendering when another session's claim is active.
