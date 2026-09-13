@@ -259,3 +259,15 @@ article.post-body em{color:#39414B}
 @media(prefers-reduced-motion:reduce){
   .pointer{opacity:1;animation:none}
 }
+
+
+/* ---------- hero photo band ---------- */
+.hero-photo-band{margin-top:36px;max-width:640px;border:1px solid var(--rule);background:#fff}
+.hero-photo-band picture{display:block}
+.hero-photo-band img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%;display:block;filter:saturate(.9)}
+@media(max-width:640px) and (orientation:portrait){
+  .hero-photo-band img{aspect-ratio:3/2}
+}
+.hero-photo-band figcaption{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);padding:10px 14px;border-top:1px solid var(--rule)}
+.hero-photo-band figcaption .tag{display:inline-block;background:var(--stamp);color:#fff;padding:2px 7px;margin-right:9px;font-weight:700;letter-spacing:.06em}
+@media(max-width:640px){.hero-photo-band{max-width:100%}}
