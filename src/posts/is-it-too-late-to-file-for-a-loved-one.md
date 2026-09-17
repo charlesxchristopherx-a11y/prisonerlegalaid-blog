@@ -9,46 +9,129 @@ workItemId: "704028b7-8d0d-4a73-a4ac-08b289e68c61"
 verifierScore: 0.978
 ---
 
-If you’re reading this, you’re likely worried about a loved one who’s incarcerated and wondering if there’s still time to take action. You might feel stuck—like you’re running out of options or not sure where to start. This article will help you understand the legal deadlines that apply to post-conviction cases, explain what to look for, and guide you toward the next step. It’s not about giving you a yes or no answer, but about helping you see the facts clearly so you can act with confidence.
+*Updated September 17, 2026 — an earlier version of this article described the one-year filing deadline imprecisely and has been rewritten.*
 
-### The 1-Year Clock: Why It Matters
-Federal and state courts have strict rules about when a prisoner can file a legal challenge to their conviction or sentence. These rules are called *deadlines* or *statutes of limitations*. For federal cases, the main deadline is 1 year from a specific date, and for state cases, it’s similar but with some differences. If the 1-year clock has run out, it’s not always a dead end—but it’s critical to know where you stand now, not later.
+If you are reading this, someone you love is in prison and you are afraid the clock has run out.
+That fear is usually the right instinct and the wrong conclusion. The deadlines in this area are
+real and they are strict — but which deadline applies, and when it started, depends on facts about
+his case that you can actually go find. Most families who assume it is too late have never checked.
 
-The key is to figure out *when* the 1-year clock started ticking. This depends on four possible dates, outlined in **28 U.S.C. § 2255(f)**. Let’s walk through them one by one.
+Here is the honest shape of it, and what you can do this week.
 
-#### 1. The Date the Conviction Became Final
-This is the most straightforward trigger. If your loved one’s conviction was confirmed on appeal or after all appeals were exhausted, the 1-year clock starts on that date. For example, if they were convicted in 2018 and the appeal ended in 2019, the clock would have started in 2019. If today is 2023, that means the deadline would have passed in 2020. But if the appeal was delayed, this date might not be the right one.
+### First: which law applies depends on which court convicted him
 
-#### 2. The Date the Legal Right Was First Recognized
-Sometimes, a new legal rule can change what’s allowed in court. If a court later decides that a certain type of error invalidates a conviction, the 1-year clock starts from the date that rule was established. For instance, if a new Supreme Court decision made a specific type of evidence inadmissible, and your loved one’s case relied on that evidence, the clock would start from the date of that decision. This is rare but important to consider if there’s a potential for a new legal argument.
+This is the fork everything else hangs on, and it takes one minute to answer.
 
-#### 3. The Date the Grounds for the Claim Were Discovered
-If your loved one’s case involves a new piece of evidence or a previously unknown legal issue, the clock starts when that information came to light. For example, if a witness later confesses to lying during the trial, the 1-year period would begin when that confession was discovered. This is often the most complex trigger, as it requires proving when the information became available.
+**If he was convicted in federal court**, his motion is under **28 U.S.C. § 2255**, filed in the same
+court that sentenced him.
 
-#### 4. The Date the Petition Was Actually Filed
-This might sound confusing, but it’s a safeguard. If the 1-year clock was paused for some reason (like a pending state court action), the clock restarts when the petition is filed. This is less common but can apply in cases where state and federal processes overlap.
+**If he was convicted in state court**, his federal petition is under **28 U.S.C. § 2254**, and its
+deadline comes from **28 U.S.C. § 2244(d)**. He may also have state post-conviction remedies with
+their own separate deadlines, which vary by state.
 
-### How This Applies to State Cases
-If your loved one was convicted in a state court, the rules are similar but governed by **28 U.S.C. § 2244(d)(1)**. The 1-year deadline starts when the conviction becomes final, just like in federal cases. However, if they’ve already filed a state-level appeal or a *collateral attack* (like a state habeas corpus petition), the deadline is *tolled* (paused) while that process is ongoing. This means the clock doesn’t start until the state process is complete.
+Both routes carry a one-year limit. They are not the same one year, and mixing them up is the most
+common mistake we see.
 
-### What If the Deadline Has Passed?
-If the 1-year clock has expired, it’s not necessarily over. Courts may allow late filings in *narrow circumstances* through a process called *equitable tolling*. This is a legal doctrine that lets the court extend the deadline if the prisoner can show they were prevented from acting on time due to extraordinary circumstances. Examples include serious illness, legal confusion, or if the prison’s legal resources were unavailable. However, equitable tolling is not guaranteed and requires strong evidence. Courts apply it sparingly, so it’s not a fallback plan but a potential option if the facts align.
+### The one year does not always start where you think
 
-### Why Acting Now Matters
-Courts take deadlines seriously. Even if there’s a chance of equitable tolling, waiting too long can make it harder to prove your case. The best approach is to act as soon as possible. This means gathering documents, understanding the legal options, and seeking help from trusted resources. Writ Large is here to help you navigate this process, but we’re not a law firm—we provide *paralegal document preparation* to support self-represented individuals.
+For a federal conviction, § 2255(f) says the year runs from **the latest** of four dates:
 
-### Next Steps: What You Can Do Today
-If you’re ready to take action, here’s what to do next:
-1. **Gather documents**: Look for court records, appeal dates, and any evidence related to your loved one’s case.
-2. **Review the timeline**: Use the four trigger dates above to estimate when the 1-year clock started.
-3. **Contact Writ Large**: Our team can help you prepare the necessary documents and explain your options. Visit [prisonerlegalaid.blog](https://prisonerlegalaid.blog/) to get started.
+1. the date the judgment of conviction becomes final;
+2. the date an unlawful **government-created obstacle** to filing is removed, if that obstacle is
+   what prevented him from filing;
+3. the date the Supreme Court first recognized the right he is asserting — **but only if the Supreme
+   Court also made that right retroactive to cases on collateral review**; or
+4. the date the facts supporting his claim **could have been discovered through the exercise of due
+   diligence**.
 
-### Final Notes
-This material is general educational information. It is not legal advice. This material does not create an attorney-client relationship.
+Read the second one again, because it is the one families never know about. If the facility withheld
+his records, or blocked his access to the law library, or lost his mail, that is not just unfair —
+the statute may move his start date.
 
-Writ Large is a Prisoner Legal Aid resource providing paralegal document preparation, not legal representation; the client remains self-represented.
+Two cautions on the others, both of which matter more than they look.
 
-## Sources
+**"Latest of" is doing real work.** If two of these dates apply, the later one governs. That is
+sometimes the whole case.
 
-- [uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2255&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2255&num=0&edition=prelim)
-- [uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2244&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2244&num=0&edition=prelim)
+**Number three is narrower than it sounds.** A new Supreme Court decision only restarts the clock if
+the Court also made it retroactive on collateral review. Most decisions are not. A case in the news
+is not by itself a new deadline.
+
+**Number four is stricter than it sounds.** The statute does not say "when you found out." It says
+when the facts **could have been discovered with due diligence**. That is often an earlier date, and
+the gap between them is where petitions are lost.
+
+For a state conviction, § 2244(d)(1) sets out a parallel set of four triggers — finality on direct
+review, removal of a state-created obstacle, a newly recognized retroactive right, or discoverability
+of the factual predicate.
+
+### What "tolled" actually means, because this one is dangerous
+
+You will read that a pending state post-conviction case **tolls** the federal deadline. That is true,
+and it does not mean what most people take it to mean.
+
+Section 2244(d)(2) says the time a **properly filed** state post-conviction or collateral review
+application is pending "shall not be counted toward" the one-year period. It **pauses** the clock. It
+does not restart it, and it does not give back time already spent.
+
+So if ten months of his year had already run when the state petition was filed, he has **two months**
+when it ends. Not twelve. Families who believe otherwise wait — and that wait is the bar.
+
+Two more things about that provision. **"Properly filed" is not decoration** — an application that
+was not properly filed tolls nothing, and that is discovered after the year is gone. And a **direct
+appeal is different**: during direct review the clock has not started yet, so there is nothing to
+pause. Different mechanism entirely.
+
+### If the year has already run, two doors remain
+
+Neither is easy. Both are real, and the second one is the one almost nobody mentions.
+
+**Equitable tolling.** In *Holland v. Florida*, 560 U.S. 631 (2010), the Supreme Court held a
+petitioner is entitled to equitable tolling only if he shows "(1) that he has been pursuing his
+rights diligently, and (2) that some extraordinary circumstance stood in his way" and prevented
+timely filing.
+
+Both halves are required, and the first is where most attempts fail. Holland qualified because he
+wrote his lawyer over and over, contacted the courts and the state bar to get that lawyer removed,
+and filed his own petition the very day he learned his clock had expired. **Diligence is a record you
+either have or you don't.**
+
+Be clear about what does not count. The Court has held that "a garden variety claim of excusable
+neglect" — including a simple miscalculation that causes a missed deadline — does not warrant
+equitable tolling. **Not understanding the deadline is not, by itself, an excuse for missing it.** If
+you have read otherwise, that was wrong.
+
+**Actual innocence.** This is the door that goes unmentioned, and for some families it is the only
+one that matters. In *McQuiggin v. Perkins*, 569 U.S. 383 (2013), the Court confirmed that "in an
+extraordinary case, where a constitutional violation has probably resulted in the conviction of one
+who is actually innocent, a federal habeas court may grant the writ even in the absence of a showing
+of cause for the procedural default" — a credible showing of actual innocence can let a prisoner
+reach his constitutional claims "notwithstanding the existence of a procedural bar to relief."
+
+The bar is high and it requires new evidence, not a retelling of the trial. But an expired clock is
+not automatically the end of it.
+
+### What to do this week
+
+You do not need to resolve any of the above to start. You need the dates, and they exist on paper.
+
+1. **Get the docket.** The sentencing court's docket sheet shows the judgment date and every filing.
+   Federal dockets are available through PACER, and the clerk of court can tell you what a paper copy
+   costs.
+2. **Find the end of the appeal.** The date the appeal concluded — or the date the time to appeal
+   expired without one — is what most start-date questions turn on.
+3. **List anything already filed.** Any state post-conviction petition, with the dates it was filed
+   and decided. Those dates change the arithmetic.
+4. **Write down what he was never able to do, and why.** Records he asked for and did not get,
+   law-library access he was denied, mail that vanished, periods he was physically unable to work on
+   his case. Dates, names, what he asked for. This is what triggers two and four are built from, and
+   nobody reconstructs it later as well as they can now.
+5. **Do it now rather than when you feel ready.** Facilities purge files and staff transfer out. The
+   record is easiest to get the day you decide to get it.
+
+Prisoner Legal Aid prepares documents and requests records for families doing exactly this. We can
+look at the dates you gather and tell you what we see. Free case review: **786-408-5073**.
+
+Prisoner Legal Aid is not a law firm and has no attorneys. We prepare documents and gather records;
+the person we help remains self-represented. Nothing here is legal advice, and no outcome is
+guaranteed — the court decides, not us.
