@@ -123,6 +123,28 @@ layout: null
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  {#-
+    /terms/ and /refund-policy/ are live, footer-linked, and were missing from
+    this list until 2026-09-18 - the drift a hand-maintained sitemap eventually
+    produces. Kept hand-maintained deliberately: a collections.all rewrite was
+    built and tested and DROPPED NINE live pages, because Eleventy adds only the
+    FIRST page of a paginated template to collections unless
+    addAllPagesToCollections is set, and /checklists/* and /topics/* are
+    paginated. Net would have been -7 URLs. If this list is ever generated,
+    set that flag first and diff the output before trusting it.
+  -#}
+  <url>
+    <loc>{{ site }}/terms/</loc>
+    <lastmod>{{ lastmodFor("/terms/") }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>{{ site }}/refund-policy/</loc>
+    <lastmod>{{ lastmodFor("/refund-policy/") }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <url>
     <loc>{{ site }}/blog/</loc>
     <lastmod>{{ lastmodFor("/blog/") }}</lastmod>
