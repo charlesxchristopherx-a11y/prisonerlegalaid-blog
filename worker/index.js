@@ -36,15 +36,27 @@ export default {
     // an unrelated page is treated as a soft 404 by Google and recovers
     // nothing, so relevance matters more than salvaging every last URL.
     //
-    // Deliberately NOT redirected: /what-is-a-legal-brief/. It is the single
-    // largest source of impressions (1,372) and the worst of them -- it ranks
-    // for "legal brief meaning", "legal brief definition", "parts of a legal
-    // brief". That is law students, not families of federal prisoners. One
-    // click in eight months. There is no relevant live target, and pointing it
-    // at one would import the wrong topical signal into a site trying to be
-    // unmistakably about federal post-conviction relief. It stays 404, which
-    // is the honest answer for content that was removed.
+    // /what-is-a-legal-brief/ -- REVERSED 2026-09-18 by brain-session decision.
+    //
+    // THE PRIOR REASONING, kept because it is evidence-based and may well be
+    // right: it is the single largest source of impressions (1,372) and the
+    // worst of them -- it ranks for "legal brief meaning", "legal brief
+    // definition", "parts of a legal brief". That is law students, not families
+    // of federal prisoners. One click in eight months. There is no relevant
+    // live target, and pointing it at one imports the wrong topical signal into
+    // a site trying to be unmistakably about federal post-conviction relief.
+    // 404 is the honest answer for content that was removed, and Google treats
+    // a 301 to an unrelated page as a soft 404 anyway -- so this recovers
+    // little while muddying the topic.
+    //
+    // THE NEW REASONING: repeated 404s on indexed URLs depress crawl trust for
+    // the whole domain, and /blog/ is a defensible generic target.
+    //
+    // If impressions for "legal brief meaning" start converting into /blog/
+    // sessions that bounce, revert this line. The prior analysis is above so
+    // the decision can be re-made on evidence rather than re-litigated blind.
     const LEGACY_REDIRECTS = {
+      "/what-is-a-legal-brief/": "/blog/",
       "/confidentiality-legal-services-prisoners/": "/",
       "/confidentiality-in-legal-document-preparation-guide/": "/",
       "/legal-consultation-for-inmates/": "/",
