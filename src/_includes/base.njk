@@ -120,6 +120,48 @@
   }
 })();
 </script>
+<script>
+(function () {
+  var storageKey = 'pla_first_touch';
+  var storage;
+  try {
+    storage = window.sessionStorage;
+  } catch (error) {
+    return;
+  }
+
+  if (!storage.getItem(storageKey)) {
+    var params = new URLSearchParams(window.location.search);
+    var source = params.get('utm_source') || '';
+    if (!source && document.referrer) {
+      try {
+        var referrerHostname = new URL(document.referrer).hostname;
+        if (referrerHostname !== location.hostname) {
+          source = referrerHostname;
+        }
+      } catch (error) {
+        source = document.referrer;
+      }
+    }
+    if (!source) source = 'direct';
+    storage.setItem(storageKey, JSON.stringify({
+      traffic_source: source,
+      landing_page: window.location.pathname + window.location.search
+    }));
+  }
+
+  document.addEventListener('submit', function (event) {
+    var form = event.target;
+    if (!form || !form.querySelector('[name="traffic_source"]')) return;
+    var touch = {};
+    try {
+      touch = JSON.parse(storage.getItem(storageKey) || '{}');
+    } catch (error) {}
+    form.querySelector('[name="traffic_source"]').value = touch.traffic_source || 'direct';
+    form.querySelector('[name="landing_page"]').value = touch.landing_page || window.location.pathname + window.location.search;
+  }, true);
+})();
+</script>
 </head>
 <body>
 <div class="topstrip">

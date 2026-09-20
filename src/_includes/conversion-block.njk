@@ -1,0 +1,54 @@
+{#-
+  Shared conversion block, added 2026-09-20.
+
+  Until now .blog had exactly ONE form on the entire domain - the homepage.
+  /pricing/, /case-file/, /forms/, /litigation/ and /free-tools/ all had zero,
+  while articles linked to those pages and to a bare /#contact anchor. A reader
+  who finished an article and clicked through had no way to convert.
+
+  Same Formspree endpoint and the same form_type the homepage already sends, so
+  nothing downstream has to change. traffic_source and landing_page are filled
+  by the first-touch script in base.njk; GA4 intake_submit fires from the
+  delegated submit listener there too, so this needs no per-page script.
+-#}
+<section class="cta-block" id="contact">
+  <div class="wrap">
+    <form class="cform" action="https://formspree.io/f/xzzqvkjd" method="POST">
+      <h3>{{ ctaHeading | default("Talk to someone about your case.") }}</h3>
+      <p style="font-size:15px;line-height:1.7;margin:0 0 16px">{{ ctaBlurb | default("Tell us what is going on and we will follow up. There is no charge for the first conversation.") }}</p>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="New Writ Large intake — Prisoner Legal Aid">
+      <input type="hidden" name="form_type" value="Writ Large Document Services">
+      <input type="hidden" name="source_page" value="{{ page.url }}">
+
+      <label for="cb_name">Full name *</label>
+      <input id="cb_name" name="name" required autocomplete="name">
+
+      <label for="cb_phone">Phone *</label>
+      <input id="cb_phone" name="phone" type="tel" required autocomplete="tel">
+
+      <label for="cb_email">Email *</label>
+      <input id="cb_email" name="email" type="email" required autocomplete="email">
+
+      <label for="cb_service">What do you need? *</label>
+      <select id="cb_service" name="service_needed" required>
+        <option value="">Select…</option>
+        <option>§ 2255 Motion to Vacate Sentence</option>
+        <option>§ 2241 Habeas Corpus Petition</option>
+        <option>Compassionate Release</option>
+        <option>Early Termination of Supervision</option>
+        <option>Appeal</option>
+        <option>Not Sure — Please Advise</option>
+      </select>
+
+      <label for="cb_details">Briefly, what's going on? *</label>
+      <textarea id="cb_details" name="case_details" rows="4" required placeholder="Facility, sentence details, and any deadlines. We'll follow up for the rest."></textarea>
+
+      <input type="hidden" name="traffic_source" value="">
+      <input type="hidden" name="landing_page" value="">
+
+      <button type="submit">Submit</button>
+      <small>By submitting, you agree to our <a href="https://prisonerlegalaid.com/privacy-policy/">Privacy Policy</a>. This is a request for document preparation services, not legal advice, and does not create an attorney-client relationship. Submitting this form does not stop any deadline from running. If you are facing one, call <a href="tel:+17864085073">786-408-5073</a>.</small>
+    </form>
+  </div>
+</section>

@@ -211,6 +211,11 @@ pageModified: 2026-09-01
         </select>
         <label for="dt">Briefly, what's going on? *</label>
         <textarea id="dt" name="case_details" rows="4" required placeholder="Facility, sentence details, and any deadlines. We'll follow up for the rest."></textarea>
+        {#- Added 2026-09-20 with the first-touch script in base.njk. Without these
+            two inputs the homepage form - the only form .blog had - submitted with
+            no attribution at all, so .blog conversions were unattributable. -#}
+        <input type="hidden" name="traffic_source" value="">
+        <input type="hidden" name="landing_page" value="">
         <button type="submit">Submit</button>
         <small>By submitting, you agree to our <a href="https://prisonerlegalaid.com/privacy-policy/">Privacy Policy</a>. This is a request for document preparation services, not legal advice, and does not create an attorney-client relationship.</small>
       </form>
