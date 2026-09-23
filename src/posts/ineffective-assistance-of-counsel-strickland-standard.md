@@ -45,7 +45,7 @@ That standard cuts both ways, and it's worth being honest about both directions.
 
 ## Where this fits in a post-conviction case
 
-For federal prisoners, ineffective-assistance claims are almost always raised in a § 2255 motion rather than on direct appeal, and there's a structural reason for that: these claims typically depend on evidence outside the trial record — what the lawyer knew, what they investigated, what they told the client, why they made the choices they made — and a direct appeal is generally limited to what's already in that record. A § 2255 motion, filed in the sentencing court, is built for exactly this kind of fact development, which is part of why courts have historically treated it as the preferred vehicle for these claims rather than requiring them to be shoehorned into a direct appeal where the record often can't support them.
+For federal prisoners, ineffective-assistance claims are almost always raised in a [§ 2255 motion](/blog/what-is-a-2255-motion/) rather than on direct appeal, and there's a structural reason for that: these claims typically depend on evidence outside the trial record — what the lawyer knew, what they investigated, what they told the client, why they made the choices they made — and a direct appeal is generally limited to what's already in that record. A § 2255 motion, filed in the sentencing court, is built for exactly this kind of fact development, which is part of why courts have historically treated it as the preferred vehicle for these claims rather than requiring them to be shoehorned into a direct appeal where the record often can't support them.
 
 None of this means the bar is designed to be unbeatable. It means the bar has two separate parts, and a filing that only addresses the first — "my lawyer messed up" — without seriously grappling with the second — "and here's specifically how that changed what happened to me" — is incomplete by definition, no matter how frustrated or justified the underlying grievance is.
 
@@ -62,3 +62,9 @@ If a claim like this was never raised in state court, [procedural default](/blog
 ---
 
 *This is general information about how ineffective-assistance claims generally work under federal law — not legal advice for your specific case, record, or attorney's conduct, all of which require careful, individualized review.* If you believe your trial or plea was undermined by your lawyer's performance, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — our paralegal team can help you assess whether the record supports both parts of this standard before anything gets filed.
+
+More on this subject: [all articles on this topic](/topics/2255/).
+
+**Keep reading**
+
+- [Can You File a Second § 2255 Motion After the First Is Denied?](/blog/second-or-successive-motions-one-shot/)

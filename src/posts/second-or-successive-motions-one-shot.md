@@ -21,13 +21,13 @@ authorities:
   - cite: "Panetti v. Quarterman, 551 U.S. 930 (2007)"
     url: "https://www.courtlistener.com/opinion/145700/panetti-v-quarterman/"
 ---
-One of the hardest realities in post-conviction practice has nothing to do with the strength of any particular legal argument. It's timing, and it's structural: federal law treats a prisoner's first § 2255 motion, or first federal habeas petition, as close to a one-shot opportunity. Get it wrong, leave something out, or file it before you're ready, and the door to a second attempt doesn't just get harder to open — it gets locked behind a gatekeeper who has to grant permission before a district court can even consider what's on the other side.
+One of the hardest realities in post-conviction practice has nothing to do with the strength of any particular legal argument. It's timing, and it's structural: federal law treats a prisoner's first [§ 2255 motion](/blog/what-is-a-2255-motion/), or first federal habeas petition, as close to a one-shot opportunity. Get it wrong, leave something out, or file it before you're ready, and the door to a second attempt doesn't just get harder to open — it gets locked behind a gatekeeper who has to grant permission before a district court can even consider what's on the other side.
 
 ## The general rule
 
 For federal prisoners, § 2255(h) governs. A second or successive motion must be certified by a panel of the appropriate court of appeals before the district court is even allowed to consider it, and certification is available only on two narrow grounds: newly discovered evidence that, if proven and viewed against the evidence as a whole, would be sufficient to establish by clear and convincing evidence that no reasonable factfinder would have found the movant guilty of the offense, or a new rule of constitutional law, made retroactive to cases on collateral review by the Supreme Court, that was previously unavailable. Those are the only two doors. A stronger legal argument on an old claim, a different lawyer's read on the same facts, or genuine regret about not raising something the first time around — none of that qualifies.
 
-For state prisoners under § 2254, the parallel structure lives in § 2244(b), and it works similarly: as a general matter, a claim already presented in a prior application is not considered again, and a claim not presented in a prior application must be dismissed unless it relies on either a new, retroactive rule of constitutional law, or a factual predicate that could not have been discovered previously through due diligence — combined with facts sufficient to establish, by clear and convincing evidence, that no reasonable factfinder would have found the applicant guilty.
+For state prisoners under [§ 2254](/blog/the-one-year-clock-2254-habeas-deadline/), the parallel structure lives in § 2244(b), and it works similarly: as a general matter, a claim already presented in a prior application is not considered again, and a claim not presented in a prior application must be dismissed unless it relies on either a new, retroactive rule of constitutional law, or a factual predicate that could not have been discovered previously through due diligence — combined with facts sufficient to establish, by clear and convincing evidence, that no reasonable factfinder would have found the applicant guilty.
 
 ## The gatekeeping mechanism itself
 
@@ -61,3 +61,5 @@ If you are considering whether § 2241 offers an alternative route, note that *J
 ---
 
 *This is general information about how the second-or-successive framework generally works — not legal advice for your specific procedural history, which can involve real technical questions about what counts as a prior application.* If you're considering a second § 2255 motion or federal habeas petition, or you're not sure whether an earlier filing counts against you under this rule, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below before you file anything.
+
+More on this subject: [all articles on this topic](/topics/2255/).

@@ -28,3 +28,9 @@ One mistake worth avoiding: assuming a single opened envelope means you have an 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're not sure how to document a mail interference issue or draft a grievance that actually holds up, our <a href="/#services">Pro Se Services</a> can help you put together something clear and specific. And if you believe there's an ongoing pattern that's affected your case, our <a href="/litigation/">Full Lawsuit Support</a> program connects you with attorneys who handle exactly this kind of claim.
+
+**Keep reading**
+
+- [Your Right to Send and Receive Mail](/blog/your-right-to-send-and-receive-mail/)
+- [Your Right to Family Visitation](/blog/your-right-to-family-visitation/)
+- [Your Right to Practice Religion Behind Bars](/blog/your-right-to-practice-religion-behind-bars/)

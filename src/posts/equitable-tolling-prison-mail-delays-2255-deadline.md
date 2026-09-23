@@ -19,11 +19,11 @@ authorities:
   - cite: "Houston v. Lack, 487 U.S. 266 (1988)"
     url: "https://www.courtlistener.com/opinion/112126/houston-v-lack/"
 ---
-Missing the one-year deadline under 28 U.S.C. § 2255(f) usually ends a case before a court ever looks at the merits. But "usually" isn't "always." Two doctrines — equitable tolling and the prisoner mailbox rule — exist specifically because Congress and the courts recognized that people in custody don't control their own mail the way someone on the outside does.
+Missing the [one-year deadline](/blog/the-one-year-clock-2254-habeas-deadline/) under 28 U.S.C. § 2255(f) usually ends a case before a court ever looks at the merits. But "usually" isn't "always." Two doctrines — equitable tolling and the prisoner mailbox rule — exist specifically because Congress and the courts recognized that people in custody don't control their own mail the way someone on the outside does.
 
 ## The deadline itself, precisely
 
-Section 2255(f) sets a one-year limitation period on "a motion under this section" — meaning a § 2255 motion to vacate, set aside, or correct a federal sentence. That one-year clock runs from the latest of four trigger dates, most commonly the date the judgment of conviction became final. This deadline applies specifically to § 2255 motions. It does not govern § 2241 petitions, which have no equivalent statutory deadline, and it does not govern compassionate-release motions under 18 U.S.C. § 3582(c)(1)(A), which are gated by administrative exhaustion rather than a filing clock. Confusing the three is one of the more common — and costly — mistakes people make when they're researching their own case.
+Section 2255(f) sets a one-year limitation period on "a motion under this section" — meaning a [§ 2255 motion](/blog/what-is-a-2255-motion/) to vacate, set aside, or correct a federal sentence. That one-year clock runs from the latest of four trigger dates, most commonly the date the judgment of conviction became final. This deadline applies specifically to § 2255 motions. It does not govern [§ 2241 petition](/blog/what-is-a-2241-habeas-petition/)s, which have no equivalent statutory deadline, and it does not govern compassionate-release motions under 18 U.S.C. § 3582(c)(1)(A), which are gated by administrative exhaustion rather than a filing clock. Confusing the three is one of the more common — and costly — mistakes people make when they're researching their own case.
 
 ## The two-part test for equitable tolling
 
@@ -41,8 +41,10 @@ This matters even outside a tolling fight. If your motion sat in an outgoing mai
 
 ## What this looks like in practice
 
-If you believe mail delay affected your deadline, the pieces worth preserving are specific: the date you completed and handed over your motion, any request slips or cop-outs you submitted about outgoing legal mail, any responses (or lack of response) from staff, and whatever your facility's own mail log shows. Equitable tolling is an exception courts apply narrowly, and it's decided on the specific record you can put in front of the judge — not on a general sense that the system was slow.
+If you believe mail delay affected your deadline, the pieces worth preserving are specific: the date you completed and handed over your motion, any request slips or cop-outs you submitted about outgoing [legal mail](/blog/can-guards-read-your-legal-mail/), any responses (or lack of response) from staff, and whatever your facility's own mail log shows. Equitable tolling is an exception courts apply narrowly, and it's decided on the specific record you can put in front of the judge — not on a general sense that the system was slow.
 
 ---
 
 None of this is a substitute for review of your specific record and deadlines. If you're facing a § 2255 deadline or believe mail delay has already affected yours, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/2255/).

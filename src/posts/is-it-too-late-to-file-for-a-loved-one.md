@@ -87,7 +87,7 @@ pause. Different mechanism entirely.
 Neither is easy. Both are real, and the second one is the one almost nobody mentions.
 
 **Equitable tolling.** In *Holland v. Florida*, 560 U.S. 631 (2010), the Supreme Court held a
-petitioner is entitled to equitable tolling only if he shows "(1) that he has been pursuing his
+petitioner is entitled to [equitable tolling](/blog/equitable-tolling-prison-mail-delays-2255-deadline/) only if he shows "(1) that he has been pursuing his
 rights diligently, and (2) that some extraordinary circumstance stood in his way" and prevented
 timely filing.
 
@@ -105,7 +105,7 @@ you have read otherwise, that was wrong.
 one that matters. In *McQuiggin v. Perkins*, 569 U.S. 383 (2013), the Court confirmed that "in an
 extraordinary case, where a constitutional violation has probably resulted in the conviction of one
 who is actually innocent, a federal habeas court may grant the writ even in the absence of a showing
-of cause for the procedural default" — a credible showing of actual innocence can let a prisoner
+of cause for the [procedural default](/blog/what-is-procedural-default/)" — a credible showing of [actual innocence](/blog/actual-innocence-gateway-claims-schlup-v-delo/) can let a prisoner
 reach his constitutional claims "notwithstanding the existence of a procedural bar to relief."
 
 The bar is high and it requires new evidence, not a retelling of the trial. But an expired clock is

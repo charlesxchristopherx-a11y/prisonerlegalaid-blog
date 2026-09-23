@@ -23,7 +23,7 @@ authorities:
   <iframe src="https://www.youtube-nocookie.com/embed/nHyfnNgZg1o" title="Compassionate Release: Supreme Court Updates" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-On May 28, 2026, the Supreme Court decided two compassionate release cases the same day — Rutherford v. United States and Fernandez v. United States. Together, they close off two arguments federal prisoners had increasingly relied on since the First Step Act made compassionate release motions available directly to the courts. Compassionate release itself survives. These two specific theories don't.
+On May 28, 2026, the Supreme Court decided two [compassionate release](/blog/compassionate-release-3582/) cases the same day — Rutherford v. United States and Fernandez v. United States. Together, they close off two arguments federal prisoners had increasingly relied on since the First Step Act made compassionate release motions available directly to the courts. Compassionate release itself survives. These two specific theories don't.
 
 ## Rutherford: a nonretroactive law change is not, by itself, "extraordinary and compelling"
 
@@ -39,7 +39,7 @@ The second case addressed a different kind of motion: prisoners arguing that the
 
 The Court held that's not what compassionate release is for. A claim that a conviction or sentence is unlawful has to proceed under 28 U.S.C. § 2255 (or another legally authorized avenue), not as a compassionate release motion. Compassionate release addresses circumstances that arose after sentencing — it isn't a side door around the procedural rules, deadlines, and gatekeeping requirements that govern challenges to the conviction itself.
 
-**What this means:** if what you actually have is a claim that your conviction or sentence was unlawful, compassionate release is the wrong vehicle. That claim needs to go in a § 2255 motion, filed within its own procedural rules and deadlines.
+**What this means:** if what you actually have is a claim that your conviction or sentence was unlawful, compassionate release is the wrong vehicle. That claim needs to go in a [§ 2255 motion](/blog/what-is-a-2255-motion/), filed within its own procedural rules and deadlines.
 
 ## What still works after these decisions
 
@@ -55,3 +55,9 @@ The Court also left open questions it didn't decide — including whether other 
 ---
 
 This is general information, not legal advice, and it isn't a substitute for review of your specific record. If you're weighing whether your circumstances still support a compassionate release motion — or whether what you actually have is a § 2255 claim — <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/compassionate-release/).
+
+**Keep reading**
+
+- [Can Compassionate Release Fix a Bad Sentence? What Fernandez Says](/blog/compassionate-release-cannot-fix-a-bad-conviction-fernandez/)

@@ -17,7 +17,7 @@ Timing matters more than people expect. Notes written the same day, or as close 
 
 Consider a plausible scenario. A resident, call him D., is pat-searched roughly the same way every week — until one week an officer uses noticeably more force than usual, shoving him into a wall hard enough to bruise his shoulder. D. can't record it. What he can do that evening is write down the date, the approximate time, the officer's name if he has it or a description if he doesn't, exactly what was said before and during the search, and the fact that he felt pain immediately and that a bruise appeared the next morning. He asks to see medical the next day and makes sure the visit and any noted bruising end up in his medical file. Weeks later, if this becomes a claim under Hudson v. McMillian (1992) — the standard for excessive force, which turns on whether force was applied maliciously and sadistically rather than in a good-faith effort to maintain order — that same-day note is worth more than a recording would have been, because it's dated, specific, and paired with a medical record that corroborates the injury.
 
-If what happened involves possible sexual abuse or harassment, PREA — the Prison Rape Elimination Act — sets out reporting standards facilities are required to follow, including ways to report that don't necessarily go through the person you're reporting. Knowing that a PREA reporting channel exists, separate from the general grievance process, is worth having in your back pocket even if you never need it. Ask about it, and note the date you asked.
+If what happened involves possible sexual abuse or harassment, [PREA](/blog/reporting-abuse-know-your-rights-under-prea/) — the Prison Rape Elimination Act — sets out reporting standards facilities are required to follow, including ways to report that don't necessarily go through the person you're reporting. Knowing that a PREA reporting channel exists, separate from the general grievance process, is worth having in your back pocket even if you never need it. Ask about it, and note the date you asked.
 
 One misconception worth putting to rest: documentation isn't just for lawsuits. Good written records also feed directly into grievances, PREA reports, and requests for outside investigation — and they're what turns "he said, she said" into something a reviewing body can actually evaluate on its own terms. The habit of writing things down close in time, consistently, is worth building before you need it, not after.
 
@@ -26,3 +26,8 @@ One misconception worth putting to rest: documentation isn't just for lawsuits. 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to build a documentation habit or need help turning your notes into a grievance, PREA report, or other filing that actually holds together, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can walk you through it. And if what happened involves a serious injury or a pattern of abuse, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who can take it from there.
+
+**Keep reading**
+
+- [How to Preserve Evidence for a Future Lawsuit](/blog/how-to-preserve-evidence-for-a-future-lawsuit/)
+- [How to Document a Use-of-Force Incident So It Actually Holds Up](/blog/how-to-document-a-use-of-force-incident-so-it-actually-holds-up/)

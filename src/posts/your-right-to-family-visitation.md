@@ -25,4 +25,8 @@ One more thing worth saying plainly: rules vary a lot by state and by facility, 
 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
-If you're trying to sort out whether a visitation restriction in your family's situation looks more like ordinary policy or more like something worth challenging, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you put together grievances and documentation that actually hold up. And if the pattern points to something bigger — retaliation, a pattern of inconsistent enforcement, a real constitutional claim — our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases.
+If you're trying to sort out whether a visitation restriction in your family's situation looks more like ordinary policy or more like something worth challenging, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you put together grievances and [documentation](/blog/can-you-record-or-document-what-happens-behind-bars/) that actually hold up. And if the pattern points to something bigger — [retaliation](/blog/retaliation-after-a-grievance-building-the-record-before-you-need-it/), a pattern of inconsistent enforcement, a real constitutional claim — our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases.
+
+**Keep reading**
+
+- [Can Guards Read Your Legal Mail?](/blog/can-guards-read-your-legal-mail/)

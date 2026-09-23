@@ -23,9 +23,9 @@ If you believe your *conviction itself* was wrongful — not just that your circ
 
 ## What Fernandez actually held
 
-The petitioner in *Fernandez* had already lost his argument on direct appeal and again in a § 2255 motion. He then raised the same underlying claim in a compassionate-release motion, framing it as an "extraordinary and compelling reason" for early release — and initially won, getting released on grounds a court had already rejected twice.
+The petitioner in *Fernandez* had already lost his argument on direct appeal and again in a [§ 2255 motion](/blog/what-is-a-2255-motion/). He then raised the same underlying claim in a compassionate-release motion, framing it as an "extraordinary and compelling reason" for early release — and initially won, getting released on grounds a court had already rejected twice.
 
-The Supreme Court reversed. Its holding is direct: **the supposed invalidity of a conviction is not among the "extraordinary and compelling reasons" that justify compassionate release.** The Court's reasoning turned on what each statute is actually built to do. Section 2255 is the exacting, specifically-designed vehicle for challenging whether a conviction is valid — with its own deadlines, its own limits on repeat filings, and its own substantive standards. Section 3582(c)(1)(A), by contrast, is about mercy: it's built around a prisoner's *personal circumstances* — terminal illness, advanced age, safety risk, demonstrated rehabilitation — not about relitigating whether the conviction itself was sound.
+The Supreme Court reversed. Its holding is direct: **the supposed invalidity of a conviction is not among the "extraordinary and compelling reasons" that justify [compassionate release](/blog/compassionate-release-3582/).** The Court's reasoning turned on what each statute is actually built to do. Section 2255 is the exacting, specifically-designed vehicle for challenging whether a conviction is valid — with its own deadlines, its own limits on repeat filings, and its own substantive standards. Section 3582(c)(1)(A), by contrast, is about mercy: it's built around a prisoner's *personal circumstances* — terminal illness, advanced age, safety risk, demonstrated rehabilitation — not about relitigating whether the conviction itself was sound.
 
 Allowing compassionate release to double as a backdoor challenge to a conviction, the Court held, would let prisoners "bypass" and even "override" § 2255's careful limits — filing the same rejected argument again and again, for years, with no deadline and no cap, simply by relabeling it. The Court explicitly declined to let § 3582 be used that way.
 
@@ -41,4 +41,6 @@ For someone who's already lost a conviction-validity argument once, this can fee
 
 ---
 
-None of this is a substitute for review of your specific record. If you're not sure whether your situation calls for a § 2255 motion, a § 2241 petition, or a compassionate-release motion, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+None of this is a substitute for review of your specific record. If you're not sure whether your situation calls for a § 2255 motion, a [§ 2241 petition](/blog/what-is-a-2241-habeas-petition/), or a compassionate-release motion, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/compassionate-release/).

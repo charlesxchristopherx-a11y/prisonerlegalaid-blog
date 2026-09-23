@@ -31,7 +31,7 @@ The Sentencing Commission's policy statement identifies several categories court
 
 - **Terminal illness** — a serious and advanced illness with an end-of-life trajectory
 - **Serious medical conditions** that substantially diminish the ability to provide self-care in a correctional setting and are not expected to improve
-- **Advanced age**, combined with a serious deterioration in physical or mental health tied to aging, and a substantial portion of the sentence already served
+- **Advanced age**, combined with a serious deterioration in physical or [mental health](/blog/mental-health-care-behind-bars-what-youre-entitled-to/) tied to aging, and a substantial portion of the sentence already served
 - **Family circumstances** — most commonly, the death or incapacitation of the only available caregiver for the prisoner's minor child, or an incapacitated spouse/partner requiring caregiving
 - Other circumstances that, alone or combined, are of similar gravity to the categories above
 
@@ -41,8 +41,14 @@ Before filing with the court, you generally have to first submit a request to th
 
 ## Why the motion itself matters so much
 
-Because this is a discretionary remedy weighed against the § 3553(a) factors, the strength of the motion — how clearly it documents the medical or family circumstances, how it's supported by records, and how it addresses public safety and the sentencing factors head-on — genuinely affects the outcome. A thin motion listing a diagnosis without documentation, or one that doesn't grapple with the § 3553(a) factors at all, is an easy denial.
+Because this is a discretionary remedy weighed against the § 3553(a) factors, the strength of the motion — how clearly it documents the medical or family circumstances, how it's supported by records, and how it addresses public safety and the sentencing factors head-on — genuinely affects the outcome. A thin motion listing a diagnosis without [documentation](/blog/can-you-record-or-document-what-happens-behind-bars/), or one that doesn't grapple with the § 3553(a) factors at all, is an easy denial.
 
 ---
 
 If you're evaluating whether your situation may qualify, or you need a motion prepared with the medical and procedural documentation courts actually look for, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/compassionate-release/).
+
+**Keep reading**
+
+- [Supreme Court Narrows Compassionate Release: What Changed](/blog/rutherford-fernandez-compassionate-release/)

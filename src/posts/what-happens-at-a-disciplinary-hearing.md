@@ -5,7 +5,7 @@ date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"
 ---
-Getting a disciplinary write-up can feel like the ground just shifted under you — good time on the line, a transfer possibly coming, maybe segregation. It's natural to assume you're walking into something resembling a criminal trial, with all the protections that implies. You're not. A prison disciplinary hearing is a much thinner process than a courtroom, but it isn't nothing either, and understanding exactly what protections you do have is the difference between sitting there passively and actually using the hearing to your advantage.
+Getting a disciplinary [write-up](/blog/can-you-sue-over-a-wrongful-disciplinary-write-up/) can feel like the ground just shifted under you — good time on the line, a transfer possibly coming, maybe segregation. It's natural to assume you're walking into something resembling a criminal trial, with all the protections that implies. You're not. A prison disciplinary hearing is a much thinner process than a courtroom, but it isn't nothing either, and understanding exactly what protections you do have is the difference between sitting there passively and actually using the hearing to your advantage.
 
 The baseline for what due process looks like inside a disciplinary hearing comes from the Supreme Court's 1974 decision in Wolff v. McDonnell. The Court was blunt about the fact that prisoners don't get the full menu of rights a criminal defendant gets — no jury, generally no right to an attorney, no formal rules of evidence. But it also held that once a prisoner faces a real loss like the loss of good-time credit, some minimum due process is required, and it laid out what that floor looks like. It's not the same as a trial, but it's not nothing, and it's enforceable.
 
@@ -28,3 +28,8 @@ Winning a challenge to a disciplinary finding rarely means the underlying incide
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're putting together an appeal of a disciplinary finding, our <a href="/#services">Pro Se Services</a> can help you lay out exactly where the process fell short in a way that's clear and specific. And if the stakes involve a serious loss of good time or a lengthy segregation placement, our <a href="/litigation/">Full Lawsuit Support</a> program can put you in touch with an attorney who handles these challenges directly.
+
+**Keep reading**
+
+- [Can You Be Held in Solitary Indefinitely?](/blog/can-you-be-held-in-solitary-indefinitely/)
+- [5 Grievance Mistakes That Get Cases Thrown Out](/blog/5-grievance-mistakes-that-get-cases-thrown-out/)

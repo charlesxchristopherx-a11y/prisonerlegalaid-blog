@@ -23,7 +23,7 @@ Procedural default is one of the most common reasons a genuinely strong claim ne
 
 ## The general rule Martinez had to work around
 
-Before *Martinez*, the controlling rule (from *Coleman v. Thompson*) was blunt: a postconviction attorney's negligence generally does not count as "cause" to excuse a procedural default, because the attorney is legally your agent — under ordinary agency principles, you bear the consequences of your own representative's mistakes, even in a collateral proceeding where you have no constitutional right to counsel at all.
+Before *Martinez*, the controlling rule (from *Coleman v. Thompson*) was blunt: a postconviction attorney's negligence generally does not count as "cause" to excuse a [procedural default](/blog/what-is-procedural-default/), because the attorney is legally your agent — under ordinary agency principles, you bear the consequences of your own representative's mistakes, even in a collateral proceeding where you have no constitutional right to counsel at all.
 
 ## The narrow exception Martinez created
 
@@ -42,8 +42,8 @@ The Court's reasoning was practical, not constitutional: if the *only* place sta
 
 *Martinez* is deliberately narrow, and the Court was explicit about its limits:
 
-- It applies **only to the first, initial-review collateral proceeding** — not to an appeal from that proceeding, and not to a second or successive collateral proceeding.
-- It applies **only to claims of ineffective assistance at trial** — not to other defaulted constitutional claims.
+- It applies **only to the first, initial-review collateral proceeding** — not to an appeal from that proceeding, and not to a [second or successive](/blog/second-or-successive-motions-one-shot/) collateral proceeding.
+- It applies **only to claims of [ineffective assistance](/blog/ineffective-assistance-of-counsel-strickland-standard/) at trial** — not to other defaulted constitutional claims.
 - It applies **only in states that structurally require** trial-IAC claims to be raised in a collateral proceeding rather than on direct appeal. If your state lets you raise ineffective-assistance-of-trial-counsel claims on direct appeal, *Martinez* generally doesn't apply, because the structural gap it was designed to fix isn't present.
 - It does not, by itself, entitle you to habeas relief. Establishing "cause and prejudice" under *Martinez* only opens the door for a federal court to consider the merits of the underlying claim — it doesn't decide the claim in your favor.
 
@@ -52,3 +52,5 @@ Getting the *Martinez* analysis right starts with knowing your own state's proce
 ---
 
 None of this is a substitute for review of your specific state's procedural rules and your case record. If a procedural default is standing between you and a federal habeas claim, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/2254/).

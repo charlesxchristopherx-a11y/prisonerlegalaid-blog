@@ -21,6 +21,7 @@
 module.exports = [
   {
     slug: "2255-filing",
+    relatedPosts: ["what-is-a-2255-motion", "ineffective-assistance-of-counsel-strickland-standard", "second-or-successive-motions-one-shot", "the-certificate-of-appealability-explained", "equitable-tolling-prison-mail-delays-2255-deadline", "filing-a-2255-motion-costs-self-representation-and-challenges"],
     modified: "2026-09-04",
     label: "§ 2255 motion",
     title: "§ 2255 Filing Checklist — What Goes In, and Where It Goes",
@@ -79,6 +80,7 @@ module.exports = [
 
   {
     slug: "2241-filing",
+    relatedPosts: ["what-is-a-2241-habeas-petition", "2255-savings-clause-when-2241-works-instead", "bop-camp-transfer-before-rrc-home-confinement", "his-release-date-hasnt-moved"],
     modified: "2026-09-04",
     label: "§ 2241 petition",
     title: "§ 2241 Filing Checklist — Exhaustion, Venue, and the $5 Fee",
@@ -132,6 +134,7 @@ module.exports = [
 
   {
     slug: "2254-filing",
+    relatedPosts: ["the-one-year-clock-2254-habeas-deadline", "what-is-procedural-default", "actual-innocence-gateway-claims-schlup-v-delo", "aedpa-deference-2254d-why-state-court-being-wrong-isnt-enough", "martinez-v-ryan-post-conviction-lawyer-mistakes-excuse-default"],
     modified: "2026-09-04",
     label: "§ 2254 petition",
     title: "§ 2254 Filing Checklist — State Judgments in Federal Court",
@@ -184,6 +187,7 @@ module.exports = [
 
   {
     slug: "compassionate-release",
+    relatedPosts: ["compassionate-release-3582", "rutherford-fernandez-compassionate-release", "compassionate-release-cannot-fix-a-bad-conviction-fernandez"],
     modified: "2026-09-04",
     label: "Compassionate release",
     title: "Compassionate Release Preparation Checklist (§ 3582(c)(1)(A))",
@@ -229,6 +233,7 @@ module.exports = [
 
   {
     slug: "fsa-time-credits",
+    relatedPosts: ["first-step-act-time-credits-explained", "first-step-act-time-credits-which-offenses-are-excluded", "his-release-date-hasnt-moved", "bop-camp-transfer-before-rrc-home-confinement"],
     modified: "2026-09-04",
     label: "FSA time credits",
     title: "First Step Act Time Credit Dispute Checklist",
@@ -283,6 +288,7 @@ module.exports = [
 
   {
     slug: "pacer-records",
+    relatedPosts: ["how-to-request-medical-records-from-inside", "how-to-preserve-evidence-for-a-future-lawsuit", "can-you-record-or-document-what-happens-behind-bars"],
     modified: "2026-09-04",
     label: "Getting court records",
     title: "How to Pull Federal Court Records (PACER) Without Running Up a Bill",

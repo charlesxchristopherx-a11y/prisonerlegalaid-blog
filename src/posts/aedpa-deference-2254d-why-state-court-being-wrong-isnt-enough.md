@@ -15,7 +15,7 @@ authorities:
   - cite: "28 U.S.C. § 2254(d)"
     url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2254&num=0&edition=prelim"
 ---
-One of the hardest things to accept about § 2254 habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
+One of the hardest things to accept about [§ 2254](/blog/the-one-year-clock-2254-habeas-deadline/) habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
 
 ## The exact standard, in the statute's own words
 
@@ -43,3 +43,10 @@ Understanding this distinction early tends to shape which claims are worth devel
 ---
 
 None of this is a substitute for review of your specific record. If you're preparing a § 2254 petition and want help identifying the controlling Supreme Court precedent for your claims, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/2254/).
+
+**Keep reading**
+
+- [What Is Procedural Default — and Can It Still Be Excused?](/blog/what-is-procedural-default/)
+- [Can New Evidence of Innocence Reopen a Barred Habeas Claim?](/blog/actual-innocence-gateway-claims-schlup-v-delo/)

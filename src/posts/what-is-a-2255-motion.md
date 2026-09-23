@@ -34,7 +34,7 @@ Not every complaint about a conviction belongs in a § 2255 motion. Courts gener
 - Exceeded the maximum authorized by law
 - Is otherwise subject to collateral attack
 
-In practice, the single most common § 2255 claim is **ineffective assistance of counsel** — because that claim typically cannot be raised on direct appeal (it usually requires evidence outside the trial record) and is not subject to the same procedural-default rules as other claims.
+In practice, the single most common § 2255 claim is **[ineffective assistance of counsel](/blog/ineffective-assistance-of-counsel-strickland-standard/)** — because that claim typically cannot be raised on direct appeal (it usually requires evidence outside the trial record) and is not subject to the same procedural-default rules as other claims.
 
 ## The procedural trap: issues already litigated, or never raised
 
@@ -42,7 +42,7 @@ Two rules catch a lot of pro se petitioners:
 
 **Claims already decided on direct appeal** generally cannot be relitigated in a § 2255 motion, absent an intervening change in the law.
 
-**Claims that could have been raised on direct appeal, but weren't,** are usually barred unless you can show either cause for the default and actual prejudice, or that you're actually innocent. This is called procedural default, and it's one of the most common reasons § 2255 motions get denied without ever reaching the merits.
+**Claims that could have been raised on direct appeal, but weren't,** are usually barred unless you can show either cause for the default and actual prejudice, or that you're actually innocent. This is called [procedural default](/blog/what-is-procedural-default/), and it's one of the most common reasons § 2255 motions get denied without ever reaching the merits.
 
 ## The one-year clock
 
@@ -57,8 +57,10 @@ Miss the window, and the court may never reach the substance of your claim — r
 
 ## One motion, generally
 
-Federal prisoners generally get one § 2255 motion. A "second or successive" motion requires prior authorization from the court of appeals, and is limited to newly discovered evidence establishing innocence by clear and convincing evidence, or a new, retroactive rule of constitutional law. This makes getting the first motion right — complete, properly supported, and timely — critical.
+Federal prisoners generally get one § 2255 motion. A "[second or successive](/blog/second-or-successive-motions-one-shot/)" motion requires prior authorization from the court of appeals, and is limited to newly discovered evidence establishing innocence by clear and convincing evidence, or a new, retroactive rule of constitutional law. This makes getting the first motion right — complete, properly supported, and timely — critical.
 
 ---
 
 None of this is a substitute for review of your specific record and deadlines. If you're facing a § 2255 deadline or want your motion prepared by people who work in this area daily, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/2255/).

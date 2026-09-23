@@ -92,3 +92,21 @@ eleventyComputed:
   </div>
   <p style="font-size:14px;color:#5b6470;line-height:1.7;margin:22px 0 0"><em>General educational information, not legal advice, and not a prediction of any outcome. Deadlines and local rules vary by district &mdash; confirm them against your own court's rules and your own record. This material does not create an attorney-client relationship.</em></p>
 </section>
+
+{%- if cl.relatedPosts and cl.relatedPosts.length -%}
+<section class="related">
+  <h2>Articles that go with this checklist</h2>
+  {#- Added 2026-09-23. Checklists previously linked to ZERO posts, so every
+      article here was reachable only from /blog/ - one inbound link each, which
+      is what "discovered, currently not indexed" looks like from Google's side. -#}
+  <ul>
+  {%- for post in collections.posts -%}
+    {%- for slug in cl.relatedPosts -%}
+      {%- if post.fileSlug == slug -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}

@@ -21,7 +21,7 @@ In *Carlson v. Green*, 446 U.S. 14 (1980), the Supreme Court held that a federal
 
 That door has been closing steadily. In *Ziglar v. Abbasi*, 582 U.S. 120 (2017), the Court built a strict two-step test for any Bivens claim that doesn't match one of the three narrow contexts it had previously approved. Then in *Egbert v. Boule*, 596 U.S. 482 (2022), the Court sharpened that test into something close to a one-way ratchet — if a court has even a single reason to hesitate before recognizing a new Bivens claim, it must refuse to allow it, and the Court described creating any new Bivens remedy as "a disfavored judicial activity."
 
-The clearest signal for prisoners specifically came in *Goldey v. Fields*, 606 U.S. 942 (2025). A federal prisoner in solitary confinement alleged he'd been physically abused by prison officials and sued under the Eighth Amendment. The Supreme Court held that Bivens does not extend to an Eighth Amendment excessive-force claim against federal prison officials at all. That reasoning applies broadly across custodial claims — courts are now very likely to dismiss new Bivens suits from federal prisoners as presenting a "new context" that Egbert says should end the case.
+The clearest signal for prisoners specifically came in *Goldey v. Fields*, 606 U.S. 942 (2025). A federal prisoner in [solitary](/blog/can-you-be-held-in-solitary-indefinitely/) confinement alleged he'd been physically abused by prison officials and sued under the Eighth Amendment. The Supreme Court held that Bivens does not extend to an Eighth Amendment excessive-force claim against federal prison officials at all. That reasoning applies broadly across custodial claims — courts are now very likely to dismiss new Bivens suits from federal prisoners as presenting a "new context" that Egbert says should end the case.
 
 ## What still works: FTCA, and it's more useful than people assume
 
@@ -42,3 +42,8 @@ The tradeoff is procedural, not substantive: FTCA claims require filing an admin
 *This is general legal information, not legal advice for your specific situation. Whether FTCA, a remaining narrow Bivens theory, or another avenue fits your facts depends on exactly what happened and who was involved.*
 
 If you're evaluating a potential claim over something that happened in federal custody, Writ Large's <a href="/#services">Pro Se Services</a> can help you understand which path actually fits — and if litigation is the right next step, our sister service handles <a href="https://prisonerlegalaid.com" target="_blank" rel="noopener">full civil rights lawsuit support</a> at zero upfront cost.
+
+**Keep reading**
+
+- [What Is a Section 1983 Claim?](/blog/what-is-a-section-1983-claim/)
+- [What Is Qualified Immunity?](/blog/what-is-qualified-immunity/)

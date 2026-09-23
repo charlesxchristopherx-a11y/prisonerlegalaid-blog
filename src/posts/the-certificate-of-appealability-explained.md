@@ -21,7 +21,7 @@ authorities:
   - cite: "Buck v. Davis, 580 U.S. 100 (2017)"
     url: "https://www.courtlistener.com/opinion/4374577/buck-v-davis/"
 ---
-Losing a § 2255 motion or a habeas petition feels like the end of the road, but it isn't, at least not procedurally — there's an appeal available. What surprises a lot of people is that you don't get there automatically. Before a federal court of appeals can even look at whether the district court got it wrong, the prisoner has to clear a separate threshold: a certificate of appealability, universally shortened to COA. Without one, the court of appeals doesn't have jurisdiction to decide the merits at all — the case simply doesn't get that far.
+Losing a [§ 2255 motion](/blog/what-is-a-2255-motion/) or a habeas petition feels like the end of the road, but it isn't, at least not procedurally — there's an appeal available. What surprises a lot of people is that you don't get there automatically. Before a federal court of appeals can even look at whether the district court got it wrong, the prisoner has to clear a separate threshold: a certificate of appealability, universally shortened to COA. Without one, the court of appeals doesn't have jurisdiction to decide the merits at all — the case simply doesn't get that far.
 
 ## What the statute requires
 
@@ -57,3 +57,10 @@ The practical stakes of understanding this system are significant, and they comp
 ---
 
 *This is general information about how the certificate of appealability process generally works — not legal advice for your specific denial, deadline, or circuit's rules, which vary in ways that matter.* If your § 2255 motion or habeas petition was recently denied and you're weighing whether to seek a COA, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below before the appeal window closes.
+
+More on this subject: [all articles on this topic](/topics/2255/).
+
+**Keep reading**
+
+- [How Do You Prove Your Lawyer Was Ineffective?](/blog/ineffective-assistance-of-counsel-strickland-standard/)
+- [Can You File a Second § 2255 Motion After the First Is Denied?](/blog/second-or-successive-motions-one-shot/)

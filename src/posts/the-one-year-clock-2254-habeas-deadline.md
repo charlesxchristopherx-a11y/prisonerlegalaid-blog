@@ -21,7 +21,7 @@ authorities:
   - cite: "Lawrence v. Florida, 549 U.S. 327 (2007)"
     url: "https://www.courtlistener.com/opinion/145759/lawrence-v-florida/"
 ---
-Of all the deadlines in post-conviction practice, none gets more people in trouble than AEDPA's one-year statute of limitations for state habeas petitions. It sounds simple — one year — and that simplicity is exactly what makes it dangerous. The clock doesn't always start when people assume it does, and it can be paused by the right kind of state filing. Once the limitations period expires, the petition will ordinarily be dismissed as untimely unless statutory tolling, equitable tolling, the actual-innocence gateway, waiver, or another recognized doctrine applies. The deadline is not jurisdictional, but it is strictly enforced and should never be treated as optional.
+Of all the deadlines in post-conviction practice, none gets more people in trouble than AEDPA's one-year statute of limitations for state habeas petitions. It sounds simple — one year — and that simplicity is exactly what makes it dangerous. The clock doesn't always start when people assume it does, and it can be paused by the right kind of state filing. Once the limitations period expires, the petition will ordinarily be dismissed as untimely unless statutory tolling, [equitable tolling](/blog/equitable-tolling-prison-mail-delays-2255-deadline/), the actual-innocence gateway, waiver, or another recognized doctrine applies. The deadline is not jurisdictional, but it is strictly enforced and should never be treated as optional.
 
 ## Four possible start dates, not one
 
@@ -60,3 +60,9 @@ None of the exceptions above are things to count on. Equitable tolling is descri
 ---
 
 *This is general information about how AEDPA's statute of limitations generally works for state habeas petitions — not legal advice for your specific conviction, appeal history, or state filings, all of which affect the actual deadline in your case.* If you're not certain when your federal deadline runs, or you've had state filings that might affect the tolling calculation, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — this is one deadline where getting a second set of eyes before you file matters enormously.
+
+More on this subject: [all articles on this topic](/topics/2254/).
+
+**Keep reading**
+
+- [What Is Procedural Default — and Can It Still Be Excused?](/blog/what-is-procedural-default/)

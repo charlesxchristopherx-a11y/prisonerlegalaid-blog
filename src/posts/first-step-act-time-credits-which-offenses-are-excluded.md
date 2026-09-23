@@ -17,7 +17,7 @@ authorities:
   - cite: "18 U.S.C. § 3624(g)"
     url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3624&num=0&edition=prelim"
 ---
-Successfully completing evidence-based recidivism-reduction programming or productive activities under the First Step Act earns time credits — generally 10 days for every 30 days of participation, with an additional 5 days for people assessed at minimum or low recidivism risk who maintain that status. Those credits can be applied toward earlier transfer to prerelease custody or supervised release. But none of that matters if the underlying conviction falls on the statute's exclusion list.
+Successfully completing evidence-based recidivism-reduction programming or productive activities under the First Step Act earns [time credits](/blog/first-step-act-time-credits-explained/) — generally 10 days for every 30 days of participation, with an additional 5 days for people assessed at minimum or low recidivism risk who maintain that status. Those credits can be applied toward earlier transfer to prerelease custody or supervised release. But none of that matters if the underlying conviction falls on the statute's exclusion list.
 
 ## Where the exclusion list actually lives
 
@@ -42,7 +42,7 @@ Even for a prisoner whose offense isn't on the exclusion list, § 3632(d)(4)(E) 
 
 ## Why the 85% floor matters even for eligible offenses
 
-For prisoners who are eligible and who do accumulate enough credits, 18 U.S.C. § 3624(g) still requires at least 85% of the imposed term of imprisonment to be served before transfer to home confinement, separate from the underlying eligibility question. Time credits change *when* within that framework someone can transfer — they don't override the 85% floor itself.
+For prisoners who are eligible and who do accumulate enough credits, 18 U.S.C. § 3624(g) still requires at least 85% of the imposed term of imprisonment to be served before transfer to [home confinement](/blog/bop-camp-transfer-before-rrc-home-confinement/), separate from the underlying eligibility question. Time credits change *when* within that framework someone can transfer — they don't override the 85% floor itself.
 
 ## Why this is worth checking early
 
@@ -55,3 +55,9 @@ Being on the exclusion list forecloses time credits — it does not foreclose a 
 ---
 
 None of this is a substitute for review of your specific sentence computation. If you believe your FSA time credits have been miscalculated or wrongly withheld, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/first-step-act/).
+
+**Keep reading**
+
+- [Who Actually Qualifies for Compassionate Release?](/blog/compassionate-release-3582/)

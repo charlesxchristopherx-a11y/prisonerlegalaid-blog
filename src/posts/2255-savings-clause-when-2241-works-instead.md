@@ -17,7 +17,7 @@ authorities:
   - cite: "Jones v. Hendrix, 599 U.S. 465 (2023)"
     url: "https://www.courtlistener.com/opinion/10049669/jones-v-hendrix/"
 ---
-A recurring question in federal post-conviction cases is whether a claim belongs in a § 2255 motion or a § 2241 petition. Get it wrong, and a court can dismiss your filing without ever reaching the substance of your argument. The rule that decides this — the § 2255(e) savings clause — is narrower than a lot of jailhouse-lawyer advice suggests, and the Supreme Court narrowed it further in 2023.
+A recurring question in federal post-conviction cases is whether a claim belongs in a [§ 2255 motion](/blog/what-is-a-2255-motion/) or a [§ 2241 petition](/blog/what-is-a-2241-habeas-petition/). Get it wrong, and a court can dismiss your filing without ever reaching the substance of your argument. The rule that decides this — the § 2255(e) savings clause — is narrower than a lot of jailhouse-lawyer advice suggests, and the Supreme Court narrowed it further in 2023.
 
 ## Why § 2255 is normally the *only* option
 
@@ -33,7 +33,7 @@ But *Jones* also confirmed what the savings clause **does** still reach: claims 
 
 The question to ask isn't "is § 2255 hard" or "did I lose already" — courts have repeatedly held that § 2255 isn't "inadequate or ineffective" merely because a prior motion was denied, or because AEDPA's second-or-successive bar now blocks a new one. The real dividing line is *what kind of claim it is*:
 
-- **Attacking whether the conviction or sentence is valid** — wrong jury instruction, ineffective counsel, a statutory-interpretation argument, a constitutional defect — belongs in § 2255, subject to its one-year clock and second-or-successive limits.
+- **Attacking whether the conviction or sentence is valid** — wrong jury instruction, ineffective counsel, a statutory-interpretation argument, a constitutional defect — belongs in § 2255, subject to its [one-year clock](/blog/the-one-year-clock-2254-habeas-deadline/) and second-or-successive limits.
 - **Attacking how the sentence is being executed right now** — sentence computation errors, good-time or FSA credit disputes, disciplinary actions affecting release date, unlawful conditions tied to the sentence itself — is the traditional home of § 2241, filed in the district where you're confined, not where you were sentenced.
 
 Where a claim sits genuinely close to that line, the analysis gets fact-specific fast, and getting it wrong can mean losing the claim entirely to a jurisdictional dismissal rather than a ruling on the merits.
@@ -41,3 +41,5 @@ Where a claim sits genuinely close to that line, the analysis gets fact-specific
 ---
 
 None of this is a substitute for review of your specific record and deadlines. If you're unsure whether your claim belongs in a § 2255 motion or a § 2241 petition, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
+
+More on this subject: [all articles on this topic](/topics/2241/).
