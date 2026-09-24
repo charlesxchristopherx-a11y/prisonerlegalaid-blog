@@ -62,4 +62,4 @@ If you are considering whether § 2241 offers an alternative route, note that *J
 
 *This is general information about how the second-or-successive framework generally works — not legal advice for your specific procedural history, which can involve real technical questions about what counts as a prior application.* If you're considering a second § 2255 motion or federal habeas petition, or you're not sure whether an earlier filing counts against you under this rule, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below before you file anything.
 
-More on this subject: [all articles on this topic](/topics/2255/).
+More on this subject: [all articles on this topic](/topics/2255-motions/).

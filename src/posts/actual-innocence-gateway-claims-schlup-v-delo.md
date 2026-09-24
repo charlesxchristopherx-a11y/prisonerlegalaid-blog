@@ -60,4 +60,4 @@ The gateway most often matters when a claim is blocked by [procedural default](/
 
 *This is general information about how the actual-innocence gateway generally works in federal habeas practice — not legal advice for your specific evidence, claims, or procedural posture, all of which require careful individualized evaluation.* If you believe you have new evidence that could support this kind of claim, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — this is a fact-intensive area where getting the evidentiary presentation right matters as much as having the evidence itself.
 
-More on this subject: [all articles on this topic](/topics/2254/).
+More on this subject: [all articles on this topic](/topics/2254-habeas/).

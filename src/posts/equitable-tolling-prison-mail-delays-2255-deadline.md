@@ -47,4 +47,4 @@ If you believe mail delay affected your deadline, the pieces worth preserving ar
 
 None of this is a substitute for review of your specific record and deadlines. If you're facing a § 2255 deadline or believe mail delay has already affected yours, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
-More on this subject: [all articles on this topic](/topics/2255/).
+More on this subject: [all articles on this topic](/topics/2255-motions/).

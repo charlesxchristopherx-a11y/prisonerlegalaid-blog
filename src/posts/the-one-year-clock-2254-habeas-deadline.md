@@ -61,7 +61,7 @@ None of the exceptions above are things to count on. Equitable tolling is descri
 
 *This is general information about how AEDPA's statute of limitations generally works for state habeas petitions — not legal advice for your specific conviction, appeal history, or state filings, all of which affect the actual deadline in your case.* If you're not certain when your federal deadline runs, or you've had state filings that might affect the tolling calculation, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — this is one deadline where getting a second set of eyes before you file matters enormously.
 
-More on this subject: [all articles on this topic](/topics/2254/).
+More on this subject: [all articles on this topic](/topics/2254-habeas/).
 
 **Keep reading**
 

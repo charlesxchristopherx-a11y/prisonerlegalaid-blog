@@ -61,6 +61,13 @@ jobs:
             exit 1
           fi
 
+      # Added 2026-09-24. A broken internal link must not be able to reach
+      # production. Runs AFTER the Eleventy build and BEFORE deploy; a non-zero
+      # exit fails the job and nothing ships. Build mode checks INTERNAL links
+      # only - external links are checked by the live run, not here.
+      - name: Link check (build gate)
+        run: python3 tools/pla_linkcheck.py --dir _site --base https://prisonerlegalaid.blog
+
       - name: Deploy to Cloudflare Workers
         env:
           CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}

@@ -1,0 +1,33 @@
+name: Link check
+
+# Added 2026-09-24 after 15 broken internal links shipped unnoticed in commit
+# 7d21aeb (an internal-linking backfill that interpolated a hub KEY where the URL
+# needs a hub SLUG).
+#
+# IMPORTANT LIMITATION, read before trusting this as a gate:
+# pushes to this repo are deployed by CLOUDFLARE'S OWN BUILDER, not by GitHub
+# Actions. A failing job here therefore cannot BLOCK a push-triggered deploy - it
+# makes the break loud and immediate, and marks the commit failed. The real
+# blocking gate is the identical step inside daily-publish.yml, which owns the
+# scheduled rebuild that does most of the publishing here.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm ci
+      - name: Build site
+        run: npx @11ty/eleventy
+      - name: Link check
+        run: python3 tools/pla_linkcheck.py --dir _site --base https://prisonerlegalaid.blog

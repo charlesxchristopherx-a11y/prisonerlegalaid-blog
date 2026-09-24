@@ -58,7 +58,7 @@ The practical stakes of understanding this system are significant, and they comp
 
 *This is general information about how the certificate of appealability process generally works — not legal advice for your specific denial, deadline, or circuit's rules, which vary in ways that matter.* If your § 2255 motion or habeas petition was recently denied and you're weighing whether to seek a COA, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below before the appeal window closes.
 
-More on this subject: [all articles on this topic](/topics/2255/).
+More on this subject: [all articles on this topic](/topics/2255-motions/).
 
 **Keep reading**
 

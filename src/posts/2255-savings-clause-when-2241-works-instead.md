@@ -42,4 +42,4 @@ Where a claim sits genuinely close to that line, the analysis gets fact-specific
 
 None of this is a substitute for review of your specific record and deadlines. If you're unsure whether your claim belongs in a § 2255 motion or a § 2241 petition, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
-More on this subject: [all articles on this topic](/topics/2241/).
+More on this subject: [all articles on this topic](/topics/2241-habeas/).

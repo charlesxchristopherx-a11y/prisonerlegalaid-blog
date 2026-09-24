@@ -63,7 +63,7 @@ If a claim like this was never raised in state court, [procedural default](/blog
 
 *This is general information about how ineffective-assistance claims generally work under federal law — not legal advice for your specific case, record, or attorney's conduct, all of which require careful, individualized review.* If you believe your trial or plea was undermined by your lawyer's performance, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — our paralegal team can help you assess whether the record supports both parts of this standard before anything gets filed.
 
-More on this subject: [all articles on this topic](/topics/2255/).
+More on this subject: [all articles on this topic](/topics/2255-motions/).
 
 **Keep reading**
 

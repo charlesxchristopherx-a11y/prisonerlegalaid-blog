@@ -58,4 +58,4 @@ That's cold comfort to someone whose case actually was defaulted, but it points 
 
 *This is general information about how procedural default generally works in federal habeas review — not legal advice for your specific state, conviction, or filing history, all of which affect whether a default occurred and whether an exception applies.* If you're concerned that a claim in your case may have been defaulted, or you're not sure whether your state proceedings preserved it properly, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
-More on this subject: [all articles on this topic](/topics/2254/).
+More on this subject: [all articles on this topic](/topics/2254-habeas/).

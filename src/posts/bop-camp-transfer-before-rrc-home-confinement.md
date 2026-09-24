@@ -37,7 +37,7 @@ On May 28, 2026, the Federal Bureau of Prisons announced a change that affects h
 
 If you're trying to figure out whether this policy applies to a specific situation — especially where the eligibility categories aren't entirely clear-cut — that's exactly the kind of question worth raising with the unit team directly, backed up with the actual policy language rather than secondhand descriptions of it.
 
-Separately from this policy, if the underlying problem is simply distance — the facility is hundreds of miles from family — that's a different request with its own statutory basis. Section 601 of the First Step Act directs the BOP to place people within 500 driving miles of their primary residence where practicable. We built a [free tool that prepares that transfer request](/transfer-request/) on the official BOP form; it [costs](/blog/filing-a-2255-motion-costs-self-representation-and-counsel/) nothing and takes a few minutes.
+Separately from this policy, if the underlying problem is simply distance — the facility is hundreds of miles from family — that's a different request with its own statutory basis. Section 601 of the First Step Act directs the BOP to place people within 500 driving miles of their primary residence where practicable. We built a [free tool that prepares that transfer request](/transfer-request/) on the official BOP form; it [costs](/blog/filing-a-2255-motion-costs-self-representation-and-challenges/) nothing and takes a few minutes.
 
 ---
 

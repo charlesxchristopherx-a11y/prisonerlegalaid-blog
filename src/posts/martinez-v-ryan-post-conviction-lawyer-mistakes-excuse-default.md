@@ -53,4 +53,4 @@ Getting the *Martinez* analysis right starts with knowing your own state's proce
 
 None of this is a substitute for review of your specific state's procedural rules and your case record. If a procedural default is standing between you and a federal habeas claim, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
-More on this subject: [all articles on this topic](/topics/2254/).
+More on this subject: [all articles on this topic](/topics/2254-habeas/).
