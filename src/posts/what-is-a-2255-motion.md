@@ -64,3 +64,6 @@ Federal prisoners generally get one § 2255 motion. A "[second or successive](/b
 None of this is a substitute for review of your specific record and deadlines. If you're facing a § 2255 deadline or want your motion prepared by people who work in this area daily, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
 More on this subject: [all articles on this topic](/topics/2255-motions/).
+
+<!-- TEMP 2026-09-24: deliberate bad link to prove the build gate fails. Removed in the next commit. -->
+[gate test](/topics/this-slug-does-not-exist/)
