@@ -42,6 +42,8 @@ Understanding this distinction early tends to shape which claims are worth devel
 
 ---
 
+When it is time to put the petition together, [the § 2254 filing checklist](/checklists/2254-filing/) walks through the filing step by step before it goes to the federal court.
+
 None of this is a substitute for review of your specific record. If you're preparing a § 2254 petition and want help identifying the controlling Supreme Court precedent for your claims, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
 More on this subject: [all articles on this topic](/topics/2254-habeas/).

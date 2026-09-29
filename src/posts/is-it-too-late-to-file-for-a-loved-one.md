@@ -117,7 +117,7 @@ You do not need to resolve any of the above to start. You need the dates, and th
 
 1. **Get the docket.** The sentencing court's docket sheet shows the judgment date and every filing.
    Federal dockets are available through PACER, and the clerk of court can tell you what a paper copy
-   costs.
+   costs. Here is [how to pull his docket on PACER](/checklists/pacer-records/) without running up a bill.
 2. **Find the end of the appeal.** The date the appeal concluded — or the date the time to appeal
    expired without one — is what most start-date questions turn on.
 3. **List anything already filed.** Any state post-conviction petition, with the dates it was filed

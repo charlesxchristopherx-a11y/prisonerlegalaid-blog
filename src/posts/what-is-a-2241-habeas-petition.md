@@ -55,6 +55,8 @@ None of this is academic housekeeping. A court may dismiss a mislabeled filing, 
 
 That's the pattern worth sitting with: the law here isn't complicated because the underlying question is hard to state. It's complicated because two statutes with overlapping vocabulary route to different courts, different defendants, different deadlines, and different odds of ever reaching the merits. The practical consequence of choosing the wrong vehicle can be dismissal, transfer, avoidable delay, or expiration of an independently running deadline. Sometimes correction is possible, but no prisoner should assume that a mislabeled filing will preserve a claim or produce a second opportunity.
 
+Before anything is filed, [what a § 2241 petition needs](/checklists/2241-filing/) — exhaustion, the right court, and the fee — is set out step by step.
+
 ## Primary authorities
 
 - [28 U.S.C. § 2241](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim) — the general habeas corpus statute

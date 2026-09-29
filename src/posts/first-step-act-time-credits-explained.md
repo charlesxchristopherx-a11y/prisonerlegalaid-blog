@@ -35,6 +35,8 @@ If the administrative process doesn't resolve it, or drags out without a real an
 
 One thing worth being realistic about: a computation error doesn't automatically mean you're entitled to immediate release. Sometimes it means a correction of a few weeks, sometimes months, depending on how much programming is at issue and how far off the calculation was. But even a modest correction is real time, and it's worth pursuing precisely because the process to fix it exists and works when it's used correctly.
 
+If you want to [check his credits yourself](/checklists/fsa-time-credits/), the time-credit checklist goes through which records to request and how to pin down the exact discrepancy.
+
 ---
 
 *This is general information about how the law generally works — not legal advice for your specific situation. Every facility and case is different, and eligibility and outcomes depend on your specific record.*

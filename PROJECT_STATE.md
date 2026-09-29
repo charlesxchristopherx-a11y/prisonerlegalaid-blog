@@ -16,6 +16,13 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- D1 CHECKLIST INBOUND LINKS — 2026-09-29, hands session (THE ORDER item 3). Eight checklist
+  pages each went from 1 to 3 contextual inbound links (header/nav/footer stripped). 14 in-body
+  links across 12 posts plus /blog/ and /free-tools/ -> /checklists/. Brain's case-file pick
+  (what-happens-after-you-exhaust-administrative-remedies) was NOT used: grievance paperwork is not
+  a federal case file. Used filing-a-2255-motion-costs... (transcripts) and what-is-a-2255-motion
+  (evidence outside the trial record) instead. PACER second source: what-is-a-2255-motion,
+  at "date the judgment became final". Build link gate: 78 pages, 149 targets, 0 broken.
 - Homepage hero photo band ADDED — 2026-09-12, direct to main at Chris's express instruction
   (branch+PR step waived by him for this change). New files `src/img/hero-team-{wide,portrait}.{jpg,webp}`;
   `src/index.njk` gained a `.hero-photo-band` figure after the hero CTA row; `src/css/style.css` gained the

@@ -45,6 +45,8 @@ Because this is a discretionary remedy weighed against the § 3553(a) factors, t
 
 ---
 
+Before the motion is written, it helps to know [what to gather before you ask](/checklists/compassionate-release/) — starting with the request to the warden and the records behind the reason.
+
 If you're evaluating whether your situation may qualify, or you need a motion prepared with the medical and procedural documentation courts actually look for, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
 More on this subject: [all articles on this topic](/topics/compassionate-release/).

@@ -54,6 +54,8 @@ Being on the exclusion list forecloses time credits — it does not foreclose a 
 
 ---
 
+If his offense is not on the list, [the time-credit checklist](/checklists/fsa-time-credits/) shows how to build the record when the credits look wrong.
+
 None of this is a substitute for review of your specific sentence computation. If you believe your FSA time credits have been miscalculated or wrongly withheld, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
 More on this subject: [all articles on this topic](/topics/first-step-act/).

@@ -45,6 +45,8 @@ Two narrow escape valves exist for petitioners who miss the deadline outright. E
 
 None of the exceptions above are things to count on. Equitable tolling is described by the Supreme Court itself as unavailable for "garden variety" negligence — a simple miscalculation of a deadline generally isn't extraordinary, even though that's exactly the kind of mistake that puts people in this position in the first place. The actual-innocence gateway requires new, reliable evidence that most cases simply don't have. The realistic takeaway is that the one-year clock has to be calculated carefully and conservatively from day one — identifying the correct trigger date, tracking every state filing's effect on tolling, and building in a real margin rather than filing at the last possible moment and hoping the math holds up under scrutiny later.
 
+Once the dates are worked out, [what the filing requires](/checklists/2254-filing/) is laid out in one checklist.
+
 ## Primary authorities
 
 - [28 U.S.C. § 2244(d)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim) — the one-year limitations period and statutory tolling

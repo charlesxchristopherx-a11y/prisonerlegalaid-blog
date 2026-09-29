@@ -54,6 +54,8 @@ The Court also left open questions it didn't decide — including whether other 
 
 ---
 
+If his circumstances still fit, [the compassionate release checklist](/checklists/compassionate-release/) lists what to gather first, starting with the request to the warden.
+
 This is general information, not legal advice, and it isn't a substitute for review of your specific record. If you're weighing whether your circumstances still support a compassionate release motion — or whether what you actually have is a § 2255 claim — <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below.
 
 More on this subject: [all articles on this topic](/topics/compassionate-release/).
