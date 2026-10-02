@@ -25,6 +25,5 @@ None of this is about being combative. It's about being organized in a system th
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to put together a records request, a follow-up letter, or a grievance that actually holds up on paper, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you draft documents that are clear, specific, and built to create the record you need. And if a medical situation has already caused real harm and you think it may need an attorney's attention, our <a href="/litigation/">Full Lawsuit Support</a> program can help connect you with one.

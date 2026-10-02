@@ -23,6 +23,5 @@ It also helps to understand that [qualified immunity](/blog/what-is-qualified-im
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you've just finished the grievance process and need help figuring out exactly what your final exhaustion date is and organizing your documentation before a filing deadline, our <a href="/#services">Pro Se Services</a> can walk through it with you. And if the deadline is close or the claim is complex, our <a href="/litigation/">Full Lawsuit Support</a> program can get you in front of an attorney quickly enough to actually matter.

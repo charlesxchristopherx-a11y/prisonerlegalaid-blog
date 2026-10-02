@@ -23,6 +23,5 @@ None of this means don't file. It means go in with realistic expectations and bu
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're weighing whether a § 1983 claim is worth pursuing and want help thinking through how qualified immunity might apply to your facts, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you prepare a stronger, better-documented filing. And if your situation touches on a right that's well established but the case itself is complicated, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these claims regularly.

@@ -36,7 +36,6 @@ That last distinction — deliberate indifference versus ordinary negligence or 
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 ## "What form do I file for a 1983 claim?"
 

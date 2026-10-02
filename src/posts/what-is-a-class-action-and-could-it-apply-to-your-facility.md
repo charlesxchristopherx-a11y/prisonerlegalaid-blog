@@ -23,7 +23,6 @@ If you think your situation might fit this pattern, the most useful thing you ca
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 Sorting out whether your situation is more of an individual claim or part of a shared pattern worth pursuing together is exactly the kind of thing worth getting help with early. Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you build the [documentation](/blog/can-you-record-or-document-what-happens-behind-bars/) that makes any claim stronger, and our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney if what you're describing looks like it could affect more people than just you.
 

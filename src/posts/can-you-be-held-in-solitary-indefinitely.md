@@ -25,6 +25,5 @@ None of this means every long segregation stay is unconstitutional, and it's imp
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to put together a record of a segregation placement — classification reviews, grievance copies, a timeline that actually holds together — our <a href="/#services">Pro Se Services</a> can help you organize it into something a court can use. And if the pattern looks like it's crossed into genuinely indefinite, poorly reviewed isolation, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases and can evaluate whether it's worth pursuing.

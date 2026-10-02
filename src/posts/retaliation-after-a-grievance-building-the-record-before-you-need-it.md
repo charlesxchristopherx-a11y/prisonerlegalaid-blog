@@ -25,6 +25,5 @@ None of this requires legal training. It requires a notebook, a pen, and the dis
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're already keeping a timeline like this and want help turning it into a properly formatted grievance, declaration, or exhibit log, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you organize what you've documented into something a grievance office or court can actually use. And if the pattern you're seeing looks serious — repeated retaliation, escalating discipline, or conduct tied to a protected report like a PREA complaint — our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases before too much time passes.

@@ -23,7 +23,6 @@ One more thing worth knowing: facilities have real discretion here, and a rule d
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If mail is being rejected without a clear reason and you want help requesting that explanation in writing or building a grievance around it, our <a href="/#services">Pro Se Services</a> can help you put the paperwork together. And if a pattern of mail interference looks serious enough to need more than a grievance, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who can take a closer look.
 

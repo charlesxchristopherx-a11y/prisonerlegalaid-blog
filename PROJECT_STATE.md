@@ -16,6 +16,13 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- DISCLAIMER SWEEP (class 1 of 2) — 2026-10-01/02, hands session, Hands Brief 17 Task 3.
+  Removed "not a law firm / not attorneys / not legal advice / general information" boilerplate
+  from article footers and landing-page footer blocks per claude/00-NO-DISCLAIMER-RULE-2026-09-13.
+  Accurate service sentences, deadline urgency, the 988 line and "we can help you reach one" kept.
+  HELD for a ruling (not touched): legal pages (terms/privacy/disclosures), form consent text,
+  "Are you attorneys?" FAQ, about-page identity lines, pro-se plan/services scope lines, site
+  footers in base.njk, llms.txt, team/ pages, pricing line. Link gate PASS.
 - D1 CHECKLIST INBOUND LINKS — 2026-09-29, hands session (THE ORDER item 3). Eight checklist
   pages each went from 1 to 3 contextual inbound links (header/nav/footer stripped). 14 in-body
   links across 12 posts plus /blog/ and /free-tools/ -> /checklists/. Brain's case-file pick

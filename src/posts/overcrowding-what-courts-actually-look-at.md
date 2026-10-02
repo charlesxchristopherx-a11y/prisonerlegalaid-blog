@@ -25,6 +25,5 @@ If you're dealing with overcrowding conditions right now, the most useful thing 
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to build that kind of documented record and aren't sure how to phrase a grievance so it holds up, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you prepare it properly. And if the harm you're describing is serious and ongoing, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles conditions-of-confinement cases.

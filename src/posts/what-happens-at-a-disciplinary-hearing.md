@@ -25,7 +25,6 @@ Winning a challenge to a disciplinary finding rarely means the underlying incide
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're putting together an appeal of a disciplinary finding, our <a href="/#services">Pro Se Services</a> can help you lay out exactly where the process fell short in a way that's clear and specific. And if the stakes involve a serious loss of good time or a lengthy segregation placement, our <a href="/litigation/">Full Lawsuit Support</a> program can put you in touch with an attorney who handles these challenges directly.
 

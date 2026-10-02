@@ -25,7 +25,6 @@ Faith doesn't stop being real or important because someone's incarcerated, and t
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you've had a religious accommodation denied and want help putting together a clear written request or grievance that lays out the RLUIPA standard properly, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you draft it. And if a denial has been ongoing or especially serious, our <a href="/litigation/">Full Lawsuit Support</a> program can help connect you with an attorney who handles these cases.
 

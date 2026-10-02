@@ -23,6 +23,5 @@ One more thing worth doing: send follow-ups in a form that creates its own paper
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If your grievance has gone quiet and you're not sure how your facility's deadlines work or how to document the silence properly, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you put together a clear, well-organized record. And if this is tangled up in a bigger issue — a denial of [medical care](/blog/do-you-have-a-right-to-see-a-doctor-behind-bars/), an injury, ongoing [retaliation](/blog/retaliation-after-a-grievance-building-the-record-before-you-need-it/) — our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney to take it further.

@@ -132,6 +132,6 @@ You do not need to resolve any of the above to start. You need the dates, and th
 Prisoner Legal Aid prepares documents and requests records for families doing exactly this. We can
 look at the dates you gather and tell you what we see. Free case review: **786-408-5073**.
 
-Prisoner Legal Aid is not a law firm and has no attorneys. We prepare documents and gather records;
-the person we help remains self-represented. Nothing here is legal advice, and no outcome is
+We prepare documents and gather records;
+the person we help remains self-represented. No outcome is
 guaranteed — the court decides, not us.

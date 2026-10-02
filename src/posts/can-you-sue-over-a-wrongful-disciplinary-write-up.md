@@ -23,7 +23,6 @@ Whatever your specific system calls it — an administrative appeal, a grievance
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're staring down an appeal deadline and need help putting together a clear, well-organized challenge, our <a href="/#services">Pro Se Services</a> can walk you through drafting it properly. And if your situation involves a pattern of retaliation or a hearing process that looks seriously broken, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases.
 

@@ -23,6 +23,5 @@ If this is happening to you, the same instinct that helps with almost every pris
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're seeing a pattern like this and want help turning your notes into a grievance or a formal record, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can walk you through putting it together. And if the pattern looks like real retaliation or abuse rather than routine security practice, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who can evaluate whether you have a claim worth pursuing.

@@ -23,7 +23,6 @@ What you can actually do while it's happening matters more than most people real
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you or someone you love is trying to build a written record of a medical request that's been ignored, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you put together grievances and documentation that hold up. And if what's happening looks like a real pattern of deliberate indifference rather than a single slow week, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these claims.
 

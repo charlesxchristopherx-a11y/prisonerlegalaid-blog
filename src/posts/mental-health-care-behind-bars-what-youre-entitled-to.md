@@ -23,6 +23,5 @@ If you're currently dealing with a mental health crisis or watching someone you 
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to get your documentation in order — record requests, grievance logs, a timeline that actually holds together — our <a href="/#services">Pro Se Services</a> can help you build the paperwork the right way from the start. And if what you're describing sounds like it's crossed into a pattern serious enough to need an attorney, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with one who handles these cases.

@@ -27,7 +27,6 @@ None of this means the system is designed to be impossible — it means it's des
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're staring down a grievance form and don't want to guess your way through it, our <a href="/#services">Pro Se Services</a> can help you draft one that names the right people, requests real relief, and tracks the deadlines your facility actually uses. And if your situation looks like it might need to go further than the grievance office, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who knows how exhaustion issues get litigated.
 

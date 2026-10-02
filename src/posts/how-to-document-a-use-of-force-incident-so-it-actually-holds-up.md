@@ -25,7 +25,6 @@ A few concrete habits make all of this easier to actually do under pressure. Kee
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to put an incident like this into a formal written record — a grievance, a declaration, a demand letter — Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you organize what you've documented into something a reviewing body will actually take seriously. And if the injury or the pattern behind it looks like it's more than you should navigate alone, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases.
 

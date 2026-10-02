@@ -25,6 +25,5 @@ None of this works, though, if the record isn't built as it happens. Memory fade
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to sort out whether what happened to you looks like retaliation and want help putting the paperwork together, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can help you organize your documentation and prepare grievances and filings that hold up. And if the pattern is serious — a transfer, a real injury, a documented campaign of harassment — our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who handles these cases.

@@ -23,6 +23,5 @@ It's worth saying clearly that using these reporting channels is your right, not
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you or someone you know needs to talk through reporting options, understand what a facility is supposed to provide, or just needs a confidential way to reach out for help, <a href="/#contact">Prisoner Legal Aid's intake page</a> offers a confidential intake — reach out whenever you're ready, at your own pace.

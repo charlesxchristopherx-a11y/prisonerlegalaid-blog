@@ -39,7 +39,6 @@ The tradeoff is procedural, not substantive: FTCA claims require filing an admin
 
 ---
 
-*This is general legal information, not legal advice for your specific situation. Whether FTCA, a remaining narrow Bivens theory, or another avenue fits your facts depends on exactly what happened and who was involved.*
 
 If you're evaluating a potential claim over something that happened in federal custody, Writ Large's <a href="/#services">Pro Se Services</a> can help you understand which path actually fits — and if litigation is the right next step, our sister service handles <a href="https://prisonerlegalaid.com" target="_blank" rel="noopener">full civil rights lawsuit support</a> at zero upfront cost.
 

@@ -23,7 +23,6 @@ One misconception worth putting to rest: documentation isn't just for lawsuits. 
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're trying to build a documentation habit or need help turning your notes into a grievance, PREA report, or other filing that actually holds together, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can walk you through it. And if what happened involves a serious injury or a pattern of abuse, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who can take it from there.
 

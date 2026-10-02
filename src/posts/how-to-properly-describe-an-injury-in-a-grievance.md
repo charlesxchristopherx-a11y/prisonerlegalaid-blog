@@ -25,7 +25,6 @@ None of this requires legal training. It requires slowing down and writing what 
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you want help getting a grievance into the kind of shape that actually holds up, Prisoner Legal Aid's <a href="/#services">Pro Se Services</a> can walk through the drafting with you. And if what happened involves a serious injury or a pattern of neglect, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney to look at whether it's worth pursuing further.
 

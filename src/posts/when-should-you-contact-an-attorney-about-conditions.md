@@ -25,6 +25,5 @@ None of this requires having a fully built case before making contact. It requir
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If any of these trigger points sound familiar — an untreated medical issue, a use-of-force incident, a retaliation pattern, or a deadline you're not sure you can still meet — don't sit on it. Reach out to Prisoner Legal Aid now. Our <a href="/#services">Pro Se Services</a> can help you get organized and document things correctly on your own, and our <a href="/litigation/">Full Lawsuit Support</a> program can connect you directly with an attorney if your situation needs one. The sooner we hear from you, the more options are still on the table.

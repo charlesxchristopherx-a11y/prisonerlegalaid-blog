@@ -41,7 +41,6 @@ Separately from this policy, if the underlying problem is simply distance — th
 
 ---
 
-*This is general information about a new BOP policy — not legal advice for your specific situation. Implementation details can vary by institution, and this policy may be updated or clarified by the BOP over time.*
 
 If you have questions about how this or any other BOP policy affects your case, or if you need help with a [§ 2241 habeas petition](/blog/what-is-a-2241-habeas-petition/), [compassionate release](/blog/compassionate-release-3582/) motion, or other post-conviction filing, Writ Large's <a href="/#services">Pro Se Services</a> can help.
 

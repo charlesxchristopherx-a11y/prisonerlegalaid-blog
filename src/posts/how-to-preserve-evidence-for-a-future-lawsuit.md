@@ -23,6 +23,5 @@ It's worth saying plainly: none of this is about becoming paranoid or turning ev
 
 ---
 
-*This is general information about how the law generally works — not legal advice for your specific situation. Every facility and jurisdiction has its own rules, and outcomes depend on your specific facts.*
 
 If you're not sure how to organize what you've already gathered — or how to make sure a grievance you're about to file actually preserves your legal options — our <a href="/#services">Pro Se Services</a> can help you put it together properly. And if you're sitting on [documentation](/blog/can-you-record-or-document-what-happens-behind-bars/) of something serious that may need to go further, our <a href="/litigation/">Full Lawsuit Support</a> program can connect you with an attorney who can take it from there.
