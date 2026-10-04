@@ -16,6 +16,12 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- TEAM VOICE + ORG BYLINES — 2026-10-04, hands, Hands Brief 24. Article author is the
+  ORGANIZATION (Prisoner Legal Aid), set in ONE template per site (.com base.njk JSON-LD +
+  post.njk meta; .blog post.njk JSON-LD + byline). Per-post override only via front matter
+  author_name/author_role for genuinely first-person pieces. src/_includes/lead-ack.njk (shared,
+  byte-identical both repos, included from base.njk) beacons every validated intake submit to n8n
+  "PLA Lead Acknowledgment" (alCcC7ZeCKezofNX), which now sends the team-voice confirmation.
 - HONEYPOT + HELP-PAGE FALLBACK — 2026-10-04, hands session, Hands Brief 20 (CAPTCHA turned off on
   Formspree xzzqvkjd by Chris). src/_includes/honeypot.njk is the ONE honeypot definition
   (byte-identical in both repos): off-screen wrapper, aria-hidden, tabindex -1, autocomplete off.

@@ -1,0 +1,36 @@
+{#- SHARED LEAD ACKNOWLEDGMENT — Hands Brief 24 (2026-10-04). Byte-identical in BOTH repos;
+    change both together. Included once from base.njk, so every form on every page is covered,
+    including forms added later.
+    On a validated submit of any intake form (Formspree xzzqvkjd or FormSubmit), it tells the n8n
+    workflow "PLA Lead Acknowledgment" (alCcC7ZeCKezofNX, path pla-lead-ack) to email the family
+    the confirmation. Formspree's free plan sends nothing back; this is what does.
+    - Sent form-urlencoded with sendBeacon: a CORS-safe type the browser really sends, and it
+      survives the page navigating away to Formspree's thank-you page. (JSON in no-cors mode
+      arrives as text/plain and n8n returns 500 — proven in Hands Brief 20.)
+    - Skipped when the honeypot (_gotcha / _honey) is filled, so bots get no email.
+    - Skipped for forms marked data-ack-self, which send their own acknowledgment only after a
+      confirmed send (/help/medical-neglect/).
+    Trade-off, stated: for plain-POST forms this fires as the browser submits, before Formspree's
+    answer is known; a Formspree outage at that instant would still send a confirmation. -#}
+<script>
+(function () {
+  var ACK = 'https://prisonerlegalaid.app.n8n.cloud/webhook/pla-lead-ack';
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || f.tagName !== 'FORM') return;
+    var action = f.getAttribute('action') || '';
+    if (!/formspree\.io\/f\/xzzqvkjd|formsubmit\.co\//.test(action)) return;
+    if (f.hasAttribute('data-ack-self')) return;
+    var hp = f.querySelector('[name="_gotcha"],[name="_honey"]');
+    if (hp && hp.value) return;
+    if (f.checkValidity && !f.checkValidity()) return;
+    try {
+      var p = new URLSearchParams();
+      new FormData(f).forEach(function (v, k) { if (typeof v === 'string') p.append(k, v); });
+      p.append('ack_page', location.pathname);
+      if (navigator.sendBeacon && navigator.sendBeacon(ACK, p)) return;
+      fetch(ACK, { method: 'POST', mode: 'no-cors', body: p, keepalive: true }).catch(function () {});
+    } catch (err) {}
+  }, false);
+})();
+</script>

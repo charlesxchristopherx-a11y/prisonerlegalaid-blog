@@ -20,18 +20,18 @@ layout: base.njk
   "articleSection": {{ category | dump | safe }},
   "inLanguage": "en-US",
   "isAccessibleForFree": true,
-  {#- author is a Person, not the Organization. For a legal-information
-      site, naming the actual human who researched the piece is the point of
-      the signal; the Organization remains the publisher. Person data is
-      truthful: a paralegal, explicitly not an attorney. -#}
-  "author": {
+  {#- BYLINE (Chris's directive 2026-10-04, Hands Brief 24, supersedes the earlier
+      Person-author note): articles are authored by the ORGANIZATION, Prisoner Legal
+      Aid — PLA is a team (Chris, Jennifer Alexander and other paralegals), not one
+      person. This template is the ONLY place the article author is set. A genuinely
+      first-person piece may name its author with front matter `author_name` (+ optional
+      `author_role`). Never style anyone as an attorney. -#}
+  "author": {% if author_name %}{
     "@type": "Person",
-    "@id": "https://prisonerlegalaid.blog/about-the-author/#person",
-    "name": "Charles Christopher",
-    "jobTitle": "Paralegal",
-    "url": "https://prisonerlegalaid.blog/about-the-author/",
-    "worksFor": { "@id": "https://prisonerlegalaid.blog/#organization" }
-  },
+    "name": {{ author_name | dump | safe }}{% if author_role %},
+    "jobTitle": {{ author_role | dump | safe }}{% endif %},
+    "worksFor": { "@id": "https://prisonerlegalaid.com/#organization" }
+  }{% else %}{ "@type": "Organization", "@id": "https://prisonerlegalaid.com/#organization", "name": "Prisoner Legal Aid", "url": "https://prisonerlegalaid.com/" }{% endif %},
   "publisher": { "@id": "https://prisonerlegalaid.blog/#organization" },
   {#- No schema reviewedBy. Articles are written by a paralegal and are not
       claimed to have been checked by counsel before publication; asserting a
@@ -88,7 +88,7 @@ layout: base.njk
   <h1>{{ title }}</h1>
   <p class="meta">Writ Large · {{ page.date | dateDisplay }}{% if modified %} · Last reviewed {{ modified | dateDisplay }}{% endif %}</p>
   <p class="byline" style="font-size:15px;color:#5b6470;margin:-6px 0 22px">
-    Written by <a href="/about-the-author/" style="color:#14181f;font-weight:600">Charles Christopher, Paralegal</a>
+    {% if author_name %}Written by <strong style="color:#14181f">{{ author_name }}{% if author_role %}, {{ author_role }}{% endif %}</strong>{% else %}Written by <a href="/editorial-standards/" style="color:#14181f;font-weight:600">Prisoner Legal Aid</a>{% endif %}
   </p>
   {% if answer %}
   {# Answer-first block. AI retrieval chunks pages and strongly favors a
