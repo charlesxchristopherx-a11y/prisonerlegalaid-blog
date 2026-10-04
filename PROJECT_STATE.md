@@ -16,6 +16,13 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- CONFIRMED-SEND ACKNOWLEDGMENT + GUIDE EMAIL — 2026-10-04, hands, Hands Brief 26.
+  src/_includes/lead-ack.njk (shared, byte-identical) now submits every Formspree form by fetch
+  and fires the n8n acknowledgment ONLY after Formspree answers OK; on failure nothing is sent and
+  the visitor gets an on-page message with 786-408-5073. /first-72-hours/ calls window.plaSendAck
+  in its own success branch. n8n alCcC7ZeCKezofNX routes guide requests (form_type/request_type)
+  to a guide email with no contact promise; intakes keep the intake email. .com post CTA no longer
+  says "our ... attorneys" or "zero upfront cost".
 - TEAM VOICE + ORG BYLINES — 2026-10-04, hands, Hands Brief 24. Article author is the
   ORGANIZATION (Prisoner Legal Aid), set in ONE template per site (.com base.njk JSON-LD +
   post.njk meta; .blog post.njk JSON-LD + byline). Per-post override only via front matter

@@ -1,29 +1,33 @@
-{#- SHARED LEAD ACKNOWLEDGMENT — Hands Brief 24 (2026-10-04). Byte-identical in BOTH repos;
-    change both together. Included once from base.njk, so every form on every page is covered,
-    including forms added later.
-    On a validated submit of any intake form (Formspree xzzqvkjd or FormSubmit), it tells the n8n
-    workflow "PLA Lead Acknowledgment" (alCcC7ZeCKezofNX, path pla-lead-ack) to email the family
-    the confirmation. Formspree's free plan sends nothing back; this is what does.
-    - Sent form-urlencoded with sendBeacon: a CORS-safe type the browser really sends, and it
-      survives the page navigating away to Formspree's thank-you page. (JSON in no-cors mode
-      arrives as text/plain and n8n returns 500 — proven in Hands Brief 20.)
-    - Skipped when the honeypot (_gotcha / _honey) is filled, so bots get no email.
-    - Skipped for forms marked data-ack-self, which send their own acknowledgment only after a
-      confirmed send (/help/medical-neglect/).
-    Trade-off, stated: for plain-POST forms this fires as the browser submits, before Formspree's
-    answer is known; a Formspree outage at that instant would still send a confirmation. -#}
+{#- SHARED SUBMIT + ACKNOWLEDGMENT — byte-identical in BOTH repos; change both together.
+    Included once from base.njk, so every form on every page is covered, including new ones.
+
+    2026-10-04, Hands Brief 26 — the acknowledgment is sent ONLY AFTER the submission is
+    accepted. The Brief 24 version beaconed on submit, before Formspree answered, so a
+    rejected submission could still produce "We have your request" — a success reported before
+    the result was known. Now, for every Formspree form (xzzqvkjd):
+      1. the browser's normal POST is replaced by the same POST sent with fetch;
+      2. if Formspree answers OK, the n8n acknowledgment fires and the form is replaced, in place,
+         by a short confirmation (the visitor no longer lands on formspree.io/thanks);
+      3. if Formspree fails or the network drops, NO acknowledgment is sent, everything typed
+         stays, and the visitor sees an honest message with 786-408-5073.
+    Not intercepted here:
+      - forms marked data-ack-self (/help/medical-neglect/): they run their own
+        confirmed-send flow and call their own acknowledgment;
+      - FormSubmit forms (/first-72-hours/): that page's own script submits by fetch and calls
+        window.plaSendAck(form) in its success branch.
+    The acknowledgment call is form-urlencoded via sendBeacon (CORS-safe; JSON in no-cors mode
+    reaches n8n as text/plain and fails — Hands Brief 20). The n8n workflow "PLA Lead
+    Acknowledgment" (alCcC7ZeCKezofNX) chooses the intake or the guide email from form_type /
+    request_type. Honeypot (_gotcha / _honey) filled => no acknowledgment. -#}
 <script>
 (function () {
   var ACK = 'https://prisonerlegalaid.app.n8n.cloud/webhook/pla-lead-ack';
-  document.addEventListener('submit', function (e) {
-    var f = e.target;
-    if (!f || f.tagName !== 'FORM') return;
-    var action = f.getAttribute('action') || '';
-    if (!/formspree\.io\/f\/xzzqvkjd|formsubmit\.co\//.test(action)) return;
-    if (f.hasAttribute('data-ack-self')) return;
+  function honeypotFilled(f) {
     var hp = f.querySelector('[name="_gotcha"],[name="_honey"]');
-    if (hp && hp.value) return;
-    if (f.checkValidity && !f.checkValidity()) return;
+    return !!(hp && hp.value);
+  }
+  window.plaSendAck = function (f) {
+    if (!f || honeypotFilled(f)) return;
     try {
       var p = new URLSearchParams();
       new FormData(f).forEach(function (v, k) { if (typeof v === 'string') p.append(k, v); });
@@ -31,6 +35,42 @@
       if (navigator.sendBeacon && navigator.sendBeacon(ACK, p)) return;
       fetch(ACK, { method: 'POST', mode: 'no-cors', body: p, keepalive: true }).catch(function () {});
     } catch (err) {}
+  };
+  function note(f, cls, html, role) {
+    var n = f.querySelector('.' + cls);
+    if (!n) { n = document.createElement('p'); n.className = cls; if (role) n.setAttribute('role', role); f.appendChild(n); }
+    n.innerHTML = html;
+    return n;
+  }
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || f.tagName !== 'FORM') return;
+    if (!/formspree\.io\/f\/xzzqvkjd/.test(f.getAttribute('action') || '')) return;
+    if (f.hasAttribute('data-ack-self')) return;
+    if (f.checkValidity && !f.checkValidity()) return;
+    e.preventDefault();
+    var btn = f.querySelector('button[type=submit],button:not([type])');
+    var label = btn ? btn.textContent : '';
+    var old = f.querySelector('.pla-send-error'); if (old) old.parentNode.removeChild(old);
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    fetch(f.action, { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (!r.ok) throw new Error('status ' + r.status);
+        window.plaSendAck(f);
+        var done = document.createElement('div');
+        done.className = 'pla-sent';
+        done.setAttribute('role', 'status');
+        done.style.cssText = 'padding:18px 20px;border:2px solid #1c6b3f;background:#EEF6F0;color:#1F2937;font-size:16px;line-height:1.6';
+        done.innerHTML = '<strong>Got it &mdash; your message reached us.</strong><br>A confirmation email is on its way to the address you gave. If it is urgent, call <a href="tel:+17864085073" style="color:#1F2937;font-weight:700">786-408-5073</a> and say it is urgent.';
+        f.parentNode.replaceChild(done, f);
+        done.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = label; }
+        var n = note(f, 'pla-send-error', 'We could not send this just now. Your information is still here &mdash; please try again, or call <a href="tel:+17864085073" style="color:#7A1F1F;font-weight:700">786-408-5073</a>.', 'alert');
+        n.style.cssText = 'margin:14px 0 0;padding:12px 14px;border:1px solid #E5B8B8;background:#FBEFEF;color:#7A1F1F;font-size:15px;line-height:1.5';
+        n.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
   }, false);
 })();
 </script>
