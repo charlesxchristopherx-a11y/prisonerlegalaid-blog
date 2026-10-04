@@ -1,0 +1,17 @@
+{#- SHARED SPAM HONEYPOT — the ONE place this field is defined. Every form includes this file;
+    do not hand-write a honeypot into a form. Byte-identical in BOTH repos
+    (prisonerlegalaid-com and prisonerlegalaid-blog); change both together. Added 2026-10-04,
+    Hands Brief 20, after CAPTCHA was turned off on Formspree form xzzqvkjd.
+    How it works: a real person never sees or fills this field. A bot that fills every input
+    does, and Formspree then "silently ignore[s] the submission" (its docs, for `_gotcha`).
+    Hiding: the wrapper is moved off-screen (absolute, -10000px, 1px clip) rather than
+    display:none, which some bots detect and skip. aria-hidden keeps it out of screen readers;
+    tabindex -1 keeps it out of keyboard order; autocomplete off stops browsers auto-filling it.
+    Never required.
+    Optional variable, set before the include:
+      hp_name   field name (default "_gotcha" — Formspree's honeypot). FormSubmit's honeypot
+                field is "_honey", so /first-72-hours/ (FormSubmit) sets hp_name = "_honey". -#}
+{%- set _hpn = hp_name | default("_gotcha") -%}
+<div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+  <label>Leave this field empty<input type="text" name="{{ _hpn }}" tabindex="-1" autocomplete="off" value=""></label>
+</div>

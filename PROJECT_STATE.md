@@ -16,6 +16,13 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- HONEYPOT + HELP-PAGE FALLBACK — 2026-10-04, hands session, Hands Brief 20 (CAPTCHA turned off on
+  Formspree xzzqvkjd by Chris). src/_includes/honeypot.njk is the ONE honeypot definition
+  (byte-identical in both repos): off-screen wrapper, aria-hidden, tabindex -1, autocomplete off.
+  Formspree forms use _gotcha; /first-72-hours/ (FormSubmit) uses _honey. .com help page: a failed
+  send now stays on the page with a message and 786-408-5073 instead of form.submit(), and the
+  n8n acknowledgment call now sends form-urlencoded (JSON in no-cors mode reached n8n as
+  text/plain and returned 500, so no acknowledgment went out from real browsers).
 - VIDEO FEED FAILS LOUDLY — 2026-10-04, hands session, Hands Brief 19. /api/youtube-videos now
   returns 502 + {error, stale, videos:<last-good or []>} when YouTube's feed can't be read, and
   200 + {empty:true} only for a genuine zero. Cause of the 10-03/04 empty feed: YouTube's public

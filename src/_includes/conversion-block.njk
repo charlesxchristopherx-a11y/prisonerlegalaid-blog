@@ -16,7 +16,7 @@
     <form class="cform" action="https://formspree.io/f/xzzqvkjd" method="POST">
       <h3>{{ ctaHeading | default("Talk to someone about your case.") }}</h3>
       <p style="font-size:15px;line-height:1.7;margin:0 0 16px">{{ ctaBlurb | default("Tell us what is going on and we will follow up. There is no charge for the first conversation.") }}</p>
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      {% set hp_name = "_gotcha" %}{% include "honeypot.njk" %}
       <input type="hidden" name="_subject" value="New Writ Large intake — Prisoner Legal Aid">
       <input type="hidden" name="form_type" value="Writ Large Document Services">
       <input type="hidden" name="source_page" value="{{ page.url }}">
