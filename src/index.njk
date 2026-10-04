@@ -115,10 +115,14 @@ pageModified: 2026-09-01
 <script>
 (function () {
   fetch('/api/youtube-videos')
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
+    .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+    .then(function (res) {
+      var data = res.d || {};
       var videos = data.videos || [];
-      if (!videos.length) return; // keep the "coming soon" state showing
+      if (!videos.length) {
+        if (!res.ok) feedDown(data.channelUrl);
+        return; // genuine zero: keep the "coming soon" state showing
+      }
 
       var container = document.getElementById('wlt-container');
       var featured = videos[0];
@@ -145,7 +149,17 @@ pageModified: 2026-09-01
 
       container.innerHTML = html;
     })
-    .catch(function () { /* network hiccup — keep showing the empty state */ });
+    .catch(function () { feedDown(); });
+
+  // 2026-10-04 (Hands Brief 19): the route answers 502 when YouTube can't be read.
+  // Say so and link the channel, instead of "new videos are on the way" — untrue
+  // when the channel already has public videos.
+  function feedDown(channelUrl) {
+    var c = document.getElementById('wlt-container');
+    if (!c) return;
+    c.innerHTML = '<div class="tv-empty"><p>Our video feed is not loading on this page right now. Every Writ Large TV video is on our YouTube channel.</p>' +
+      '<a class="yt-btn" href="' + (channelUrl || 'https://www.youtube.com/@PrisonerLegalAidChannel') + '" target="_blank" rel="noopener">Watch on YouTube →</a></div>';
+  }
 
   function escapeHtml(s) {
     var d = document.createElement('div');

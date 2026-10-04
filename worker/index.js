@@ -112,37 +112,65 @@ export default {
 };
 
 async function getYouTubeVideos() {
+  // 2026-10-04, Hands Brief 19 — FAIL LOUDLY. This used to swallow every upstream
+  // error, return 200 {"videos":[]}, and then CACHE that empty answer for 15 minutes.
+  // A dead feed looked exactly like a channel with no videos, and the homepage told
+  // families "new videos are on the way" while 28 were public. Now:
+  //   upstream OK, entries   -> 200 {videos}            (cached 15 min + 7-day last-good)
+  //   upstream OK, zero      -> 200 {videos:[], empty:true}
+  //   upstream failed        -> 502 {videos:<last-good or []>, stale, error:{...}}  never cached
   const cache = caches.default;
-  const cacheKey = new Request("https://cache.internal/youtube-videos");
+  const cacheKey = new Request("https://cache.internal/youtube-videos-v2");
+  const staleKey = new Request("https://cache.internal/youtube-videos-last-good-v1");
   const cached = await cache.match(cacheKey);
   if (cached) return cached;
 
-  let videos = [];
+  let videos = [], upstreamOk = false, upstreamStatus = null, upstreamError = null;
   try {
     const feedRes = await fetch(
       `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`,
       { headers: { "User-Agent": "Mozilla/5.0 (compatible; PrisonerLegalAidBot/1.0)" } }
     );
+    upstreamStatus = feedRes.status;
     if (feedRes.ok) {
-      const xml = await feedRes.text();
-      videos = parseFeed(xml);
+      upstreamOk = true;
+      videos = parseFeed(await feedRes.text());
     }
   } catch (err) {
-    // Network hiccup or feed unavailable — fall through with an empty list.
-    // The homepage shows a graceful "coming soon" state in this case.
+    upstreamError = String(err && err.message ? err.message : err);
   }
 
-  const body = JSON.stringify({ videos, channelUrl: CHANNEL_URL });
-  const response = new Response(body, {
+  const json = (body, status, cacheControl) => new Response(JSON.stringify(body), {
+    status,
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": `public, max-age=${CACHE_SECONDS}`,
+      "Cache-Control": cacheControl,
       "Access-Control-Allow-Origin": "*",
     },
   });
 
-  // Cache a clone at the edge so we don't hit YouTube on every single visitor.
+  if (!upstreamOk) {
+    let stale = [], staleSavedAt = null;
+    const s = await cache.match(staleKey);
+    if (s) { try { const j = await s.json(); stale = j.videos || []; staleSavedAt = j.savedAt || null; } catch (e) {} }
+    return json({
+      videos: stale,
+      channelUrl: CHANNEL_URL,
+      stale: stale.length > 0,
+      staleSavedAt,
+      error: { code: "upstream_unavailable", message: "Could not read the YouTube channel feed.", upstreamStatus, upstreamError },
+    }, 502, "no-store");
+  }
+
+  if (!videos.length) {
+    return json({ videos: [], channelUrl: CHANNEL_URL, empty: true }, 200, "no-store");
+  }
+
+  const response = json({ videos, channelUrl: CHANNEL_URL }, 200, `public, max-age=${CACHE_SECONDS}`);
   await cache.put(cacheKey, response.clone());
+  await cache.put(staleKey, new Response(JSON.stringify({ videos, savedAt: new Date().toISOString() }), {
+    headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=604800" },
+  }));
   return response;
 }
 
