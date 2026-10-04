@@ -13,8 +13,8 @@
     Not intercepted here:
       - forms marked data-ack-self (/help/medical-neglect/): they run their own
         confirmed-send flow and call their own acknowledgment;
-      - FormSubmit forms (/first-72-hours/): that page's own script submits by fetch and calls
-        window.plaSendAck(form) in its success branch.
+      - /first-72-hours/ (data-ack-self since Hands Brief 30, now on Formspree): its own script
+        submits by fetch and calls window.plaSendAck(form) in its success branch.
     The acknowledgment call is form-urlencoded via sendBeacon (CORS-safe; JSON in no-cors mode
     reaches n8n as text/plain and fails — Hands Brief 20). The n8n workflow "PLA Lead
     Acknowledgment" (alCcC7ZeCKezofNX) chooses the intake or the guide email from form_type /
@@ -49,6 +49,9 @@
     if (f.hasAttribute('data-ack-self')) return;
     if (f.checkValidity && !f.checkValidity()) return;
     e.preventDefault();
+    // Hands Brief 30: duplicate-submit guard — set before anything async, cleared on failure.
+    if (f.dataset.plaSending) return;
+    f.dataset.plaSending = '1';
     var btn = f.querySelector('button[type=submit],button:not([type])');
     var label = btn ? btn.textContent : '';
     var old = f.querySelector('.pla-send-error'); if (old) old.parentNode.removeChild(old);
@@ -66,6 +69,7 @@
         done.scrollIntoView({ behavior: 'smooth', block: 'center' });
       })
       .catch(function () {
+        delete f.dataset.plaSending;
         if (btn) { btn.disabled = false; btn.textContent = label; }
         var n = note(f, 'pla-send-error', 'We could not send this just now. Your information is still here &mdash; please try again, or call <a href="tel:+17864085073" style="color:#7A1F1F;font-weight:700">786-408-5073</a>.', 'alert');
         n.style.cssText = 'margin:14px 0 0;padding:12px 14px;border:1px solid #E5B8B8;background:#FBEFEF;color:#7A1F1F;font-size:15px;line-height:1.5';

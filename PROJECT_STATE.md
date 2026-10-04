@@ -16,6 +16,11 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- /first-72-hours/ OFF FORMSUBMIT — 2026-10-04, hands, Hands Brief 30. The guide form now posts to
+  Formspree xzzqvkjd (data-ack-self; success = r.ok; FormData body; _gotcha honeypot; request_type +
+  source_page added; _template/_captcha/_autoresponse removed). FormSubmit had never delivered a
+  notification here. Error path still offers the PDF. Duplicate-submit guard (dataset.plaSending) in
+  the shared lead-ack handler (both sites), the help-page handler and the first-72 handler.
 - CONFIRMED-SEND ACKNOWLEDGMENT + GUIDE EMAIL — 2026-10-04, hands, Hands Brief 26.
   src/_includes/lead-ack.njk (shared, byte-identical) now submits every Formspree form by fetch
   and fires the n8n acknowledgment ONLY after Formspree answers OK; on failure nothing is sent and
