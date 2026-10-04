@@ -16,6 +16,13 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- INTAKE ATTRIBUTION — 2026-10-03, hands session, Hands Brief 18. Every intake and guide form
+  (6 on .com, 2 templates on .blog) now includes src/_includes/source-select.njk — the ONE place
+  the "How did you hear about us?" options live (byte-identical file in both repos; change both).
+  Field is referral_source, required; "Saw a video" and "ChatGPT or another AI" at the top.
+  Field names unified: name / phone / email / message / service_needed / referral_source /
+  traffic_source / landing_page / form_type. help-medical-neglect keeps source_page + request_type
+  (n8n PLA Lead Acknowledgment reads them). Do not hand-copy dropdown options into a form.
 - DISCLAIMER SWEEP (class 1 of 2) — 2026-10-01/02, hands session, Hands Brief 17 Task 3.
   Removed "not a law firm / not attorneys / not legal advice / general information" boilerplate
   from article footers and landing-page footer blocks per claude/00-NO-DISCLAIMER-RULE-2026-09-13.

@@ -1,0 +1,26 @@
+{#- SHARED "How did you hear about us?" dropdown — the ONE place these options live.
+    Every intake and guide form on this site includes this file; do not hand-copy the
+    options into a form. The same file exists, byte-identical, in BOTH repos
+    (prisonerlegalaid-com and prisonerlegalaid-blog); change both together.
+    Added 2026-10-03, Hands Brief 18. "Saw a video" and "ChatGPT or another AI" sit at the
+    top on purpose, in Chris's wording: people pick from what they see first.
+    Optional variables, set before the include:
+      src_id           element id (default "referral_source"; must be unique on the page)
+      src_label_style  inline style for the label, for pages with inline-styled forms
+      src_select_style inline style for the select
+    Field name is always referral_source. Required, so no lead arrives unattributed;
+    "Other" is the escape hatch. -#}
+{%- set _sid = src_id | default("referral_source") -%}
+<label for="{{ _sid }}"{% if src_label_style %} style="{{ src_label_style }}"{% endif %}>How did you hear about us? *</label>
+<select id="{{ _sid }}" name="referral_source" required{% if src_select_style %} style="{{ src_select_style }}"{% endif %}>
+  <option value="">Select…</option>
+  <option>Saw a video</option>
+  <option>ChatGPT or another AI</option>
+  <option>Google Search</option>
+  <option>YouTube</option>
+  <option>TikTok</option>
+  <option>Instagram</option>
+  <option>Facebook</option>
+  <option>Referral</option>
+  <option>Other</option>
+</select>

@@ -42,7 +42,9 @@
       </select>
 
       <label for="cb_details">Briefly, what's going on? *</label>
-      <textarea id="cb_details" name="case_details" rows="4" required placeholder="Facility, sentence details, and any deadlines. We'll follow up for the rest."></textarea>
+      <textarea id="cb_details" name="message" rows="4" required placeholder="Facility, sentence details, and any deadlines. We'll follow up for the rest."></textarea>
+
+      {% set src_id = "cb_source" %}{% include "source-select.njk" %}
 
       <input type="hidden" name="traffic_source" value="">
       <input type="hidden" name="landing_page" value="">
