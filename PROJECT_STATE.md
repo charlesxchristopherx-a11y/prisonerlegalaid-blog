@@ -16,6 +16,12 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- VIDEO FEED FAILS LOUDLY — 2026-10-04, hands session, Hands Brief 19. /api/youtube-videos now
+  returns 502 + {error, stale, videos:<last-good or []>} when YouTube's feed can't be read, and
+  200 + {empty:true} only for a genuine zero. Cause of the 10-03/04 empty feed: YouTube's public
+  RSS endpoint (feeds/videos.xml) returns 404 for EVERY channel tested, including YouTube's own —
+  not a key, not quota, not private videos. Restoring data needs a new source (YouTube Data API v3
+  key in PLA's own Google Cloud project). Do NOT hard-code a video list.
 - INTAKE ATTRIBUTION — 2026-10-03, hands session, Hands Brief 18. Every intake and guide form
   (6 on .com, 2 templates on .blog) now includes src/_includes/source-select.njk — the ONE place
   the "How did you hear about us?" options live (byte-identical file in both repos; change both).
