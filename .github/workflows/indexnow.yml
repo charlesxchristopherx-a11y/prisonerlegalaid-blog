@@ -12,8 +12,8 @@ name: IndexNow submit
 #    exactly once and an unchanged site sends nothing.
 #  - TRIGGERS: on push to main (immediate), plus a daily run 30 min after daily-publish, because
 #    pushes made with GITHUB_TOKEN by daily-publish do not trigger push workflows.
-#  - DEPLOY WAIT: Cloudflare deploys after the push. Each URL must return 200 live before it is
-#    submitted; a URL that never comes up fails the run, so the next run retries it.
+#  - DEPLOY WAIT: nothing is submitted until Cloudflare's build check on this commit succeeds;
+#    a failed or unfinished build fails the run, so the next run retries those URLs.
 #  - STATIC PAGES: src/<page>.njk is mapped through its `permalink:` front matter.
 #  - A 200/202 from IndexNow means ACCEPTED, not indexed. Indexing shows later in Bing
 #    Webmaster Tools.
@@ -33,6 +33,7 @@ on:
 permissions:
   contents: read
   actions: read
+  checks: read
 
 concurrency:
   group: indexnow
@@ -110,25 +111,29 @@ jobs:
           print(f"{len(urls)} url(s) to submit"); [print("  ", u) for u in urls]
           PY
 
-      - name: Wait until every URL is in the live sitemap (Cloudflare deploy)
+      - name: Wait for the Cloudflare build of this commit to succeed
         if: steps.urls.outputs.count != '0'
         env:
-          URLS: ${{ steps.urls.outputs.list }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          # The live sitemap is the deploy signal. Fetching the HTML pages themselves from a
-          # GitHub runner hung (2026-10-05 run 37313546170): Cloudflare challenges datacenter IPs
-          # on HTML, while .txt/.xml come back 200. A URL is submitted only once the deployed
-          # sitemap lists it; if it never appears the run fails and the next run retries it.
+          # Deploy signal = Cloudflare's own "Workers Builds: <project>" check-run on this commit.
+          # Fetching the live site from a GitHub runner does not work: on 2026-10-05 both an HTML
+          # fetch (run 37313546170) and a sitemap fetch (run 37314662373) hung behind Cloudflare
+          # for datacenter IPs. Fails if the build fails or has not finished in 10 minutes.
           python3 - <<'PY'
-          import json, os, time, subprocess
-          host = os.environ["HOST"]; pending = set(json.loads(os.environ["URLS"]))
-          for attempt in range(30):                      # up to ~10 minutes
-              xml = subprocess.run(["curl", "-s", "--max-time", "20", f"https://{host}/sitemap.xml?a={attempt}"],
-                                   capture_output=True, text=True).stdout
-              pending = {u for u in pending if f"<loc>{u}</loc>" not in xml}
-              if not pending: print("all URLs present in the live sitemap"); break
-              time.sleep(20)
-          if pending: raise SystemExit("::error::Not in the live sitemap after 10 minutes: " + ", ".join(sorted(pending)))
+          import json, os, time, urllib.request
+          url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/commits/{os.environ['GITHUB_SHA']}/check-runs?per_page=50"
+          hdr = {"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"}
+          for attempt in range(40):
+              runs = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=30)).get("check_runs", [])
+              cf = [r for r in runs if r["name"].startswith("Workers Builds:")]
+              if cf and cf[0]["status"] == "completed":
+                  if cf[0]["conclusion"] == "success":
+                      print("Cloudflare build succeeded:", cf[0]["name"]); time.sleep(30); break
+                  raise SystemExit(f"::error::Cloudflare build {cf[0]['conclusion']} — not submitting.")
+              time.sleep(15)
+          else:
+              raise SystemExit("::error::Cloudflare build not finished after 10 minutes — not submitting.")
           PY
 
       - name: Submit to IndexNow
