@@ -110,23 +110,25 @@ jobs:
           print(f"{len(urls)} url(s) to submit"); [print("  ", u) for u in urls]
           PY
 
-      - name: Wait until every URL is live (Cloudflare deploy)
+      - name: Wait until every URL is in the live sitemap (Cloudflare deploy)
         if: steps.urls.outputs.count != '0'
         env:
           URLS: ${{ steps.urls.outputs.list }}
         run: |
+          # The live sitemap is the deploy signal. Fetching the HTML pages themselves from a
+          # GitHub runner hung (2026-10-05 run 37313546170): Cloudflare challenges datacenter IPs
+          # on HTML, while .txt/.xml come back 200. A URL is submitted only once the deployed
+          # sitemap lists it; if it never appears the run fails and the next run retries it.
           python3 - <<'PY'
-          import json, os, time, urllib.request
-          pending = set(json.loads(os.environ["URLS"]))
+          import json, os, time, subprocess
+          host = os.environ["HOST"]; pending = set(json.loads(os.environ["URLS"]))
           for attempt in range(30):                      # up to ~10 minutes
-              for u in list(pending):
-                  try:
-                      if urllib.request.urlopen(urllib.request.Request(u + "?indexnow-check", headers={"User-Agent": "Mozilla/5.0"}), timeout=20).status == 200:
-                          pending.discard(u)
-                  except Exception: pass
-              if not pending: print("all URLs live"); break
+              xml = subprocess.run(["curl", "-s", "--max-time", "20", f"https://{host}/sitemap.xml?a={attempt}"],
+                                   capture_output=True, text=True).stdout
+              pending = {u for u in pending if f"<loc>{u}</loc>" not in xml}
+              if not pending: print("all URLs present in the live sitemap"); break
               time.sleep(20)
-          if pending: raise SystemExit("::error::Not live after 10 minutes: " + ", ".join(sorted(pending)))
+          if pending: raise SystemExit("::error::Not in the live sitemap after 10 minutes: " + ", ".join(sorted(pending)))
           PY
 
       - name: Submit to IndexNow
