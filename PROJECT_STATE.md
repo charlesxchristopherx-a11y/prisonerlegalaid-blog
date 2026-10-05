@@ -16,6 +16,11 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- INDEXNOW ON BOTH SITES — 2026-10-05, hands, Hands Brief 33. .github/workflows/indexnow.yml is
+  byte-identical in both repos (host from the repo name). Key bc10900418a84a23a3fb1da926b6ed98, served at
+  each site's root. Runs on push to main (src/**) and daily 09:50 UTC; submits only URLs changed since
+  the last SUCCESSFUL run, each after it returns 200 live. 200/202 = accepted, not indexed. Bing
+  Webmaster Tools verification + sitemap submission is Chris's (Task 0).
 - /first-72-hours/ OFF FORMSUBMIT — 2026-10-04, hands, Hands Brief 30. The guide form now posts to
   Formspree xzzqvkjd (data-ack-self; success = r.ok; FormData body; _gotcha honeypot; request_type +
   source_page added; _template/_captcha/_autoresponse removed). FormSubmit had never delivered a
