@@ -121,8 +121,13 @@ jobs:
           # fetch (run 37313546170) and a sitemap fetch (run 37314662373) hung behind Cloudflare
           # for datacenter IPs. Fails if the build fails or has not finished in 10 minutes.
           python3 - <<'PY'
-          import json, os, time, urllib.request
-          url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/commits/{os.environ['GITHUB_SHA']}/check-runs?per_page=50"
+          import json, os, time, urllib.request, subprocess
+          # Cloudflare only builds commits that change the site (a workflow-only commit gets no
+          # build), so wait on the newest commit that touched the site's source.
+          sha = subprocess.run(["git", "log", "-1", "--format=%H", "--", "src", ".eleventy.js", "package.json", "package-lock.json"],
+                               capture_output=True, text=True).stdout.strip() or os.environ["GITHUB_SHA"]
+          print("waiting on the Cloudflare build of", sha)
+          url = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/commits/{sha}/check-runs?per_page=50"
           hdr = {"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"}
           for attempt in range(40):
               runs = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=30)).get("check_runs", [])
