@@ -1,0 +1,31 @@
+---
+permalink: /sitemap.rss
+eleventyExcludeFromCollections: true
+layout: null
+---
+{#- RSS 2.0 feed — Hands Brief 33 (2026-10-05). Lives at /sitemap.rss because Bing (imported from
+    Google Search Console) already holds a registration for that exact path on .blog.
+    Most recent 20 PUBLISHED posts (collections.posts — future-dated drip posts are excluded,
+    same as the sitemap), newest first. Description = the post's own meta description. -#}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+{%- set site = "https://prisonerlegalaid.blog" -%}
+{%- set items = collections.posts | sort(true, false, "date") | limit(20) %}
+<title>Writ Large</title>
+<link>https://prisonerlegalaid.blog/</link>
+<description>Federal post-conviction and prisoner-rights explainers from Prisoner Legal Aid.</description>
+<language>en-us</language>
+<lastBuildDate>{{ (items[0].date if items.length else page.date) | rssDate }}</lastBuildDate>
+<atom:link href="https://prisonerlegalaid.blog/sitemap.rss" rel="self" type="application/rss+xml"/>
+{%- for post in items %}
+<item>
+<title>{{ post.data.title | xmlEscape | safe }}</title>
+<link>{{ site }}{{ post.url }}</link>
+<guid isPermaLink="true">{{ site }}{{ post.url }}</guid>
+<pubDate>{{ post.date | rssDate }}</pubDate>
+<description>{{ post.data.description | xmlEscape | safe }}</description>
+</item>
+{%- endfor %}
+</channel>
+</rss>

@@ -16,6 +16,8 @@ module.exports = function (eleventyConfig) {
   // addition, not an SEO lever. Must stay accurate to the real nav/footer;
   // update it in the same commit as any nav/footer link change.
   eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
+  // IndexNow key for this host only (Hands Brief 33, 2026-10-05). One key per domain.
+  eleventyConfig.addPassthroughCopy({ "src/0e3c8e6bf67f8dfe95bf35887933f851.txt": "0e3c8e6bf67f8dfe95bf35887933f851.txt" });
 
   // NOTE: the Google Search Console verification file is NOT served from here.
   // Cloudflare Workers Assets strips the .html extension and 307-redirects
@@ -63,6 +65,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
 
   eleventyConfig.addFilter("dateISO", (d) => new Date(d).toISOString().slice(0, 10));
+  // RFC-822 dates for /sitemap.rss (Hands Brief 33). Noon UTC so a date-only post never slips a day.
+  eleventyConfig.addFilter("rssDate", (d) => { const x = new Date(d); if (!x.getUTCHours() && !x.getUTCMinutes()) x.setUTCHours(12); return x.toUTCString().replace("GMT", "+0000"); });
+  eleventyConfig.addFilter("xmlEscape", (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"));
 
   // Newest published post date — used as <lastmod> for the index pages so the
   // sitemap reflects real freshness instead of the build timestamp.

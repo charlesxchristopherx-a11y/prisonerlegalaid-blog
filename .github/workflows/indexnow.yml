@@ -3,8 +3,8 @@ name: IndexNow submit
 # Tells Bing (and Copilot / ChatGPT search, which read Bing's index), Yandex, Seznam and Naver
 # that specific URLs were added or changed. Google does not use IndexNow; it uses the sitemap.
 #
-# Hands Brief 33 (2026-10-05) rebuilt this file, byte-identical in BOTH repos (the host is
-# read from the repo name). What changed and why:
+# Hands Brief 33 (2026-10-05) rebuilt this file, byte-identical in BOTH repos (the host AND that
+# host's own IndexNow key are chosen from the repo name — one key per domain, per the brief). What changed and why:
 #  - CHANGE DETECTION: it used to diff HEAD~1..HEAD, so it saw only the newest commit, missed
 #    anything earlier in the day, and re-submitted the same URLs every day when nothing new had
 #    been pushed (the same commit was submitted on 3 consecutive days in Sept/Oct). It now diffs
@@ -43,8 +43,6 @@ jobs:
   submit:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    env:
-      KEY: bc10900418a84a23a3fb1da926b6ed98
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,8 +51,8 @@ jobs:
       - name: Host for this repo
         run: |
           case "${GITHUB_REPOSITORY##*/}" in
-            prisonerlegalaid-com)  echo "HOST=prisonerlegalaid.com"  >> "$GITHUB_ENV" ;;
-            prisonerlegalaid-blog) echo "HOST=prisonerlegalaid.blog" >> "$GITHUB_ENV" ;;
+            prisonerlegalaid-com)  echo "HOST=prisonerlegalaid.com"  >> "$GITHUB_ENV"; echo "KEY=ef1e1347261f54ef03d90c18f788f394"  >> "$GITHUB_ENV" ;;
+            prisonerlegalaid-blog) echo "HOST=prisonerlegalaid.blog" >> "$GITHUB_ENV"; echo "KEY=0e3c8e6bf67f8dfe95bf35887933f851" >> "$GITHUB_ENV" ;;
             *) echo "::error::Unknown repo ${GITHUB_REPOSITORY}"; exit 1 ;;
           esac
 
@@ -105,6 +103,9 @@ jobs:
                       m = re.search(r"^permalink:\s*[\"']?([^\"'\n]+)", open(f, encoding="utf8").read(), re.M)
                       if m and m.group(1).strip().endswith("/"):
                           urls.append(f"https://{host}{m.group(1).strip()}")
+          # The RSS feed (/sitemap.rss) changes whenever a post does, so submit it with them.
+          if any("/blog/" in u for u in urls) or any(l.split("\t")[-1] in ("src/sitemap-rss.njk",) for l in git("diff", "--name-only", base or "HEAD~1", "HEAD").splitlines()):
+              urls.append(f"https://{host}/sitemap.rss")
           urls = sorted(set(u for u in urls if u.startswith(f"https://{host}/")))
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
               fh.write("list=" + json.dumps(urls) + "\n"); fh.write(f"count={len(urls)}\n")

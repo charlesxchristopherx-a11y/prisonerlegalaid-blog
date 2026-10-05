@@ -16,6 +16,12 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- RSS FEED + PER-DOMAIN INDEXNOW KEY — 2026-10-05, hands, Hands Brief 33 (Tasks 1, 2, 4).
+  /sitemap.rss (src/sitemap-rss.njk): RSS 2.0, 20 newest PUBLISHED posts, RFC-822 dates, meta
+  description, atom:link self; discovery <link rel="alternate"> in base.njk <head>. IndexNow now uses
+  this host's OWN key (value in Drive credentials folder, indexnow-keys-2026-10-05.json; key file at
+  site root); the earlier shared key file is still served, not deleted. indexnow.yml also submits
+  /sitemap.rss whenever a post (or the feed template) changes.
 - INDEXNOW ON BOTH SITES — 2026-10-05, hands, Hands Brief 33. .github/workflows/indexnow.yml is
   byte-identical in both repos (host from the repo name). Key bc10900418a84a23a3fb1da926b6ed98, served at
   each site's root. Runs on push to main (src/**) and daily 09:50 UTC; submits only URLs changed since
