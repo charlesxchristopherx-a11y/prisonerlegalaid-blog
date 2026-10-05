@@ -98,7 +98,8 @@ export default {
       return new Response(
         "User-agent: *\n" +
         "Allow: /\n\n" +
-        "Sitemap: https://prisonerlegalaid.blog/sitemap.xml\n",
+        "Sitemap: https://prisonerlegalaid.blog/sitemap.xml\n" +
+        "Sitemap: https://prisonerlegalaid.blog/sitemap.rss\n",   // RSS 2.0 feed (Hands Brief 34 task 6)
         { headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "public, max-age=3600" } }
       );
     }

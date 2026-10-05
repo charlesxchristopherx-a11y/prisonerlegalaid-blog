@@ -16,6 +16,10 @@ that file in git and could not find it; that gap is closed. It carries the full
 the stock-photo constraint on the hero, and the open items handed to Chris.
 
 ## Recently completed (last 7 days)
+- robots.txt NOW LISTS THE RSS FEED — 2026-10-05, hands, Hands Brief 34 task 6. robots.txt is served
+  by worker/index.js (not a file in src/); it now carries a second Sitemap: line for /sitemap.rss.
+  NOTE: the shared IndexNow key file bc10900418a84a23a3fb1da926b6ed98.txt is still served but no
+  workflow submits with it any more (per-domain keys replaced it); kept, not deleted, per Chris.
 - RSS FEED + PER-DOMAIN INDEXNOW KEY — 2026-10-05, hands, Hands Brief 33 (Tasks 1, 2, 4).
   /sitemap.rss (src/sitemap-rss.njk): RSS 2.0, 20 newest PUBLISHED posts, RFC-822 dates, meta
   description, atom:link self; discovery <link rel="alternate"> in base.njk <head>. IndexNow now uses
