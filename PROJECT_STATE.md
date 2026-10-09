@@ -1,6 +1,6 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-09-12 by a claude.ai chat session, homepage hero photo added_
+_Updated: 2026-10-09 by the joined Claude session, video poster facade (Brief 29 task 6)_
 
 ## Status
 CLAIM-008 homepage case-review heading rename is live on main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701`. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
@@ -8,14 +8,15 @@ CLAIM-008 homepage case-review heading rename is live on main in merge commit `7
 ## Active work
 - (none claimed on this repo right now)
 
-**CROSS-ACTOR CLAIM BOARD — READ BEFORE STARTING ANYTHING.** It is now committed
-to the prisonerlegalaid-com repository at `claude/00-IN-FLIGHT.md`, not only in
-Chris's Claude Project. A prior run of this repo recorded that it went looking for
-that file in git and could not find it; that gap is closed. It carries the full
-2026-09-12 change log for BOTH repos, the standing rules on the cases-won pages,
-the stock-photo constraint on the hero, and the open items handed to Chris.
+**CLAIM BOARD:** `claude/00-IN-FLIGHT.md` in Chris's Claude Project (mirrored in the
+prisonerlegalaid-com repo at the same path). Rewritten 2026-10-09 for the single joined Claude
+session; the 09-12 version is archived. Read it before starting anything.
 
 ## Recently completed (last 7 days)
+- VIDEO POSTER FACADE — 2026-10-09, joined session, Brief 29 task 6 (ded456a, 63a0b1a). Featured
+  video and shorts on the homepage now show a YouTube thumbnail button; the youtube-nocookie
+  player loads only on tap. Homepage 533 KB -> 410 KB. Thumbnail URL is built in JS so the link
+  checker does not read a partial address. Record: claude/00-RECORD-2026-10-09-ops-check-fixes.md.
 - robots.txt NOW LISTS THE RSS FEED — 2026-10-05, hands, Hands Brief 34 task 6. robots.txt is served
   by worker/index.js (not a file in src/); it now carries a second Sitemap: line for /sitemap.rss.
   NOTE: the shared IndexNow key file bc10900418a84a23a3fb1da926b6ed98.txt is still served but no
