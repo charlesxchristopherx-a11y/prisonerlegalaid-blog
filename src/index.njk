@@ -170,10 +170,13 @@ pageModified: 2026-09-01
   // Poster facade (Hands Brief 29 task 6, 2026-10-09): show the thumbnail and a
   // play button; load YouTube's player only when someone taps. Each eager iframe
   // pulled about a megabyte of YouTube script on page load, on phones.
+  function thumb(id) {
+    return ['https:', '', 'i.ytimg.com', 'vi', encodeURIComponent(id), 'hqdefault.jpg'].join('/');
+  }
   function facade(v) {
     return '<button type="button" class="yt-facade" data-yt="' + escapeAttr(v.id) +
       '" aria-label="Play video: ' + escapeAttr(v.title) + '">' +
-      '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.id) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async">' +
+      '<img src="' + thumb(v.id) + '" alt="" loading="lazy" decoding="async">' +
       '<span class="yt-play" aria-hidden="true"></span></button>';
   }
   document.addEventListener('click', function (e) {
