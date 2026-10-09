@@ -130,9 +130,7 @@ pageModified: 2026-09-01
       var channelUrl = data.channelUrl || 'https://www.youtube.com/@PrisonerLegalAidChannel';
 
       var html = '<div class="tv-grid">' +
-        '<div class="video-frame video-frame--vertical"><iframe src="https://www.youtube-nocookie.com/embed/' + featured.id +
-        '" title="' + escapeAttr(featured.title) +
-        '" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' +
+        '<div class="video-frame video-frame--vertical">' + facade(featured) + '</div>' +
         '<div class="tv-side"><h3>' + escapeHtml(featured.title) + '</h3>' +
         '<p>New from Writ Large TV.</p>' +
         '<a class="yt-btn" href="' + channelUrl + '" target="_blank" rel="noopener">Subscribe on YouTube →</a></div>' +
@@ -141,8 +139,7 @@ pageModified: 2026-09-01
       if (rest.length) {
         html += '<div class="shorts-row">';
         rest.forEach(function (v) {
-          html += '<div class="short-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + v.id +
-            '" title="' + escapeAttr(v.title) + '" loading="lazy" allowfullscreen></iframe></div>';
+          html += '<div class="short-frame">' + facade(v) + '</div>';
         });
         html += '</div>';
       }
@@ -169,6 +166,26 @@ pageModified: 2026-09-01
   function escapeAttr(s) {
     return escapeHtml(s).replace(/"/g, '&quot;');
   }
+
+  // Poster facade (Hands Brief 29 task 6, 2026-10-09): show the thumbnail and a
+  // play button; load YouTube's player only when someone taps. Each eager iframe
+  // pulled about a megabyte of YouTube script on page load, on phones.
+  function facade(v) {
+    return '<button type="button" class="yt-facade" data-yt="' + escapeAttr(v.id) +
+      '" aria-label="Play video: ' + escapeAttr(v.title) + '">' +
+      '<img src="https://i.ytimg.com/vi/' + encodeURIComponent(v.id) + '/hqdefault.jpg" alt="" loading="lazy" decoding="async">' +
+      '<span class="yt-play" aria-hidden="true"></span></button>';
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.yt-facade');
+    if (!b) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.getAttribute('data-yt')) + '?autoplay=1&playsinline=1';
+    f.title = b.getAttribute('aria-label').replace(/^Play video: /, '');
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    f.allowFullscreen = true;
+    b.replaceWith(f);
+  });
 })();
 </script>
 
