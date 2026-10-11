@@ -6,9 +6,11 @@ layout: null
 {#- RSS 2.0 feed — Hands Brief 33 (2026-10-05). Lives at /sitemap.rss because Bing (imported from
     Google Search Console) already holds a registration for that exact path on .blog.
     Most recent 20 PUBLISHED posts (collections.posts — future-dated drip posts are excluded,
-    same as the sitemap), newest first. Description = the post's own meta description. -#}
+    same as the sitemap), newest first. Description = the post's own meta description.
+    Family First guides (2026-10-11) add <pla:topic> and <pla:facebook>: the n8n Facebook workflow posts
+    that text instead of title + description, with tracking tags on the link. -#}
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:pla="https://prisonerlegalaid.com/ns/pla">
 <channel>
 {%- set site = "https://prisonerlegalaid.blog" -%}
 {%- set items = collections.posts | sort(true, false, "date") | limit(20) %}
@@ -25,6 +27,12 @@ layout: null
 <guid isPermaLink="true">{{ site }}{{ post.url }}</guid>
 <pubDate>{{ post.date | rssDate }}</pubDate>
 <description>{{ post.data.description | xmlEscape | safe }}</description>
+{%- if post.data.topic_id %}
+<pla:topic>{{ post.data.topic_id | xmlEscape | safe }}</pla:topic>
+{%- endif %}
+{%- if post.data.fb_post %}
+<pla:facebook>{{ post.data.fb_post | xmlEscape | safe }}</pla:facebook>
+{%- endif %}
 </item>
 {%- endfor %}
 </channel>
