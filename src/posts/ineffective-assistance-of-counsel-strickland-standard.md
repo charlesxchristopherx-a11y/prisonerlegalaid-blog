@@ -1,70 +1,87 @@
 ---
-title: "How Do You Prove Your Lawyer Was Ineffective?"
-description: "Almost every federal prisoner thinks their lawyer did something wrong. Winning on it requires two specific things under Strickland v. Washington — and the second one, prejudice, is usually where the fight is."
-date: 2026-08-10
+title: "My Son's Lawyer Failed Him. What Can We Do Now?"
+description: "His lawyer never investigated, never called, or never told him about a plea offer. When that can undo a federal conviction, what has to be proved, and the one-year clock."
+date: 2026-10-15
 category: "Post-Conviction · § 2255"
 track: "post-conviction"
 hub: "2255"
-answer: "Strickland v. Washington requires two things: that counsel's performance fell below an objective standard of reasonableness, and that the deficient performance prejudiced the defense. Prejudice means a reasonable probability the result would have been different — enough to undermine confidence in the outcome. Both prongs must be met."
+topic_id: "FF-004"
+answer: "Sometimes. A bad lawyer can be grounds to reopen a federal conviction, but two things have to be shown: the lawyer's work fell below what a reasonable lawyer would do, and it changed the result. The claim is usually raised in a motion under 28 U.S.C. § 2255, which generally has a one-year deadline."
+fb_post: "Your son keeps saying his lawyer failed him. The lawyer never visited, never looked at the evidence, or never told him the government offered a deal. You believe him, and you want to know if anything can be done now that he is already sentenced. Sometimes it can. A federal conviction can be reopened when the lawyer's work fell below what a reasonable lawyer would have done and it changed the outcome. That second part is where most of these claims are won or lost, and there is a one-year clock that usually starts when the conviction became final. We wrote out what has to be shown, the plea offer rule most families have never heard of, and what you can start gathering this week. If you want someone to look at his case with you, call Charles Christopher at 786-408-5073."
 faq:
-  - q: "Why is ineffective assistance usually raised in a § 2255 motion?"
-    a: "Because it typically requires evidence outside the trial record — what counsel knew, did, or failed to investigate. That evidence generally cannot be developed on direct appeal, so the claim is normally reserved for collateral review."
-  - q: "Is a bad outcome enough to prove ineffective assistance?"
-    a: "No. Courts weigh the entire trial record and ask whether the specific error actually mattered against everything else the factfinder saw. Losing, by itself, proves nothing under Strickland."
+  - q: "Can a bad lawyer get my son's conviction overturned?"
+    a: "It can, but proving the lawyer made mistakes is only half of it. Under Strickland v. Washington he has to show the lawyer's performance was deficient and that it prejudiced the defense, meaning a reasonable probability the result would have been different."
+  - q: "His lawyer never told him about a plea offer. Does that matter?"
+    a: "Yes. In Missouri v. Frye the Supreme Court held that, as a general rule, defense counsel has the duty to communicate formal plea offers from the prosecution that may be favorable to the accused. Letting a formal offer expire without telling him is not the effective assistance the Constitution requires. He still has to show it made a difference."
+  - q: "He pleaded guilty. Can he still claim his lawyer was ineffective?"
+    a: "Yes. Hill v. Lockhart applies the same two-part test to guilty pleas. For the second part he has to show a reasonable probability that, but for the lawyer's errors, he would not have pleaded guilty and would have insisted on going to trial."
+  - q: "Does he have to raise this on appeal first?"
+    a: "No. In Massaro v. United States the Supreme Court held that an ineffective-assistance claim may be brought in a motion under 28 U.S.C. 2255 whether or not it could have been raised on direct appeal."
+  - q: "How long does he have to file?"
+    a: "A motion under 28 U.S.C. 2255 has a one-year period of limitation. For most people it runs from the date the conviction became final. The statute lists three later starting dates that apply only in specific situations, so work out his date now."
 authorities:
   - cite: "Strickland v. Washington, 466 U.S. 668 (1984)"
     url: "https://www.courtlistener.com/opinion/111170/strickland-v-washington/"
   - cite: "Hill v. Lockhart, 474 U.S. 52 (1985)"
     url: "https://www.courtlistener.com/opinion/111539/hill-v-lockhart/"
-  - cite: "Lafler v. Cooper, 566 U.S. 156 (2012)"
-    url: "https://www.courtlistener.com/opinion/625833/lafler-v-cooper/"
   - cite: "Missouri v. Frye, 566 U.S. 134 (2012)"
     url: "https://www.courtlistener.com/opinion/626055/missouri-v-frye/"
 ---
-Talk to a hundred people serving federal time and you'll hear a common thread: their lawyer missed something, didn't investigate something, didn't call a witness who should have testified, didn't push back hard enough at sentencing. Some of that is genuine grievance. Some of it is the ordinary second-guessing anyone would do about the worst experience of their life. The law doesn't ask which one it is by intuition. It asks a very specific two-part question. Many ineffective-assistance claims turn on prejudice even when counsel's performance is seriously questioned, because both prongs are independently required — a defendant can clear the first hurdle and still lose on the second.
+Sometimes a bad lawyer is enough to reopen a federal conviction. Not always, and not because the lawyer was rude, slow, or hard to reach. The question is narrower than that: did the lawyer's work fall below what a reasonable lawyer would have done, and did it change what happened to your son? Both answers have to be yes. If he was convicted in federal court, the place to raise it is usually a motion under 28 U.S.C. § 2255, and that motion generally has a one-year deadline.
 
-## The two-part test, and why it's harder than it sounds
+Most families hear "ineffective assistance" and assume it means proving the lawyer was bad. That is the easier half. The harder half is showing it mattered.
 
-The governing framework comes from *Strickland v. Washington*, 466 U.S. 668 (1984), and it hasn't changed in the four decades since. To win an ineffective-assistance claim, a defendant has to prove two separate things: first, that counsel's performance fell below an objective standard of reasonableness under prevailing professional norms — "deficient performance" — and second, that this deficient performance actually prejudiced the outcome. Both prongs are required. Proving one without the other ordinarily does not establish entitlement to relief.
+## The two things he has to show
 
-The deficient-performance prong is often the easier of the two to argue, at least on the surface. Courts ask whether the attorney's conduct fell outside the wide range of what a reasonably competent lawyer would have done under the circumstances — not whether a *better* lawyer existed, or whether a different strategy might have worked out better in hindsight. Strategic decisions, even ones that look bad after the fact, are generally given heavy deference if they were made after reasonable investigation. That's a deliberate policy choice: courts don't want to turn every conviction into a referendum on trial tactics decided from the comfortable distance of appellate review.
+The rule comes from Strickland v. Washington, 466 U.S. 668 (1984). The Supreme Court set out two parts. "First, the defendant must show that counsel's performance was deficient." Second, "the defendant must show that the deficient performance prejudiced the defense."
 
-## Where the fight usually happens: prejudice
+The first part asks whether the lawyer did something a reasonable lawyer would not have done, or failed to do something a reasonable lawyer would have. Not investigating, not interviewing a witness who could have helped, giving him wrong advice about the law. Courts give lawyers a lot of room on strategy. The Court said that "strategic choices made after thorough investigation of law and facts relevant to plausible options are virtually unchallengeable." So "I would have done it differently" is not enough on its own. A choice made without investigating is a different story.
 
-The prejudice prong is the real battleground, and it's stricter than most people expect. It's not enough to show that counsel's error *might* have changed something. The defendant has to show a reasonable probability that, but for counsel's unprofessional errors, the result of the proceeding would have been different — a probability sufficient to undermine confidence in the outcome. That's a real evidentiary burden, not a formality. Courts have to weigh the whole trial record, not just the isolated mistake, and ask whether the error actually mattered against everything else the jury or judge saw.
+The second part is prejudice. He has to show a reasonable probability that the result would have been different without the lawyer's errors. The Court defined that phrase this way: "A reasonable probability is a probability sufficient to undermine confidence in the outcome." He does not have to prove he would certainly have won. He does have to connect the mistake to the result.
 
-The Supreme Court has applied this framework across very different fact patterns, and the range is instructive. In *Hinton v. Alabama*, 571 U.S. 263 (2014), defense counsel mistakenly believed state law capped funding for expert witnesses at a low dollar amount, and as a result hired an inadequate ballistics expert in a case that turned heavily on gun-and-bullet matching testimony — that was deficient performance because it stemmed from a basic failure to research the applicable funding law, not a strategic choice. In *Hill v. Lockhart*, 474 U.S. 52 (1985), the Court extended the same two-part test to guilty pleas: a defendant challenging a plea he *accepted* has to show a reasonable probability that, absent counsel's errors, he would not have pleaded guilty and would have insisted on going to trial.
+So a filing that says "my lawyer messed up" and stops there will lose. A filing that says "my lawyer never contacted this witness, here is what she would have said, and here is why it would have changed the verdict" has a chance.
 
-Plea-related prejudice is context-specific, and the *Hill* formulation does not cover every plea scenario. Where deficient advice caused a defendant to *reject* a favorable plea offer and stand trial, *Lafler v. Cooper*, 566 U.S. 156 (2012), requires a different and more detailed showing: a reasonable probability that the defendant would have accepted the offer, that the prosecution would not have withdrawn it, that the court would have accepted its terms, and that the resulting conviction or sentence would have been less severe than what was actually imposed. Where the lost opportunity concerns a plea offer that counsel never communicated at all, *Missouri v. Frye*, 566 U.S. 134 (2012), supplies the governing analysis. These are distinct tests, and collapsing them all into "would have gone to trial" misstates what several of them require.
+## If he pleaded guilty
 
-## Deficient performance alone changes nothing
+Most federal cases end in a plea, and the same test applies. In Hill v. Lockhart, 474 U.S. 52 (1985), the Court held that the two-part test applies to guilty pleas. For the prejudice part, he has to show "a reasonable probability that, but for counsel's errors, he would not have pleaded guilty and would have insisted on going to trial."
 
-This is the point worth sitting with longest, because it is a recurring trap in pro se filings: showing that a lawyer clearly screwed up is only step one, and step one by itself accomplishes nothing. *Lockhart v. Fretwell*, 506 U.S. 364 (1993), makes this explicit — the prejudice inquiry isn't a pure outcome-determination test. It asks whether counsel's errors were serious enough to deprive the defendant of a *fair* trial, one whose result is reliable, not simply whether a different call by counsel might have produced a different number on paper. A defendant doesn't get relief just because a hypothetical better lawyer might have gotten a marginally better result on some isolated point; the errors have to have actually undermined confidence in whether the whole proceeding was trustworthy.
+That is a real hurdle. In Hill itself the claim failed because the man never said that, with correct advice, he would have gone to trial.
 
-That standard cuts both ways, and it's worth being honest about both directions. It sets a real floor — sloppy, uninvestigated, phoned-in representation on a matter that plainly affected the case can and does get relief, as *Hinton* and cases like *Andrus v. Texas*, 590 U.S. 806 (2020) — where counsel barely spoke to key mitigation witnesses before trial and failed to investigate a documented history of trauma — show. But it also means a lawyer's genuine misjudgment, made after real investigation, on a strategic question reasonable lawyers could disagree about, usually isn't enough on its own, even if it turned out to be the wrong call.
+## The plea offer nobody told him about
 
-## Where this fits in a post-conviction case
+This is the rule families most often do not know. In Missouri v. Frye, 566 U.S. 134 (2012), the Court held that "as a general rule, defense counsel has the duty to communicate formal offers from the prosecution to accept a plea on terms and conditions that may be favorable to the accused." When the lawyer in that case let a formal offer expire without telling his client, the Court said he "did not render the effective assistance the Constitution requires."
 
-For federal prisoners, ineffective-assistance claims are almost always raised in a [§ 2255 motion](/blog/what-is-a-2255-motion/) rather than on direct appeal, and there's a structural reason for that: these claims typically depend on evidence outside the trial record — what the lawyer knew, what they investigated, what they told the client, why they made the choices they made — and a direct appeal is generally limited to what's already in that record. A § 2255 motion, filed in the sentencing court, is built for exactly this kind of fact development, which is part of why courts have historically treated it as the preferred vehicle for these claims rather than requiring them to be shoehorned into a direct appeal where the record often can't support them.
+If your son learned later that the government had offered a deal and his lawyer never mentioned it, write down when he found out and how. He will still have to show it would have made a difference, but it is the kind of fact these motions are built on.
 
-None of this means the bar is designed to be unbeatable. It means the bar has two separate parts, and a filing that only addresses the first — "my lawyer messed up" — without seriously grappling with the second — "and here's specifically how that changed what happened to me" — is incomplete by definition, no matter how frustrated or justified the underlying grievance is.
+## Why it usually comes after the appeal
 
-If a claim like this was never raised in state court, [procedural default](/blog/what-is-procedural-default/) may affect whether a federal court can reach it at all.
+These claims usually depend on things that are not in the court record: what the lawyer knew, what he investigated, what he told your son in private. That is why they are normally raised in a § 2255 motion in the court that sentenced him. The Supreme Court said so directly in Massaro v. United States, 538 U.S. 500 (2003): "an ineffective-assistance-of-counsel claim may be brought in a collateral proceeding under § 2255, whether or not the petitioner could have raised the claim on direct appeal." Our guide to [what a 2255 motion is](/blog/what-is-a-2255-motion/) explains the process.
 
-## Primary authorities
+If he was convicted in a state court, the same two-part test applies, but the paperwork and the deadlines are different. Start with our article on [procedural default](/blog/what-is-procedural-default/).
 
-- *Strickland v. Washington*, 466 U.S. 668 (1984)
-- *Hill v. Lockhart*, 474 U.S. 52 (1985)
-- *Hinton v. Alabama*, 571 U.S. 263 (2014)
-- *Lafler v. Cooper*, 566 U.S. 156 (2012)
-- *Missouri v. Frye*, 566 U.S. 134 (2012)
+## The clock
 
----
+Under 28 U.S.C. § 2255(f), a 1-year period of limitation applies to the motion. It runs from the latest of four dates:
 
-If you believe your trial or plea was undermined by your lawyer's performance, <a href="tel:+17864085073">call 786-408-5073</a> or start an intake below — our paralegal team can help you assess whether the record supports both parts of this standard before anything gets filed.
+1. the date on which the judgment of conviction becomes final;
+2. the date a governmental impediment to filing, created in violation of the Constitution or laws of the United States, is removed, if that impediment prevented him from filing;
+3. the date on which the right asserted was initially recognized by the Supreme Court, if that right has been newly recognized by the Supreme Court and made retroactively applicable to cases on collateral review; or
+4. the date on which the facts supporting the claim could have been discovered through the exercise of due diligence.
 
-More on this subject: [all articles on this topic](/topics/2255-motions/).
+Notice the last one says "could have been discovered," not "were discovered." For most people the first date controls, and when a conviction becomes final depends on whether there was an appeal. Work out his date this week, and if it is close, get help right away.
 
-**Keep reading**
+He also generally gets one § 2255 motion. A second one needs permission from the court of appeals, and that is hard to get. Read [why the first motion is usually the only one](/blog/second-or-successive-motions-one-shot/) before anything is filed. Every claim belongs in the first motion.
 
-- [Can You File a Second § 2255 Motion After the First Is Denied?](/blog/second-or-successive-motions-one-shot/)
+## What you can gather this week
+
+- Write down what he tells you the lawyer did and did not do, with dates. Visits, calls, what was said about a plea.
+- Have him ask the lawyer, in writing, for a copy of his case file. The request should come from him, since he is the client. Keep a copy.
+- Find any letters, emails, or texts from the lawyer, and any letter that mentions a plea offer.
+- Write down names of witnesses the lawyer never contacted, and what each could have said.
+- Get the date of sentencing and the date of any appeal decision. Those set the clock.
+
+None of this has to be perfect. It gives whoever helps him something real to work from.
+
+If you want someone to go through his case with you, [send us a message](/#contact) or call Charles Christopher at 786-408-5073. We prepare the paperwork and can help you see whether the record supports both parts of the test before anything is filed.
+
+More on this subject: [all articles on 2255 motions](/topics/2255-motions/).
