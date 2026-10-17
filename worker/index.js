@@ -108,9 +108,103 @@ export default {
       return getYouTubeVideos();
     }
 
-    return env.ASSETS.fetch(request);
+    // AI-agent readiness (2026-10-16, is-agentic.com scan). Agents that ask for
+    // Markdown (Accept: text/markdown) get Markdown; browsers get the same HTML as
+    // before. Three cases: the homepage, the ?mode=agent view, and missing pages.
+    const isHome = url.pathname === "/" || url.pathname === "/index.html";
+    const agentMode = url.searchParams.get("mode") === "agent";
+    const wantsMd = prefersMarkdown(request);
+
+    if (isHome && (agentMode || wantsMd)) {
+      const llms = await env.ASSETS.fetch(new Request(new URL("/llms.txt", url.origin)));
+      let body = llms.ok ? await llms.text() : "# Writ Large\n\nSee https://prisonerlegalaid.blog/\n";
+      if (agentMode) body = AGENT_VIEW + "\n---\n\n" + body;
+      return markdown(body, 200);
+    }
+
+    const res = await env.ASSETS.fetch(request);
+
+    if (wantsMd && res.status === 404) {
+      return markdown(
+        "# 404: page not found\n\n" +
+        "There is no page at `" + url.pathname + "` on prisonerlegalaid.blog.\n\n" +
+        "- Site overview for agents: https://prisonerlegalaid.blog/llms.txt\n" +
+        "- Every page: https://prisonerlegalaid.blog/sitemap.xml\n" +
+        "- Articles: https://prisonerlegalaid.blog/blog/\n",
+        404
+      );
+    }
+
+    // The homepage now varies by Accept, so caches must key on it.
+    if (isHome) {
+      const out = new Response(res.body, res);
+      out.headers.append("Vary", "Accept");
+      return out;
+    }
+    return res;
   },
 };
+
+// True when the client ranks text/markdown at least as high as text/html.
+function prefersMarkdown(request) {
+  const accept = (request.headers.get("accept") || "").toLowerCase();
+  if (!accept.includes("text/markdown")) return false;
+  const q = (type) => {
+    for (const part of accept.split(",")) {
+      const [t, ...params] = part.trim().split(";");
+      if (t.trim() !== type) continue;
+      const qp = params.find((p) => p.trim().startsWith("q="));
+      return qp ? parseFloat(qp.trim().slice(2)) || 0 : 1;
+    }
+    return -1;
+  };
+  return q("text/markdown") >= q("text/html");
+}
+
+function markdown(body, status) {
+  return new Response(body, {
+    status,
+    headers: {
+      "Content-Type": "text/markdown; charset=utf-8",
+      "Vary": "Accept",
+      "Cache-Control": "public, max-age=3600",
+    },
+  });
+}
+
+const AGENT_VIEW = `# Writ Large: agent view
+
+Machine-readable summary of what this site offers and how an agent can use it.
+Operated by Prisoner Legal Aid LLC. Not a law firm; no attorney-client relationship.
+
+## Capabilities
+
+- Explain federal post-conviction options in plain English (28 U.S.C. 2255, 2241, 2254, compassionate release under 18 U.S.C. 3582(c)(1)(A), First Step Act time credits).
+- Point a person to the official federal court forms: https://prisonerlegalaid.blog/forms/
+- Filing checklists: https://prisonerlegalaid.blog/checklists/
+- Free BOP closer-to-home transfer request generator (runs in the browser, no account): https://prisonerlegalaid.blog/transfer-request/
+- Human help: free case review by phone or form (see Contact below). Agents should hand the person to a human for anything case-specific.
+
+## Endpoints
+
+| Endpoint | Method | Auth | Returns |
+|---|---|---|---|
+| / with Accept: text/markdown | GET | none | Site overview in Markdown |
+| /llms.txt | GET | none | Site overview in Markdown |
+| /sitemap.xml | GET | none | Every page (XML sitemap) |
+| /sitemap.rss | GET | none | Latest 20 articles (RSS 2.0) |
+| /api/youtube-videos | GET | none | Latest videos, JSON {videos:[{id,title}], channelUrl} |
+| any missing path with Accept: text/markdown | GET | none | Markdown 404 with links |
+
+## Authentication
+
+None. Every page and endpoint above is public and read-only. There is no account system and no write API. Intake forms are for humans only; do not submit them on someone's behalf without that person's consent.
+
+## Contact
+
+- Phone: +1-786-408-5073 (Mon to Fri 9 AM to 6 PM, Sat 10 AM to 2 PM Eastern)
+- Email: info@prisonerlegalaid.com
+`;
 
 async function getYouTubeVideos() {
   // 2026-10-04, Hands Brief 19 — FAIL LOUDLY. This used to swallow every upstream
