@@ -9,5 +9,9 @@
     "binding": "ASSETS",
     "run_worker_first": true,
     "not_found_handling": "404-page"
-  }
+  },
+  // Permanent video list shared with prisonerlegalaid.com (2026-10-17).
+  "kv_namespaces": [
+    { "binding": "VIDEO_LIST", "id": "637919ee985a4d99ab1d512993b953e7" }
+  ]
 }

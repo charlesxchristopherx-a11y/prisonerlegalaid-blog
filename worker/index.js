@@ -10,7 +10,7 @@ const CHANNEL_URL = "https://www.youtube.com/@PrisonerLegalAidChannel";
 const CACHE_SECONDS = 900; // 15 minutes
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     // Canonicalize: www.prisonerlegalaid.blog -> prisonerlegalaid.blog
@@ -105,7 +105,7 @@ export default {
     }
 
     if (url.pathname === "/api/youtube-videos") {
-      return getYouTubeVideos();
+      return getYouTubeVideos(env, ctx);
     }
 
     // AI-agent readiness (2026-10-16, is-agentic.com scan). Agents that ask for
@@ -206,81 +206,114 @@ None. Every page and endpoint above is public and read-only. There is no account
 - Email: info@prisonerlegalaid.com
 `;
 
-async function getYouTubeVideos() {
-  // 2026-10-04, Hands Brief 19 — FAIL LOUDLY. This used to swallow every upstream
-  // error, return 200 {"videos":[]}, and then CACHE that empty answer for 15 minutes.
-  // A dead feed looked exactly like a channel with no videos, and the homepage told
-  // families "new videos are on the way" while 28 were public. Now:
-  //   upstream OK, entries   -> 200 {videos}            (cached 15 min + 7-day last-good)
-  //   upstream OK, zero      -> 200 {videos:[], empty:true}
-  //   upstream failed        -> 502 {videos:<last-good or []>, stale, error:{...}}  never cached
+// 2026-10-17: videos come from our permanent list (Cloudflare KV namespace
+// PLA_VIDEO_LIST, shared with prisonerlegalaid.com and fed by the n8n publisher at
+// upload time). YouTube's RSS feed only ADDS to it. Before this, a YouTube feed
+// outage (10-03, 10-16) emptied the section, because the only fallback was a
+// per-data-center cache.
+//   feed OK            -> 200 {videos}  merged feed + saved list, saved back to KV
+//   feed down, saved   -> 200 {videos, source:"saved-list"}  X-Video-Source: saved-list
+//   feed down, nothing -> 502 {videos:[], error:{...}}  never cached (fail loudly)
+async function getYouTubeVideos(env, ctx) {
   const cache = caches.default;
-  const cacheKey = new Request("https://cache.internal/youtube-videos-v2");
-  const staleKey = new Request("https://cache.internal/youtube-videos-last-good-v1");
+  const cacheKey = new Request("https://cache.internal/youtube-videos-v3");
   const cached = await cache.match(cacheKey);
   if (cached) return cached;
 
-  let videos = [], upstreamOk = false, upstreamStatus = null, upstreamError = null;
+  const saved = await readList(env);
+  let feed = [], upstreamStatus = null, upstreamError = null;
   try {
     const feedRes = await fetch(
       `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`,
       { headers: { "User-Agent": "Mozilla/5.0 (compatible; PrisonerLegalAidBot/1.0)" } }
     );
     upstreamStatus = feedRes.status;
-    if (feedRes.ok) {
-      upstreamOk = true;
-      videos = parseFeed(await feedRes.text());
-    }
+    if (feedRes.ok) feed = parseFeed(await feedRes.text());
   } catch (err) {
     upstreamError = String(err && err.message ? err.message : err);
   }
 
-  const json = (body, status, cacheControl) => new Response(JSON.stringify(body), {
+  const json = (body, status, cacheControl, source) => new Response(JSON.stringify(body), {
     status,
     headers: {
       "Content-Type": "application/json",
       "Cache-Control": cacheControl,
       "Access-Control-Allow-Origin": "*",
+      ...(source ? { "X-Video-Source": source } : {}),
     },
   });
 
-  if (!upstreamOk) {
-    let stale = [], staleSavedAt = null;
-    const s = await cache.match(staleKey);
-    if (s) { try { const j = await s.json(); stale = j.videos || []; staleSavedAt = j.savedAt || null; } catch (e) {} }
+  if (feed.length) {
+    const save = saveMerged(env, feed, "feed");
+    if (ctx && ctx.waitUntil) ctx.waitUntil(save); else await save;
+  }
+  const merged = mergeEntries(feed, saved);
+  const videos = merged.slice(0, 4).map((v) => ({ id: v.id, title: v.title || "Writ Large TV" }));
+
+  if (!videos.length) {
     return json({
-      videos: stale,
+      videos: [],
       channelUrl: CHANNEL_URL,
-      stale: stale.length > 0,
-      staleSavedAt,
-      error: { code: "upstream_unavailable", message: "Could not read the YouTube channel feed.", upstreamStatus, upstreamError },
+      error: { code: "upstream_unavailable", message: "Could not read the YouTube channel feed and no saved list exists.", upstreamStatus, upstreamError },
     }, 502, "no-store");
   }
 
-  if (!videos.length) {
-    return json({ videos: [], channelUrl: CHANNEL_URL, empty: true }, 200, "no-store");
+  if (!feed.length) {
+    return json({ videos, channelUrl: CHANNEL_URL, source: "saved-list",
+      notice: "YouTube's feed did not answer; showing our saved list of videos." }, 200, "public, max-age=300", "saved-list");
   }
 
-  const response = json({ videos, channelUrl: CHANNEL_URL }, 200, `public, max-age=${CACHE_SECONDS}`);
+  const response = json({ videos, channelUrl: CHANNEL_URL }, 200, `public, max-age=${CACHE_SECONDS}`, "feed+saved-list");
   await cache.put(cacheKey, response.clone());
-  await cache.put(staleKey, new Response(JSON.stringify({ videos, savedAt: new Date().toISOString() }), {
-    headers: { "Content-Type": "application/json", "Cache-Control": "public, max-age=604800" },
-  }));
   return response;
+}
+
+const LIST_KEY = "list";
+const LIST_MAX = 200;
+
+async function readList(env) {
+  if (!env || !env.VIDEO_LIST) return [];
+  try {
+    const j = await env.VIDEO_LIST.get(LIST_KEY, "json");
+    return (j && Array.isArray(j.entries)) ? j.entries : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function mergeEntries(...lists) {
+  const byId = new Map();
+  for (const list of lists) for (const e of list || []) if (e && e.id && !byId.has(e.id)) byId.set(e.id, e);
+  return [...byId.values()]
+    .sort((a, b) => String(b.published || "").localeCompare(String(a.published || "")))
+    .slice(0, LIST_MAX);
+}
+
+async function saveMerged(env, fresh, addedBy) {
+  if (!env || !env.VIDEO_LIST || !fresh || !fresh.length) return;
+  const saved = await readList(env);
+  const merged = mergeEntries(fresh.map((e) => ({ ...e, addedBy: e.addedBy || addedBy })), saved);
+  const sig = (l) => l.map((e) => e.id + "|" + e.title).join();
+  if (sig(merged) === sig(saved)) return;
+  await env.VIDEO_LIST.put(LIST_KEY, JSON.stringify({ updatedAt: new Date().toISOString(), entries: merged }));
 }
 
 function parseFeed(xml) {
   const entries = xml.split("<entry>").slice(1);
   const videos = [];
-  for (const block of entries.slice(0, 4)) {
+  for (const block of entries.slice(0, 15)) {
     const idMatch = block.match(/<yt:videoId>([^<]+)<\/yt:videoId>/);
     const titleMatch =
       block.match(/<media:title>([^<]+)<\/media:title>/) ||
       block.match(/<title>([^<]+)<\/title>/);
+    const pubMatch = block.match(/<published>([^<]+)<\/published>/);
+    const descMatch = block.match(/<media:description>([\s\S]*?)<\/media:description>/);
     if (idMatch) {
       videos.push({
         id: idMatch[1],
         title: titleMatch ? decodeXmlEntities(titleMatch[1]) : "Writ Large TV",
+        published: pubMatch ? pubMatch[1] : "",
+        description: descMatch ? decodeXmlEntities(descMatch[1]).slice(0, 500) : "",
       });
     }
   }
