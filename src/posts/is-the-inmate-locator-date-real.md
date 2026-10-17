@@ -91,7 +91,7 @@ email, so you have it on your phone when you are sitting in a parking lot outsid
 
 **[Send me the First 72 Hours guide →](https://prisonerlegalaid.com/first-72-hours/)**
 
-If you would rather just talk to a person, call **786-408-5073** and ask for Charles Christopher.
+If you would rather just talk to a person, call the Prisoner Legal Aid Family Help Line at **[786-408-5073](tel:+17864085073)**, or text **[727-635-0600](sms:+17276350600)**.
 If it is the middle of the night, send the email instead and it will be read in the morning.
 
 Prisoner Legal Aid prepares documents, requests records, explains deadlines, and connects

@@ -103,6 +103,8 @@
     var href = a.getAttribute('href') || '';
     if (href.indexOf('tel:') === 0) {
       send('call_click', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('sms:') === 0) {
+      send('text_click', { link_url: href, page_path: location.pathname });
     } else if (/\.pdf($|\?)/i.test(href)) {
       send('form_download', {
         file_name: href.split('/').pop().split('?')[0],
@@ -262,5 +264,23 @@
 
 
 {% include "lead-ack.njk" %}
+
+<!-- Family Help Line action bar, phones only (2026-10-17). Call 786-408-5073, text 727-635-0600. -->
+<style>
+.pla-actionbar{display:none}
+@media (max-width:760px){
+  .pla-actionbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.15);padding-bottom:env(safe-area-inset-bottom)}
+  .pla-actionbar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:58px;color:#fff;text-decoration:none;font:600 13px/1.2 var(--sans);letter-spacing:.01em}
+  .pla-actionbar a+a{border-left:1px solid rgba(255,255,255,.15)}
+  .pla-actionbar a.primary{background:var(--stamp)}
+  .pla-actionbar small{display:block;font-weight:400;font-size:11px;opacity:.85;margin-top:2px}
+  body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+}
+</style>
+<nav class="pla-actionbar" aria-label="Contact the Prisoner Legal Aid Family Help Line">
+  <a class="primary" href="tel:+17864085073">Call<small>786-408-5073</small></a>
+  <a href="sms:+17276350600">Text<small>727-635-0600</small></a>
+  <a href="/#contact">Free review<small>no cost</small></a>
+</nav>
 </body>
 </html>

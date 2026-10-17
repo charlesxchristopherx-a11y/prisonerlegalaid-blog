@@ -68,3 +68,14 @@ test("videos: feed down and nothing saved fails loudly (502)", async () => {
   assert.equal(r.status, 502);
   globalThis.fetch = realFetch;
 });
+
+test("Family Help Line: action bar with call and text links, no 'ask for Charles Christopher'", async () => {
+  const html = fs.readFileSync(path.join(site, "index.html"), "utf8");
+  assert.match(html, /class="pla-actionbar"/);
+  assert.match(html, /href="tel:\+17864085073"/);
+  assert.match(html, /href="sms:\+17276350600"/);
+  const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  const offenders = walk(site).filter((f) => f.endsWith(".html") && !f.includes(`${path.sep}team${path.sep}`))
+    .filter((f) => /ask for Charles Christopher|call Charles Christopher/.test(fs.readFileSync(f, "utf8")));
+  assert.deepEqual(offenders, []);
+});

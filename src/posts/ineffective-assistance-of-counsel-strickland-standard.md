@@ -7,7 +7,7 @@ track: "post-conviction"
 hub: "2255"
 topic_id: "FF-004"
 answer: "Sometimes. A bad lawyer can be grounds to reopen a federal conviction, but two things have to be shown: the lawyer's work fell below what a reasonable lawyer would do, and it changed the result. The claim is usually raised in a motion under 28 U.S.C. § 2255, which generally has a one-year deadline."
-fb_post: "Your son keeps saying his lawyer failed him. The lawyer never visited, never looked at the evidence, or never told him the government offered a deal. You believe him, and you want to know if anything can be done now that he is already sentenced. Sometimes it can. A federal conviction can be reopened when the lawyer's work fell below what a reasonable lawyer would have done and it changed the outcome. That second part is where most of these claims are won or lost, and there is a one-year clock that usually starts when the conviction became final. We wrote out what has to be shown, the plea offer rule most families have never heard of, and what you can start gathering this week. If you want someone to look at his case with you, call Charles Christopher at 786-408-5073."
+fb_post: "Your son keeps saying his lawyer failed him. The lawyer never visited, never looked at the evidence, or never told him the government offered a deal. You believe him, and you want to know if anything can be done now that he is already sentenced. Sometimes it can. A federal conviction can be reopened when the lawyer's work fell below what a reasonable lawyer would have done and it changed the outcome. That second part is where most of these claims are won or lost, and there is a one-year clock that usually starts when the conviction became final. We wrote out what has to be shown, the plea offer rule most families have never heard of, and what you can start gathering this week. If you want someone to look at his case with you, call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073) or text [727-635-0600](sms:+17276350600)."
 faq:
   - q: "Can a bad lawyer get my son's conviction overturned?"
     a: "It can, but proving the lawyer made mistakes is only half of it. Under Strickland v. Washington he has to show the lawyer's performance was deficient and that it prejudiced the defense, meaning a reasonable probability the result would have been different."
@@ -82,6 +82,6 @@ He also generally gets one § 2255 motion. A second one needs permission from th
 
 None of this has to be perfect. It gives whoever helps him something real to work from.
 
-If you want someone to go through his case with you, [send us a message](/#contact) or call Charles Christopher at 786-408-5073. We prepare the paperwork and can help you see whether the record supports both parts of the test before anything is filed.
+If you want someone to go through his case with you, [send us a message](/#contact) or call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073) or text [727-635-0600](sms:+17276350600). We prepare the paperwork and can help you see whether the record supports both parts of the test before anything is filed.
 
 More on this subject: [all articles on 2255 motions](/topics/2255-motions/).

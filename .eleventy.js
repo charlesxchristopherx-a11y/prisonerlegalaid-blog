@@ -1,4 +1,19 @@
 module.exports = function (eleventyConfig) {
+  // Family Help Line (2026-10-17, Chris): families are routed to the Prisoner Legal Aid
+  // Family Help Line, not to one person. Articles already staged before this date still
+  // carry the old line; rewrite it at build time so nothing published says "ask for Charles
+  // Christopher". Byline and About the Author pages are not touched.
+  eleventyConfig.addTransform("family-help-line", function (content) {
+    if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
+    const CALL = '<a href="tel:+17864085073">786-408-5073</a>';
+    const TEXT = '<a href="sms:+17276350600">727-635-0600</a>';
+    return content
+      .replace(/call <strong>786-408-5073<\/strong> and ask for Charles Christopher/g,
+        'call the Prisoner Legal Aid Family Help Line at <strong>' + CALL + '</strong>, or text <strong>' + TEXT + '</strong>')
+      .replace(/call Charles Christopher at 786-408-5073/g,
+        'call the Prisoner Legal Aid Family Help Line at ' + CALL + ' or text ' + TEXT);
+  });
+
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
