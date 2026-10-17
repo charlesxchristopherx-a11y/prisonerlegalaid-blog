@@ -1,0 +1,51 @@
+{#- One video per article (2026-10-17). The n8n publisher tags each article's video with the
+    article's slug in the permanent video list; this asks for it and shows a tap-to-play poster.
+    Nothing renders when the article has no video yet. Videos are vertical (9:16). -#}
+<div class="article-video" id="article-video" data-slug="{{ page.fileSlug }}" hidden>
+  <p class="article-video-label">Watch the one-minute version</p>
+  <div class="article-video-frame"></div>
+</div>
+<style>
+.article-video{margin:4px 0 28px}
+.article-video-label{font:600 13px/1.3 var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--steel);margin:0 0 8px}
+.article-video-frame{position:relative;width:100%;max-width:320px;aspect-ratio:9/16;background:#000;border-radius:6px;overflow:hidden}
+.article-video-frame iframe,.article-video-frame button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;margin:0;background:#000;cursor:pointer;display:block}
+.article-video-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.article-video-frame .play{position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:rgba(20,24,31,.8)}
+.article-video-frame .play::after{content:"";position:absolute;left:27px;top:20px;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent #fff}
+.article-video-frame button:hover .play{background:var(--stamp)}
+</style>
+<script>
+(function () {
+  var box = document.getElementById('article-video');
+  if (!box || !window.fetch) return;
+  var slug = box.getAttribute('data-slug');
+  fetch('https://prisonerlegalaid.com/api/youtube-videos?article=' + encodeURIComponent(slug))
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      var v = d && d.videos && d.videos[0];
+      if (!v || !/^[A-Za-z0-9_-]{11}$/.test(v.id)) return;
+      var frame = box.querySelector('.article-video-frame');
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Play video: ' + v.title);
+      var img = document.createElement('img');
+      img.src = 'https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg';
+      img.alt = ''; img.loading = 'lazy'; img.decoding = 'async';
+      var p = document.createElement('span'); p.className = 'play'; p.setAttribute('aria-hidden', 'true');
+      b.appendChild(img); b.appendChild(p);
+      b.addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + v.id + '?autoplay=1&playsinline=1';
+        f.title = v.title;
+        f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        f.allowFullscreen = true;
+        b.replaceWith(f);
+        if (typeof gtag === 'function') gtag('event', 'article_video_play', { video_id: v.id, page_path: location.pathname });
+      });
+      frame.appendChild(b);
+      box.hidden = false;
+    })
+    .catch(function () {});
+})();
+</script>

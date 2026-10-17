@@ -98,6 +98,7 @@ layout: base.njk
     <p style="margin:0;font-size:17px;line-height:1.65;color:#14181f"><strong>Short answer:</strong> {{ answer }}</p>
   </div>
   {% endif %}
+  {% if not video %}{% include "article-video.njk" %}{% endif %}
   {{ content | safe }}
   {% if faq %}
   <section class="post-faq" style="margin:36px 0 0">
