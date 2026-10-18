@@ -1,11 +1,11 @@
 ---
-title: "Can Guards Read Your Legal Mail?"
-description: "Legal mail gets real constitutional protection that ordinary mail doesn't — but only if it's marked correctly and opened in your presence. What the law actually requires, and what to do if it's violated."
+title: "His Legal Mail Came Open. Can They Do That?"
+description: "Legal mail has protection ordinary mail doesn't, but only if it's marked right and opened in front of him. What the law requires and what to do."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"
 ---
-Say your sister mails you a copy of a motion your lawyer filed, and by the time it lands in your hands, the envelope's been sliced open with the pages creased like someone flipped through every one of them twice. You'd be right to wonder whether that's allowed. It's one of the most common questions we hear, and the honest answer is: it depends almost entirely on what was written on that envelope before it ever got to the mailroom.
+He tells you on the phone that the letter from his lawyer arrived already sliced open, the pages creased like someone flipped through every one. You are right to wonder whether that is allowed. It is one of the most common questions we hear, and the honest answer depends almost entirely on what was written on the envelope before it ever reached the mailroom.
 
 Prisons and jails draw a hard line between two categories of mail, and that line matters more than almost anything else in this conversation. Ordinary personal mail — letters from your mom, your kids, a friend, even most correspondence with the outside world — gets very little protection. Staff can typically open it, skim it, and in many facilities read it for security purposes, especially if there's a reason to suspect contraband, coded language, or a threat. That's been true for a long time and it's not likely to change. Legal mail, sometimes called privileged or attorney mail, sits in a different category entirely, with real constitutional weight behind it.
 

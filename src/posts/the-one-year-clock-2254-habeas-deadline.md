@@ -1,6 +1,6 @@
 ---
 title: "How Long Do You Have to File a Federal Habeas Petition?"
-description: "State prisoners generally get one year to file a federal habeas petition under § 2254 — but the clock doesn't always start where people assume, and it can pause. Here's how the four trigger dates and statutory tolling actually work."
+description: "State prisoners usually get one year to file federal habeas under § 2254, but the clock may start later than you think and can pause. How it works."
 date: 2026-08-15
 category: "Post-Conviction · § 2254"
 track: "post-conviction"

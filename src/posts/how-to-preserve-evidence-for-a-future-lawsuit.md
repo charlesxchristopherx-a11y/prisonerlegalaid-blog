@@ -1,6 +1,6 @@
 ---
 title: "How to Preserve Evidence for a Future Lawsuit"
-description: "Strong cases usually fall apart because nobody wrote anything down at the time. A practical method for preserving dates, names, and documentation before memory and video are gone."
+description: "Strong cases fall apart when nobody wrote anything down. A practical way to save dates, names, and records before memory and video are gone."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"

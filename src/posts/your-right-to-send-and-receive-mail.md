@@ -1,6 +1,6 @@
 ---
 title: "Your Right to Send and Receive Mail"
-description: "Ordinary mail gets far less protection than legal mail, but facilities still can't restrict it without justification. What the law actually allows, and what crosses the line."
+description: "Ordinary mail gets less protection than legal mail, but a facility still needs a reason to restrict it. What the law allows, and what crosses the line."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

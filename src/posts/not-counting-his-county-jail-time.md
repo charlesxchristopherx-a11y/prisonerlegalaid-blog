@@ -1,10 +1,11 @@
 ---
 title: "They Aren't Counting the Time He Sat in County Jail. How Do We Fix It?"
-description: "He sat in county for months before the federal sentence and none of it shows on his paperwork. Here is who actually does that math, the one clause in the statute that decides it, and the written requests to send today."
+seoTitle: "His County Jail Time Isn't Being Counted. How to Fix It"
+description: "He sat in county for months before his federal sentence and none of it shows. Who does that math, the rule that decides it, and what to send today."
 date: 2026-10-12
 category: "Federal Prison News · Release Dates and Time Credits"
 track: "post-conviction"
-hub: "2241-habeas"
+hub: "2241"
 ---
 
 He sat in the county jail for eleven months waiting on the federal case. You counted those months. Then his paperwork came through and the release date is built as if none of it happened, and everyone you ask points at somebody else.

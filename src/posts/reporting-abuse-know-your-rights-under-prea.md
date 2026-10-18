@@ -1,6 +1,6 @@
 ---
 title: "Reporting Abuse: Know Your Rights Under PREA"
-description: "The Prison Rape Elimination Act sets specific reporting and investigation requirements. What PREA protects, how to report, and what to document if you're not believed."
+description: "The Prison Rape Elimination Act sets rules for reporting and investigating abuse. What PREA protects, how to report, and what to write down."
 date: 2026-07-30
 category: "PREA / Abuse Reporting"
 track: "inside-rights"

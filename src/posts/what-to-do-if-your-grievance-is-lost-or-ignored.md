@@ -1,11 +1,11 @@
 ---
-title: "What to Do If Your Grievance Is \"Lost\" or Ignored"
-description: "Silence isn't the same as exhaustion, but courts still expect specific steps when a grievance goes unanswered. What to do — and document — when nothing comes back."
+title: "His Grievance Vanished. What Do You Do Now?"
+description: "No answer isn't the same as finishing the process, and courts expect certain steps when a grievance disappears. What to do and what to document."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"
 ---
-Nothing coming back is its own kind of frustrating. You did what you were supposed to do — filled out the form, followed the steps, waited — and then silence. No receipt, no response, no denial you could at least appeal. Just nothing. It's tempting to read that silence as a dead end, like the system swallowed your complaint and there's no way forward. That's usually not true, but what you do in that gap matters enormously, because a lost or ignored grievance can still become part of a solid legal record if you handle it right.
+He filed the grievance the way he was supposed to, and then nothing came back. No receipt, no answer, no denial he could at least appeal. It is tempting to read that silence as a dead end. It usually is not, but what he does in the gap matters a great deal, because a lost or ignored grievance can still become part of a solid record if it is handled right. Here is what to tell him.
 
 Start with the paperwork you control before it even gets submitted. Keep a copy of everything — the grievance itself, any attachments, any cover note. If your facility doesn't let you photocopy, write it out twice and keep one version, or at minimum keep detailed notes of exactly what you wrote: the date, the specific complaint, and any relief you requested. Note how you submitted it — handed to a specific officer, dropped in a grievance box, mailed through a particular unit — and get a name if you can. A submission with no name attached to it is much easier for a facility to claim never happened.
 

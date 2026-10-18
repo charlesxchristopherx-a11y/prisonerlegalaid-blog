@@ -1,6 +1,6 @@
 ---
 title: "What Happens at a Disciplinary Hearing?"
-description: "Disciplinary hearings aren't criminal trials, but Wolff v. McDonnell still guarantees specific due process protections. What you're entitled to, and what isn't required."
+description: "A disciplinary hearing isn't a criminal trial, but he still has due process rights under Wolff v. McDonnell. What he's entitled to, and what he isn't."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

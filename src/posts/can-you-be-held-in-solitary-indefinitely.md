@@ -1,6 +1,6 @@
 ---
 title: "Can You Be Held in Solitary Indefinitely?"
-description: "There's no single federal cap on solitary confinement, but courts do scrutinize prolonged isolation. What factors matter, and how a due process or Eighth Amendment claim gets built."
+description: "No federal law caps solitary confinement, but courts do look hard at long isolation. What matters, and how a due process or Eighth Amendment claim is built."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

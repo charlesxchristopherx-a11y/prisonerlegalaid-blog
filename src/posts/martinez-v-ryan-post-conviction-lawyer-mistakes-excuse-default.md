@@ -1,6 +1,7 @@
 ---
 title: "Can Your Post-Conviction Lawyer's Mistake Excuse a Lost Claim?"
-description: "Procedural default usually kills a claim you didn't raise at the right stage — permanently. Martinez v. Ryan carved out one narrow exception for ineffective-assistance claims, and it's easy to misunderstand how far it actually reaches."
+seoTitle: "Can a Post-Conviction Lawyer's Mistake Excuse a Lost Claim?"
+description: "A claim not raised at the right stage is usually lost for good. Martinez v. Ryan made one narrow exception, and it reaches less far than people think."
 date: 2026-09-06
 category: "Post-Conviction · § 2254"
 track: "post-conviction"

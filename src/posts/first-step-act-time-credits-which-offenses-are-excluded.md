@@ -1,6 +1,7 @@
 ---
 title: "Which Offenses Disqualify You From First Step Act Time Credits?"
-description: "Earning FSA time credits toward early transfer to home confinement or supervised release depends on more than program participation — the underlying offense of conviction matters. Here's the actual statutory exclusion list."
+seoTitle: "Which Offenses Block First Step Act Time Credits?"
+description: "Some convictions block First Step Act time credits no matter how many programs he finishes. The actual list of excluded offenses, in plain terms."
 date: 2026-09-07
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"

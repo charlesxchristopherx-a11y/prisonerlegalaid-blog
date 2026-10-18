@@ -1,6 +1,6 @@
 ---
 title: "Do You Have a Right to See a Doctor Behind Bars?"
-description: "The Eighth Amendment guarantees medical care, not a specific response time. What 'deliberate indifference' actually requires you to show, and how documentation makes or breaks that claim."
+description: "The Eighth Amendment guarantees medical care, not a set response time. What deliberate indifference requires, and how records make or break the claim."
 date: 2026-07-30
 category: "Medical Neglect"
 track: "inside-rights"

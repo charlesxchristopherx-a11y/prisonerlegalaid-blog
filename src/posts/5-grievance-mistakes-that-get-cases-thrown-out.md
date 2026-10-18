@@ -1,6 +1,6 @@
 ---
 title: "5 Grievance Mistakes That Get Cases Thrown Out"
-description: "Under the PLRA, a grievance filed the wrong way can end a federal claim before a judge ever reaches the merits. Five common mistakes that sink otherwise strong cases."
+description: "A grievance filed the wrong way can end a federal case before a judge reads it. Five common mistakes that sink otherwise strong cases."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"

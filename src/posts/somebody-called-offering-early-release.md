@@ -1,6 +1,7 @@
 ---
 title: "Somebody Called Saying They Could Get My Husband Out for a Fee. Is It a Scam?"
-description: "A stranger called and said he can get your husband home early if you pay. Here is how to tell in sixty seconds, what to do if you already sent money, and what actually moves a federal release date."
+seoTitle: "Someone Offered to Get My Husband Out for a Fee. Scam?"
+description: "A stranger says he can get your husband out early for a fee. How to tell in sixty seconds, what to do if you paid, and what really moves a release date."
 date: 2026-09-28
 category: "Federal Prison News · Scams and Fraud"
 track: "post-conviction"

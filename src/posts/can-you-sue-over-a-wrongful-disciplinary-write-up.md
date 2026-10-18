@@ -1,6 +1,6 @@
 ---
 title: "Can You Sue Over a Wrongful Disciplinary Write-Up?"
-description: "Prison officials don't have unchecked authority to hand out discipline. When a wrongful write-up can support a due process or retaliation claim — and when it can't."
+description: "Prison staff can't hand out discipline with no limits. When a wrongful write-up supports a due process or retaliation claim, and when it doesn't."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

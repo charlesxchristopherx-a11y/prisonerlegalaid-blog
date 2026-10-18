@@ -1,6 +1,7 @@
 ---
 title: "The Right to Adequate Medical Care in Custody — And Why Bivens No Longer Works for Federal Prisoners"
-description: "Deliberate indifference and medical negligence are not the same legal claim. Recent Supreme Court decisions have made Bivens damages actions nearly impossible for federal prisoners — but FTCA negligence claims remain a real path forward."
+seoTitle: "Medical Care in Federal Prison: Why Bivens No Longer Works"
+description: "Deliberate indifference and negligence are different claims. Bivens is nearly closed to federal prisoners, but FTCA negligence claims still work."
 date: 2026-07-23
 category: "Medical Care · Bivens & FTCA"
 track: "inside-rights"

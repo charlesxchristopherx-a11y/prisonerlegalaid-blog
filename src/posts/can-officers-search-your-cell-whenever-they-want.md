@@ -1,6 +1,6 @@
 ---
 title: "Can Officers Search Your Cell Whenever They Want?"
-description: "Cell searches get very little Fourth Amendment protection — but that's not the whole story. What courts actually look at when a search crosses into retaliation or harassment."
+description: "Cell searches get little Fourth Amendment protection, but that isn't the whole story. When a search crosses into retaliation or harassment."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

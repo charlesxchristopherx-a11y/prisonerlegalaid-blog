@@ -1,6 +1,6 @@
 ---
 title: "How Do First Step Act Time Credits Work?"
-description: "Federal law entitles eligible prisoners to 10-15 days of credit for every 30 days of program participation — but the BOP frequently miscalculates or delays applying it. What the statute actually says, and what to do if your credits are wrong."
+description: "Eligible federal prisoners earn 10 to 15 days of credit per 30 days of programs, but the BOP often gets it wrong. What the law says and how to fix it."
 date: 2026-07-30
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"

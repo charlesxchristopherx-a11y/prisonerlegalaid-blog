@@ -1,6 +1,6 @@
 ---
 title: "How to Properly Describe an Injury in a Grievance"
-description: "Vague language is one of the most common reasons grievances get denied for 'insufficient information.' How to describe an injury with the specificity reviewers and courts expect."
+description: "Vague wording is a top reason grievances get denied. How to describe an injury with the detail reviewers and courts expect."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"

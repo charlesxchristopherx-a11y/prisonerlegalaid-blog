@@ -24,9 +24,9 @@ module.exports = [
     relatedPosts: ["what-is-a-2255-motion", "ineffective-assistance-of-counsel-strickland-standard", "second-or-successive-motions-one-shot", "the-certificate-of-appealability-explained", "equitable-tolling-prison-mail-delays-2255-deadline", "filing-a-2255-motion-costs-self-representation-and-challenges"],
     modified: "2026-09-04",
     label: "§ 2255 motion",
-    title: "§ 2255 Filing Checklist — What Goes In, and Where It Goes",
+    title: "§ 2255 Filing Checklist: What Goes In and Where",
     description:
-      "A step-by-step checklist for filing a 28 U.S.C. § 2255 motion: the one-year clock, what Rule 2 requires the motion to contain, how many copies the clerk needs, and what happens after it is docketed.",
+      "Step by step checklist for a § 2255 motion: the one-year clock, what the motion must contain, how many copies, and what happens after filing.",
     intro:
       "A § 2255 motion is filed as a motion in your existing federal criminal case, not as a new lawsuit. That single fact drives most of what follows — including why there is no filing fee.",
     form: { label: "Official § 2255 form (AO 243)", href: "/forms/AO_243.pdf" },
@@ -83,9 +83,9 @@ module.exports = [
     relatedPosts: ["what-is-a-2241-habeas-petition", "2255-savings-clause-when-2241-works-instead", "bop-camp-transfer-before-rrc-home-confinement", "his-release-date-hasnt-moved"],
     modified: "2026-09-04",
     label: "§ 2241 petition",
-    title: "§ 2241 Filing Checklist — Exhaustion, Venue, and the $5 Fee",
+    title: "§ 2241 Checklist: Exhaustion, Venue, $5 Fee",
     description:
-      "A checklist for a 28 U.S.C. § 2241 habeas petition challenging how the Bureau of Prisons is carrying out a sentence: the administrative remedy deadlines you must clear first, which district to file in, and who to name.",
+      "Checklist for a § 2241 petition on how the BOP is carrying out a sentence: the remedy deadlines to clear first, where to file, and who to name.",
     intro:
       "A § 2241 petition challenges the <em>execution</em> of a sentence — time credits, computation, discipline — rather than whether the conviction is valid. Two things sink most of them before the merits: skipping the administrative remedy process, and filing in the wrong district.",
     form: { label: "Official § 2241 form (AO 242)", href: "/forms/AO_242.pdf" },
@@ -137,9 +137,9 @@ module.exports = [
     relatedPosts: ["the-one-year-clock-2254-habeas-deadline", "what-is-procedural-default", "actual-innocence-gateway-claims-schlup-v-delo", "aedpa-deference-2254d-why-state-court-being-wrong-isnt-enough", "martinez-v-ryan-post-conviction-lawyer-mistakes-excuse-default"],
     modified: "2026-09-04",
     label: "§ 2254 petition",
-    title: "§ 2254 Filing Checklist — State Judgments in Federal Court",
+    title: "§ 2254 Checklist: State Cases in Federal Court",
     description:
-      "A checklist for a 28 U.S.C. § 2254 habeas petition: naming the right respondent, the fee or trust-account certificate the rules require, the one-year clock, and the deference standard waiting on the other side.",
+      "Checklist for a § 2254 petition: the right respondent, the fee or trust account certificate, the one-year clock, and the standard on the other side.",
     intro:
       "§ 2254 is for someone in custody under a <strong>state</strong> court judgment seeking federal review. It is the most procedurally unforgiving of the three routes, and the deference standard means being right is not by itself enough.",
     form: { label: "Official § 2254 form (AO 241)", href: "/forms/AO_241.pdf" },
@@ -190,9 +190,9 @@ module.exports = [
     relatedPosts: ["compassionate-release-3582", "rutherford-fernandez-compassionate-release", "compassionate-release-cannot-fix-a-bad-conviction-fernandez"],
     modified: "2026-09-04",
     label: "Compassionate release",
-    title: "Compassionate Release Preparation Checklist (§ 3582(c)(1)(A))",
+    title: "Compassionate Release Preparation Checklist",
     description:
-      "What to gather and clear before filing a compassionate-release motion under 18 U.S.C. § 3582(c)(1)(A), including the exhaustion requirement and the two arguments the Supreme Court closed off in 2026.",
+      "What to gather before filing for compassionate release under § 3582(c)(1)(A), including asking the BOP first and the arguments closed off in 2026.",
     intro:
       "There is no official court form for compassionate release. It is a motion filed in your criminal case. The statute has a hard gate in front of it, and two of the arguments people most often reached for are now foreclosed.",
     form: null,
@@ -238,7 +238,7 @@ module.exports = [
     label: "FSA time credits",
     title: "First Step Act Time Credit Dispute Checklist",
     description:
-      "How to challenge a Bureau of Prisons First Step Act time-credit calculation: confirming what you should be earning, working the administrative remedy process, and when the dispute becomes a § 2241 petition.",
+      "How to challenge a BOP time credit calculation: what he should be earning, the administrative remedy steps, and when it becomes a § 2241 petition.",
     intro:
       "Time-credit disputes are the most common § 2241 issue, and the most commonly mishandled. The calculation is the BOP's to make in the first instance — which is why the administrative record you build matters more than the argument you eventually write.",
     form: { label: "Official § 2241 form (AO 242)", href: "/forms/AO_242.pdf" },
@@ -291,9 +291,9 @@ module.exports = [
     relatedPosts: ["how-to-request-medical-records-from-inside", "how-to-preserve-evidence-for-a-future-lawsuit", "can-you-record-or-document-what-happens-behind-bars"],
     modified: "2026-09-04",
     label: "Getting court records",
-    title: "How to Pull Federal Court Records (PACER) Without Running Up a Bill",
+    title: "Pulling PACER Court Records Without a Bill",
     description:
-      "A practical guide to retrieving federal docket sheets and filed documents through PACER: what it costs, the quarterly waiver that makes most use free, and what is free regardless.",
+      "How to get federal docket sheets and court filings through PACER: what it costs, the quarterly waiver that makes most use free, and what's always free.",
     intro:
       "Post-conviction work runs on the record. This guide is written for the person on the outside doing the retrieving — PACER is a public website, and it is not reachable from inside a facility.",
     form: null,

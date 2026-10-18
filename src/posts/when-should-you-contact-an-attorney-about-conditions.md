@@ -1,6 +1,6 @@
 ---
 title: "When Should You Contact an Attorney About Conditions?"
-description: "Handling everything alone first isn't always the safest approach. When conditions-of-confinement issues are worth bringing to an attorney — and how to know before it's too late."
+description: "Handling it alone first isn't always safest. When jail or prison conditions are worth bringing to an attorney, and how to know before it's too late."
 date: 2026-07-30
 category: "Referral Network"
 track: "inside-rights"

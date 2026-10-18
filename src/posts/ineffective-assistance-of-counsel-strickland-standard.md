@@ -1,6 +1,6 @@
 ---
 title: "My Son's Lawyer Failed Him. What Can We Do Now?"
-description: "His lawyer never investigated, never called, or never told him about a plea offer. When that can undo a federal conviction, what has to be proved, and the one-year clock."
+description: "His lawyer never investigated or never told him about a plea offer. When that can undo a federal conviction, what must be proved, and the deadline."
 date: 2026-10-15
 category: "Post-Conviction · § 2255"
 track: "post-conviction"

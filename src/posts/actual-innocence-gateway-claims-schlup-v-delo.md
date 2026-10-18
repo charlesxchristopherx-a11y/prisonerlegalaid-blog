@@ -1,6 +1,6 @@
 ---
 title: "Can New Evidence of Innocence Reopen a Barred Habeas Claim?"
-description: "New evidence of innocence can sometimes unlock claims that would otherwise be permanently barred by procedural default or AEDPA's deadline. But the standard is demanding, and it doesn't work the way most people assume."
+description: "New evidence of innocence can sometimes reopen claims barred by default or the deadline. The standard is hard, and it works differently than people think."
 date: 2026-08-13
 category: "Post-Conviction · § 2254"
 track: "post-conviction"

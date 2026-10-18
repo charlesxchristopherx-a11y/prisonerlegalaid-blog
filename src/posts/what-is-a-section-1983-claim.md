@@ -1,6 +1,6 @@
 ---
 title: "What Is a Section 1983 Claim?"
-description: "42 U.S.C. § 1983 is the vehicle for constitutional claims against state officials — but it's often misunderstood. What it actually covers, and what it doesn't."
+description: "Section 1983 is how people sue state officials for violating their constitutional rights. What it actually covers, and what it doesn't."
 date: 2026-07-30
 modified: 2026-09-02
 category: "Civil Rights · § 1983"

@@ -1,6 +1,6 @@
 ---
 title: "What Is a Class Action and Could It Apply to Your Facility?"
-description: "When the same problem affects an entire unit — bad water, chronic understaffing — a class action can be more effective than dozens of individual claims. How to tell if your situation fits."
+description: "When the same problem hits a whole unit, like bad water or short staffing, a class action can work better than many single cases. How to tell if it fits."
 date: 2026-07-30
 category: "Civil Rights · § 1983"
 track: "inside-rights"

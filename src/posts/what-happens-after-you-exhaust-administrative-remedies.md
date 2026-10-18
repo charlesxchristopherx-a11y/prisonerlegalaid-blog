@@ -1,6 +1,6 @@
 ---
 title: "What Happens After You Exhaust Administrative Remedies?"
-description: "Finishing the grievance process is a milestone, not the finish line. What exhaustion actually accomplishes, and what comes next if you're considering a federal claim."
+description: "Finishing the grievance process is a step, not the finish line. What exhaustion does, and what comes next if he's thinking about a federal claim."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"

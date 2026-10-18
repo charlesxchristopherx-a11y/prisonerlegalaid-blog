@@ -1,6 +1,6 @@
 ---
 title: "Mental Health Care Behind Bars: What You're Entitled To"
-description: "The same deliberate indifference standard that governs physical medical care applies to mental health treatment. What that standard requires, and how it plays out in practice."
+description: "The same standard that covers physical medical care covers mental health treatment behind bars. What it requires, and how it plays out."
 date: 2026-07-30
 category: "Medical Neglect"
 track: "inside-rights"

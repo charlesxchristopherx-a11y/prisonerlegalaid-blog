@@ -1,6 +1,7 @@
 ---
 title: "He Finished the Gun Charge Years Ago. Why Is He Still Not Earning Time Credits?"
-description: "His team keeps saying he is FSA ineligible and nobody will explain it. The rule is about the counts on his judgment, not the gun in his presentence report — and one disqualifying count can hold down an entire aggregated sentence. Here is how to check it and what to file this week."
+seoTitle: "Gun Charge Done Years Ago. Why No Time Credits Yet?"
+description: "His team says he's FSA ineligible. The rule turns on the counts on his judgment, and one count can block a whole sentence. How to check it this week."
 date: 2026-10-07
 category: "Federal Prison News · Release Dates and Time Credits"
 track: "post-conviction"

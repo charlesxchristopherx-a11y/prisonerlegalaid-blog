@@ -92,5 +92,43 @@ module.exports = function (eleventyConfig) {
     return new Date(newest).toISOString().slice(0, 10);
   });
 
+
+  // SEO check (added 2026-10-18 from the SEO audit). Warns, never fails the
+  // build, so an unattended publish is never blocked. Grep the build log for
+  // "SEO CHECK" to see problems. Limits: meta description 160 characters,
+  // <title> 60 characters, no em or en dashes in either.
+  eleventyConfig.addLinter("seo-check", function (content) {
+    const out = this.page && this.page.outputPath;
+    if (!out || !String(out).endsWith(".html") || String(out).includes("/team/")) return;
+    const d = (content.match(/<meta name="description" content="([^"]*)"/) || [])[1];
+    const t = (content.match(/<title>([\s\S]*?)<\/title>/) || [])[1];
+    const un = (s) => String(s).replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").trim();
+    const where = this.page.inputPath;
+    if (d !== undefined) {
+      const dd = un(d);
+      if (dd.length > 160) console.warn(`SEO CHECK: description is ${dd.length} chars (max 160) in ${where}`);
+      if (/[\u2013\u2014]/.test(dd)) console.warn(`SEO CHECK: dash in description in ${where}`);
+    }
+    if (t !== undefined) {
+      const tt = un(t);
+      if (tt.length > 60) console.warn(`SEO CHECK: title is ${tt.length} chars (max 60, use seoTitle) in ${where}`);
+      if (/[\u2013\u2014]/.test(tt)) console.warn(`SEO CHECK: dash in title in ${where}`);
+    }
+  });
+
+
+  // Warn when a post's hub: value is not a key in src/_data/hubs.js. A wrong
+  // key silently drops the post from its topic hub page (found 2026-10-18).
+  eleventyConfig.on("eleventy.after", function () {
+    const fs = require("fs"), path = require("path");
+    const keys = new Set(require("./src/_data/hubs.js").map((h) => h.key));
+    const dir = path.join(__dirname, "src", "posts");
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".md")) continue;
+      const m = fs.readFileSync(path.join(dir, f), "utf8").match(/^hub:\s*"?([^"\n]+)"?\s*$/m);
+      if (m && !keys.has(m[1].trim())) console.warn(`SEO CHECK: unknown hub key "${m[1].trim()}" in src/posts/${f}`);
+    }
+  });
+
   return { dir: { input: "src", includes: "_includes", output: "_site" } };
 };

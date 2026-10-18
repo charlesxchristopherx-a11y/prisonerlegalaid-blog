@@ -1,6 +1,7 @@
 ---
 title: "How to Document a Use-of-Force Incident So It Actually Holds Up"
-description: "Use-of-force incidents are chaotic and over fast. How to build a written record — dates, names, injuries — that can actually support a claim under Hudson v. McMillian."
+seoTitle: "How to Document a Use of Force Incident So It Holds Up"
+description: "Use of force incidents are fast and chaotic. How to build a written record of dates, names, and injuries that can actually support a claim."
 date: 2026-07-30
 category: "Excessive Force"
 track: "inside-rights"

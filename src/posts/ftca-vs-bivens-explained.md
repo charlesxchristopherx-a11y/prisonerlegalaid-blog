@@ -1,6 +1,6 @@
 ---
-title: "FTCA vs. Bivens: What's the Difference, and Which One Actually Works for Federal Prisoners?"
-description: "Two very different legal roads for federal prisoners seeking damages — and after a string of recent Supreme Court decisions, one of them has nearly closed. Here's what each claim is, and which one still works."
+title: "He Was Hurt in a Federal Prison. Who Do You Sue?"
+description: "Two routes for damages after harm in federal prison, and recent Supreme Court rulings nearly closed one. What each is, and which one still works."
 date: 2026-08-09
 category: "Federal Litigation · FTCA & Bivens"
 track: "inside-rights"
@@ -9,7 +9,7 @@ track: "inside-rights"
   <iframe src="https://www.youtube-nocookie.com/embed/VyXozQ1Yego" title="What's the difference between FTCA and Bivens lawsuits?" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-If you're a federal prisoner considering a lawsuit for something that happened to you in custody, you'll run into two names constantly: FTCA and Bivens. They sound like they might be interchangeable — they aren't. They're built on completely different legal foundations, they answer different questions, and as of the last several years, one of them barely works anymore for federal prisoners. Knowing the difference isn't optional; it determines whether your claim has a real chance or gets dismissed before anyone looks at the facts.
+There are two completely different routes, and picking the wrong one wastes the deadline. Which one fits depends on one thing: whether the person who hurt him was a government employee doing their job badly, or an officer who crossed a line on purpose. And after a string of recent Supreme Court decisions, one of the two barely works anymore.
 
 **Bivens is a claim against the individual official.** It comes from *Bivens v. Six Unknown Named Agents*, 403 U.S. 388 (1971), where the Supreme Court recognized an implied right to sue a federal officer personally for money damages when that officer violates your constitutional rights. A Bivens claim names the specific person — the guard, the doctor, the official — and asks a jury to hold that person individually responsible, with the possibility of punitive damages on top of compensatory ones.
 

@@ -1,6 +1,6 @@
 ---
 title: "Is the Date on the BOP Inmate Locator His Real Release Date?"
-description: "The date on the federal inmate locator is real, but it is not the day he walks out, and it is not the judge's number. Here is where it comes from, why it moves, and how to check it against his own paperwork this week."
+description: "The inmate locator date is real, but it isn't the day he walks out or the judge's number. Where it comes from, why it moves, and how to check it."
 date: 2026-10-02
 category: "Federal Prison News · Release Dates and Time Credits"
 track: "post-conviction"

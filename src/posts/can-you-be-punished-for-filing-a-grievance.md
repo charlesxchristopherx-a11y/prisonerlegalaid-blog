@@ -1,6 +1,6 @@
 ---
 title: "Can You Be Punished for Filing a Grievance?"
-description: "Retaliation for filing a grievance is its own separate legal claim, distinct from whatever the original grievance was about. What you have to show, and how to build the record."
+description: "Punishment for filing a grievance is its own legal claim, separate from the original complaint. What has to be shown, and how to build the record."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"

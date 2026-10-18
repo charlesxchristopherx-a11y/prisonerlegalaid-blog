@@ -8,7 +8,7 @@ layout: base.njk
 eleventyComputed:
   title: "{{ hub.title }} | Writ Large"
   description: "{{ hub.description }}"
-  pageModified: "2026-09-04"
+  pageModified: "{{ hub.modified }}"
 ---
 {#- Hub page: the parent for every core article on this subject. Generated
     from src/_data/hubs.js, with children resolved by each post's `hub:`
@@ -60,6 +60,8 @@ eleventyComputed:
   <p style="margin:18px 0 0;font-size:15px"><a href="/forms/">Browse official federal court forms →</a></p>
   {% endif %}
 
+  {% if hub.body %}<div class="hub-body" style="font-size:17px;line-height:1.75;color:#39414B;max-width:66ch">{{ hub.body | safe }}</div>{% endif %}
+
   <h2 style="font-size:22px;margin:38px 0 16px">Articles in this topic</h2>
   <div class="posts">
     {%- set items = [] -%}
@@ -84,6 +86,6 @@ eleventyComputed:
   </p>
 
   <div class="post-cta" style="margin-top:32px">
-    <strong>Need a document prepared?</strong> Call <a href="tel:+17864085073">786-408-5073</a> or email <a href="mailto:info@prisonerlegalaid.com">info@prisonerlegalaid.com</a>.
+    <strong>Not sure where he stands?</strong> Call the Prisoner Legal Aid Family Help Line at <a href="tel:+17864085073">786-408-5073</a> or text <a href="sms:+17276350600">727-635-0600</a> for a free case review. Writ Large prepares documents. It is not a law firm and does not give legal advice.
   </div>
 </section>

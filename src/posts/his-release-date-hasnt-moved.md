@@ -1,6 +1,6 @@
 ---
 title: "His Release Date Hasn't Moved and Nobody Will Tell Us Why"
-description: "Your husband finished the classes. The date on the locator is the same. Here is what is actually going on inside the computer that holds his date, what he can file this week, and the deadlines that decide whether anybody ever has to answer him."
+description: "He finished the classes and the date hasn't changed. What is going on in the system that holds his date, what he can file, and the deadlines."
 date: 2026-09-24
 category: "Federal Prison News · First Step Act"
 track: "post-conviction"

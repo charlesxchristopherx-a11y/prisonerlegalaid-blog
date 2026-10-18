@@ -1,6 +1,6 @@
 ---
 title: "How to Request Medical Records From Inside"
-description: "A dated paper trail is often what turns a vague complaint into a real Eighth Amendment claim. How to request your medical records from inside, and why the request itself matters."
+description: "A dated paper trail can turn a vague complaint into a real Eighth Amendment claim. How to request medical records from inside, and why it matters."
 date: 2026-07-30
 category: "Medical Neglect"
 track: "inside-rights"

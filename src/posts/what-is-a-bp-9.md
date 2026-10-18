@@ -1,10 +1,10 @@
 ---
 title: "What Is a BP-9, and How Does He File One?"
-description: "Somebody told him to file a BP-9 and nobody explained what that is. Here is the whole chain in order, the exact deadlines in calendar days, the words to put on the form, and what to do when no answer ever comes back."
+description: "Someone told him to file a BP-9. The whole appeal chain in order, the deadlines in calendar days, what to write, and what to do if no answer comes."
 date: 2026-10-16
 category: "Federal Prison News · Grievances and Administrative Remedies"
 track: "post-conviction"
-hub: "2241-habeas"
+hub: "2241"
 ---
 
 He called and said a counselor told him to "file a BP-9." He does not know what that is. Neither do you. The number sounds like something only a lawyer would handle, and the fifteen minutes on the phone ran out before anybody explained it.

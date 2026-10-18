@@ -1,6 +1,7 @@
 ---
 title: "What Is Procedural Default — and Can It Still Be Excused?"
-description: "A federal court can refuse to even look at the merits of a strong constitutional claim if it wasn't raised the right way, at the right time, in state court first. Here's how procedural default works — and the narrow paths around it."
+seoTitle: "What Is Procedural Default, and Can It Be Excused?"
+description: "A federal court can refuse to hear a strong claim that wasn't raised the right way in state court first. How procedural default works, and ways around it."
 date: 2026-08-11
 category: "Post-Conviction · § 2254"
 track: "post-conviction"

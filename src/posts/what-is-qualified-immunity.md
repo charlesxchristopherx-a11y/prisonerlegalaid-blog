@@ -1,11 +1,11 @@
 ---
 title: "What Is Qualified Immunity?"
-description: "Qualified immunity is one of the biggest obstacles in § 1983 cases — and it can defeat a claim even when everyone agrees on the facts. What it actually requires and how it works."
+description: "You can be right about what the guard did and still lose. Qualified immunity is the most common reason. What it is, and what gets around it."
 date: 2026-07-30
 category: "Civil Rights · § 1983"
 track: "inside-rights"
 ---
-You file a civil rights claim under 42 U.S.C. § 1983 because a guard did something you're sure was unconstitutional. The facts aren't really in dispute — everybody agrees on what happened. And you still lose, not because the court thinks the officer acted fine, but because of a doctrine that never asks whether the conduct was okay in some moral sense. That doctrine is qualified immunity, and understanding it before you file is a lot better than being blindsided by it after.
+You can be completely right about what the guard did and still lose. The reason has a name, and it is the single most common way these cases end. Here is what it is and what gets around it.
 
 Qualified immunity comes out of Harlow v. Fitzgerald (1982), a Supreme Court case that reshaped how lawsuits against government officials work. The short version: qualified immunity shields government employees — including corrections officers, wardens, and other prison staff — from being held personally liable for money damages under § 1983, unless they violated a right that was "clearly established" at the time, and one that a reasonable official in their position should have known was unlawful. Notice what that standard doesn't ask. It doesn't ask whether a right was violated in some abstract sense. It asks whether the law was so clear, at the time of the incident, that any reasonable officer doing that job would have understood the specific conduct crossed a constitutional line.
 

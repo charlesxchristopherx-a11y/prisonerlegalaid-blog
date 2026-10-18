@@ -1,6 +1,6 @@
 ---
 title: "Your Right to Practice Religion Behind Bars"
-description: "RLUIPA requires more than a policy justification to restrict religious exercise in custody. What 'compelling interest' and 'least restrictive means' actually mean in practice."
+description: "RLUIPA requires a strong reason to restrict religious practice in custody. What 'compelling interest' and 'least restrictive means' mean in practice."
 date: 2026-07-30
 category: "Religious Rights"
 track: "inside-rights"

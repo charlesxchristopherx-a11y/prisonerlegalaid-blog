@@ -1,6 +1,6 @@
 ---
 title: "§ 2241 or § 2255: Which Petition Do You Actually File?"
-description: "28 U.S.C. § 2241 challenges how a federal sentence is being carried out, not the sentence itself. Here's when it applies, where to file it, and why federal prisoners so often confuse it with a § 2255 motion."
+description: "§ 2241 challenges how a federal sentence is carried out, not the sentence. When it applies, where to file, and how it differs from § 2255."
 date: 2026-08-09
 category: "Post-Conviction · § 2241"
 track: "post-conviction"

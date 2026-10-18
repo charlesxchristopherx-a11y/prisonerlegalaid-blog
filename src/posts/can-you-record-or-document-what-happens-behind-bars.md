@@ -1,6 +1,6 @@
 ---
 title: "Can You Record or Document What Happens Behind Bars?"
-description: "Recording devices are almost never allowed inside. What written documentation can do instead, and why a same-day note often holds up better than a recording would."
+description: "Recording devices are almost never allowed inside. What written notes can do instead, and why a same-day note often holds up better."
 date: 2026-07-30
 category: "Know Your Rights"
 track: "inside-rights"

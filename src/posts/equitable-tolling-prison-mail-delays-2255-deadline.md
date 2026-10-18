@@ -1,6 +1,7 @@
 ---
 title: "My § 2255 Deadline Passed — Can Prison Mail Delays Excuse It?"
-description: "The § 2255 one-year deadline is strict, but not absolute. Here's the Supreme Court's actual two-part test for excusing a late filing caused by prison mail delays — and the rule that fixes your filing date the moment you hand it to staff."
+seoTitle: "§ 2255 Deadline Missed? When Prison Mail Delays Excuse It"
+description: "The § 2255 deadline is strict but not absolute. When prison mail delays can excuse a late filing, and the rule that sets the date he hands it to staff."
 date: 2026-09-02
 category: "Post-Conviction · § 2255"
 track: "post-conviction"

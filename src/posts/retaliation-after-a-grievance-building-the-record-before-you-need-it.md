@@ -1,5 +1,6 @@
 ---
 title: "Retaliation After a Grievance: Building the Record Before You Need It"
+seoTitle: "Retaliation After a Grievance: Build the Record Early"
 description: "Retaliation rarely comes with a note attached. How to build a timeline connecting protected conduct to adverse action before you need it in front of a court."
 date: 2026-07-30
 category: "Grievances & Exhaustion"

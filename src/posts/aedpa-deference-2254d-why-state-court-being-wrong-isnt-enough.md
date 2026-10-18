@@ -1,6 +1,6 @@
 ---
 title: "Why Federal Courts Rarely Overturn a State Conviction"
-description: "Winning a federal habeas petition under § 2254 takes more than showing the state court made a mistake. Here's the exact statutory standard federal courts have to apply — and why it's so much harder to meet than people expect."
+description: "Winning a § 2254 petition takes more than showing the state court got it wrong. The standard federal judges apply, and why it is so hard to meet."
 date: 2026-09-05
 category: "Post-Conviction · § 2254"
 track: "post-conviction"

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title }}</title>
+<title>{{ seoTitle or title }}</title>
 <meta name="description" content="{{ description }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,14 +18,14 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/icon-180.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#1a2a4a">
-<meta property="og:title" content="{{ title }}">
+<meta property="og:title" content="{{ seoTitle or title }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://prisonerlegalaid.blog{{ page.url }}">
 <meta property="og:image" content="https://prisonerlegalaid.blog/img/og-card.jpg">
 <meta property="og:site_name" content="Writ Large">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:title" content="{{ seoTitle or title }}">
 <meta name="twitter:description" content="{{ description }}">
 <meta name="twitter:image" content="https://prisonerlegalaid.blog/img/og-card.jpg">
 <script type="application/ld+json">
