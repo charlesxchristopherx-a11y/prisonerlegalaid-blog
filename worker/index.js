@@ -70,7 +70,11 @@ export default {
       "/civil-rights-litigation-justice-prison/": "/litigation/",
       "/civil-rights-litigation-prisoners/": "/litigation/",
       "/state-court-litigation-basics-usa/": "/topics/2254-habeas/",
-      "/hello-world/": "/"
+      "/hello-world/": "/",
+      // Added 2026-10-22: two more WordPress-era paths still drawing Google
+      // visits (GA4, Apr to Oct 2026) and answering 404.
+      "/key-types-of-legal-documents-for-prisoners/": "/forms/",
+      "/indigent-representation-us-courts/": "/blog/filing-a-2255-motion-costs-self-representation-and-challenges/"
     };
     {
       const p = url.pathname.endsWith("/") ? url.pathname : url.pathname + "/";
