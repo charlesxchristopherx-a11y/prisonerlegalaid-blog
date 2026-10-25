@@ -1,6 +1,6 @@
 ---
 title: "Why Did They Take His Credits Away After One Write-Up?"
-description: "One incident report and his release date moved the wrong way. Which kind of credit they can take, why one write-up is sometimes not enough to trigger it, who is allowed to take it, the appeal that skips the warden, and the restoration rule almost nobody mentions."
+description: "One write-up and his release date moved the wrong way. Which credits they can take, who may take them, and the restoration rule."
 date: 2026-10-21
 category: "Federal Prison News · Time Credits and Release Dates"
 track: "post-conviction"

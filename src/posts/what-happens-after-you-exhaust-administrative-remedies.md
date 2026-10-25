@@ -1,11 +1,11 @@
 ---
-title: "What Happens After You Exhaust Administrative Remedies?"
+title: "He Finished the Grievance Process. What Happens Now?"
 description: "Finishing the grievance process is a step, not the finish line. What exhaustion does, and what comes next if he's thinking about a federal claim."
 date: 2026-07-30
 category: "Grievances & Exhaustion"
 track: "inside-rights"
 ---
-Finishing the grievance process feels like it should be the hard part. You filed the initial grievance, you appealed the denial, maybe you appealed again to a regional or central office, and finally you got a piece of paper saying the process is done. A lot of people breathe a sigh of relief right there, thinking the fight is basically over and a lawsuit is just a formality away. It's not — exhaustion isn't the finish line, it's the starting gun for a race that has its own strict rules, and the biggest one is timing.
+He filed the grievance, appealed when they denied it, maybe appealed again, and now he has a paper saying the process is finished. That paper matters more than anybody told him, because exhaustion is not the finish line. It is the starting point for a new set of rules and deadlines, and they begin running from the date on that paper.
 
 Under the Prison Litigation Reform Act, codified at 42 U.S.C. § 1997e(a), someone generally has to exhaust all available administrative remedies before filing a federal lawsuit over prison conditions — that's the law that made the grievance process mandatory in the first place, not optional homework. Congress wanted facilities to get a first crack at fixing problems internally before courts got involved, and the exhaustion requirement is taken seriously by judges. A case filed too early, before the process is complete, usually gets dismissed regardless of how strong the underlying claim is. That's why people push so hard to finish every appeal level even when it feels like shouting into a void — skipping a step can sink a case that would otherwise have real merit.
 

@@ -1,5 +1,6 @@
 ---
 title: "What Is Qualified Immunity?"
+seoTitle: "They Say the Officers Cannot Be Sued. Is That Right?"
 description: "You can be right about what the guard did and still lose. Qualified immunity is the most common reason. What it is, and what gets around it."
 date: 2026-07-30
 category: "Civil Rights · § 1983"

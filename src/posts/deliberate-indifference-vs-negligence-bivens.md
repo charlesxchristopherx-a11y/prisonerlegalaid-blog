@@ -1,6 +1,6 @@
 ---
 title: "The Right to Adequate Medical Care in Custody — And Why Bivens No Longer Works for Federal Prisoners"
-seoTitle: "Medical Care in Federal Prison: Why Bivens No Longer Works"
+seoTitle: "He Is Sick in Federal Prison. Who Can Be Held Responsible?"
 description: "Deliberate indifference and negligence are different claims. Bivens is nearly closed to federal prisoners, but FTCA negligence claims still work."
 date: 2026-07-23
 category: "Medical Care · Bivens & FTCA"

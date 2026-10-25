@@ -1,6 +1,6 @@
 ---
 title: "How Do You Appeal a Denied § 2255? Certificate of Appealability"
-seoTitle: "How to Appeal a Denied § 2255: Certificate of Appealability"
+seoTitle: "His Motion Was Denied. Can He Appeal It?"
 description: "Losing a § 2255 or habeas case doesn't mean an automatic appeal. He needs a certificate of appealability first. What it is and how to get one."
 date: 2026-08-12
 category: "Post-Conviction · § 2255"

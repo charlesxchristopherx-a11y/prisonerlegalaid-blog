@@ -1,6 +1,6 @@
 ---
 title: "What Is Procedural Default — and Can It Still Be Excused?"
-seoTitle: "What Is Procedural Default, and Can It Be Excused?"
+seoTitle: "The Court Will Not Hear His Claim. Is There a Way Around It?"
 description: "A federal court can refuse to hear a strong claim that wasn't raised the right way in state court first. How procedural default works, and ways around it."
 date: 2026-08-11
 category: "Post-Conviction · § 2254"

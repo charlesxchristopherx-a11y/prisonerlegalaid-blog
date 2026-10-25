@@ -1,5 +1,6 @@
 ---
 title: "What Is a Section 1983 Claim?"
+seoTitle: "How Do You Sue a Jail or Prison for What They Did?"
 description: "Section 1983 is how people sue state officials for violating their constitutional rights. What it actually covers, and what it doesn't."
 date: 2026-07-30
 modified: 2026-09-02

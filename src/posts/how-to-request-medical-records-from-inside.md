@@ -1,11 +1,11 @@
 ---
-title: "How to Request Medical Records From Inside"
+title: "How He Requests His Own Medical Records From Inside"
 description: "A dated paper trail can turn a vague complaint into a real Eighth Amendment claim. How to request medical records from inside, and why it matters."
 date: 2026-07-30
 category: "Medical Neglect"
 track: "inside-rights"
 ---
-If you've been trying to get someone at your facility to take a health complaint seriously, you already know the frustration of watching a problem get worse while nothing gets written down anywhere you can see. That's the real value of a medical records request — it's not just paperwork for paperwork's sake. It's how you start building a record that exists independent of what staff remember or choose to say later. Whether you're trying to understand your own treatment history, prepare for a parole hearing, or lay groundwork for a legal claim, the records are yours to ask for, and there's a right way to ask that makes them useful.
+If he keeps telling you a health complaint is being ignored, the most useful thing he can do this week is ask, in writing, for his own medical records. Some records only he can request, from inside, on the facility's own form, and the request itself creates a dated paper trail that exists no matter what staff remember later. The steps below are written for him, so you can send them to him or read them to him on the phone.
 
 Start with the request itself, and keep it specific. "I want my medical file" is too broad and too easy to slow-walk. Instead, name what you're after: the date range, the type of records (chart notes, lab results, x-ray reports, medication administration records, sick-call requests you submitted), and if you know it, the provider or unit involved. A request for "all chart notes and sick-call slips related to my lower back pain from March 2025 to the present" gets treated differently than a vague ask — it signals you know exactly what you're looking for, and it gives the records department less room to hand you a partial file and call it done. Address it to medical records or health services specifically, using whatever form your facility requires if one exists, and if no form exists, a plain written request works.
 

@@ -1,5 +1,5 @@
 ---
-title: "He Was Hurt in a Federal Prison. Who Do You Sue?"
+title: "He Was Hurt in Federal Prison. Is a Lawsuit Even Possible?"
 description: "Two routes for damages after harm in federal prison, and recent Supreme Court rulings nearly closed one. What each is, and which one still works."
 date: 2026-08-09
 category: "Federal Litigation · FTCA & Bivens"
@@ -10,6 +10,8 @@ track: "inside-rights"
 </div>
 
 There are two completely different routes, and picking the wrong one wastes the deadline. Which one fits depends on one thing: whether the person who hurt him was a government employee doing their job badly, or an officer who crossed a line on purpose. And after a string of recent Supreme Court decisions, one of the two barely works anymore.
+
+If he was hurt by a guard's force or by medical neglect and your family is weighing a lawsuit, our sister site has the step by step family guide: [He Was Hurt in a Federal Prison. Who Do You Sue?](https://prisonerlegalaid.com/blog/ftca-vs-bivens-key-differences/)
 
 **Bivens is a claim against the individual official.** It comes from *Bivens v. Six Unknown Named Agents*, 403 U.S. 388 (1971), where the Supreme Court recognized an implied right to sue a federal officer personally for money damages when that officer violates your constitutional rights. A Bivens claim names the specific person — the guard, the doctor, the official — and asks a jury to hold that person individually responsible, with the possibility of punitive damages on top of compensatory ones.
 
