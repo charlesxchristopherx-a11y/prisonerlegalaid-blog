@@ -57,7 +57,8 @@ module.exports = [
 <li>Count forward to estimate his deadline, and treat it as earlier than you think.</li>
 <li>Gather his lawyer's letters, the plea agreement, and anything showing what he was told and when.</li>
 <li>Get a free case review well before the deadline, not in the last few weeks.</li>
-</ol>`,
+</ol>
+<p>Ready to start the paperwork? Use the <a href="/checklists/2255-filing/">step by step § 2255 filing checklist</a>, and see <a href="/checklists/pacer-records/">how to pull his court records from PACER</a> without running up a bill.</p>`,
     form: { name: "AO 243", href: "/forms/AO_243.pdf", label: "Official § 2255 form (AO 243)" }
   },
   {
@@ -100,7 +101,8 @@ module.exports = [
 <li>Compare the dates against his judgment and the time he spent in custody before he was sentenced.</li>
 <li>If something is wrong, he should file the BP-9 now, in writing, and keep a copy.</li>
 <li>Write down the date he hands in every form and the date every answer comes back. Those dates decide what happens next.</li>
-</ol>`,
+</ol>
+<p>When the BOP process is finished, the <a href="/checklists/2241-filing/">§ 2241 filing checklist</a> covers where to file, who to name and the fee.</p>`,
     form: { name: "AO 242", href: "/forms/AO_242.pdf", label: "Official § 2241 form (AO 242)" }
   },
   {
@@ -136,7 +138,8 @@ module.exports = [
 <li>Find out whether a state post-conviction petition is pending right now.</li>
 <li>Count the days between his conviction becoming final and the filing of any state petition.</li>
 <li>Collect the state court opinions. The federal judge reviews what the state courts said, not only what happened at trial.</li>
-</ol>`,
+</ol>
+<p>When it is time to file, use the <a href="/checklists/2254-filing/">§ 2254 filing checklist</a>.</p>`,
     form: { name: "AO 241", href: "/forms/AO_241.pdf", label: "Official § 2254 form (AO 241)" }
   },
   {
@@ -176,7 +179,8 @@ module.exports = [
 <li>Help him write a dated request to the warden, and keep a copy.</li>
 <li>Mark the date 30 days after the warden received it.</li>
 <li>Start the release plan: an address, who he will live with, doctors, and insurance.</li>
-</ol>`,
+</ol>
+<p>The <a href="/checklists/compassionate-release/">compassionate release preparation checklist</a> lists everything to gather before the motion is filed.</p>`,
     form: null
   },
   {
