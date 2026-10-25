@@ -13,9 +13,9 @@ faq:
     a: "That is a separate request with its own statutory basis. Section 601 of the First Step Act directs the BOP to house people within 500 driving miles of home where practicable. Our free transfer-request tool prepares that request at no cost."
 authorities:
   - cite: "18 U.S.C. § 3621(b)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3621&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3621/"
   - cite: "18 U.S.C. § 3624(g)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3624&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3624/"
 ---
 <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
   <iframe src="https://www.youtube-nocookie.com/embed/WP3Q3P7b7O4" title="New BOP Policy: Camp Transfer Before RRC or Home Confinement" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

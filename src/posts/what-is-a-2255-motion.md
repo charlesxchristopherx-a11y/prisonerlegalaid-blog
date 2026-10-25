@@ -15,7 +15,7 @@ faq:
     a: "§ 2255 is for people convicted in federal court. § 2254 is for people in custody under a state court judgment. Filing under the wrong one wastes time you may not have."
 authorities:
   - cite: "28 U.S.C. § 2255"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
 ---
 If you're serving a federal sentence and believe your conviction or sentence was unconstitutional, unauthorized by law, or otherwise fundamentally flawed, 28 U.S.C. § 2255 is usually the vehicle for raising that challenge — not a new appeal, and not a state habeas petition. It's the federal post-conviction remedy built specifically for people convicted in federal court.
 

@@ -14,7 +14,7 @@ faq:
     a: "Under Houston v. Lack, a pro se prisoner's filing is deemed filed when delivered to prison authorities for mailing — not when the court clerk stamps it. The prison's outgoing mail log is the relevant record."
 authorities:
   - cite: "28 U.S.C. § 2255(f)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
   - cite: "Holland v. Florida, 560 U.S. 631 (2010)"
     url: "https://www.courtlistener.com/opinion/6796841/holland-v-florida/"
   - cite: "Houston v. Lack, 487 U.S. 266 (1988)"

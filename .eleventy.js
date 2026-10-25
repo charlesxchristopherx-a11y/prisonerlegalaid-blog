@@ -130,5 +130,22 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+
+  // U.S. Code links (added 2026-10-25). uscode.house.gov retired its old
+  // view.xhtml addresses in October 2026; they now return 404. The new official
+  // address is /us/usc/119-124/t<title>/s<section>/ (edition segment read from the
+  // live browse page). Rewriting at build time fixes every page, including staged
+  // payloads written with the old form, without touching their source files.
+  // If the edition segment changes, update USC_EDITION here; the link check will catch it.
+  const USC_EDITION = "119-124";
+  eleventyConfig.addTransform("uscode-links", function (content) {
+    if (!this.page || !String(this.page.outputPath || "").endsWith(".html")) return content;
+    return content
+      .replace(/https?:\/\/uscode\.house\.gov\/view\.xhtml\?req=granuleid:usc-prelim-title(\d+)-section(\w+)(?:&amp;|&)num=0(?:&amp;|&)edition=prelim/gi,
+        (m, t, s) => `https://uscode.house.gov/us/usc/${USC_EDITION}/t${t}/s${s}/`)
+      .replace(/https?:\/\/uscode\.house\.gov\/view\.xhtml\?req=%28title%3A(\d+)\+section%3A(\w+)\+edition%3Aprelim%29/gi,
+        (m, t, s) => `https://uscode.house.gov/us/usc/${USC_EDITION}/t${t}/s${s}/`);
+  });
+
   return { dir: { input: "src", includes: "_includes", output: "_site" } };
 };

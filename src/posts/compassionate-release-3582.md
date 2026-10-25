@@ -23,11 +23,11 @@ faq:
     a: "Thirty days from receipt opens the door to the court anyway. If the warden denies it instead, he must give written notice and a statement of reasons, and that denial can be appealed through the Bureau's Administrative Remedy Procedure."
 authorities:
   - cite: "18 U.S.C. § 3582(c)(1)(A)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3582/"
   - cite: "18 U.S.C. § 3553(a)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3553&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3553/"
   - cite: "28 U.S.C. § 2255"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
 ---
 Yes. If your husband is seriously ill in a federal prison, he can ask the judge who sentenced him to cut the rest of his sentence short. The law is 18 U.S.C. § 3582(c)(1)(A). Most people call it compassionate release.
 

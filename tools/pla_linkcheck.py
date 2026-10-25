@@ -5,11 +5,14 @@ PLA LINK CHECKER — canonical. Run against live sites or a local _site build.
   python3 pla_linkcheck.py                     # both live sites
   python3 pla_linkcheck.py --site https://x    # one live site
   python3 pla_linkcheck.py --dir _site --base https://prisonerlegalaid.blog
+  python3 pla_linkcheck.py --dir _site --base https://prisonerlegalaid.blog --external
+      (--external also checks every outbound link from the build; use it before any deploy.
+       Added 2026-10-25 after 55 dead U.S. Code links shipped past a build-mode PASS.)
 
 Exit codes:  0 = every link resolves.  1 = at least one broken link.
 Designed to be a BUILD GATE: a non-zero exit must fail the deploy.
 """
-import re, sys, json, os, argparse, subprocess, concurrent.futures as cf
+import re, sys, json, os, argparse, subprocess, html, concurrent.futures as cf
 from urllib.parse import urljoin, urldefrag, urlparse
 
 UA = "Mozilla/5.0 (compatible; PLA-LinkCheck/1.0)"
@@ -75,6 +78,8 @@ def main():
     ap.add_argument("--site", action="append")
     ap.add_argument("--dir"); ap.add_argument("--base")
     ap.add_argument("--json")
+    ap.add_argument("--external", action="store_true",
+                    help="in --dir mode, also check outbound links live")
     a = ap.parse_args()
 
     if a.dir:
@@ -88,7 +93,7 @@ def main():
     for p, (st, body) in pages.items():
         if st != 200: continue
         for m in A_RE.finditer(body):
-            raw = m.group(1).strip()
+            raw = html.unescape(m.group(1).strip())
             if raw.startswith(("mailto:", "tel:", "javascript:", "#", "sms:")): continue
             occ.append((p, raw, urldefrag(urljoin(p, raw))[0], text_of(m.group(2))[:70], "link"))
         for rx, kind in ((SRC_RE, "asset"), (CSS_RE, "stylesheet")):
@@ -113,7 +118,17 @@ def main():
                 continue  # not this build's concern
             status[t] = 200 if (t.rstrip("/") + "/" in local or t in local
                                 or t.rstrip("/") in norm) else 404
-    else:
+    def chk(t):
+        st, _ = curl(t, "HEAD", 20)
+        if st in (0, 403, 404, 405):
+            st2, _ = curl(t, "GET", 25)
+            if st2: st = st2
+        return t, st
+    if local is not None and a.external:
+        ext = [t for t in targets if urlparse(t).netloc != urlparse(a.base).netloc]
+        with cf.ThreadPoolExecutor(10) as ex:
+            for t, st in ex.map(chk, ext): status[t] = st
+    if local is None:
         def chk(t):
             st, _ = curl(t, "HEAD", 20)
             if st in (0, 403, 404, 405):

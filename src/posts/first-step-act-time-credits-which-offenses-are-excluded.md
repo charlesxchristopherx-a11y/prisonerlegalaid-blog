@@ -14,9 +14,9 @@ faq:
     a: "Yes. Exclusion from time credits does not foreclose a closer-to-home placement request under Section 601 of the First Step Act, which stands on its own footing regardless of credit eligibility."
 authorities:
   - cite: "18 U.S.C. § 3632(d)(4)(D)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3632&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3632/"
   - cite: "18 U.S.C. § 3624(g)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3624&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3624/"
 ---
 Successfully completing evidence-based recidivism-reduction programming or productive activities under the First Step Act earns [time credits](/blog/first-step-act-time-credits-explained/) — generally 10 days for every 30 days of participation, with an additional 5 days for people assessed at minimum or low recidivism risk who maintain that status. Those credits can be applied toward earlier transfer to prerelease custody or supervised release. But none of that matters if the underlying conviction falls on the statute's exclusion list.
 

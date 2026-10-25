@@ -17,7 +17,7 @@ authorities:
   - cite: "Fernandez v. United States, No. 24-556 (U.S. May 28, 2026)"
     url: "https://www.supremecourt.gov/opinions/25pdf/24-556_8m58.pdf"
   - cite: "18 U.S.C. § 3582(c)(1)(A)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3582/"
 ---
 <div style="position:relative;width:100%;aspect-ratio:16/9;background:#000;margin:0 0 30px;border:1px solid rgba(20,24,31,.15)">
   <iframe src="https://www.youtube-nocookie.com/embed/nHyfnNgZg1o" title="Compassionate Release: Supreme Court Updates" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

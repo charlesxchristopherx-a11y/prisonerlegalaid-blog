@@ -13,9 +13,9 @@ faq:
     a: "Congress did not impose a one-year statute of limitations on § 2241 petitions the way it did for § 2255 and § 2254. Unreasonable delay can still hurt a petition, but there is no equivalent statutory clock."
 authorities:
   - cite: "28 U.S.C. § 2241"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2241/"
   - cite: "28 U.S.C. § 2255"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
   - cite: "Rumsfeld v. Padilla, 542 U.S. 426 (2004)"
     url: "https://www.courtlistener.com/opinion/136999/rumsfeld-v-padilla/"
   - cite: "Preiser v. Rodriguez, 411 U.S. 475 (1973)"
@@ -59,8 +59,8 @@ Before anything is filed, [what a § 2241 petition needs](/checklists/2241-filin
 
 ## Primary authorities
 
-- [28 U.S.C. § 2241](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim) — the general habeas corpus statute
-- [28 U.S.C. § 2255](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim) — federal post-conviction remedy, including the saving clause at § 2255(e) and second-or-successive limits at § 2255(h)
+- [28 U.S.C. § 2241](https://uscode.house.gov/us/usc/119-124/t28/s2241/) — the general habeas corpus statute
+- [28 U.S.C. § 2255](https://uscode.house.gov/us/usc/119-124/t28/s2255/) — federal post-conviction remedy, including the saving clause at § 2255(e) and second-or-successive limits at § 2255(h)
 - *Preiser v. Rodriguez*, 411 U.S. 475 (1973)
 - *Rumsfeld v. Padilla*, 542 U.S. 426 (2004)
 - *Jones v. Hendrix*, 599 U.S. 465 (2023)

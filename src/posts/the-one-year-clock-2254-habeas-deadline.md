@@ -13,7 +13,7 @@ faq:
     a: "Equitable tolling may excuse a late filing where you pursued your rights diligently and an extraordinary circumstance prevented timely filing. Courts apply it narrowly and decide it on the specific record."
 authorities:
   - cite: "28 U.S.C. § 2244(d)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2244/"
   - cite: "Pace v. DiGuglielmo, 544 U.S. 408 (2005)"
     url: "https://www.courtlistener.com/opinion/142891/pace-v-diguglielmo/"
   - cite: "Holland v. Florida, 560 U.S. 631 (2010)"
@@ -49,7 +49,7 @@ Once the dates are worked out, [what the filing requires](/checklists/2254-filin
 
 ## Primary authorities
 
-- [28 U.S.C. § 2244(d)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim) — the one-year limitations period and statutory tolling
+- [28 U.S.C. § 2244(d)](https://uscode.house.gov/us/usc/119-124/t28/s2244/) — the one-year limitations period and statutory tolling
 - *Gonzalez v. Thaler*, 565 U.S. 134 (2012)
 - *Pace v. DiGuglielmo*, 544 U.S. 408 (2005)
 - *Lawrence v. Florida*, 549 U.S. 327 (2007)

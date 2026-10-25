@@ -16,9 +16,9 @@ authorities:
   - cite: "Fernandez v. United States, No. 24-556 (U.S. May 28, 2026)"
     url: "https://www.supremecourt.gov/opinions/25pdf/24-556_8m58.pdf"
   - cite: "18 U.S.C. § 3582(c)(1)(A)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t18/s3582/"
   - cite: "28 U.S.C. § 2255"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
 ---
 If you believe your *conviction itself* was wrongful — not just that your circumstances have changed since sentencing — it can be tempting to raise that argument in a compassionate-release motion under 18 U.S.C. § 3582(c)(1)(A). The Supreme Court's May 2026 decision in *Fernandez v. United States* squarely closed that door, and understanding exactly why matters for choosing the right filing the first time.
 

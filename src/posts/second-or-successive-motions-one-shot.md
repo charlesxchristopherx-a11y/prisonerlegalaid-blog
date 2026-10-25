@@ -14,9 +14,9 @@ faq:
     a: "The district court must dismiss it. Authorization from a three-judge panel of the court of appeals is a jurisdictional prerequisite, not a formality that can be cured later."
 authorities:
   - cite: "28 U.S.C. § 2255(h)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
   - cite: "28 U.S.C. § 2244(b)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2244/"
   - cite: "Magwood v. Patterson, 561 U.S. 320 (2010)"
     url: "https://www.courtlistener.com/opinion/149287/magwood-v-patterson/"
   - cite: "Panetti v. Quarterman, 551 U.S. 930 (2007)"
@@ -52,8 +52,8 @@ If you are considering whether § 2241 offers an alternative route, note that *J
 
 ## Primary authorities
 
-- [28 U.S.C. § 2244(b)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim) — gatekeeping for second or successive applications
-- [28 U.S.C. § 2255(h)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim) — second-or-successive limits for federal prisoners
+- [28 U.S.C. § 2244(b)](https://uscode.house.gov/us/usc/119-124/t28/s2244/) — gatekeeping for second or successive applications
+- [28 U.S.C. § 2255(h)](https://uscode.house.gov/us/usc/119-124/t28/s2255/) — second-or-successive limits for federal prisoners
 - *Magwood v. Patterson*, 561 U.S. 320 (2010)
 - *Panetti v. Quarterman*, 551 U.S. 930 (2007)
 - *Gonzalez v. Crosby*, 545 U.S. 524 (2005)

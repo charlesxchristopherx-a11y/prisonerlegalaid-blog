@@ -14,7 +14,7 @@ faq:
     a: "The appeal cannot proceed in the ordinary course. Because the COA is the gate to appellate review, how the claims are framed at this stage matters more than most people expect."
 authorities:
   - cite: "28 U.S.C. § 2253(c)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2253&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2253/"
   - cite: "Slack v. McDaniel, 529 U.S. 473 (2000)"
     url: "https://www.courtlistener.com/opinion/118359/slack-v-mcdaniel/"
   - cite: "Miller-El v. Cockrell, 537 U.S. 322 (2003)"
@@ -48,7 +48,7 @@ The practical stakes of understanding this system are significant, and they comp
 
 ## Primary authorities
 
-- [28 U.S.C. § 2253(c)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2253&num=0&edition=prelim) — the certificate-of-appealability requirement
+- [28 U.S.C. § 2253(c)](https://uscode.house.gov/us/usc/119-124/t28/s2253/) — the certificate-of-appealability requirement
 - *Slack v. McDaniel*, 529 U.S. 473 (2000)
 - *Miller-El v. Cockrell*, 537 U.S. 322 (2003)
 - *Buck v. Davis*, 580 U.S. 100 (2017)

@@ -14,7 +14,7 @@ faq:
     a: "Claims about how the sentence is being carried out — sentence computation, good-time or First Step Act credits, parole denial, disciplinary sanctions affecting your release date, or detention in a place or manner the sentence does not authorize."
 authorities:
   - cite: "28 U.S.C. § 2255(e)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
   - cite: "Jones v. Hendrix, 599 U.S. 465 (2023)"
     url: "https://www.courtlistener.com/opinion/10049669/jones-v-hendrix/"
 ---

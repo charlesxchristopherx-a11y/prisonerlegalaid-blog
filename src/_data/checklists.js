@@ -71,9 +71,9 @@ module.exports = [
       }
     ],
     authorities: [
-      { cite: "28 U.S.C. § 2255 (and the Rules Governing § 2255 Proceedings)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1914&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 2253(c) (certificate of appealability)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2253&num=0&edition=prelim" },
+      { cite: "28 U.S.C. § 2255 (and the Rules Governing § 2255 Proceedings)", url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/" },
+      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/us/usc/119-124/t28/s1914/" },
+      { cite: "28 U.S.C. § 2253(c) (certificate of appealability)", url: "https://uscode.house.gov/us/usc/119-124/t28/s2253/" },
       { cite: "Houston v. Lack, 487 U.S. 266 (1988)", url: "https://www.courtlistener.com/opinion/112126/houston-v-lack/" }
     ]
   },
@@ -124,8 +124,8 @@ module.exports = [
       }
     ],
     authorities: [
-      { cite: "28 U.S.C. § 2241", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1914&num=0&edition=prelim" },
+      { cite: "28 U.S.C. § 2241", url: "https://uscode.house.gov/us/usc/119-124/t28/s2241/" },
+      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/us/usc/119-124/t28/s1914/" },
       { cite: "28 C.F.R. §§ 542.13–542.18 (BOP Administrative Remedy Program)", url: "https://www.govinfo.gov/content/pkg/CFR-2024-title28-vol2/pdf/CFR-2024-title28-vol2-part542.pdf" },
       { cite: "Rumsfeld v. Padilla, 542 U.S. 426 (2004)", url: "https://www.courtlistener.com/opinion/136999/rumsfeld-v-padilla/" },
       { cite: "Jones v. Hendrix, 599 U.S. 465 (2023)", url: "https://www.courtlistener.com/opinion/10049669/jones-v-hendrix/" }
@@ -178,10 +178,10 @@ module.exports = [
       }
     ],
     authorities: [
-      { cite: "28 U.S.C. § 2254 (and the Rules Governing § 2254 Cases)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2254&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 2244(d) (one-year limitation)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2244&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1914&num=0&edition=prelim" },
-      { cite: "28 U.S.C. § 2253(c) (certificate of appealability)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2253&num=0&edition=prelim" }
+      { cite: "28 U.S.C. § 2254 (and the Rules Governing § 2254 Cases)", url: "https://uscode.house.gov/us/usc/119-124/t28/s2254/" },
+      { cite: "28 U.S.C. § 2244(d) (one-year limitation)", url: "https://uscode.house.gov/us/usc/119-124/t28/s2244/" },
+      { cite: "28 U.S.C. § 1914 (filing fees)", url: "https://uscode.house.gov/us/usc/119-124/t28/s1914/" },
+      { cite: "28 U.S.C. § 2253(c) (certificate of appealability)", url: "https://uscode.house.gov/us/usc/119-124/t28/s2253/" }
     ]
   },
 
@@ -224,8 +224,8 @@ module.exports = [
       }
     ],
     authorities: [
-      { cite: "18 U.S.C. § 3582(c)(1)(A)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3582&num=0&edition=prelim" },
-      { cite: "18 U.S.C. § 3553(a) (sentencing factors)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3553&num=0&edition=prelim" },
+      { cite: "18 U.S.C. § 3582(c)(1)(A)", url: "https://uscode.house.gov/us/usc/119-124/t18/s3582/" },
+      { cite: "18 U.S.C. § 3553(a) (sentencing factors)", url: "https://uscode.house.gov/us/usc/119-124/t18/s3553/" },
       { cite: "Fernandez v. United States, No. 24-556 (U.S. May 28, 2026)", url: "https://www.supremecourt.gov/opinions/25pdf/24-556_8m58.pdf" },
       { cite: "Rutherford v. United States, No. 24-820 (U.S. May 28, 2026)", url: "https://www.supremecourt.gov/opinions/25pdf/24-820_97be.pdf" }
     ]
@@ -279,10 +279,10 @@ module.exports = [
       }
     ],
     authorities: [
-      { cite: "18 U.S.C. § 3632(d)(4) (earning time credits)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3632&num=0&edition=prelim" },
-      { cite: "18 U.S.C. § 3624(g) (prerelease custody)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title18-section3624&num=0&edition=prelim" },
+      { cite: "18 U.S.C. § 3632(d)(4) (earning time credits)", url: "https://uscode.house.gov/us/usc/119-124/t18/s3632/" },
+      { cite: "18 U.S.C. § 3624(g) (prerelease custody)", url: "https://uscode.house.gov/us/usc/119-124/t18/s3624/" },
       { cite: "28 C.F.R. §§ 542.13–542.18 (BOP Administrative Remedy Program)", url: "https://www.govinfo.gov/content/pkg/CFR-2024-title28-vol2/pdf/CFR-2024-title28-vol2-part542.pdf" },
-      { cite: "28 U.S.C. § 2241", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2241&num=0&edition=prelim" }
+      { cite: "28 U.S.C. § 2241", url: "https://uscode.house.gov/us/usc/119-124/t28/s2241/" }
     ]
   },
 
@@ -337,7 +337,7 @@ module.exports = [
     ],
     authorities: [
       { cite: "Electronic Public Access Fee Schedule (U.S. Courts)", url: "https://www.uscourts.gov/court-programs/fees/electronic-public-access-fee-schedule" },
-      { cite: "28 U.S.C. § 1914 (district court fees)", url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1914&num=0&edition=prelim" }
+      { cite: "28 U.S.C. § 1914 (district court fees)", url: "https://uscode.house.gov/us/usc/119-124/t28/s1914/" }
     ]
   }
 ];

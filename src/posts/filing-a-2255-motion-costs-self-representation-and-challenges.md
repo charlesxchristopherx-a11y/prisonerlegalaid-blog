@@ -10,9 +10,9 @@ workItemId: "8d1bf712-53e8-4b6a-9eee-eac5535c1462"
 verifierScore: 0.975
 authorities:
   - cite: "28 U.S.C. § 2255"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2255&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2255/"
   - cite: "28 U.S.C. § 1914"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section1914&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s1914/"
 ---
 
 Filing a Section 2255 motion involves specific procedural and financial considerations. There is **no [filing fee](/blog/filing-a-2255-motion-costs-self-representation-and-challenges/)** for a [§ 2255 motion](/blog/what-is-a-2255-motion/). The official federal form, AO 243, states this directly in its instructions: "No fee is required with this motion." That is because a § 2255 motion is filed as a motion in your existing federal criminal case, not as a new civil action carrying the civil filing fee set by 28 U.S.C. § 1914. If you cannot afford costs connected with the motion — transcripts, for example ([the case-file checklist](/case-file-checklist/) explains what is in the file and what is public) — the AO 243 instructions direct you to request permission to proceed in forma pauperis using form AO 240. Individuals may choose to file a 2255 motion themselves, as the statute explicitly allows prisoners to move the court that imposed their sentence to vacate, set aside, or correct it. However, pro se filers often encounter practical difficulties, including navigating complex legal standards, meeting strict deadlines, and understanding the requirement for a [certificate of appealability](/blog/the-certificate-of-appealability-explained/) under 28 U.S.C. 2253.
@@ -23,8 +23,8 @@ For further guidance, consult official court resources or seek assistance from q
 
 ## Sources
 
-- [uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section1915&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section1915&num=0&edition=prelim)
-- [uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2255&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2255&num=0&edition=prelim)
-- [uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2253&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:usc-prelim-title28-section2253&num=0&edition=prelim)
+- [uscode.house.gov/us/usc/119-124/t28/s1915/](https://uscode.house.gov/us/usc/119-124/t28/s1915/)
+- [uscode.house.gov/us/usc/119-124/t28/s2255/](https://uscode.house.gov/us/usc/119-124/t28/s2255/)
+- [uscode.house.gov/us/usc/119-124/t28/s2253/](https://uscode.house.gov/us/usc/119-124/t28/s2253/)
 
 More on this subject: [all articles on this topic](/topics/2255-motions/).

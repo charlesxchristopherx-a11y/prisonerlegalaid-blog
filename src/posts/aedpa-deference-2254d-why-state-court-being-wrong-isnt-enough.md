@@ -13,7 +13,7 @@ faq:
     a: "Generally no. The phrase means holdings of the U.S. Supreme Court as they existed at the time of the state-court decision. A claim needs a Supreme Court hook, not just favorable circuit law."
 authorities:
   - cite: "28 U.S.C. § 2254(d)"
-    url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title28-section2254&num=0&edition=prelim"
+    url: "https://uscode.house.gov/us/usc/119-124/t28/s2254/"
 ---
 One of the hardest things to accept about [§ 2254](/blog/the-one-year-clock-2254-habeas-deadline/) habeas review is this: a federal court can privately believe the state court got your case wrong and still be legally required to deny your petition. That isn't a quirk of one unsympathetic judge — it's the deference standard Congress wrote directly into the statute.
 
