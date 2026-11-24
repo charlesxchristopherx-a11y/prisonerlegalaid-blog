@@ -299,13 +299,21 @@ def main():
         dur=narr+TAIL
         fp=os.path.join(wd,"filter.txt")
         open(fp,"w").write(build_filter(ph,narr,dur))
-        r=subprocess.run(["ffmpeg","-y","-f","lavfi",
-          "-i",f"color=c=0x0E1116:s={W}x{H}:d={dur}:r=30",
-          "-i",a.logo_small,"-i",a.logo_end,"-i",audio,
-          "-filter_complex_script",fp,"-map","[out]","-map","3:a",
-          "-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p",
-          "-c:a","aac","-b:a","160k","-r","30","-t",f"{dur}",a.out],
-          capture_output=True,text=True)
+        def run_ffmpeg(filter_args):
+            return subprocess.run(["ffmpeg","-y","-f","lavfi",
+              "-i",f"color=c=0x0E1116:s={W}x{H}:d={dur}:r=30",
+              "-i",a.logo_small,"-i",a.logo_end,"-i",audio,
+              *filter_args,"-map","[out]","-map","3:a",
+              "-c:v","libx264","-preset","medium","-crf","20","-pix_fmt","yuv420p",
+              "-c:a","aac","-b:a","160k","-r","30","-t",f"{dur}",a.out],
+              capture_output=True,text=True)
+        # ffmpeg 7+ reads the filter graph from a file with "-/filter_complex";
+        # newer builds removed the old "-filter_complex_script". Older ffmpeg
+        # (6.x and earlier) only knows the old one, so fall back to it.
+        r=run_ffmpeg(["-/filter_complex",fp])
+        if r.returncode and ("Unrecognized option" in r.stderr or "Option not found" in r.stderr):
+            log("ffmpeg does not know -/filter_complex; retrying with -filter_complex_script")
+            r=run_ffmpeg(["-filter_complex_script",fp])
         if r.returncode: raise Fail(f"ffmpeg failed:\n{r.stderr[-900:]}")
         verify_output(a.out,dur)
         log(f"SUCCESS -> {a.out}")
