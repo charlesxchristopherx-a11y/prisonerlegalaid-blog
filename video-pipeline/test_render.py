@@ -25,6 +25,16 @@ lines=r.split_lines("A lot of people think there is nothing more that can be don
 ok(not(len(lines)>1 and len(lines[-1].split())==1 and len(lines[-1])<=6),
    f"{lines}")
 
+print("\nsplit_lines: all-function-word phrase does not crash (Nov 2026 failures)")
+for text,width in [("who did not do the work.",20),("who did not do the work.",27),
+                   ("it is not as if he did",20),("the",20)]:
+    try:
+        lines=r.split_lines(text,width)
+        ok(bool(lines) and all(l.strip() for l in lines)
+           and " ".join(lines).split()==text.split(), f"{text!r} @{width} -> {lines}")
+    except Exception as e:
+        ok(False, f"{text!r} @{width} raised {type(e).__name__}: {e}")
+
 print("\nphrases: splits on sentence ends, absorbs stubs")
 words=[{"w":w,"s":i*0.4,"e":i*0.4+0.35} for i,w in enumerate(
   "There is no filing fee. A lot of people think there is. It matters.".split())]

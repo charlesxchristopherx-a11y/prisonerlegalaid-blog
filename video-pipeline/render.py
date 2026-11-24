@@ -181,13 +181,21 @@ def split_lines(text, width):
     while changed and len(lines)>1:
         changed=False
         for i in range(len(lines)-1):
-            last = re.sub(r"[^A-Za-z']","",lines[i].split()[-1]).lower()
+            w=lines[i].split()
+            # Never empty a line. A phrase made entirely of
+            # function words ("who did not do the work.") used to push every
+            # word down, empty the line, and crash with IndexError.
+            if len(w)<=1: continue
+            last = re.sub(r"[^A-Za-z']","",w[-1]).lower()
             if last in DANGLERS:
-                w=lines[i].split(); moved=w.pop()
+                moved=w.pop()
                 lines[i]=" ".join(w); lines[i+1]=moved+" "+lines[i+1]
                 changed=True
     if len(lines)>1 and len(lines[-1].split())==1 and len(lines[-1])<=6:
         lines[-2]+=" "+lines[-1]; lines=lines[:-1]
+    # Same idea for a lone word stranded at the top.
+    if len(lines)>1 and len(lines[0].split())==1 and len(lines[0])+1+len(lines[1])<=width:
+        lines[1]=lines[0]+" "+lines[1]; lines=lines[1:]
     return [l for l in lines if l.strip()]
 
 def build_filter(ph, narr, dur):
