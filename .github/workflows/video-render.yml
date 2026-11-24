@@ -43,10 +43,24 @@ jobs:
 
       - name: Install fonts and ffmpeg
         run: |
-          sudo apt-get update -qq
-          # Do not assume the runner image ships these. It has ffmpeg but
-          # ffprobe was missing from PATH, which failed the first live run.
-          sudo apt-get install -y -qq ffmpeg
+          # Do not assume the runner image ships these. It once had ffmpeg but
+          # not ffprobe, which failed the first live run. Do not rely on apt
+          # either: on Nov 23 2026 the Ubuntu mirror took the whole 20-minute
+          # job budget just downloading ffmpeg. Use what is on the image if
+          # both binaries are there; otherwise pull a static build from GitHub.
+          if command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null; then
+            echo "ffmpeg and ffprobe already on the runner"
+          else
+            url="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz"
+            if curl -sfL --retry 3 --max-time 300 -o /tmp/ffmpeg.tar.xz "$url"; then
+              mkdir -p /tmp/ffmpeg && tar -xJf /tmp/ffmpeg.tar.xz -C /tmp/ffmpeg --strip-components=1
+              sudo install -m 755 /tmp/ffmpeg/bin/ffmpeg /tmp/ffmpeg/bin/ffprobe /usr/local/bin/
+            else
+              echo "static build download failed; falling back to apt"
+              timeout 600 sudo apt-get update -qq
+              timeout 600 sudo apt-get install -y -qq --no-install-recommends ffmpeg
+            fi
+          fi
           # fonts-google-poppins is not packaged; pull the two weights we need
           sudo mkdir -p /usr/share/fonts/truetype/google-fonts
           for w in Bold Medium; do
