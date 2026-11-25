@@ -6,12 +6,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform("family-help-line", function (content) {
     if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
     const CALL = '<a href="tel:+17864085073">786-408-5073</a>';
-    const TEXT = '<a href="sms:+17276350600">727-635-0600</a>';
     return content
       .replace(/call <strong>786-408-5073<\/strong> and ask for Charles Christopher/g,
-        'call the Prisoner Legal Aid Family Help Line at <strong>' + CALL + '</strong>, or text <strong>' + TEXT + '</strong>')
+        'call the Prisoner Legal Aid Family Help Line at <strong>' + CALL + '</strong>')
       .replace(/call Charles Christopher at 786-408-5073/g,
-        'call the Prisoner Legal Aid Family Help Line at ' + CALL + ' or text ' + TEXT);
+        'call the Prisoner Legal Aid Family Help Line at ' + CALL);
   });
 
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });

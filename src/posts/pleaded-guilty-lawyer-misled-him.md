@@ -4,7 +4,7 @@ description: "A guilty plea can still be challenged when bad advice from his own
 date: 2026-11-09
 category: "Post-Conviction"
 topic_id: "FF-025"
-fb_post: "He told you his lawyer promised him a number, and then the judge gave him something else. A guilty plea is not automatically the end. Federal courts do allow a plea to be challenged when the lawyer's advice fell below what the Constitution requires and that advice is the reason he signed. What decides these cases is detail. Get his own signed account of exactly what the lawyer told him, the date, the place, and who else heard it. Ask the trial lawyer in writing for the complete file. Ask the clerk of the sentencing court for the transcripts of the plea hearing. There is a one year clock, and in most cases it starts the day his judgment became final, so begin this week. Call the Prisoner Legal Aid Family Help Line at 786-408-5073, or text 727-635-0600."
+fb_post: "He told you his lawyer promised him a number, and then the judge gave him something else. A guilty plea is not automatically the end. Federal courts do allow a plea to be challenged when the lawyer's advice fell below what the Constitution requires and that advice is the reason he signed. What decides these cases is detail. Get his own signed account of exactly what the lawyer told him, the date, the place, and who else heard it. Ask the trial lawyer in writing for the complete file. Ask the clerk of the sentencing court for the transcripts of the plea hearing. There is a one year clock, and in most cases it starts the day his judgment became final, so begin this week. Call the Prisoner Legal Aid Family Help Line at 786-408-5073."
 faq:
   - q: "Can a guilty plea really be taken back?"
     a: "Sometimes. A federal prisoner can ask the sentencing court to vacate the conviction under 28 U.S.C. § 2255, and bad advice from his own lawyer is a recognized ground. Changing his mind is not. The claim has to be that the advice fell below an objective standard of reasonableness and that it is the reason he pleaded."
@@ -90,4 +90,4 @@ In practice he gets one attempt at this, so the first filing has to carry everyt
 
 ## What to do next
 
-Pick one item off that list and do it this afternoon. The letter to the trial lawyer is the slowest piece, so send that one first. When you have the file and his signed statement, call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073), or text [727-635-0600](sms:+17276350600). We prepare the paperwork and connect families with independent civil rights attorneys.
+Pick one item off that list and do it this afternoon. The letter to the trial lawyer is the slowest piece, so send that one first. When you have the file and his signed statement, call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073). We prepare the paperwork and connect families with independent civil rights attorneys.

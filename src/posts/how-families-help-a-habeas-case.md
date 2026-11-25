@@ -4,7 +4,7 @@ description: "His name goes on the motion, but a judge decides it on paper. Most
 date: 2026-11-13
 category: "Post-Conviction"
 topic_id: "FF-029"
-fb_post: "He is the one who has to sign the motion, so from out here it can feel like there is nothing for you to do. There is. A federal judge decides most of these cases by reading paper, and almost all of that paper is something a family can gather. The transcripts from the clerk of the court that sentenced him. The complete file from his trial lawyer. A signed statement from anyone who heard what that lawyer told him, with the words, the date and the place. The rules for these cases let a judge take affidavits into the record, so a statement you collect this month can be read by the judge next year. There is a one year clock on the motion and in most cases it starts the day his judgment became final, so begin now. Call the Prisoner Legal Aid Family Help Line at 786-408-5073, or text 727-635-0600."
+fb_post: "He is the one who has to sign the motion, so from out here it can feel like there is nothing for you to do. There is. A federal judge decides most of these cases by reading paper, and almost all of that paper is something a family can gather. The transcripts from the clerk of the court that sentenced him. The complete file from his trial lawyer. A signed statement from anyone who heard what that lawyer told him, with the words, the date and the place. The rules for these cases let a judge take affidavits into the record, so a statement you collect this month can be read by the judge next year. There is a one year clock on the motion and in most cases it starts the day his judgment became final, so begin now. Call the Prisoner Legal Aid Family Help Line at 786-408-5073."
 faq:
   - q: "Can I file the motion for him?"
     a: "No. 28 U.S.C. § 2255 gives the right to move the sentencing court to the prisoner himself, and his signature goes on it. What you can do is build the record it rests on and get it into his hands."
@@ -96,4 +96,4 @@ In practice he gets one real attempt, so the first filing has to carry every gro
 
 ## What to do next
 
-Pick the slowest item and start it today. That is the letter to his trial lawyer, because a file can take weeks to arrive. Then the transcript request. When you have those two things and his signed account, call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073), or text [727-635-0600](sms:+17276350600). We prepare the paperwork and connect families with independent civil rights attorneys.
+Pick the slowest item and start it today. That is the letter to his trial lawyer, because a file can take weeks to arrive. Then the transcript request. When you have those two things and his signed account, call the Prisoner Legal Aid Family Help Line at [786-408-5073](tel:+17864085073). We prepare the paperwork and connect families with independent civil rights attorneys.
