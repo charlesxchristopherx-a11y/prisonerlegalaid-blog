@@ -13,6 +13,7 @@ prisonerlegalaid-com repo at the same path). Rewritten 2026-10-09 for the single
 session; the 09-12 version is archived. Read it before starting anything.
 
 ## Recently completed (last 7 days)
+- CUSTOMER SERVICE LINE ADDED - 2026-11-25, joined Claude session, on Chris's instruction. (645) 231-3957 ext. 101, labeled "Customer Service Line", no staff name, now shows in the top strip on every page, the post call-to-action, the contact block, llms.txt and a second Organization contactPoint. The one-number rule is retired: 786-408-5073 stays the main line, 727-635-0600 the text line, 645-231-3957 ext. 101 the customer service line.
 - VIDEO POSTER FACADE — 2026-10-09, joined session, Brief 29 task 6 (ded456a, 63a0b1a). Featured
   video and shorts on the homepage now show a YouTube thumbnail button; the youtube-nocookie
   player loads only on tap. Homepage 533 KB -> 410 KB. Thumbnail URL is built in JS so the link
