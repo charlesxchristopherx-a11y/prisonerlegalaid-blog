@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check project claim before rendering
         run: |
@@ -51,8 +51,20 @@ jobs:
           if command -v ffmpeg >/dev/null && command -v ffprobe >/dev/null; then
             echo "ffmpeg and ffprobe already on the runner"
           else
-            url="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz"
-            if curl -sfL --retry 3 --max-time 300 -o /tmp/ffmpeg.tar.xz "$url"; then
+            # Prefer a stable release-branch build; master is last because the
+            # master build dropped -filter_complex_script on Nov 23 2026 and broke
+            # the render. render.py now handles both flag spellings either way.
+            # A missing asset name 404s instantly (-f) and the next one is tried.
+            base="https://github.com/BtbN/FFmpeg-Builds/releases/download/latest"
+            got=""
+            for f in ffmpeg-n8.0-latest-linux64-gpl-8.0.tar.xz \
+                     ffmpeg-n7.1-latest-linux64-gpl-7.1.tar.xz \
+                     ffmpeg-master-latest-linux64-gpl.tar.xz; do
+              if curl -sfL --retry 3 --max-time 300 -o /tmp/ffmpeg.tar.xz "$base/$f"; then
+                echo "using static build $f"; got=1; break
+              fi
+            done
+            if [ -n "$got" ]; then
               mkdir -p /tmp/ffmpeg && tar -xJf /tmp/ffmpeg.tar.xz -C /tmp/ffmpeg --strip-components=1
               sudo install -m 755 /tmp/ffmpeg/bin/ffmpeg /tmp/ffmpeg/bin/ffprobe /usr/local/bin/
             else
@@ -82,7 +94,7 @@ jobs:
         run: python3 video-pipeline/make_script.py
 
       - name: Render
-        if: steps.script.outcome == 'success'
+        if: steps.script.outputs.slug != ''
         working-directory: video-pipeline
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
@@ -90,13 +102,22 @@ jobs:
           CF_EMAIL: ${{ secrets.CF_EMAIL }}
         run: |
           mkdir -p ../video-out
-          python3 render.py \
-            --script script.txt \
-            --out "../video-out/${{ steps.script.outputs.slug }}.mp4" \
-            --voice helena
+          # One retry: the TTS and Whisper calls go to Cloudflare and can fail
+          # transiently. A real code fault fails both attempts and is reported.
+          for attempt in 1 2; do
+            if python3 render.py \
+                --script script.txt \
+                --out "../video-out/${{ steps.script.outputs.slug }}.mp4" \
+                --voice helena; then
+              exit 0
+            fi
+            echo "render attempt $attempt failed"
+            [ "$attempt" = 1 ] && sleep 30
+          done
+          exit 1
 
       - name: Record it so it is never rendered twice
-        if: success()
+        if: success() && steps.script.outputs.slug != ''
         run: |
           python3 - <<'PY'
           import json, os
@@ -109,7 +130,7 @@ jobs:
           PY
 
       - name: Commit
-        if: success()
+        if: success() && steps.script.outputs.slug != ''
         run: |
           git config user.name "PLA Video Bot"
           git config user.email "chris@prisonerlegalaid.com"

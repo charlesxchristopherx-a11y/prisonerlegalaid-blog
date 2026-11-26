@@ -43,7 +43,7 @@ def main():
 
     if not candidates:
         print("::notice::No unrendered post with an answer block. Nothing to do.")
-        sys.exit(78)          # neutral: not a failure
+        sys.exit(0)           # nothing to do is not a failure: no slug output, render is skipped
 
     slug, title, ans = candidates[-1]     # newest first
     body = spoken(ans)
@@ -59,7 +59,7 @@ def main():
     if n < MIN_W:
         print(f"::warning::script only {n} words for {slug}; skipping rather than "
               f"publishing filler")
-        sys.exit(78)
+        sys.exit(0)           # skip, not a failure; no slug output so render is skipped
     if n > MAX_W:
         script = " ".join(script.split()[:MAX_W])
 
