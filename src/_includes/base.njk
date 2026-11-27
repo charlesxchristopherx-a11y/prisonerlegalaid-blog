@@ -60,13 +60,13 @@
     "contactType": "customer service",
     "areaServed": "US",
     "availableLanguage": "English"
-  }, {
+  }{% if phones.customerServiceLine %}, {
     "@type": "ContactPoint",
     "telephone": "+1-645-231-3957;ext=101",
     "contactType": "customer service",
     "areaServed": "US",
     "availableLanguage": "English"
-  }],
+  {% endif %}],
   "sameAs": [
     "https://prisonerlegalaid.com/",
     "https://www.youtube.com/@PrisonerLegalAidChannel",
@@ -176,7 +176,7 @@
 <div class="topstrip">
   <div class="wrap">
     <span class="mono">Mon to Fri 9 AM to 6 PM · Sat 10 AM to 2 PM EST</span>
-    <span>Family Help Line, answered 24/7: <a href="tel:+17864085073">786-408-5073</a> &middot; Customer Service Line: <a href="tel:+16452313957,101">(645) 231-3957 ext. 101</a></span>
+    <span>Family Help Line, answered 24/7: <a href="tel:+17864085073">786-408-5073</a>{% if phones.customerServiceLine %} &middot; Customer Service Line: <a href="tel:+16452313957,101">(645) 231-3957 ext. 101</a>{% endif %}</span>
   </div>
 </div>
 
@@ -257,7 +257,7 @@
       <div>
         <h4>Contact</h4>
         <a href="tel:+17864085073">786-408-5073</a>
-        <a href="tel:+16452313957,101">Customer Service: (645) 231-3957 ext. 101</a>
+        {% if phones.customerServiceLine %}<a href="tel:+16452313957,101">Customer Service: (645) 231-3957 ext. 101</a>{% endif %}
         <a href="mailto:info@prisonerlegalaid.com">info@prisonerlegalaid.com</a>
         <a href="https://prisonerlegalaid.com">prisonerlegalaid.com</a>
       </div>
@@ -272,7 +272,7 @@
 
 {% include "lead-ack.njk" %}
 
-<!-- Family Help Line action bar, phones only (2026-10-17). Call 786-408-5073; Customer Service Line 645-231-3957 ext. 101 (text line retired 2026-11-25). -->
+<!-- Family Help Line action bar, phones only (2026-10-17). Call 786-408-5073. Customer Service button follows src/_data/phones.js (off since 2026-11-27). Text line retired 2026-11-25. -->
 <style>
 .pla-actionbar{display:none}
 @media (max-width:760px){
@@ -286,7 +286,7 @@
 </style>
 <nav class="pla-actionbar" aria-label="Contact the Prisoner Legal Aid Family Help Line">
   <a class="primary" href="tel:+17864085073">Call<small>786-408-5073</small></a>
-  <a href="tel:+16452313957,101">Customer Service<small>ext. 101</small></a>
+  {% if phones.customerServiceLine %}<a href="tel:+16452313957,101">Customer Service<small>ext. 101</small></a>{% endif %}
   <a href="/#contact">Free review<small>no cost</small></a>
 </nav>
 </body>
