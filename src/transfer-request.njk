@@ -48,13 +48,83 @@ pageModified: 2026-09-01
     <div id="tr-form">
 
       <fieldset class="tr-set">
+        <legend>Where is he held?</legend>
+        <div class="tr-row tr-radio">
+          <label><input type="radio" name="f_custody" value="federal" checked> Federal prison (Bureau of Prisons) &mdash; FCI, USP, FPC, FMC, FCC, MDC</label>
+          <label><input type="radio" name="f_custody" value="state"> State prison (a state Department of Corrections)</label>
+          <span class="hint">This free form is the federal Bureau of Prisons form. It only works for someone in federal custody. Not sure? Federal register numbers look like 12345-678.</span>
+        </div>
+        <div class="tr-row" id="tr-state-row" hidden>
+          <label for="f_state">Which state holds him? <span class="req">required</span></label>
+          <select id="f_state">
+            <option value="">Choose a state</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+        </div>
+        <div id="tr-state-note" class="tr-note" hidden>
+          <p><strong>State prisons follow their own rules, not the federal statute.</strong> Section 3621(b) and the 500-mile rule apply only to the federal Bureau of Prisons. Each state Department of Corrections has its own transfer policy and its own request process.</p>
+          <p>Fill in what you can below and give us your email. We'll look up your state's transfer rules and email you what the policy says and how he asks for a move closer to home &mdash; free.</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="tr-set">
         <legend>The person in custody</legend>
         <div class="tr-row">
           <label for="f_name">Full name as the Bureau has it <span class="req">required</span></label>
           <input type="text" id="f_name" autocomplete="off" placeholder="First Middle Last">
         </div>
         <div class="tr-row">
-          <label for="f_reg">Register number <span class="req">required</span></label>
+          <label for="f_reg"><span id="tr-reg-label">Register number</span> <span class="req" id="tr-reg-req">required</span></label>
           <input type="text" id="f_reg" inputmode="numeric" placeholder="00000-000">
         </div>
         <div class="tr-two">
@@ -77,12 +147,13 @@ pageModified: 2026-09-01
         <legend>Home and distance</legend>
         <div class="tr-row">
           <label for="f_home">Primary release residence — city and state <span class="req">required</span></label>
+          <span class="hint" style="margin:-2px 0 8px">City and state only, e.g. Carson City, Nevada. No street address needed.</span>
           <input type="text" id="f_home" placeholder="e.g. St. Petersburg, Florida">
         </div>
         <div class="tr-row">
           <label for="f_miles">Approximate driving miles from the facility to that address</label>
           <input type="text" id="f_miles" inputmode="numeric" placeholder="e.g. 1100">
-          <span class="hint">Look it up on a maps app. Driving miles, not straight-line distance — the statute says driving miles.</span>
+          <span class="hint">A number only. Look it up on a maps app. Driving miles, not straight-line distance — the statute says driving miles.</span>
         </div>
         <div class="tr-row">
           <label for="f_pref">Facilities he would prefer, closest first</label>
@@ -122,9 +193,9 @@ pageModified: 2026-09-01
           <input type="text" id="f_yourname" placeholder="So we know who we're talking to">
         </div>
         <div class="tr-row">
-          <label for="f_email">Your email</label>
+          <label for="f_email">Your email <span class="req" id="tr-email-req" hidden>required</span></label>
           <input type="email" id="f_email" autocomplete="email" placeholder="you@example.com">
-          <span class="hint">Optional. The PDF downloads to this device either way. Give us an email and we'll send you a copy so you don't lose it.</span>
+          <span class="hint" id="tr-email-hint">Optional. The PDF downloads to this device either way. Give us an email and we'll send you a copy so you don't lose it.</span>
         </div>
         <div class="tr-row">
           <label for="f_phone">Your phone</label>
@@ -134,7 +205,7 @@ pageModified: 2026-09-01
 
       <p id="tr-err" class="tr-err" hidden></p>
       <button type="button" id="tr-go" class="btn btn-primary">Build My Transfer Request</button>
-      <p style="font-size:14px;color:#5A6472;line-height:1.7;margin-top:16px">The PDF is built on this device. Print it, mail it to him, and have him sign and date it before handing it to staff — an unsigned cop-out gets handed back.</p>
+      <p id="tr-pdf-note" style="font-size:14px;color:#5A6472;line-height:1.7;margin-top:16px">The PDF is built on this device. Print it, mail it to him, and have him sign and date it before handing it to staff — an unsigned cop-out gets handed back.</p>
     </div>
   </div>
 </section>
@@ -168,6 +239,12 @@ pageModified: 2026-09-01
 .tr-row label{display:block;font-weight:600;font-size:15px;margin:0 0 7px;color:var(--ink)}
 .req{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--stamp);font-weight:500;margin-left:6px}
+.tr-radio label{display:flex;gap:10px;align-items:flex-start;font-weight:500;margin:0 0 10px}
+.tr-radio input{width:auto;margin-top:5px}
+.tr-note{background:#F4F7FB;border-left:3px solid var(--navy);padding:12px 16px;margin:0 0 18px;border-radius:0 6px 6px 0;font-size:15px;line-height:1.7;color:#39414B}
+.tr-note p{margin:0 0 10px}
+.tr-row select{width:100%;font-family:var(--sans);font-size:16px;color:var(--ink);background:#fff;border:1.5px solid var(--rule);border-radius:6px;padding:12px 13px}
+.tr-row select.bad{border-color:var(--stamp);background:#FDF6F5}
 .tr-row input,.tr-row textarea{width:100%;font-family:var(--sans);font-size:16px;color:var(--ink);
   background:#fff;border:1.5px solid var(--rule);border-radius:6px;padding:12px 13px;line-height:1.5}
 .tr-row textarea{resize:vertical}

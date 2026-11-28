@@ -1,6 +1,6 @@
 # PROJECT_STATE — prisonerlegalaid-blog
 
-_Updated: 2026-10-09 by the joined Claude session, video poster facade (Brief 29 task 6)_
+_Updated: 2026-11-28 by the joined Claude session, transfer request federal vs state routing_
 
 ## Status
 CLAIM-008 homepage case-review heading rename is live on main in merge commit `7250fafc4701e1f48dff48c6d9b3845e11b61701`. Local build and exact output checks passed 2026-09-09. The requested cross-repository `claude/00-IN-FLIGHT.md` ledger is not present locally or in the related repository's `origin/main` history.
@@ -13,6 +13,7 @@ prisonerlegalaid-com repo at the same path). Rewritten 2026-10-09 for the single
 session; the 09-12 version is archived. Read it before starting anything.
 
 ## Recently completed (last 7 days)
+- TRANSFER REQUEST: FEDERAL vs STATE - 2026-11-28, joined Claude session, on Chris's "fix the entire workflow". A Nevada state prisoner's family (Ely State Prison) built and was emailed the federal 18 U.S.C. 3621(b) BOP form, which does not apply to state prisons. /transfer-request/ now asks "Where is he held?" first. Federal keeps the BP-A0148 PDF and now checks the register number is 12345-678 format. State shows a note, requires a state and an email, builds NO PDF, and posts custody/state to n8n CR8TaNM0kdTpldY9, which emails that state's verified transfer rules (or queues the lead for the State Transfer Lookup agent). Letters typed in the miles box go to home_note instead of miles. Record: claude/00-RECORD-2026-11-28-transfer-request-state-routing.md in the Project.
 - CUSTOMER SERVICE LINE SWITCHED OFF - 2026-11-27, joined Claude session, on Chris's instruction (RingCentral voicemail on that line is broken). The sites show ONE number again: 786-408-5073. The (645) 231-3957 ext. 101 code is kept behind one switch, src/_data/phones.js `customerServiceLine: false`; set it true (and re-add the llms.txt Contact line) to bring it back. 727 stays retired.
 - WEEKLY VIDEO RENDER HARDENED - 2026-11-25, joined Claude session, on Chris's "fix this permanently". The Nov 16 / Nov 23 / 66ddabf failures were already fixed on 11-24 (36abc88 caption-wrap crash, a4f906c -/filter_complex flag). Added: ffmpeg static build tries release branches (n8.0, n7.1) before master; "no post to render" now exits 0 and skips render/commit instead of failing with 78; render retries once after 30 s; actions/checkout@v5. A self-healing PLA Video Renderer Watchdog task is written (claude/00-RENDERER-WATCHDOG-SPEC-2026-11-25.md in the Project) but its creation was refused by the approval classifier; not yet live.
 - TEXT LINE REMOVED - 2026-11-25, joined Claude session, on Chris's instruction ("I don't want the text number... I'm not going to use that anymore"). 727-635-0600 stripped from every page, post, fb_post field, the top strip and the build transform; the mobile action bar's Text button now dials the Customer Service Line. Phones on the site are now only 786-408-5073 (Family Help Line) and (645) 231-3957 ext. 101 (Customer Service Line). Test now asserts 727 is absent.

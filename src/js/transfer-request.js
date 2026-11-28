@@ -11,7 +11,10 @@
    Those belong to BOP staff and are left blank.
 
    Runs entirely in the browser. Nothing is transmitted unless the visitor
-   supplies an email, in which case a lead is posted to the configured endpoint. */
+   supplies an email, in which case a lead is posted to the configured endpoint.
+   State prisoners never get this federal form: the page asks federal or state
+   first, and a state lead is posted (custody: 'state', state) with no PDF so the
+   n8n flow can email that state's own transfer rules. */
 (function () {
   'use strict';
 
@@ -203,15 +206,33 @@
     ['f_home', 'the release city and state']
   ];
 
+  function custody() {
+    var r = document.querySelector('input[name="f_custody"]:checked');
+    return r ? r.value : 'federal';
+  }
+
+  /* Miles must be a number. If letters were typed (an address, say), keep the
+     text as a home-address note instead of passing it off as a distance. */
+  function splitMiles(raw) {
+    var t = (raw || '').trim();
+    if (!t) { return { miles: '', note: '' }; }
+    if (/[A-Za-z]/.test(t)) { return { miles: '', note: t }; }
+    return { miles: t.replace(/[^0-9.,]/g, ''), note: '' };
+  }
+
+  var FEDERAL_REG = /^\d{5}-?\d{3}$/;
+
   function postLead(d, built) {
     var email = val('f_email');
-    if (!email || !LEAD_ENDPOINT) { return; }
+    if (!email || !LEAD_ENDPOINT) { return Promise.resolve(false); }
     try {
-      fetch(LEAD_ENDPOINT, {
+      return fetch(LEAD_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           tool: 'transfer-request',
+          custody: d.custody,
+          state: d.state || '',
           email: email,
           requester: val('f_yourname'),
           phone: val('f_phone'),
@@ -219,53 +240,99 @@
           reg_no: d.reg,
           facility: d.fac,
           home: d.home,
+          home_note: d.homeNote || '',
           miles: d.miles,
+          preferred: d.pref || '',
           source: location.pathname,
           referrer: document.referrer || '',
           utm: location.search || '',
           pdf_filename: built ? built.filename : null,
           pdf_base64: built ? built.base64 : null
         })
-      }).catch(function () {});
-    } catch (e) { /* never block the download */ }
+      }).then(function (r) { return r.ok; }).catch(function () { return false; });
+    } catch (e) { return Promise.resolve(false); }
+  }
+
+  function markBad(id, bad) {
+    var el = $(id);
+    if (!el) { return; }
+    if (bad) { el.classList.add('bad'); } else { el.classList.remove('bad'); }
+  }
+
+  function showErr(msg) {
+    var err = $('tr-err');
+    err.textContent = msg;
+    err.hidden = false;
+    var first = document.querySelector('.bad');
+    if (first) {
+      try { first.focus(); } catch (e) {}
+      if (typeof first.scrollIntoView === 'function') {
+        try { first.scrollIntoView({ block: 'center' }); } catch (e) {}
+      }
+    }
   }
 
   function run() {
     var err = $('tr-err'), btn = $('tr-go');
+    var mode = custody();
     var missing = [];
 
-    REQUIRED.forEach(function (r) {
+    var req = mode === 'state'
+      ? [['f_state', 'the state'], ['f_name', 'his full name'], ['f_fac', 'the current facility'],
+         ['f_home', 'the release city and state'], ['f_email', 'your email, so we can send the state rules']]
+      : REQUIRED;
+
+    ['f_state', 'f_email', 'f_reg'].forEach(function (id) { markBad(id, false); });
+    req.forEach(function (r) {
       var el = $(r[0]);
       if (!el) return;
       if (!el.value.trim()) { missing.push(r[1]); el.classList.add('bad'); }
       else { el.classList.remove('bad'); }
     });
 
-    if (missing.length) {
-      err.textContent = 'Still needed: ' + missing.join(', ') + '.';
-      err.hidden = false;
-      var first = document.querySelector('.bad');
-      if (first) {
-        try { first.focus(); } catch (e) {}
-        if (typeof first.scrollIntoView === 'function') {
-          try { first.scrollIntoView({ block: 'center' }); } catch (e) {}
-        }
-      }
+    if (missing.length) { showErr('Still needed: ' + missing.join(', ') + '.'); return; }
+
+    if (mode === 'federal' && !FEDERAL_REG.test(val('f_reg').replace(/\s/g, ''))) {
+      markBad('f_reg', true);
+      showErr('Federal register numbers have eight digits, like 12345-678. If he is in a state prison, ' +
+        'choose “State prison” at the top and we will send you that state’s transfer rules instead.');
       return;
     }
     err.hidden = true;
 
+    var m = splitMiles(val('f_miles'));
     var d = {
+      custody: mode,
+      state: mode === 'state' ? val('f_state') : '',
       to: val('f_to') || 'Unit Team',
       name: val('f_name'), reg: val('f_reg'), unit: val('f_unit'),
       work: val('f_work'), fac: val('f_fac'), home: val('f_home'),
-      miles: val('f_miles'), pref: val('f_pref'), family: val('f_family'),
+      miles: m.miles, homeNote: m.note, pref: val('f_pref'), family: val('f_family'),
       conduct: val('f_conduct'), other: val('f_other')
     };
 
+    if (mode === 'state') {
+      btn.disabled = true;
+      btn.textContent = 'Sending\u2026';
+      postLead(d, null).then(function (ok) {
+        btn.disabled = false;
+        if (ok) {
+          btn.textContent = 'Sent \u2014 Check Your Email';
+          err.className = 'tr-note';
+          err.textContent = 'Got it. We are looking up ' + d.state + '\u2019s transfer rules now and will email ' +
+            val('f_email') + ' with what the policy says and how he asks for a move. If you do not see it, check spam, or call 786-408-5073.';
+          err.hidden = false;
+        } else {
+          btn.textContent = 'Send Me My State\u2019s Transfer Rules';
+          err.className = 'tr-err';
+          showErr('That did not go through. Try again, or call 786-408-5073 and we will look up the rules for you.');
+        }
+      });
+      return;
+    }
+
     if (!window.PDFLib || !window.PDFLib.PDFDocument) {
-      err.textContent = 'The PDF builder is still loading. Give it a second and tap again.';
-      err.hidden = false;
+      showErr('The PDF builder is still loading. Give it a second and tap again.');
       return;
     }
 
@@ -277,16 +344,35 @@
       btn.disabled = false;
       postLead(d, built);
     }).catch(function () {
-      err.textContent = 'Something went wrong building the PDF. Try again, or call 786-408-5073 and we will prepare it by hand.';
-      err.hidden = false;
+      showErr('Something went wrong building the PDF. Try again, or call 786-408-5073 and we will prepare it by hand.');
       btn.textContent = 'Build My Transfer Request';
       btn.disabled = false;
       postLead(d, null);
     });
   }
 
+  function applyMode() {
+    var state = custody() === 'state';
+    $('tr-state-row').hidden = !state;
+    $('tr-state-note').hidden = !state;
+    $('tr-email-req').hidden = !state;
+    $('tr-reg-req').hidden = state;
+    $('tr-reg-label').textContent = state ? 'Inmate or DOC number' : 'Register number';
+    $('f_reg').placeholder = state ? 'As the state prison lists it' : '00000-000';
+    $('tr-email-hint').textContent = state
+      ? 'Required. This is where we send your state\u2019s transfer rules.'
+      : 'Optional. The PDF downloads to this device either way. Give us an email and we\u2019ll send you a copy so you don\u2019t lose it.';
+    $('tr-pdf-note').hidden = state;
+    var btn = $('tr-go');
+    btn.textContent = state ? 'Send Me My State\u2019s Transfer Rules' : 'Build My Transfer Request';
+    var err = $('tr-err'); err.hidden = true; err.className = 'tr-err';
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     var btn = $('tr-go');
     if (btn) { btn.addEventListener('click', run); }
+    var radios = document.querySelectorAll('input[name="f_custody"]');
+    for (var i = 0; i < radios.length; i++) { radios[i].addEventListener('change', applyMode); }
+    if ($('tr-state-row')) { applyMode(); }
   });
 })();
